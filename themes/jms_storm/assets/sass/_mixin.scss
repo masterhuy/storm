@@ -1,0 +1,8 @@
+@mixin icon_dropdown($value){
+	a.dropdown-toggle::after{
+		content: "\f107";
+		font-family: "FontAwesome";
+		padding-left: #{$value}px;
+		@content;
+	}
+}
