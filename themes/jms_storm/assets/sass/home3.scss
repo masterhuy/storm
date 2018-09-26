@@ -1,0 +1,63 @@
+@import "mixin";
+@import "varians";
+
+.container{
+	max-width: 1170px;
+}
+.container-fluid{
+	max-width: 1800px;
+	width: 100%;
+}
+#jmstools .btn-action .btn:hover{
+	background: $active-h3;
+}
+.btn-default.active,
+.btn-active{
+	background: $active-h3;
+}
+
+// topbar
+.topbar{
+	background: $active-h3;
+	color: #fff;
+	.container > .row{
+		display: flex;
+		align-items: center;
+	}
+	p{
+		margin-bottom: 0;
+	}
+	.left{
+		.addon-box{
+			float: left;
+			&:not(:first-child){
+				margin-left: 30px;
+			}
+		}
+		.text{
+			span{
+				display: none;
+			}
+		}
+	}
+	.right{
+		a{
+			color: #fff;
+		}
+		#_desktop_user_info{
+			.type3{
+				display: block;
+			}
+			.type1, .type2{
+				display: none;
+			}
+		}
+		.addon-box{
+			float: right;
+			position: relative;
+			&:not(:first-child){
+				margin-right: 41px;
+			}
+		}
+	}
+}

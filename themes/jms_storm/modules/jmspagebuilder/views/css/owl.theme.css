@@ -24,6 +24,9 @@
 .owl-controls.disabled {
     display: none;
 }
+.owl-dots.disabled {
+	display: none;
+}
 .owl-controls {
     display: block;
 }
@@ -38,19 +41,16 @@
 .owl-theme .owl-controls  div.disabled {	
 	cursor:default;	
 }
-.owl-theme .owl-controls  div.owl-prev, .owl-theme .owl-controls  div.owl-next {
-    background-position: 50% 50%;
-    border-radius: 50%;
-    display: inline-block;
-    font-size: 0;
-    height: 35px;
-    margin: 0 2px;
-    position: absolute;
-    text-align: center;
-    top: -37px;
-    width: 35px;
-	cursor:pointer;
-	z-index:2;
+.owl-theme .owl-controls div.owl-prev, .owl-theme .owl-controls div.owl-next {
+	background-position: 50% 50%;
+	border-radius: 3px;
+	display: inline-block;
+	height: 35px;
+	margin: 0 3px;
+	text-align: center;
+	width: 35px;
+	cursor: pointer;
+	z-index: 2;
 }
 
 .owl-theme .owl-controls  div.owl-prev {
@@ -74,13 +74,14 @@
     height: 10px;
 	cursor: pointer;
     width: 10px;
+    border-radius: 50%;
 }
 .owl-dots {
-    position:absolute;
-    width:100%;	
-	bottom:23px;
-	text-align:center;
-	bottom:10px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 100px;
+	z-index: 9999;
 }
 .owl-dots .owl-dot {
     display: inline-block;
@@ -97,9 +98,12 @@
 	text-decoration:none
 }
 /* Styling Pagination*/
-.owl-theme .owl-controls{
-	margin-bottom:0;
-	margin-top:0;
+.owl-theme .owl-controls {
+	margin-bottom: 0;
+	margin-top: 0;
+	position: absolute;
+	top: -44px;
+	right: 15px;
 }
 .owl-theme .owl-controls .owl-page {
 	display:inline-block;

@@ -27,13 +27,13 @@
 		{block name='product_thumbnail'}
 		  <a href="{$product.url}" class="product-image {if isset($jpb_phover) && $jpb_phover == 'image_swap'}image_swap{else}image_blur{/if}">
 			<img class="img-responsive product-img1 replace-2x"
-			  src = "{$product.cover.bySize.small_default.url}"
+			  src = "{$product.cover.bySize.medium_default.url}"
 			  alt = "{$product.cover.legend}"
 			  data-full-size-image-url = "{$product.cover.large.url}"
 			/>
 			{if isset($jpb_phover) && $jpb_phover == 'image_swap' && $product.images.1}
 				<img class="img-responsive product-img2 replace-2x"
-				  src = "{$product.images.1.bySize.small_default.url}"
+				  src = "{$product.images.1.bySize.medium_default.url}"
 				  alt = "{$product.images.1.legend}"
 				  data-full-size-image-url = "{$product.images.1.large.url}"
 				/>
@@ -49,12 +49,13 @@
 		    {block name='product_price_and_shipping'}
 		        {if $product.show_price}
 		          <div class="content_price">
+		          	{hook h='displayProductPriceBlock' product=$product type="before_price"}
+		            <span class="price new">{$product.price}</span>
 		            {if $product.has_discount}
 		              {hook h='displayProductPriceBlock' product=$product type="old_price"}
 		              <span class="old price">{$product.regular_price}</span>
 		            {/if}
-		            {hook h='displayProductPriceBlock' product=$product type="before_price"}
-		            <span class="price new">{$product.price}</span>
+		            
 
 		            {hook h='displayProductPriceBlock' product=$product type='unit_price'}
 

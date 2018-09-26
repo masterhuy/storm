@@ -60,37 +60,41 @@
 			{/if}	
 			<div class="post-info">
 				<h4 class="post-title">
-					<a href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">{$post.title|truncate:40:'...'|escape:'htmlall':'UTF-8'}</a>
+					<a href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}" title="{$post.title}">{$post.title|truncate:40:'...'|escape:'htmlall':'UTF-8'}</a>
 				</h4>
 				<ul class="post-meta">
 					{if $show_category == '1'}
 						<li>
 							{l s='In' d='Modules.JmsPagebuilder'}: 
-								<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">
-									{$post.category_name|escape:'html':'UTF-8'}
-								</a>
+							<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">
+								{$post.category_name|escape:'html':'UTF-8'}
+							</a>
 						</li>
 					{/if}
 					{if $show_time == '1'}
-						<li>
-								<span class="post-created">
-									<i class="fa fa-calendar-o" aria-hidden="true"></i>
-									{$post.created|escape:'html':'UTF-8'|date_format:'%b %e, %Y'}
-								</span>
+						<li class="time">
+							<span class="post-created">
+								{$post.created|escape:'html':'UTF-8'|date_format:'%B %e, %Y'}
+							</span>
 						</li>
 					{/if}
 					{if $show_nviews == '1'}
 						<li>
 							<span>
-								<i class="fa fa-eye" aria-hidden="true"></i>
-								{$post.views|escape:'html':'UTF-8'} {l s='views' d='Modules.JmsPagebuilder'}
+								<i class="fa fa-eye" aria-hidden="true" style="font-size: 15px;"></i>
+								{$post.views|escape:'html':'UTF-8'} {l s='Views' d='Modules.JmsPagebuilder'}
 							</span>
 						</li>
 					{/if}
 					{if $show_ncomments == '1'}		
-						<li>
+						<li class="comment">
 							<span>
-								{$post.comment_count|escape:'html':'UTF-8'} {l s='comments' d='Modules.JmsPagebuilder'}
+								<i class="fa fa-comment-o" aria-hidden="true" style="font-size: 15px;"></i>
+								{if $post.comment_count > 0}
+									({$post.comment_count|escape:'html':'UTF-8'}) {l s='Comments' d='Modules.JmsPagebuilder'}
+								{else}
+									({$post.comment_count|escape:'html':'UTF-8'}) {l s='Comment' d='Modules.JmsPagebuilder'}
+								{/if}
 							</span>
 						</li>
 					{/if}

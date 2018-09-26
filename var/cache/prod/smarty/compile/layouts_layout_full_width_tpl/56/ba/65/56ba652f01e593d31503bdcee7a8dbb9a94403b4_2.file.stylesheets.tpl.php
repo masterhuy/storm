@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-09-20 04:47:59
+/* Smarty version 3.1.32, created on 2018-09-24 04:39:07
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\templates\_partials\stylesheets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5ba35ebf39e219_59206002',
+  'unifunc' => 'content_5ba8a2abef80a1_02315892',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '56ba652f01e593d31503bdcee7a8dbb9a94403b4' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\templates\\_partials\\stylesheets.tpl',
-      1 => 1537433275,
+      1 => 1537777698,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ba35ebf39e219_59206002 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ba8a2abef80a1_02315892 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>

@@ -27,3 +27,5 @@
   {if $show_close_btn}<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>{/if}
   {$alert_message nofilter}
 </div>
+
+

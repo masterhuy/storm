@@ -25,14 +25,14 @@
 				{foreach from=$cart.subtotals item="subtotal"}
 					<div class="{$subtotal.type} cart-prices-line">
 						<span class="label">{$subtotal.label}</span>
-						<span class="value pull-right">{$subtotal.value}</span>
+						<span class="value">{$subtotal.value}</span>
 					</div>
 				{/foreach}
-				<div class="cart-button">
-					<a id="button_order_cart" class="btn-default btn-effect" href="{$cart_url}" title="{l s='Check out' d='Shop.Theme'}" rel="nofollow">
-						{l s='Check out' d='Shop.Theme'}
-					</a> 
-				</div>
+			</div>
+			<div class="cart-button">
+				<a id="button_order_cart" class="btn-default btn-effect" href="{$cart_url}" title="{l s='Check out' d='Shop.Theme'}" rel="nofollow">
+					{l s='Check out' d='Shop.Theme'}
+				</a> 
 			</div>
 		</div>
 	</div>

@@ -64,7 +64,7 @@
     left: 13px;
     position: absolute;
     text-align: left;
-    top: 100%;
+    top: calc(100% + 37px);
     width: 100%;
     z-index: 1000;
 }
@@ -80,6 +80,7 @@
     position: relative;
     width: 100%;
     padding: 20px;
+    border-radius: 3px;
 }
 #search_result .result_div .item {
     display:flex;

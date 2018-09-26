@@ -8,6 +8,9 @@
 	max-width: 1800px;
 	width: 100%;
 }
+#jmstools .btn-action .btn:hover{
+	background: $active-h1;
+}
 .btn-default.active,
 .btn-active{
 	background: $active-h1;
@@ -15,12 +18,15 @@
 
 // topbar
 .topbar{
+	background: rgba(59,59,59,0.77);
+	color: #fff;
 	.container-fluid > .row{
 		display: flex;
 		align-items: center;
 	}
-	background: rgba(59,59,59,0.77);
-	color: #fff;
+	.dropdown-menu{
+		background: rgba(59, 59, 59, 0.77);
+	}
 	.center{
 		p{
 			margin-bottom: 0;
@@ -146,9 +152,14 @@
 	.button-search:hover{
 		color: $active-h1;
 	}
-	.jms-megamenu .nav > li > a{
-		color: #fff;
-		line-height: 119px;
+	.jms-megamenu .nav > li{
+		> a{
+			color: #fff;
+			line-height: 119px;
+		}
+		&.open > a{
+			color: $active-h1;
+		}
 	}
 	.container-fluid > .row{
 		display: flex;
@@ -228,7 +239,6 @@
 			}
 		}
 		.icon-search{
-			background: url("../img/icon/search_h1.png") no-repeat;
 			display: block;
 			width: 25px;
 			height: 25px;
@@ -241,7 +251,7 @@
 			border: 0;
 			max-width: 292px;
 			padding-left: 200px;
-			&::-webkit-input-placeholder,{
+			&::-webkit-input-placeholder{
 				color: #fff;
 				text-transform: uppercase;
 				letter-spacing: 0;
@@ -252,7 +262,6 @@
 				letter-spacing: 0;
 			}
 		}
-
 	}
 }
 
@@ -303,6 +312,7 @@
 // banner fullWidth
 .banner_f, .banner_f .jms-banner{
 	margin-top: -82px;
+	text-align: center;
 	.container-fluid{
 		max-width: 100%;
 	}
@@ -350,12 +360,22 @@
 	position: relative;
 	background-repeat: no-repeat;
 	z-index: 2;
+	.layout-column{
+		.addon-box:nth-child(2){
+			min-width: 1920px;
+			position: absolute;
+			left: -228px;
+			top: -93px;
+		}
+	}
 	.owl-stage-outer{
 		padding-bottom: 120px;
 	}
 	.addon-title{
 		border-bottom: 1px solid #cfcfcf;
 		height: 39px;
+		position: relative;
+		z-index: 9;;
 		h3{
 			float: left;
 			font-size: 20px;
@@ -443,6 +463,11 @@
 
 // footer
 .footer_t{
+	.addon-title{
+		h3{
+			color: #fff;
+		}
+	}
 	.newsletter{
 		#newsletter-input{
 			height: 50px;

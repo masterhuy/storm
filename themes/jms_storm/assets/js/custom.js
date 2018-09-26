@@ -12,6 +12,7 @@
 		event: jmmm_event,
 		duration: jmmm_duration
 	});
+	$('[data-toggle="tooltip"]').tooltip();
 });
  
 $('body').on('click', '.ajax-add-to-cart', function (event) {	
@@ -112,6 +113,11 @@ function back_to_top() {
 }
 jQuery(function ($) {
     "use strict";
+    $(".product-miniature").hover(function(){
+	    $(".owl-theme .owl-dots").css("z-index", "-1");
+		}, function(){
+        $(".owl-theme .owl-dots").css("z-index", "9999");
+	});
     $(window).scroll(function () {
      if ($(window).scrollTop() >= 30) {
       $("#back-to-top").stop().fadeIn(300);

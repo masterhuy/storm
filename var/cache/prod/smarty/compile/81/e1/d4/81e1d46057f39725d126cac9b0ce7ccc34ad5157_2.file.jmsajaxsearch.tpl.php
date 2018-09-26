@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-09-21 06:00:18
+/* Smarty version 3.1.32, created on 2018-09-23 21:53:15
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmsajaxsearch\views\templates\hook\jmsajaxsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5ba4c132ecabb8_01926741',
+  'unifunc' => 'content_5ba8438b67c7a6_07192210',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '81e1d46057f39725d126cac9b0ce7ccc34ad5157' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\modules\\jmsajaxsearch\\views\\templates\\hook\\jmsajaxsearch.tpl',
-      1 => 1537524011,
+      1 => 1537753991,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ba4c132ecabb8_01926741 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ba8438b67c7a6_07192210 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == 6) {?>
 <div class="btn-group compact-hidden jms_ajax_search" id="jms_ajax_search">
 	<a href="#"  class="btn-xs icon dropdown-toggle" title="Search" data-toggle="dropdown">
@@ -51,6 +51,7 @@ if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == 6) {?>
 " class="form-control ajax_search" />		
 			<button type="submit" name="submit_search" class="button-search storm-zoom"></button>
 		</form>
+		<div id="search_result"></div>
 	</div>	
 </div>
 <?php }
