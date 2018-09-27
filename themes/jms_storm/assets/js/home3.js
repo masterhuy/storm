@@ -1,28 +1,33 @@
-
+jQuery(document).ready(function($) {
+	$("#jms-vermegamenu-container").addClass('collapse in');
+	$('.ver_menu').click(function(event) {
+		$(this).parent().toggleClass('closed');
+	});
+});
 $(window).load(function(){
-		if($('.slider').length > 0)
-		$('.slider').fractionSlider({	
-			'slideTransition' : jmsslider_trans,
-			'slideEndAnimation' : jmsslider_end_animate,
-			'transitionIn' : jmsslider_trans_in,
-			'transitionOut' : jmsslider_trans_out,
-			'fullWidth' : jmsslider_full_width,
-			'delay' : jmsslider_delay,
-			'timeout' : jmsslider_duration,
-			'speedIn' : jmsslider_speed_in,
-			'speedOut' : jmsslider_speed_out,
-			'easeIn' : jmsslider_ease_in,
-			'easeOut' : jmsslider_ease_out,
-			'controls' : jmsslider_navigation,
-			'pager' : jmsslider_pagination,
-			'autoChange' : jmsslider_autoplay,
-			'pauseOnHover' : jmsslider_pausehover,
-			'backgroundAnimation' : jmsslider_bg_animate,
-			'backgroundEase' : jmsslider_bg_ease,
-			'responsive' : jmsslider_responsive,
-			'dimensions' : jmsslider_dimensions,
-			'fullscreen' : true
-		});
+	if($('.slider').length > 0)
+	$('.slider').fractionSlider({	
+		'slideTransition' : jmsslider_trans,
+		'slideEndAnimation' : jmsslider_end_animate,
+		'transitionIn' : jmsslider_trans_in,
+		'transitionOut' : jmsslider_trans_out,
+		'fullWidth' : jmsslider_full_width,
+		'delay' : jmsslider_delay,
+		'timeout' : jmsslider_duration,
+		'speedIn' : jmsslider_speed_in,
+		'speedOut' : jmsslider_speed_out,
+		'easeIn' : jmsslider_ease_in,
+		'easeOut' : jmsslider_ease_out,
+		'controls' : jmsslider_navigation,
+		'pager' : jmsslider_pagination,
+		'autoChange' : jmsslider_autoplay,
+		'pauseOnHover' : jmsslider_pausehover,
+		'backgroundAnimation' : jmsslider_bg_animate,
+		'backgroundEase' : jmsslider_bg_ease,
+		'responsive' : jmsslider_responsive,
+		'dimensions' : jmsslider_dimensions,
+		'fullscreen' : true
+	});
 });
 jQuery(function ($) {
     "use strict";
@@ -57,42 +62,81 @@ jQuery(function ($) {
 			nav: p_nav,
 			dots: p_pag,
 			autoplay: auto_play_carousel,
+			loop: true,
 			slideSpeed: 800,
 		});
 	}
-	
-	if($(".instagram-carousel").length) {
-		var instagramCarousel = $(".instagram-carousel");
+
+	if($(".product-carousel-ol").length) {		
+		var productCarouselol = $(".product-carousel-ol");			
 		var rtl = false;
-	if ($("body").hasClass("rtl")) rtl = true;				
-	instagramCarousel.owlCarousel({
-		responsiveClass:true,
-		responsive:{			
-			1199:{
-				items:7
+		if ($("body").hasClass("rtl")) rtl = true;				
+		productCarouselol.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:p_ol_itemsDesktop
 				},
-			991:{
-				items:5
+				991:{
+					items:p_ol_itemsDesktopSmall
+				},
+				768:{
+					items:p_ol_itemsTablet
+				},
+				481:{
+					items:p_ol_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
 			},
-			768:{
-				items:3
-			},
-		
-			318:{
-				items:2
-			}
-		},
-		rtl: rtl,
-		margin: 10,
-		nav: false,
-		dots: false,
-		autoplay: true,
-		slideSpeed: 200,
-		loop: true
-	});
+			rtl: rtl,
+			margin:30,
+			nav: p_ol_nav,
+			dots: p_ol_pag,
+			autoplay: p_ol_auto_play_carousel,
+			loop: true,
+			slideSpeed: 800,
+		});
 	}
-});
-$(document).ready(function() {
-/* Apply fancybox to multiple items */
-	$('.grouped_elements').fancybox();
+
+	if($(".categorytab-carousel").length) {
+		var categorytabCarousel = $(".categorytab-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		categorytabCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:cattab_itemsDesktop
+				},
+				991:{
+					items:cattab_itemsDesktopSmall
+				},
+				768:{
+					items:cattab_itemsTablet
+				},
+				481:{
+					items:cattab_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0: {
+					items:1
+				}
+			},
+			rtl: rtl,
+				margin: 0,
+			    nav: cattab_nav,
+		        dots: cattab_pag,
+				autoplay: cattab_auto_play_carousel,
+				loop:true,
+			    navigationText: ["", ""],
+			    slideSpeed: 200
+		});
+	}
 });

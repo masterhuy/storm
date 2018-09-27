@@ -89,7 +89,7 @@
 					margin-right: 5px;
 				}
 			}
-			&.type1, &.type3{
+			&.type1, &.type3, &.type4{
 				display: none;
 			}
 			@include icon_dropdown(1);

@@ -993,10 +993,6 @@ table td[class*="col-"], table table th[class*="col-"] {
 /* Dropdown Menu */
 .dropdown-menu {
   visibility: hidden;
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  -o-transform: translateY(10px);
-  transform: translateY(10px);
   opacity: 0;
   -webkit-transition: opacity 0.3s ease 0s, visibility 0s ease 0.3s, transform 0.3s ease 0s;
   -o-transition: opacity 0.3s ease 0s, visibility 0s ease 0.3s, transform 0.3s ease 0s;
@@ -5177,6 +5173,10 @@ footer .blog-carousel {
 }
 .home_2 #cart_block #button_order_cart:hover{
   background: #ed2b2b;
+}
+
+.home_3 .back-to-top:hover {
+  background: #3700ff;
 }
 
 #footer .addon-title + ul li a::before {

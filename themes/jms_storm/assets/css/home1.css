@@ -71,7 +71,7 @@
       position: relative;
       bottom: 1px;
       margin-right: 5px; }
-  .topbar .right .languages-info.type1, .topbar .right .languages-info.type3 {
+  .topbar .right .languages-info.type1, .topbar .right .languages-info.type3, .topbar .right .languages-info.type4 {
     display: none; }
   .topbar .right .languages-info a.dropdown-toggle::after {
     content: "\f107";

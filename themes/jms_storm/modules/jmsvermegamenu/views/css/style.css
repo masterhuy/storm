@@ -37,6 +37,7 @@
     font-size: 23px;
     position: relative;
     top: 3px;
+    padding-right: 15px;
 }
 .jms-vermegamenu .nav > li > a  {
 	color:#333;
@@ -148,6 +149,9 @@
     background: #fff;
     transform: unset;
     box-shadow: 2px 0px 5px rgba(0,0,0,0.2);
+}
+.jms-vermegamenu .dropdown-menu {
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.2) !important;
 }
 .jms-vermegamenu .mega-nav li.selected,
 .mega-dropdown-menu.selected,

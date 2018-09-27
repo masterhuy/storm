@@ -84,7 +84,7 @@
 .fraction-slider .prev{
 	left:0; 
 	top:50%;
-	transform: translateY(-50%;);
+	transform: translateY(-50%);
 	opacity: 0;
 	visibility: hidden;
 }
@@ -117,7 +117,7 @@
 .fraction-slider .next{
 	right: 0;
 	top:50%;
-	transform: translateY(-50%;);
+	transform: translateY(-50%);
 	opacity: 0;
 	visibility: hidden;
 }
