@@ -7,6 +7,7 @@
 **/
 #jms-vermegamenu-container {
 	margin-bottom:0px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 .jms-vermegamenu {
     padding: 14px 0;
@@ -133,7 +134,7 @@
     list-style: outside none none;
     margin: 0 20px;
 }
-.jms-vermegamenu  .caret {
+.jms-vermegamenu .caret {
 	margin-left:5px;
 }
 .jms-vermegamenu .mega-nav li.selected > a{
@@ -144,6 +145,7 @@
     min-width: 350px;
     border: 0;
     transition: all .4s !important;
+    transform: translateY(10px);
 }
 .jms-vermegamenu .open > .dropdown-menu{
     background: #fff;

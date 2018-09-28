@@ -59,13 +59,6 @@
 			</div>
 		{/block}
 					
-		{block name='product_variants'}
-			{if $product.main_variants}
-				<div class="color_to_pick_list">
-					{include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
-				</div>
-			{/if}
-		{/block}
 		<a data-link-action="quickview" class="quick-view product-btn hidden-xs">
 			<span><i class="fa fa-eye" aria-hidden="true"></i>Quick view</span>
 		</a>
@@ -112,6 +105,13 @@
 		</div>
 	</div>
 	<div class="product_action">
+		{block name='product_variants'}
+			{if $product.main_variants}
+				<div class="color_to_pick_list">
+					{include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
+				</div>
+			{/if}
+		{/block}
 		<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
 			<span class="fa fa-spin fa-spinner"></span>
 			<span class="fa fa-check"></span>
@@ -125,3 +125,4 @@
 		{/if}
     </div>
 </div>
+

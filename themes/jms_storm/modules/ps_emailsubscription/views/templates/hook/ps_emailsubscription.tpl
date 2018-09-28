@@ -54,7 +54,7 @@
 			<span>{l s='Sign up our Newsletter for Exclusive Discount codes' d='Shop.Theme'}</span>
 		</div>
 		<div class="news_content">
-        	<div  class="block_content block_c_right">
+        	<div  class="block_c_right">
 				<form action="{$urls.pages.index}#footer" method="post">
 					<div class="form-group{if isset($msg) && $msg } {if $nw_error}form-error{else}form-ok{/if}{/if}" >
 						<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Your email here...' d='Shop.Forms.Labels'}" />

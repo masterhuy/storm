@@ -196,6 +196,8 @@
         color: #ed2b2b; }
 
 .menu .jms-vermegamenu {
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
   background: #fff; }
   .menu .jms-vermegamenu li > a:hover {
     color: #ed2b2b; }
@@ -223,8 +225,21 @@
 
 .menu .left .addon-box {
   position: relative; }
+  .menu .left .addon-box.open + .addon-box {
+    opacity: 1;
+    visibility: visible; }
+  .menu .left .addon-box:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    z-index: 1000; }
 
 .menu .left #jms-vermegamenu-container {
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
   position: absolute;
   background: #fff;
   width: 100%; }

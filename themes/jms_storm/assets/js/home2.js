@@ -1,5 +1,8 @@
 jQuery(document).ready(function($) {
 	$("#jms-vermegamenu-container").addClass('collapse');
+	$('.ver_menu').click(function(event) {
+		$(this).parent().toggleClass('open');
+	});
 });
 $(window).load(function(){
 	if($('.slider').length > 0)

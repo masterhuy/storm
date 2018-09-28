@@ -248,6 +248,7 @@
 
 .menu{
 	.jms-vermegamenu{
+		box-shadow: unset;
 		background: #fff;
 		li > a:hover{
 			color: $active-h2;
@@ -281,8 +282,19 @@
 	.left{
 		.addon-box{
 			position: relative;
+			&.open + .addon-box{
+				opacity: 1;
+				visibility: visible;
+			}
+			&:nth-child(2){
+				opacity: 0;
+				visibility: hidden;
+				transition: all .4s;
+				z-index: 1000;
+			}
 		}
 		#jms-vermegamenu-container{
+			transition: all .4s;
 			position: absolute;
 			background: #fff;
 			width: 100%;

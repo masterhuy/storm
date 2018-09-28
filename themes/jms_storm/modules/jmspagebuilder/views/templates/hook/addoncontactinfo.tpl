@@ -32,9 +32,9 @@
 {/if}
 <div class="contact-info{if $box_class} {$box_class|escape:'htmlall':'UTF-8'}{/if}">
 	<ul>
-       {if $ci_address != ''}<li>{$ci_address|escape:'html':'UTF-8'}</li>{/if}
-       {if $phone != ''}<li><span>{l s='Tel: ' d='Shop.Theme'} </span>{$phone|escape:'html':'UTF-8'}</li>{/if}
-	   {if $email != ''}<li><span>{l s='Email: ' d='Shop.Theme'}</span>{$email|escape:'html':'UTF-8'}</li>{/if}
-	   {if $opentime != ''}<li><span>{l s='Open: ' d='Shop.Theme'} </span>{$opentime|escape:'html':'UTF-8'}</li>{/if}
+       {if $ci_address != ''}<li class="address">{$ci_address|escape:'html':'UTF-8'}</li>{/if}
+       {if $phone != ''}<li class="phone"><span>{l s='Phone: ' d='Shop.Theme'} </span>{$phone|escape:'html':'UTF-8'}</li>{/if}
+	   {if $email != ''}<li class="email"><span>{l s='Email: ' d='Shop.Theme'}</span>{$email|escape:'html':'UTF-8'}</li>{/if}
+	   {if $opentime != ''}<li class="open_time"><span>{l s='Hours: ' d='Shop.Theme'} </span>{$opentime|escape:'html':'UTF-8'}</li>{/if}
     </ul>
 </div>

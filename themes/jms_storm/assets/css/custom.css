@@ -1944,9 +1944,9 @@ margin-top: 20px;
 
 .product-preview:hover .color_to_pick_list {
   opacity: 1;
-  -webkit-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  transform: translateX(0px);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -1962,17 +1962,11 @@ margin-top: 20px;
   z-index: 2; }
 
 .product-preview .color_to_pick_list {
-  background: rgba(0, 0, 0, 0.05);
-  border: 1px solid #ebebeb;
-  bottom: 10px;
-  left: 10px;
   margin: 0;
   opacity: 0;
-  padding: 5px 0 5px 5px;
-  position: absolute;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -1983,13 +1977,17 @@ margin-top: 20px;
     display: flex;
     display: -ms-flexbox;
     display: -webkit-flex;
-    float: left; }
+    float: left;
+    justify-content: center;
+    padding: 4px 30px 6px; }
   .product-preview .color_to_pick_list a {
-    height: 10px;
+    height: 29px;
     margin: 0;
-    width: 10px;
+    width: 29px;
     display: block;
-    margin-right: 5px; }
+    margin: 0 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5); }
 
 .product-preview .action-btn {
   position: absolute;
@@ -3151,11 +3149,6 @@ ul.footer_links {
   color: #fff; }
 
 /*footer*/
-footer {
-  margin-top: 100px; }
-
-#index footer {
-  margin-top: 0; }
 
 #social_block ul li {
   display: inline-block; }
@@ -4967,7 +4960,7 @@ footer .blog-carousel {
 }
 /*Owl carousel*/
 .brand-carousel {
-  padding: 75px 0; }
+  padding: 25px 0; }
   .brand-carousel.owl-theme .owl-controls div.owl-prev {
     left: 0;
     right: auto;
@@ -5193,6 +5186,23 @@ footer .blog-carousel {
 #footer .addon-title + ul li a:hover::before {
   opacity: 1;
   margin-left: 0;
+}
+.footer_t #social_block a {
+  color: #555;
+  font-size: 18px;
+  width: 33px;
+  height: 33px;
+  background: #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 3px;
 }
 
 .slides .btn-shopnow{
