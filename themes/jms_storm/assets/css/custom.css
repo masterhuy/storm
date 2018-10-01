@@ -992,6 +992,7 @@ table td[class*="col-"], table table th[class*="col-"] {
 
 /* Dropdown Menu */
 .dropdown-menu {
+  transform: translateY(10px);
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease 0s, visibility 0s ease 0.3s, transform 0.3s ease 0s;
@@ -1342,7 +1343,7 @@ ul#order_step li {
   padding: 35px;
   right: 0;
   border-radius: 3px;
-  top: calc(100% + 39px);
+  top: calc(100% + 29px);
   left: auto;
   visibility: hidden; }
 
@@ -5236,7 +5237,6 @@ footer .blog-carousel {
   transition: unset;
   border: 1px solid transparent;
 }
-
 
 
 

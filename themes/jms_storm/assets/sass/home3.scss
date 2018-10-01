@@ -103,13 +103,24 @@
 			}
 		}
 		#_desktop_user_info{
-			a.account::before{
-				content: "\e915";
-				font-family: Storm;
-				font-size: 17px;
-				position: absolute;
-				left: -24px;
-				top: -15px;
+			a{
+				span{
+					font-size: 13px;
+					text-transform: capitalize;
+				}
+				&.account{
+					&::before{
+						content: "\e915";
+						font-family: Storm;
+						font-size: 17px;
+						position: absolute;
+						left: -24px;
+						top: -15px;
+					}
+					&.btn-name::before{
+						top: -3px;
+					}
+				}
 			}
 			.type3{
 				display: block;
@@ -123,6 +134,16 @@
 			position: relative;
 			&:not(:first-child){
 				margin-right: 47px;
+				&::after{
+					content: "";
+					height: 13px;
+					width: 1px;
+					background: #5f33ff;
+					position: absolute;
+					right: -20px;
+					top: 50%;
+					transform: translateY(-50%);
+				}
 			}
 			&:not(:last-child){
 				padding-top: 0.5px;
@@ -642,11 +663,21 @@
 	.layout-column{
 		margin-top: -137px;
 	}
+	.countdown.is-countdown{
+		margin-top: -72px;
+	}
+	.img-hotdeal{
+		padding: 0;
+	}
+	.countdown-section{
+		margin: 0 7.5px;
+	}
 	.hotdeal-carousel{
 		padding-top: 0;
 		margin-top: -15px;
 		.product-name{
 			color: #0163d2;
+			min-height: 40.6px;
 			&:hover{
 				text-decoration: underline;
 			}

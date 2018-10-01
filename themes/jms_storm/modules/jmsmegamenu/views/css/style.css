@@ -82,7 +82,6 @@
     opacity: 0;
     padding: 0;
     position: absolute;
-    top: calc(100% + 10px);
      transition: all 400ms ease 0s;
 	-webkit-transition: all 400ms ease 0s;
 	-moz-transition: all 400ms ease 0s;
@@ -211,8 +210,12 @@
 .jms-megamenu .menu-align-center > .dropdown-menu {
     left: 50%;
     right: 0;
+    top: calc(100% + 10px);
     margin: auto;
     transform: translateX(-50%);
+}
+.jms-megamenu .menu-align-center.open > .dropdown-menu{
+    top: 100%;
 }
 .mega-nav .mega > a::after {
     margin-right: 2px !important;
@@ -465,17 +468,6 @@
 .jms-megamenu .nav li.hot > a > span {
 	position:relative;
 }
-.jms-megamenu .nav li.must-see > a > span::before,
-.jms-megamenu .nav li.hot > a > span::before,
-.jms-megamenu .nav li.new > a > span::before {
-	border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-top: 3px solid #e74c3c;
-    content: "";
-    position: absolute;
-    right: 4px;
-    top: -3px;
-}
 .jms-megamenu .nav li.must-see > a > span::after,
 .jms-megamenu .nav li.hot > a > span::after,
 .jms-megamenu .nav li.new > a > span::after {	
@@ -488,15 +480,6 @@
     top: -17px;
 	font-weight:400;
 	min-width:56px;	
-}
-.jms-megamenu .nav li.must-see > a > span::before {   
-    border-top: 3px solid #e74c3c;    
-}
-.jms-megamenu .nav li.must-see > a > span::after {
-    background: #e74c3c none repeat scroll 0 0;    
-    content: "Must see";    
-    right: -34px;	
-	min-width:56px;
 }
 .jms-megamenu .nav li.new > a > span::before {    
     border-top: 3px solid #3bc51a;    

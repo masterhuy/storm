@@ -53,13 +53,22 @@
 			<h3>{l s='Newsletter Signup' d='Shop.Theme'}</h3>
 			<span>{l s='Sign up our Newsletter for Exclusive Discount codes' d='Shop.Theme'}</span>
 		</div>
+		<div class="popup addon-title">
+			<p class="text-1">{l s='Get the latest news' d='Shop.Theme'}</p>
+			<p class="text-2">{l s='Delivered daily!' d='Shop.Theme'}</p>
+			<span>{l s='Give us your email and you will be daily updated with the latest events, in detail!' d='Shop.Theme'}</span>
+		</div>
 		<div class="news_content">
         	<div  class="block_c_right">
 				<form action="{$urls.pages.index}#footer" method="post">
 					<div class="form-group{if isset($msg) && $msg } {if $nw_error}form-error{else}form-ok{/if}{/if}" >
 						<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Your email here...' d='Shop.Forms.Labels'}" />
+						<input class="input_popup form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Enter your email' d='Shop.Forms.Labels'}" />
 						<button type="submit" name="submitNewsletter" class="newsletter-btn buttonh1 btn-active">
 							{l s='Sign up' d='Shop.Theme'}
+						</button>
+						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-popup btn-active">
+							{l s='Subscribe' d='Shop.Theme'}
 						</button>
 						<input type="hidden" name="action" value="0" />
 					</div>

@@ -65,7 +65,7 @@
 	 </div>
 	 <div class="user-info btn-group compact-hidden type3">
 		{if $logged} 
-		 	<a class="btn-name btn-xs dropdown-toggle" data-toggle="dropdown" href="{$my_account_url}"  title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" rel="nofollow">
+		 	<a class="btn-name account btn-xs dropdown-toggle" data-toggle="dropdown" href="{$my_account_url}"  title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" rel="nofollow">
 		    	<span class="hidden-sm-down">{$customerName}</span>
 		  	</a>	
 	      	<ul role="menu" class="dropdown-menu">
