@@ -5,7 +5,7 @@
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  * @Website: http://www.joommasters.com
 *}
-{if  $jpb_homepage == 6}
+{if  $jpb_homepage == 21}
 <div class="btn-group compact-hidden jms_ajax_search" id="jms_ajax_search">
 	<a href="#"  class="btn-xs icon dropdown-toggle" title="Search" data-toggle="dropdown">
 		<span class="pe pe-7s-search"></span>

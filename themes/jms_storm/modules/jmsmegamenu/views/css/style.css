@@ -204,15 +204,20 @@
     left: auto;
     right: 0;
 }
+.jms-megamenu .nav > li.menu-align-center.open > .dropdown-menu {
+    -webkit-transform: translateX(-50%) translateY(0px);
+    -ms-transform: translateX(-50%) translateY(0px);
+    transform: translateX(-50%) translateY(0px);
+}
 .menu-item.mega.item-fullwidth {
     position: static;
 }
 .jms-megamenu .menu-align-center > .dropdown-menu {
     left: 50%;
     right: 0;
-    top: calc(100% + 10px);
+    top: 100%;
     margin: auto;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(10px);
 }
 .jms-megamenu .menu-align-center.open > .dropdown-menu{
     top: 100%;

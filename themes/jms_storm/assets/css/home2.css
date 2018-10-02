@@ -5,6 +5,10 @@
   max-width: 1800px;
   width: 100%; }
 
+.btn-cart:hover {
+  background: #ed2b2b;
+  border-color: #ed2b2b; }
+
 #jmstools .btn-action .btn:hover {
   background: #ed2b2b; }
 

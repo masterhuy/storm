@@ -12,6 +12,10 @@
 	max-width: 100%;
 	width: 100%;
 }
+.btn-cart:hover {
+	background: $active-h3;
+	border-color: $active-h3;
+}
 #jmstools .btn-action .btn:hover{
 	background: $active-h3;
 }
@@ -76,8 +80,19 @@
 	.left{
 		.addon-box{
 			float: left;
+			position: relative;
 			&:not(:first-child){
 				margin-left: 45px;
+				&::before{
+					content: "";
+					height: 13px;
+					width: 1px;
+					background: #5f33ff;
+					position: absolute;
+					left: -27px;
+					top: 50%;
+					transform: translateY(-50%);
+				}
 			}
 		}
 		.text{
@@ -889,6 +904,9 @@
 			height: 48px;
 			padding-left: 28px;
 			min-width: 434px;
+			&:active, &:focus{
+				border-color: #eee;
+			}
 		}
 		.newsletter-btn{
 			margin-top: 0;

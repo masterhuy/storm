@@ -1122,6 +1122,7 @@ fieldset[disabled] .btn-default {
 .btn-active:hover{
   background: #111;
   border-color: #111;
+  color: #fff;
 }
 
 .btn-shopnow {
@@ -3586,6 +3587,9 @@ footer .blog-carousel {
 .blog .post-meta {
   margin-bottom: 19px;
 }
+.blog .btn-readmore:hover{
+  color: #fff;
+}
 .blog .post-meta .time::after{
   content: "";
   position: absolute;
@@ -5171,6 +5175,18 @@ footer .blog-carousel {
 
 .home_3 .back-to-top:hover {
   background: #3700ff;
+}
+.home_4 .back-to-top:hover {
+  background: #02a8f3;
+}
+
+.slides .btn-shopnow{
+  transition: unset;
+}
+.newsletter #newsletter_block_left .popup.addon-title, 
+.newsletter .input_popup, .newsletter .btn-popup, 
+.jms-popup .inputNew, .jms-popup .buttonh1 {
+  display: none;
 }
 
 #footer .addon-title + ul li a::before {
