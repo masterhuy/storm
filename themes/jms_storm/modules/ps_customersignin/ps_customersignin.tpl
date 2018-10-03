@@ -26,16 +26,19 @@
 	<div class="user-info btn-group compact-hidden type1 ">
 		{if $logged} 
 		  	<a class="btn-name dropdown-toggle" data-toggle="dropdown" href="{$my_account_url}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" rel="nofollow" target="_blank">      
-		   		{$customerName}
+		   		<i class="storm-user"></i>
 		  	</a>
 		  	<ul role="menu" class="dropdown-menu">
+		  		<li>{$customerName}</li>
 				<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='My Account' d='Shop.Theme.CustomerAccount'} </a></li>		
 				<li><a href="{$link->getModuleLink('jmswishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}" title="{l s='My wishlists' d='Shop.Theme'}">{l s='My Wishlist' d='Shop.Theme.CustomerAccount'} </a></li>
 				<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
 				<li><a class="logout" href="{$logout_url}" rel="nofollow" >{l s='Log out' d='Shop.Theme.Actions'}</a></li>
 			</ul>
 		{else}   
-			<a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account dropdown-toggle" data-toggle="dropdown" rel="nofollow">{l s='My Account'  d='Shop.Theme.CustomerAccount'} </a>
+			<a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account dropdown-toggle" data-toggle="dropdown" rel="nofollow">
+				<i class="storm-user"></i>
+			</a>
 			<ul role="menu" class="dropdown-menu">
 				<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='My Account' d='Shop.Theme.CustomerAccount'} </a></li>		
 				<li><a href="{$link->getModuleLink('jmswishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}" title="{l s='My wishlists' d='Shop.Theme'}">{l s='My Wishlist' d='Shop.Theme.CustomerAccount'} </a></li>

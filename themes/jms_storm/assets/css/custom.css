@@ -3218,7 +3218,11 @@ footer .post-title {
 
 /*BLOG footer*/
 /*instagram*/
-.instagram-carousel .owl-item a::before {
+.instagram-images a{
+  position: relative;
+}
+.instagram-carousel .owl-item a::before,
+.instagram-images a::before {
   background-color: rgba(0, 0, 0, 0.4);
   content: "";
   height: 100%;
@@ -3232,7 +3236,8 @@ footer .post-title {
   width: 100%;
   z-index: 10; }
 
-.instagram-carousel .owl-item a::after {
+.instagram-carousel .owl-item a::after,
+.instagram-images a::after {
   color: #fff;
   content: "\f16d";
   font-family: fontawesome;
@@ -3254,7 +3259,10 @@ footer .post-title {
   transition: all 0.4s ease 0s;
   z-index: 11; }
 
-.instagram-carousel .owl-item:hover a::before, .instagram-carousel .owl-item:hover a::after {
+.instagram-carousel .owl-item:hover a::before, 
+.instagram-carousel .owl-item:hover a::after,
+.instagram-images a:hover::before, 
+.instagram-images a:hover::after {
   opacity: 1; }
 
 .instagram-carousela {
@@ -5179,11 +5187,16 @@ footer .blog-carousel {
 .home_4 .back-to-top:hover {
   background: #02a8f3;
 }
+.home_5 .back-to-top:hover {
+  background: #f56c57;
+}
+
 
 .slides .btn-shopnow{
   transition: unset;
 }
-.newsletter #newsletter_block_left .popup.addon-title, 
+.newsletter #newsletter_block_left .popup.addon-title,
+#newsletter_block_left .textnews_h5,
 .newsletter .input_popup, .newsletter .btn-popup, 
 .jms-popup .inputNew, .jms-popup .buttonh1 {
   display: none;

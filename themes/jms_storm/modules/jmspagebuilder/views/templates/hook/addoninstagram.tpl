@@ -30,7 +30,7 @@
 </div>
 <div class="instagram-images">
 	{foreach from=$insta_images item=img}
-		<a class="grouped_elements" data-fancybox-group="gallery" href="{$img.url nofilter}">
+		<a class="grouped_elements" data-fancybox-group="gallery" target="_blank" href="{$img.link nofilter}">
 			<img src="{$img.url nofilter}" alt="{l s='Instagram Image' d='Modules.JmsPagebuilder'}"/>
 		</a>
 	{/foreach}

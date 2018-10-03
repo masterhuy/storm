@@ -52,15 +52,6 @@
 	.addToWishlist.product-btn:hover{
 		color: $active-h5;
 	}
-	.product-link {
-	    min-height: auto;
-	    color: #0163d2;
-	    white-space: nowrap;
-	    text-overflow: ellipsis;
-	    &:hover{
-	    	text-decoration: underline;
-	    }
-	}
 }
 
 
@@ -427,7 +418,6 @@
 			transition: all .4s;
 		}
 		&:hover > a > img{
-			transform: scale(1.01);
 			box-shadow: 0 0 20px rgba(0,0,0,0.3);
 		}
 	}
@@ -464,6 +454,7 @@
 	.cat-name{
 		font-size: 15px;
 		font-weight: 600;
+		color: #555;
 		text-transform: uppercase;
 		margin-top: 20px;
 		display: block;
@@ -496,5 +487,354 @@
 	margin-top: -100px;
 	.jms-banner{
 		margin-top: -100px;
+	}
+}
+
+// product tab
+.product_tab{
+	margin-top: 93px;
+	position: relative;
+	z-index: 1;
+	.owl-stage-outer{
+		padding-bottom: 150px;
+	}
+	.addon-title{
+		display: flow-root;
+		border-bottom: 1px solid #e6e6e6;
+		h3{
+			float: left;
+		}
+		.jms-tab{
+			float: right;
+			position: relative;
+			top: 1px;
+			ul{
+				li{
+					&.active a{
+						font-weight: 600;
+					}
+					a{
+						font-size: 14px;
+						font-weight: 400;
+						&.active{
+							font-weight: 600;
+						}
+					}
+				}
+			}
+		}
+	}
+	.product_action{
+		padding-top: 0;
+	}
+}
+
+// brand
+.brand{
+	position: relative;
+	z-index: 2;
+	margin-top: -120px;
+	margin-bottom: 50px;
+	.layout-column{
+		margin-top: -120px;
+	}
+	img{
+		padding: 15px 0;
+		background: #f8f8f8;
+	}
+}
+
+// blog
+.blog{
+	.addon-title{
+		border-bottom: 1px solid #e6e6e6;
+		padding-bottom: 3px;
+	}
+	.blog-carousel {
+		padding-top: 20px;
+	}
+	.post-meta .time {
+	    font-weight: 400;
+	    color: #333;
+	}
+	.post-title a{
+		font-size: 16px;
+	}
+	.category-name {
+		position: absolute;
+		top: 12px;
+		left: 0;
+		background: $active-h5;
+		padding: 7px 32px;
+		a{
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+	}
+	.post-info {
+	    margin-top: 14px;
+	}
+	.post-meta {
+	    margin-bottom: 7px;
+	}
+	.post-title {
+	    padding-bottom: 8px;
+	}
+	.post-intro{
+		margin-bottom: 29px;
+	}
+	.readmore{
+		color: $active-h5;
+		font-weight: 600;
+		text-transform: uppercase;
+		position: relative;
+		&::after{
+			content:"";
+			width: 0%;
+			height: 1px;
+			background: $active-h5;
+			bottom: 0;
+			left: 0;	
+			position: absolute;
+			transition: all .4s;
+		}
+		&:hover::after{
+			width: 100%;
+		}
+	}
+}
+
+// newsletter
+.newsletter{
+	margin-top: 80px;
+	padding: 134px 0 193px;
+	#newsletter_block_left{
+		.textnews_h1, .buttonh1{
+			display: none;
+		}
+		.textnews_h5, .btn-popup{
+			display: block;
+		}
+		.addon-title{
+			h3{
+				font-size: 30px;
+				color: #333;
+				padding-bottom: 23px;
+			}
+			span{
+				font-size: 16px;
+				color: #666;
+				display: block;
+				padding-right: 50px;
+				line-height: 1.25;
+			}
+		}
+	}
+	.news_content {
+		margin-top: 49px;
+	}
+	.form-group{
+		display: flex;
+		margin-bottom: 0;
+		position: relative;
+		&::before {
+		    content: "\f003";
+		    font-family: FontAwesome;
+		    position: absolute;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    left: 20px;
+		    color: #888;
+		    font-size: 16px;
+		}
+	}
+	.newsletter-btn{
+		text-transform: uppercase;
+		font-weight: 600;
+		padding: 0 21px;
+		border-radius: 0 4px 4px 0;
+	}
+	#newsletter-input{
+		height: 48px;
+		padding-left: 44px;
+	}
+}
+
+// service
+.service{
+	position: relative;
+	z-index: 4;
+	.container{
+		padding: 55px 0 57px;
+	}
+	.row .layout-column:not(:last-child) .feature-box::after{
+		content:"";
+		width: 1px;
+		height: 62px;
+		top: 50%;
+		transform: translateY(-50%);
+		right: -10px;
+		position: absolute;
+		background: #e6e6e6;
+	}
+	.feature-box{
+		position: relative;
+		i{
+			color: #666;
+			font-size: 55px;
+			margin-right: 15px;
+		}
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.text-1{
+			font-size: 16px;
+			font-weight: 600;
+			text-transform: uppercase;
+			margin-bottom: -2px;
+		}
+		.text-2{
+			font-size: 13px;
+			margin-bottom: 0;
+			color: #666;
+		}
+	}
+}
+
+#footer .addon-title h3{
+	font-size: 18px;
+}
+// footer
+.footer_t{
+	padding-top: 38px;
+	padding-bottom: 48px;
+	background: #f9f9f9;
+	#social_block{
+		ul > li:not(:first-child){
+			margin-left: 7px;
+		}
+		a{
+			color: #555;
+			font-size: 18px;
+			width: 33px;
+			height: 33px;
+			background: #e0e0e0;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 3px;
+			&:hover{
+				background: $active-h5;
+				color: #fff;
+			}
+		}
+	}
+	.row_2{
+
+		margin-top: 30px;
+		.addon-box{
+			padding: 43px 0 52px;
+			border-top: 1px solid #4b4b4b;
+		}
+		p{
+			text-align: center;
+			margin-bottom: 0;
+			color: #ddd;
+		}
+		ul{
+			text-align: center;
+			margin-bottom: 4px;
+			li{
+				display: inline-block;
+				padding: 0 16.8px;
+				position: relative;
+				&:not(:last-child)::before{
+					content: "";
+					background: #b7b7b7;
+					width: 1px;
+					height: 14px;
+					position: absolute;
+					right: -2px;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+				a{
+					font-size: 15px;
+					&:hover{
+						color: $active-h5;
+					}
+				}
+			}
+		}
+	}
+	ul li a{
+		color: #333;
+		line-height: 36px;
+	}
+	.contact{
+		.phone{
+			margin-top: 25px;
+			margin-bottom: 38px;
+		}
+		.address{
+			margin-bottom: 34px;
+			p{
+				font-size: 14px;
+				color: #333;
+				line-height: 1.5;
+			}
+		}
+		h5{
+			font-size: 16px;
+			font-weight: 500;
+			padding-bottom: 16px;
+		}
+		h4{
+			font-size: 18px;
+			font-weight: 600px;
+			padding-bottom: 0;
+		}
+		p{
+			font-size: 18px;
+			margin-bottom: 0;
+		}
+		.phone, .contact_info{
+			display: flex;
+			align-items: center;
+		}
+		.storm-headset{
+			font-size: 39px;
+			padding-right: 20px;
+		}
+		.storm-pin{
+			font-size: 25px;
+			padding-right: 10px;
+		}
+	}
+}
+.footer_b{
+	.container > .row{
+		display: flex;
+		align-items: center;
+	}
+	.left p{
+		color: #333;
+		padding: 26px 0;
+		b{
+			font-weight: 600;
+			font-size: 16px;
+		}
+	}
+	p{
+		margin-bottom: 0;
+	}
+	.right{
+		img:not(:last-child){
+			margin-right: 16.4px;
+		}
+		p{
+			float: right;
+		}
 	}
 }

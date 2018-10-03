@@ -169,6 +169,7 @@ jQuery(function ($) {
 				slideSpeed: 800,	
 		});
 	}
+	
 	if($(".blog-carousel").length) {
 		var blogCarousel = $(".blog-carousel");		
 		var rtl = false;
