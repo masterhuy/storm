@@ -618,10 +618,12 @@
     border-bottom: 1px solid #e6e6e6; }
     .cates .addon-title h3 {
       padding-bottom: 16px; }
+  .cates .c_item-info {
+    display: none; }
+  .cates .categories-wrapper {
+    margin-bottom: 30px; }
   .cates .category-info {
     display: none; }
-  .cates .categories-carousel2 {
-    margin-bottom: 30px; }
 
 #footer {
   margin-top: 30px; }

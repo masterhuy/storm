@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Cardless Payment Solutions: The Good, The Bad, and What it Means For Your Business </title>
+    <link>https://www.prestashop.com/en/blog/cardless-payment-solutions-the-good-the-bad-and-what-it-means-for-your-business</link>
+    <description>There’s a very real possibility that we’ll soon be able to walk into a shop and pay with our faces - no card, no phone, just our unique retina pattern.</description>
+     <pubDate>Wed, 03 Oct 2018 18:43:28 +0200</pubDate>
+ <dc:creator>g2apay</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/cardless-payment-solutions-the-good-the-bad-and-what-it-means-for-your-business</guid>
+  </item>
+  <item>
     <title>Meet Martin, Ambassador of the month | September 2018</title>
     <link>https://www.prestashop.com/en/blog/ambassador-martin-brussels</link>
     <description>Martin is our PrestaShop Ambassador in Brussels, Belgium, and he is the lucky Ambassador of the month! Congratulations to him!</description>
@@ -77,14 +85,6 @@ How many times have you been browsing a site, found the perfect item, and looked
      <pubDate>Wed, 01 Aug 2018 10:21:03 +0200</pubDate>
  <dc:creator>MLNielsen</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/stripe-partnership</guid>
-  </item>
-  <item>
-    <title>Global shopping trends and tourism offer new sales opportunities to merchants</title>
-    <link>https://www.prestashop.com/en/blog/global-shopping-trends-and-tourism-offer-new-sales-opportunities-to-merchants</link>
-    <description>The global market is opening up more and more for merchants in Europe, bringing with it enormous opportunities, provided that merchants are keeping up with current deve</description>
-     <pubDate>Tue, 31 Jul 2018 10:06:37 +0200</pubDate>
- <dc:creator>wirecard_en</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/global-shopping-trends-and-tourism-offer-new-sales-opportunities-to-merchants</guid>
   </item>
   </channel>
 </rss>

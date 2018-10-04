@@ -527,6 +527,8 @@
   .newsletter #newsletter-input {
     height: 48px;
     padding-left: 44px; }
+    .newsletter #newsletter-input:active, .newsletter #newsletter-input:focus {
+      border-color: #eee; }
 
 .service {
   position: relative;

@@ -25,6 +25,40 @@ $(window).load(function(){
 });
 jQuery(function ($) {
     "use strict";
+    if($(".categories-carousel2").length) {
+		var cateCarousel = $(".categories-carousel2");
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		cateCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:cs_itemsDesktop
+					},
+				991:{
+					items:cs_itemsDesktopSmall
+				},
+				768:{
+					items:cs_itemsTablet
+				},
+				481:{
+					items:2
+				},
+				0: {
+					items:1
+				}
+
+			},
+			rtl: rtl,
+			margin: 30,
+			nav: cs_nav,
+			dots: cs_pag,
+			autoplay: cs_auto_play_carousel,
+			slideSpeed: 200,
+			loop: true
+		});
+	}
+	
     if($(".product-carousel").length) {		
 		var productCarousel = $(".product-carousel");			
 		var rtl = false;

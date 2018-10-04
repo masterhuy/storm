@@ -18,6 +18,7 @@
 @import url(sitemap.css);
 @import url(cms.css);
 @import url(order-detail.css);
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900");
 html {
   -webkit-font-smoothing: antialiased;
@@ -5190,7 +5191,9 @@ footer .blog-carousel {
 .home_5 .back-to-top:hover {
   background: #f56c57;
 }
-
+.home_7 .back-to-top:hover {
+  background: #f28f00;
+}
 
 .slides .btn-shopnow{
   transition: unset;

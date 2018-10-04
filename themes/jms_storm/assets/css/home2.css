@@ -290,7 +290,7 @@
   margin-top: 30px; }
   .cates .categories-wrapper {
     position: relative; }
-    .cates .categories-wrapper .category-info {
+    .cates .categories-wrapper .c_item-info {
       position: absolute;
       width: 100%;
       padding: 0 20px;

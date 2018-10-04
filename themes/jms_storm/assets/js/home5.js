@@ -96,35 +96,36 @@ jQuery(function ($) {
 	}
 
 	if($(".categories-carousel2").length) {
-		var categoriesCarousel2 = $(".categories-carousel2");		
+		var cateCarousel = $(".categories-carousel2");
 		var rtl = false;
 		if ($("body").hasClass("rtl")) rtl = true;				
-		categoriesCarousel2.owlCarousel({
+		cateCarousel.owlCarousel({
 			responsiveClass:true,
 			responsive:{			
 				1199:{
-					items:9
-				},
+					items:cs_itemsDesktop
+					},
 				991:{
-					items:7
+					items:cs_itemsDesktopSmall
 				},
 				768:{
-					items:5
+					items:cs_itemsTablet
 				},
 				481:{
-					items:3
+					items:2
 				},
 				0: {
-					items:2
+					items:1
 				}
+
 			},
-				rtl: rtl,
-				margin:0,
-				nav: false,
-		        dots: false,
-		        loop: true,
-				autoplay:false,
-				slideSpeed: 800,	
+			rtl: rtl,
+			margin: 30,
+			nav: cs_nav,
+			dots: cs_pag,
+			autoplay: cs_auto_play_carousel,
+			slideSpeed: 200,
+			loop: true
 		});
 	}
 

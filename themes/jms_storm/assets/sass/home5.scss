@@ -658,6 +658,9 @@
 	#newsletter-input{
 		height: 48px;
 		padding-left: 44px;
+		&:active, &:focus{
+			border-color: #eee;
+		}
 	}
 }
 
