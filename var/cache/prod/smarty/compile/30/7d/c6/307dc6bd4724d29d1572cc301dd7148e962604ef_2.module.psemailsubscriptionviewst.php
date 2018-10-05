@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-02 22:50:19
+/* Smarty version 3.1.32, created on 2018-10-04 22:53:33
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bb42e6b032679_90240017',
+  'unifunc' => 'content_5bb6d22dea9dc4_20625609',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '307dc6bd4724d29d1572cc301dd7148e962604ef' => 
     array (
       0 => 'module:psemailsubscriptionviewst',
-      1 => 1538534853,
+      1 => 1538707962,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb42e6b032679_90240017 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb6d22dea9dc4_20625609 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Block Newsletter module-->
 <div id="newsletter_block_left" class="block">	
 	<div class="block_content">
@@ -34,6 +34,12 @@ function content_5bb42e6b032679_90240017 (Smarty_Internal_Template $_smarty_tpl)
 			<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Get the latest news delivered daily','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 </h3>
 			<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Give us your email and you will be daily update with the latest events in detail!','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
+</span>
+		</div>
+		<div class="textnews_h7 addon-title">
+			<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Subscribe to Our Newsletter','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
+</h3>
+			<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'More special Deals, Events & Promotions','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 </span>
 		</div>
 		<div class="popup addon-title">

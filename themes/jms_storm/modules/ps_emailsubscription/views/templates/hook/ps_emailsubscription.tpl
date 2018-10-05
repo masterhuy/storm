@@ -57,6 +57,10 @@
 			<h3>{l s='Get the latest news delivered daily' d='Shop.Theme'}</h3>
 			<span>{l s='Give us your email and you will be daily update with the latest events in detail!' d='Shop.Theme'}</span>
 		</div>
+		<div class="textnews_h7 addon-title">
+			<h3>{l s='Subscribe to Our Newsletter' d='Shop.Theme'}</h3>
+			<span>{l s='More special Deals, Events & Promotions' d='Shop.Theme'}</span>
+		</div>
 		<div class="popup addon-title">
 			<p class="text-1">{l s='Get the latest news' d='Shop.Theme'}</p>
 			<p class="text-2">{l s='Delivered daily!' d='Shop.Theme'}</p>

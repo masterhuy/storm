@@ -36,45 +36,44 @@
 </script>
 
 <div class="addon-title">
-{if $addon_title}
-	<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
-{/if}
-{if $addon_desc}
-<p class="addon-desc">{$addon_desc|escape:'htmlall':'UTF-8'}</p>
-{/if}	
+	{if $addon_title}
+		<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
+	{/if}
+	{if $addon_desc}
+		<p class="addon-desc">{$addon_desc|escape:'htmlall':'UTF-8'}</p>
+	{/if}	
 </div>
 <div id="testimonial">
-<div class="testimonial-carousel">
-{foreach from=$testimonials item=testimonial}	
-<div class="testimonial-box">
-			{if $show_image}
-						<div class="testimonial-img">
-							<img class="img-responsive" src="{$image_url|escape:'html':'UTF-8'}resized_{$testimonial.image|escape:'html':'UTF-8'}" alt="{$testimonial.author|escape:'html':'UTF-8'}" />
+	<div class="testimonial-carousel">
+		{foreach from=$testimonials item=testimonial}	
+			<div class="testimonial-box">
+				<div class="testimonial-info">
+					<div class="testimonial-comment" >
+						{$testimonial.comment|escape:'html':'UTF-8'}
+					</div>
+					{if $show_time}
+						<div class="testimonial-date">
+							{$testimonial.posttime|date_format:"%b %e, %Y"|escape:'html':'UTF-8'}
 						</div>
-			{/if}
-			<div class="info_people">
-			<div class="testimonial-author">
-				{$testimonial.author|escape:'html':'UTF-8'}
-			</div>
-			{if $show_office}
-				<span class="show_office">
-					{$testimonial.office|escape:'html':'UTF-8'}
-				</span>
-			{/if}
-		</div>
-			<div class="testimonial-info">
-			  <div class="testimonial-comment" >
-				{$testimonial.comment|escape:'html':'UTF-8'}
-			  </div>
-			{if $show_time}
-				<div class="testimonial-date">
-					{$testimonial.posttime|date_format:"%b %e, %Y"|escape:'html':'UTF-8'}
+					{/if}
 				</div>
-			{/if}
-		
-			</div>
-		
-</div>	
-{/foreach}
+				<div class="testimonial-img">
+					{if $show_image}
+						<img class="img-responsive" src="{$image_url|escape:'html':'UTF-8'}resized_{$testimonial.image|escape:'html':'UTF-8'}" alt="{$testimonial.author|escape:'html':'UTF-8'}" />
+					{/if}
+					<div class="info_people">
+						<div class="testimonial-author">
+							{$testimonial.author|escape:'html':'UTF-8'}
+						</div>
+						{if $show_office}
+							<span class="show_office">
+								{$testimonial.office|escape:'html':'UTF-8'}
+							</span>
+						{/if}
+					</div>
+				</div>
+			</div>	
+		{/foreach}
+	</div>
 </div>
-</div>
+

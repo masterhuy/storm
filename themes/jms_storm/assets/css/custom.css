@@ -1625,14 +1625,14 @@ ul#order_step li {
 .product_box .item{
   padding: 15px;
 }
-.product-preview {
+.product-miniature {
   position: relative;
   background: #fff;
   margin-bottom: 21px; }
-  .product-preview .preview {
+  .product-miniature .preview {
     position: relative;
     overflow: hidden; }
-    .product-preview .preview .block-label {
+    .product-miniature .preview .block-label {
     position: absolute;
     text-align: center;
     text-transform: uppercase;
@@ -1641,7 +1641,7 @@ ul#order_step li {
     display: flex;
     flex-direction: column;
   }
-  .product-preview .preview .label{
+  .product-miniature .preview .label{
     color: #fff;
     border-radius: 2px;
     margin-bottom: 10px;
@@ -1651,16 +1651,16 @@ ul#order_step li {
     padding: 6.5px 10px;
     position: relative;
   }
-      .product-preview .preview .label.label-sale {
+      .product-miniature .preview .label.label-sale {
         background: #8dc519;}
-      .product-preview .preview .label.label-new {
+      .product-miniature .preview .label.label-new {
         background: #3a71ec;
       }
-      .product-preview .preview .label.label-discount {
+      .product-miniature .preview .label.label-discount {
         background: #d9445d;
         top: 0 !important;
       }
-      .product-preview .preview .label::after{
+      .product-miniature .preview .label::after{
         content: "";
         width: 0;
         height: 0;
@@ -1670,13 +1670,13 @@ ul#order_step li {
         bottom: -6px;
         right: 0;
       }
-      .product-preview .preview .label.label-discount::after{
+      .product-miniature .preview .label.label-discount::after{
         border-right: 8px solid #d9445d;
       }
-      .product-preview .preview .label.label-new::after{
+      .product-miniature .preview .label.label-new::after{
         border-right: 8px solid #3a71ec;
       }
-      .product-preview .preview .label.label-sale::after{
+      .product-miniature .preview .label.label-sale::after{
         border-right: 8px solid #8dc519;
       }
 
@@ -3450,9 +3450,6 @@ footer .blog-carousel {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   width: 80px !important; }
 
-.testimonial-comment {
-  opacity: 0.75; }
-
 .tesimonial_other .testimonial-carousel {
   background: #f3f4f5; }
 
@@ -3522,7 +3519,7 @@ footer .blog-carousel {
 
 .countdown-section {
   display: inline-block;
-  margin-right: 15px;
+  margin: 0 7.5px;
   text-align: center;
   background: #e6e6e6;
   border-radius: 3px;
@@ -5200,6 +5197,7 @@ footer .blog-carousel {
 }
 .newsletter #newsletter_block_left .popup.addon-title,
 #newsletter_block_left .textnews_h5,
+#newsletter_block_left .textnews_h7,
 .newsletter .input_popup, .newsletter .btn-popup, 
 .jms-popup .inputNew, .jms-popup .buttonh1 {
   display: none;
