@@ -131,9 +131,11 @@
 			ul{
 				margin-bottom: 0;
 				li{
+					&:not(:first-child) a{
+						margin-left: 15px;
+					}
 					a{
 						font-size: 16px;
-						margin-left: 15px;
 						color: rgba(255,255,255,0.66);
 						&:hover{
 							color: rgba(255,255,255,1);
@@ -176,7 +178,7 @@
 			}
 		}
 		#_desktop_user_info{
-			padding-left: 15px;
+			padding-left: 25px;
 			a{
 				span{
 					font-size: 13px;

@@ -1750,7 +1750,7 @@ ul#order_step li {
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
-  display: inline-block;
+  display: inline;
 }
 
 .product-btn .fa-spin, .product-btn .fa-check, .product-btn.checking .text-addcart i{
@@ -1892,9 +1892,11 @@ margin-top: 20px;
   position: relative;
   white-space: nowrap;
   transition: unset;
-  padding: 9px 20px;
+  padding: 9px 10px;
   border-radius: 3px;
   width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .product-preview .product_action button.cart-button:hover{
   color: #fff;
@@ -5191,6 +5193,13 @@ footer .blog-carousel {
 .home_7 .back-to-top:hover {
   background: #f28f00;
 }
+.home_8 .back-to-top:hover {
+  background: #bf0b26;
+}
+
+
+
+
 
 .slides .btn-shopnow{
   transition: unset;

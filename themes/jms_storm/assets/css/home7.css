@@ -104,9 +104,10 @@
       left: -4px; }
   .topbar .right #social_block ul {
     margin-bottom: 0; }
+    .topbar .right #social_block ul li:not(:first-child) a {
+      margin-left: 15px; }
     .topbar .right #social_block ul li a {
       font-size: 16px;
-      margin-left: 15px;
       color: rgba(255, 255, 255, 0.66); }
       .topbar .right #social_block ul li a:hover {
         color: white; }
@@ -135,7 +136,7 @@
   .topbar .right #_desktop_currency_selector.type2, .topbar .right #_desktop_currency_selector.type3 {
     display: none; }
   .topbar .right #_desktop_user_info {
-    padding-left: 15px; }
+    padding-left: 25px; }
     .topbar .right #_desktop_user_info a span {
       font-size: 13px;
       text-transform: capitalize; }

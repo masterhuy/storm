@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-03 04:11:40
+/* Smarty version 3.1.32, created on 2018-10-08 00:17:34
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmsajaxsearch\views\templates\hook\jmsajaxsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bb479bc4cb504_00013332',
+  'unifunc' => 'content_5bbada5e940091_03549843',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '81e1d46057f39725d126cac9b0ce7ccc34ad5157' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\modules\\jmsajaxsearch\\views\\templates\\hook\\jmsajaxsearch.tpl',
-      1 => 1538554261,
+      1 => 1538972230,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb479bc4cb504_00013332 (Smarty_Internal_Template $_smarty_tpl) {
-if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == 6) {?>
+function content_5bbada5e940091_03549843 (Smarty_Internal_Template $_smarty_tpl) {
+if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == 6 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 8) {?>
 <div class="btn-group compact-hidden jms_ajax_search" id="jms_ajax_search">
 	<a href="#" class="btn-xs icon_search" title="Search">
 		<span class="button-search storm-zoom"></span>
@@ -57,6 +57,7 @@ if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == 6) {?>
 		<div id="search_result"></div>
 	</div>	
 </div>
+<?php }?>
+
 <?php }
-}
 }

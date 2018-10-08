@@ -66,6 +66,7 @@ jQuery(function ($) {
 			slideSpeed: 800,
 		});
 	}
+	
     if($(".product-carousel").length) {		
 		var productCarousel = $(".product-carousel");			
 		var rtl = false;

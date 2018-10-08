@@ -33,9 +33,13 @@ var cattab_nav = {if $navigation == 1}true{else}false{/if};
 var cattab_pag = {if $pagination == 1}true{else}false{/if};
 var cattab_auto_play_carousel = {if $autoplay == 1}true{else}false{/if};
 </script>
-{if $addon_title}
 <div class="addon-title">
-	<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
+	{if $addon_title}
+		<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
+	{/if}
+	{if $addon_desc}
+		<p class="addon-desc">{$addon_desc nofilter}</p>
+	{/if}
 	<div class="jms-tab">
 		<ul class="nav">
 			{foreach from = $categories key = k item = category}
@@ -44,7 +48,7 @@ var cattab_auto_play_carousel = {if $autoplay == 1}true{else}false{/if};
 		</ul>
 	</div>
 </div>
-{/if}
+
 
 <div class="tab-content">
 	{foreach from = $categories key = k item = category}
