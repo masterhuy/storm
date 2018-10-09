@@ -648,7 +648,7 @@
 	}
 	.category_name a {
 		display: inline-block;
-		background: #bf0b26;
+		background: $active-h8;
 		color: #fff;
 		text-transform: uppercase;
 		font-size: 13px;
@@ -692,9 +692,11 @@
 	}
 }
 
-#footer .addon-title h3 {
-	padding-bottom: 30px;
-	padding-top: 28px;
+#footer{
+	.addon-title h3 {
+		padding-bottom: 30px;
+		padding-top: 28px;
+	}
 }
 
 // footer
