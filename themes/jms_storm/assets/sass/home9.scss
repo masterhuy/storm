@@ -393,7 +393,7 @@
 				a{
 					font-weight: 400;
 					&:hover{
-						color: $active-h3;
+						color: $active-h9;
 					}
 				}
 			}
@@ -407,16 +407,16 @@
 		box-shadow: unset;
 		background: #fff;
 		li > a:hover{
-			color: $active-h3;
+			color: $active-h9;
 		}
 		.nav > li{
 			> a{
 				padding: 4.55px 0;
 				&:hover{
-					color: $active-h3;
+					color: $active-h9;
 				}
 				&.open{
-					color: $active-h3;
+					color: $active-h9;
 				}
 			}
 		}
@@ -434,7 +434,7 @@
 				color: #222;
 			}
 			&.open > a{
-				color: $active-h3;
+				color: $active-h9;
 			}
 		}
 	}
@@ -775,6 +775,9 @@
 		}
 		#newsletter-input{
 			height: 48px;
+			&:active, &:focus{
+				border-color: #eee;
+			}
 		}
 	}
 	#social_block{

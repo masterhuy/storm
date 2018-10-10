@@ -137,7 +137,7 @@
               data-id-customization   	  = "{$product.id_customization|escape:'javascript'}"
           >
             {if !isset($product.is_gift) || !$product.is_gift}
-            <i class="material-icons pull-xs-left fa fa-trash"></i>
+            <i class="pull-xs-left fa fa-trash"></i>
             {/if}
           </a>
           {hook h='displayCartExtraProductActions' product=$product}

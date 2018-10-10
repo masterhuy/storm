@@ -4974,12 +4974,31 @@ footer .blog-carousel {
 /*Owl carousel*/
 .brand-carousel {
   padding: 25px 0; }
+  .brand-carousel.owl-theme .owl-controls{
+    position: unset;
+  }
+  .brand-carousel.owl-theme .owl-controls div{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+  }
+  .brand-carousel.owl-theme:hover .owl-controls div{
+    opacity: 1;
+    visibility: visible;
+  }
   .brand-carousel.owl-theme .owl-controls div.owl-prev {
-    left: 0;
-    right: auto;
-    top: 36%; }
+    left: -35px;
+    right: auto; }
   .brand-carousel.owl-theme .owl-controls div.owl-next {
-    top: 36%; }
+    right: -35px;
+    left: auto; }
+    .brand-carousel.owl-theme:hover .owl-controls div.owl-prev {
+    left: -18px; }
+  .brand-carousel.owl-theme:hover .owl-controls div.owl-next {
+    right: -18px; }
 
 .testimonial_other .testimonial-carousel .owl-dot > span {
   display: block;
@@ -5199,7 +5218,9 @@ footer .blog-carousel {
 .home_9 .back-to-top:hover {
   background: #4bba5b;
 }
-
+.home_10 .back-to-top:hover {
+  background: #9cb130;
+}
 
 
 

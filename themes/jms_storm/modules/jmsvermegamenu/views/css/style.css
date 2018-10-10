@@ -156,7 +156,6 @@
 }
 .jms-vermegamenu .open > .dropdown-menu{
     background: #fff;
-    transform: unset;
     box-shadow: 2px 0px 5px rgba(0,0,0,0.2);
 }
 .jms-vermegamenu li.image > a{

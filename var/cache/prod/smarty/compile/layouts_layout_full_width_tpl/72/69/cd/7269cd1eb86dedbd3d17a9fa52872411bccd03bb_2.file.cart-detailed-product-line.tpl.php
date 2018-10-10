@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-09-24 03:22:09
+/* Smarty version 3.1.32, created on 2018-10-10 00:54:06
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\templates\checkout\_partials\cart-detailed-product-line.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5ba890a1b0d502_01847043',
+  'unifunc' => 'content_5bbd85eece42e7_71939877',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7269cd1eb86dedbd3d17a9fa52872411bccd03bb' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\templates\\checkout\\_partials\\cart-detailed-product-line.tpl',
-      1 => 1537323326,
+      1 => 1539147219,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ba890a1b0d502_01847043 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbd85eece42e7_71939877 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="product-line-grid">
   <!--  product left content: image-->
   <div class="product-line-grid-left col-md-2 col-xs-4 left">
@@ -188,7 +188,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 "
           >
             <?php if (!isset($_smarty_tpl->tpl_vars['product']->value['is_gift']) || !$_smarty_tpl->tpl_vars['product']->value['is_gift']) {?>
-            <i class="material-icons pull-xs-left fa fa-trash"></i>
+            <i class="pull-xs-left fa fa-trash"></i>
             <?php }?>
           </a>
           <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayCartExtraProductActions','product'=>$_smarty_tpl->tpl_vars['product']->value),$_smarty_tpl ) );?>
