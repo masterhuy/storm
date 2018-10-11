@@ -47,16 +47,6 @@
 	<div class="testimonial-carousel">
 		{foreach from=$testimonials item=testimonial}	
 			<div class="testimonial-box">
-				<div class="testimonial-info">
-					<div class="testimonial-comment" >
-						{$testimonial.comment|escape:'html':'UTF-8'}
-					</div>
-					{if $show_time}
-						<div class="testimonial-date">
-							{$testimonial.posttime|date_format:"%b %e, %Y"|escape:'html':'UTF-8'}
-						</div>
-					{/if}
-				</div>
 				<div class="testimonial-img">
 					{if $show_image}
 						<img class="img-responsive" src="{$image_url|escape:'html':'UTF-8'}resized_{$testimonial.image|escape:'html':'UTF-8'}" alt="{$testimonial.author|escape:'html':'UTF-8'}" />
@@ -70,6 +60,23 @@
 								{$testimonial.office|escape:'html':'UTF-8'}
 							</span>
 						{/if}
+					</div>
+				</div>
+				<div class="testimonial-info">
+					<div class="testimonial-comment" >
+						{$testimonial.comment|escape:'html':'UTF-8'}
+					</div>
+					{if $show_time}
+						<div class="testimonial-date">
+							{$testimonial.posttime|date_format:"%b %e, %Y"|escape:'html':'UTF-8'}
+						</div>
+					{/if}
+					<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
 					</div>
 				</div>
 			</div>	

@@ -24,6 +24,111 @@ $(window).load(function(){
 	});
 });
 
+jQuery(function ($) {
+    "use strict";
+    if($(".product-carousel").length) {		
+		var productCarousel = $(".product-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		productCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:p_itemsDesktop
+				},
+				991:{
+					items:p_itemsDesktopSmall
+				},
+				768:{
+					items:p_itemsTablet
+				},
+				481:{
+					items:p_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin:0,
+			nav: p_nav,
+			dots: p_pag,
+			autoplay: auto_play_carousel,
+			loop: true,
+			slideSpeed: 800,
+		});
+	}
+
+	if($(".blog-carousel").length) {
+		var blogCarousel = $(".blog-carousel");		
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		blogCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:blog_itemsDesktop
+				},
+				991:{
+					items:blog_itemsDesktopSmall
+				},
+				768:{
+					items:blog_itemsTablet
+				},
+				481:{
+					items:blog_itemsMobile
+				},
+				0: {
+					items:1
+				}
+			},
+				rtl: rtl,
+				margin: 30,
+				nav: p_nav_blog,
+		        dots: p_pag_blog,
+				autoplay:auto_play_blog,
+				loop: true,
+				slideSpeed: 800,	
+		});
+	}
+
+	if($(".testimonial-carousel").length) {
+		var testimonialCarousel = $(".testimonial-carousel");		
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		testimonialCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:testi_itemsDesktop
+				},
+				991:{
+					items:testi_itemsDesktopSmall
+				},
+				768:{
+					items:testi_itemsTablet
+				},
+				481:{
+					items:testi_itemsMobile
+				},
+				0: {
+					items:1
+				}
+			},
+				rtl: rtl,
+				margin:0,
+				nav: p_nav_testi,
+		        dots: p_pag_testi,
+				autoplay:auto_play_testi,
+				slideSpeed: 800,
+				loop: true
+		});
+	}		
+});
+
 jQuery(document).ready(function($) {
 	$('.header .icon_search').click(function(event) {
 		$('.header .search-box').addClass('open');
@@ -32,9 +137,9 @@ jQuery(document).ready(function($) {
 		$('.header .search-box').removeClass('open');
 	});
 
-	$(".cate_tab .product-miniature").hover(function(){
-	    $(".cate_tab").css("z-index", "3");
+	$(".best_seller .product-miniature").hover(function(){
+	    $(".best_seller").css("z-index", "3");
 		}, function(){
-        $(".cate_tab").css("z-index", "1");
+        $(".best_seller").css("z-index", "1");
 	});
 });

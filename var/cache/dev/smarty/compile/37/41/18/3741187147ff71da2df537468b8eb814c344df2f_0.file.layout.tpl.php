@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-03 22:24:56
+/* Smarty version 3.1.32, created on 2018-10-11 05:23:11
   from 'D:\xamppp\htdocs\jms_storm\admin063ihraim\themes\default\template\layout.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bb579f8f01e71_02245557',
+  'unifunc' => 'content_5bbf167f234584_49068073',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb579f8f01e71_02245557 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbf167f234584_49068073 (Smarty_Internal_Template $_smarty_tpl) {
 echo $_smarty_tpl->tpl_vars['header']->value;?>
 
 <?php if (isset($_smarty_tpl->tpl_vars['conf']->value)) {?>

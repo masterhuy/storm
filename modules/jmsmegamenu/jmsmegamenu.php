@@ -1,11 +1,11 @@
 <?php
 /**
-* 2007-2017 PrestaShop
+* 2007-2018 PrestaShop
 *
 * Jms Mega menu module
 *
 *  @author    Joommasters <joommasters@gmail.com>
-*  @copyright 2007-2017 Joommasters
+*  @copyright 2007-2018 Joommasters
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: http://www.joommasters.com
 */
@@ -191,7 +191,7 @@ class JmsMegaMenu extends Module
 
     public function genItem($itemid)
     {
-        $item = $this->_items[$itemid];		
+        $item = $this->_items[$itemid];
         $this->context = Context::getContext();
         $lvl     = $this->_items[$itemid]['level'];
         $params = isset($item['params']) ? $item['params'] : array();
@@ -229,7 +229,13 @@ class JmsMegaMenu extends Module
                 $data .= ' data-icon="'.$setting['icon'].'"';
             }
             $this->menu .= '<li '.$class.'"'.$data.'>';
-            if (!isset($setting['title']) || ((int)$setting['title']==1)) {
+            if($item['type'] == 'theme-logo') {
+                $logo = $this->context->link->getMediaLink(_PS_IMG_.Configuration::get('PS_LOGO'));
+                $this->menu .= '<a href="'.$item['link'].'" target="'.$item['target'].'" title="'.Configuration::get('PS_SHOP_NAME').'">';
+                $this->menu .= '<img class="logo img-responsive" src="'.$logo.'" alt="'.Configuration::get('PS_SHOP_NAME').'" />';
+                $this->menu .='</a>';
+            }
+            if ((!isset($setting['title']) || ((int)$setting['title']==1)) && $item['type'] != 'theme-logo') {
                 $this->menu .= '<a href="'.$item['link'].'" target="'.$item['target'].'">';
                 if (isset($setting['icon'])) {
                     $this->menu .= '<i class="'.$setting['icon'].'"></i>';
@@ -439,7 +445,19 @@ class JmsMegaMenu extends Module
                 $data .= ' data-icon="'.$setting['icon'].'"';
             }
             $this->mobilemenu .= '<li '.$class.'"'.$data.'>';
-            if (!isset($setting['title']) || ((int)$setting['title']==1)) {
+            if($item['type'] == 'theme-logo') {
+                $mobile_device = $this->context->getMobileDevice();
+                if ($mobile_device && Configuration::get('PS_LOGO_MOBILE')) {
+                    $logo = $this->context->link->getMediaLink(_PS_IMG_.Configuration::get('PS_LOGO_MOBILE').'?'.Configuration::get('PS_IMG_UPDATE_TIME'));
+                } else {
+                    $logo = $this->context->link->getMediaLink(_PS_IMG_.Configuration::get('PS_LOGO'));
+                }
+                $this->menu .= '<a href="'.$item['link'].'" target="'.$item['target'].'" title="'.Configuration::get('PS_SHOP_NAME').'">';
+                $this->menu .= '<img class="logo img-responsive" src="'.$logo.'" alt="'.Configuration::get('PS_SHOP_NAME').'" />';
+                $this->menu .='</a>';
+            }
+
+            if ((!isset($setting['title']) || ((int)$setting['title']==1)) && $item['type'] != 'theme-logo') {
                 $this->mobilemenu .= '<a href="'.$item['link'].'" target="'.$item['target'].'">';
                 if (isset($setting['icon'])) {
                     $this->mobilemenu .= '<i class="'.$setting['icon'].'"></i>';
@@ -537,9 +555,9 @@ class JmsMegaMenu extends Module
                 AND b.`id_lang` = '.(int)$id_lang.
                 ' ORDER BY a.`ordering`';
         $rows = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
-        $jmshelper = new JmsMegaMenuHelper();		
+        $jmshelper = new JmsMegaMenuHelper();
         $items = $jmshelper->getMenuTree($rows, '1');
-        foreach ($items as &$item) {			
+        foreach ($items as &$item) {
             switch ($item['type'])
             {
                 case 'product':
@@ -559,7 +577,7 @@ class JmsMegaMenu extends Module
                     $cms = CMS::getLinks((int)$id_lang, array($id_cms));
 					if(isset($cms[0]['link']))
 						$item['link'] = $cms[0]['link'];
-					else 
+					else
 						$item['link'] = '#';
                     break;
                 case 'manufacturer':
@@ -625,7 +643,7 @@ class JmsMegaMenu extends Module
             $parent = isset($this->children[$item['parent_id']]) ? $this->children[$item['parent_id']] : array();
             $parent[] = $item;
             $this->children[$item['parent_id']] = $parent;
-			
+
             $this->_items[$item['mitem_id']] = $item;
         }
 
@@ -634,8 +652,8 @@ class JmsMegaMenu extends Module
             if ((isset($this->children[$item['mitem_id']]))) {
                 $item['dropdown'] = 1;
             }
-                $item['title'] = htmlspecialchars($item['name'], ENT_COMPAT, 'UTF-8', false);
-                $this->_items[(int)$item['mitem_id']] = $item;
+            $item['title'] = htmlspecialchars($item['name'], ENT_COMPAT, 'UTF-8', false);
+            $this->_items[(int)$item['mitem_id']] = $item;
         }
         $this->menu = '';
         $this->beginmenu();
@@ -684,7 +702,7 @@ class JmsMegaMenu extends Module
                     $cms = CMS::getLinks((int)$id_lang, array($id_cms));
 					if(isset($cms[0]['link']))
 						$item['link'] = $cms[0]['link'];
-					else 
+					else
 						$item['link'] = '#';
                     break;
                 case 'manufacturer':

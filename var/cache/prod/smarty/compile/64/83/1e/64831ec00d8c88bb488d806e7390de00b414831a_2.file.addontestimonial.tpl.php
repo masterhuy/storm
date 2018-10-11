@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-05 05:26:44
+/* Smarty version 3.1.32, created on 2018-10-11 02:47:24
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmspagebuilder\views\templates\hook\addontestimonial.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bb72e54091439_18522051',
+  'unifunc' => 'content_5bbef1fc44f5f1_87992520',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '64831ec00d8c88bb488d806e7390de00b414831a' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\modules\\jmspagebuilder\\views\\templates\\hook\\addontestimonial.tpl',
-      1 => 1538731449,
+      1 => 1539240420,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb72e54091439_18522051 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbef1fc44f5f1_87992520 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_storm\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 echo '<script'; ?>
  type="text/javascript">
@@ -62,18 +62,6 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['testimonial']->value) {
 ?>	
 			<div class="testimonial-box">
-				<div class="testimonial-info">
-					<div class="testimonial-comment" >
-						<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['testimonial']->value['comment'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
-
-					</div>
-					<?php if ($_smarty_tpl->tpl_vars['show_time']->value) {?>
-						<div class="testimonial-date">
-							<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( smarty_modifier_date_format($_smarty_tpl->tpl_vars['testimonial']->value['posttime'],"%b %e, %Y"),'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
-
-						</div>
-					<?php }?>
-				</div>
 				<div class="testimonial-img">
 					<?php if ($_smarty_tpl->tpl_vars['show_image']->value) {?>
 						<img class="img-responsive" src="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['image_url']->value,'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
@@ -92,6 +80,25 @@ resized_<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registere
 
 							</span>
 						<?php }?>
+					</div>
+				</div>
+				<div class="testimonial-info">
+					<div class="testimonial-comment" >
+						<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['testimonial']->value['comment'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+
+					</div>
+					<?php if ($_smarty_tpl->tpl_vars['show_time']->value) {?>
+						<div class="testimonial-date">
+							<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( smarty_modifier_date_format($_smarty_tpl->tpl_vars['testimonial']->value['posttime'],"%b %e, %Y"),'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+
+						</div>
+					<?php }?>
+					<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
 					</div>
 				</div>
 			</div>	

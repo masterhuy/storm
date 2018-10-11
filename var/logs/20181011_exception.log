@@ -1,0 +1,29 @@
+*ERROR* 	v1.7.4.2	2018/10/11 - 03:49:14: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 03:49:18: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 03:49:35: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 09:49:57: Link to database cannot be established: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at line 120 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 03:51:37: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 03:54:52: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 03:57:27: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 03:58:17: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 03:59:27: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 04:00:29: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 04:00:31: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 04:00:33: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 04:00:35: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 04:00:37: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 04:00:38: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 10:03:08: Link to database cannot be established: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at line 120 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 04:20:15: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 05:07:24: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 05:08:47: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 05:11:43: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 05:11:50: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 05:13:00: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 05:13:36: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 05:14:31: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 05:14:33: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 05:14:35: Invalid category vars at line 375 in file classes/Link.php
+*ERROR* 	v1.7.4.2	2018/10/11 - 05:48:03: Invalid category vars at line 375 in file classes/Link.php

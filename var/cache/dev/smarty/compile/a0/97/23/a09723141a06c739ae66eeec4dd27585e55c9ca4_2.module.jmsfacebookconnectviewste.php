@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-03 22:25:14
+/* Smarty version 3.1.32, created on 2018-10-11 05:21:22
   from 'module:jmsfacebookconnectviewste' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bb57a0a3cafb8_45304356',
+  'unifunc' => 'content_5bbf1612def825_41114278',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb57a0a3cafb8_45304356 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbf1612def825_41114278 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <!-- begin D:\xamppp\htdocs\jms_storm/modules/jmsfacebookconnect/views/templates/hook/header.tpl -->
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_170065bb57a0a3cafb9_63172459', "page_content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_22445bbf1612dd8116_77256397', "page_content");
 ?>
 <!-- end D:\xamppp\htdocs\jms_storm/modules/jmsfacebookconnect/views/templates/hook/header.tpl --><?php }
 /* {block "page_content"} */
-class Block_170065bb57a0a3cafb9_63172459 extends Smarty_Internal_Block
+class Block_22445bbf1612dd8116_77256397 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_170065bb57a0a3cafb9_63172459',
+    0 => 'Block_22445bbf1612dd8116_77256397',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

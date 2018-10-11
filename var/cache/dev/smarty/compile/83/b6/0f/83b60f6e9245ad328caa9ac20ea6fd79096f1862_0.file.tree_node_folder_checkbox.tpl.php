@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-03 22:33:20
+/* Smarty version 3.1.32, created on 2018-10-11 05:28:06
   from 'D:\xamppp\htdocs\jms_storm\admin063ihraim\themes\default\template\helpers\tree\tree_node_folder_checkbox.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bb57bf016e9a0_51762082',
+  'unifunc' => 'content_5bbf17a62c6137_44380109',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb57bf016e9a0_51762082 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbf17a62c6137_44380109 (Smarty_Internal_Template $_smarty_tpl) {
 ?><li class="tree-folder">
 	<span class="tree-folder-name<?php if (isset($_smarty_tpl->tpl_vars['node']->value['disabled']) && $_smarty_tpl->tpl_vars['node']->value['disabled'] == true) {?> tree-folder-name-disable<?php }?>">
 		<?php if (isset($_smarty_tpl->tpl_vars['node']->value['id_category']) && $_smarty_tpl->tpl_vars['node']->value['id_category'] != $_smarty_tpl->tpl_vars['root_category']->value) {?>

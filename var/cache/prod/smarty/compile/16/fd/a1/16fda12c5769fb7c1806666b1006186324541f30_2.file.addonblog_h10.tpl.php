@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-10 03:14:47
+/* Smarty version 3.1.32, created on 2018-10-11 05:12:46
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmspagebuilder\views\templates\hook\addonblog_h10.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bbda6e7659cf3_58312503',
+  'unifunc' => 'content_5bbf140ea76bb1_33646875',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '16fda12c5769fb7c1806666b1006186324541f30' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\modules\\jmspagebuilder\\views\\templates\\hook\\addonblog_h10.tpl',
-      1 => 1539155684,
+      1 => 1539231486,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bbda6e7659cf3_58312503 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbf140ea76bb1_33646875 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_storm\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),1=>array('file'=>'D:\\xamppp\\htdocs\\jms_storm\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 echo '<script'; ?>
  type="text/javascript">	

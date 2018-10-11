@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-09-18 22:20:40
+/* Smarty version 3.1.32, created on 2018-10-11 05:49:47
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmspagebuilder\views\templates\hook\jmspagebuilder_body.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5ba1b27849f569_62529157',
+  'unifunc' => 'content_5bbf1cbb979d07_73163015',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f58c6821bf38f43de1eb66717f8148361ec9156b' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\modules\\jmspagebuilder\\views\\templates\\hook\\jmspagebuilder_body.tpl',
-      1 => 1537323325,
+      1 => 1539249268,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ba1b27849f569_62529157 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbf1cbb979d07_73163015 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['rows']->value, 'row');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['row']->value) {
