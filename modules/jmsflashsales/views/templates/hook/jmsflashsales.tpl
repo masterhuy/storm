@@ -34,9 +34,9 @@ jQuery(function ($) {
 
 <div class="jmsflashsales">
 	<div class="flashsales-countdown">{$expiretime|escape:'htmlall':'UTF-8'}</div>
-	<div class="flashsales-carousel">	
-	{foreach from=$products item=product key=k}				
-		Product Code Here	
-	{/foreach}
-	</div>
+		<div class="flashsales-carousel">	
+		{foreach from=$products item=product key=k}				
+			Product Code Here	
+		{/foreach}
+		</div>
 </div>

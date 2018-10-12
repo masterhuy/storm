@@ -206,6 +206,41 @@ jQuery(function ($) {
 			slideSpeed: 800,
 		});
 	}
+	if($(".product-carousel2").length) {		
+		var productCarousel2 = $(".product-carousel2");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		productCarousel2.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:p2_itemsDesktop
+				},
+				991:{
+					items:p2_itemsDesktopSmall
+				},
+				768:{
+					items:p2_itemsTablet
+				},
+				481:{
+					items:p2_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin:30,
+			nav: p2_nav,
+			dots: p2_pag,
+			autoplay: p2_auto_play_carousel,
+			loop: true,
+			slideSpeed: 800,
+		});
+	}
 	if($(".testimonial-carousel").length) {
 		var testimonialCarousel = $(".testimonial-carousel");		
 		var rtl = false;

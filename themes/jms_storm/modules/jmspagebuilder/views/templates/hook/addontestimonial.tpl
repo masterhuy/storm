@@ -34,15 +34,15 @@
 		var auto_play_testi = {if $autoplay == 1}true{else}false{/if};
 	
 </script>
-
+{if $addon_title}
 <div class="addon-title">
-	{if $addon_title}
-		<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
-	{/if}
-	{if $addon_desc}
-		<p class="addon-desc">{$addon_desc|escape:'htmlall':'UTF-8'}</p>
-	{/if}	
+	<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
 </div>
+{/if}
+{if $addon_desc}
+	<p class="addon-desc">{$addon_desc|escape:'htmlall':'UTF-8'}</p>
+{/if}	
+
 <div id="testimonial">
 	<div class="testimonial-carousel">
 		{foreach from=$testimonials item=testimonial}	
@@ -71,13 +71,6 @@
 							{$testimonial.posttime|date_format:"%b %e, %Y"|escape:'html':'UTF-8'}
 						</div>
 					{/if}
-					<div class="stars">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div>
 				</div>
 			</div>	
 		{/foreach}

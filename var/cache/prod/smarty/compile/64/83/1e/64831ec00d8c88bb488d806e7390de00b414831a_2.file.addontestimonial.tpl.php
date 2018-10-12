@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-11 02:47:24
+/* Smarty version 3.1.32, created on 2018-10-12 04:13:49
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmspagebuilder\views\templates\hook\addontestimonial.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bbef1fc44f5f1_87992520',
+  'unifunc' => 'content_5bc057bd013e03_69496305',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '64831ec00d8c88bb488d806e7390de00b414831a' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\modules\\jmspagebuilder\\views\\templates\\hook\\addontestimonial.tpl',
-      1 => 1539240420,
+      1 => 1539331942,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bbef1fc44f5f1_87992520 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bc057bd013e03_69496305 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_storm\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 echo '<script'; ?>
  type="text/javascript">
@@ -43,17 +43,17 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 	
 <?php echo '</script'; ?>
 >
-
+<?php if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 <div class="addon-title">
-	<?php if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
-		<h3><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['addon_title']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+	<h3><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['addon_title']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 </h3>
-	<?php }?>
-	<?php if ($_smarty_tpl->tpl_vars['addon_desc']->value) {?>
-		<p class="addon-desc"><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['addon_desc']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
-</p>
-	<?php }?>	
 </div>
+<?php }
+if ($_smarty_tpl->tpl_vars['addon_desc']->value) {?>
+	<p class="addon-desc"><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['addon_desc']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+</p>
+<?php }?>	
+
 <div id="testimonial">
 	<div class="testimonial-carousel">
 		<?php
@@ -93,13 +93,6 @@ resized_<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registere
 
 						</div>
 					<?php }?>
-					<div class="stars">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div>
 				</div>
 			</div>	
 		<?php
