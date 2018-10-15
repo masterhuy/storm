@@ -33,3 +33,5 @@
 
   <div class="category-description">{$category.description nofilter}</div>
 </section>
+
+

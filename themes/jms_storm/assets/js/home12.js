@@ -130,6 +130,79 @@ jQuery(function ($) {
 		});
 	}
 
+	if($(".product-carousel").length) {		
+		var productCarousel = $(".product-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		productCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:p_itemsDesktop
+				},
+				991:{
+					items:p_itemsDesktopSmall
+				},
+				768:{
+					items:p_itemsTablet
+				},
+				481:{
+					items:p_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin:0,
+			nav: p_nav,
+			dots: p_pag,
+			autoplay: auto_play_carousel,
+			loop: true,
+			slideSpeed: 800,
+		});
+	}
+
+	if($(".producttab-carousel").length) {
+		var producttabCarousel = $(".producttab-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		producttabCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:tab_itemsDesktop
+				},
+				991:{
+					items:tab_itemsDesktopSmall
+				},
+				768:{
+					items:tab_itemsTablet
+				},
+				481:{
+					items:tab_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0: {
+					items:1
+				}
+			},
+			rtl: rtl,
+				margin: 0,
+			    nav: p_nav_tab,
+		        dots: p_pag_tab,
+				autoplay: auto_play_tab,
+				loop:true,
+			    navigationText: ["", ""],
+			    slideSpeed: 200
+		});
+	}
+
 	if($(".flashsales-carousel").length) {		
 		var flashsalesCarousel = $(".flashsales-carousel");			
 		var rtl = false;
@@ -173,5 +246,10 @@ jQuery(document).ready(function($) {
 	    $(".best_seller").css("z-index", "3");
 		}, function(){
         $(".best_seller").css("z-index", "1");
+	});
+	$(".product_tab .product-miniature").hover(function(){
+	    $(".product_tab").css("z-index", "3");
+		}, function(){
+        $(".product_tab").css("z-index", "1");
 	});
 });

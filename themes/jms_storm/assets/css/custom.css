@@ -4855,9 +4855,6 @@ footer .blog-carousel {
   display: none; }
 
 /*More Element*/
-.img-hotdeal {
-  padding: 0 15px 0 0; }
-
 .hotdeal .rating {
   display: block; }
 
@@ -5223,6 +5220,12 @@ footer .blog-carousel {
 }
 .home_11 .back-to-top:hover {
   background: #c09749;
+}
+.home_12 .back-to-top:hover {
+  background: #ff0000;
+}
+.home_13 .back-to-top:hover {
+  background: #000;
 }
 
 
