@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-09-27 06:11:13
+/* Smarty version 3.1.32, created on 2018-10-15 22:01:48
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmspagebuilder\views\templates\hook\addoncategorytab_ol_h3.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bacacc1c11560_03497343',
+  'unifunc' => 'content_5bc5468c43f888_11906390',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dfdec3bf95860151b2be091fdcf4fba77f186b9c' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\modules\\jmspagebuilder\\views\\templates\\hook\\addoncategorytab_ol_h3.tpl',
-      1 => 1538043040,
+      1 => 1539655303,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product2.tpl' => 1,
   ),
 ),false)) {
-function content_5bacacc1c11560_03497343 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bc5468c43f888_11906390 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 var cattab_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {
@@ -44,10 +44,12 @@ var cattab_pag = <?php if ($_smarty_tpl->tpl_vars['pagination']->value == 1) {?>
 var cattab_auto_play_carousel = <?php if ($_smarty_tpl->tpl_vars['autoplay']->value == 1) {?>true<?php } else { ?>false<?php }?>;
 <?php echo '</script'; ?>
 >
-<?php if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
+
 <div class="addon-title">
-	<h3><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['addon_title']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+	<?php if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
+		<h3><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['addon_title']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 </h3>
+	<?php }?>
 	<div class="jms-tab">
 		<ul class="nav">
 			<?php
@@ -65,7 +67,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		</ul>
 	</div>
 </div>
-<?php }?>
+
 
 <div class="tab-content">
 	<?php

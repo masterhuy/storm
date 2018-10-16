@@ -316,10 +316,7 @@
   .banner_1 .jms-banner a {
     display: block; }
     .banner_1 .jms-banner a:hover::before {
-      opacity: 1;
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1); }
+      opacity: 1; }
     .banner_1 .jms-banner a::before {
       content: "";
       width: 100%;
@@ -329,9 +326,6 @@
       left: 0%;
       background: rgba(0, 0, 0, 0.2);
       position: absolute;
-      -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-      transform: scale(0);
       -webkit-transition: all .4s;
       -o-transition: all .4s;
       transition: all .4s; }
@@ -427,3 +421,242 @@
         color: #000;
         background: #fff;
         border-color: #fff; }
+
+.new_arrivals {
+  margin-top: 69px;
+  margin-bottom: 44px; }
+  .new_arrivals .side .addon-title {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 3px; }
+  .new_arrivals .side .product-miniature {
+    background: #f5f6f6; }
+    .new_arrivals .side .product-miniature:hover {
+      -webkit-box-shadow: unset;
+      box-shadow: unset; }
+    .new_arrivals .side .product-miniature:hover .product_action {
+      -webkit-box-shadow: unset;
+      box-shadow: unset; }
+  .new_arrivals .side .product_action {
+    position: unset;
+    opacity: 1;
+    visibility: visible;
+    background: #f5f6f6;
+    padding-bottom: 37px; }
+    .new_arrivals .side .product_action .cart-button {
+      margin-top: 0; }
+    .new_arrivals .side .product_action .addToWishlist.product-btn {
+      display: none; }
+    .new_arrivals .side .product_action::before {
+      display: none; }
+  .new_arrivals .center .product-box {
+    background: #f5f6f6;
+    margin-bottom: 30px;
+    padding: 11px 0;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset; }
+  .new_arrivals .center .product-image::before, .new_arrivals .center .product-image::after {
+    display: none; }
+  .new_arrivals .center .content_price .price {
+    display: block;
+    line-height: normal; }
+  .new_arrivals .center img {
+    border: 0; }
+  .new_arrivals .center .product-info {
+    text-align: left;
+    padding-top: 3px; }
+  .new_arrivals .center .jms-tab ul {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .new_arrivals .center .jms-tab ul li.active a {
+      border: 0;
+      color: #222; }
+      .new_arrivals .center .jms-tab ul li.active a::after {
+        content: "";
+        width: 50%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        left: 50%;
+        bottom: -2px;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%); }
+    .new_arrivals .center .jms-tab ul li a {
+      font-size: 14px;
+      color: #aaa;
+      font-weight: 400;
+      padding: 8px 16.5px; }
+      .new_arrivals .center .jms-tab ul li a.active {
+        border: 0;
+        color: #222; }
+        .new_arrivals .center .jms-tab ul li a.active::after {
+          content: "";
+          width: 50%;
+          height: 2px;
+          background: #000;
+          position: absolute;
+          left: 50%;
+          bottom: -2px;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.men {
+  position: relative;
+  z-index: 1;
+  margin-top: 86px; }
+  .men .addon-title {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 3px; }
+  .men .owl-stage-outer {
+    padding-bottom: 150px; }
+
+.instagram {
+  position: relative;
+  z-index: 2;
+  margin-top: -120px; }
+  .instagram .layout-column {
+    margin-top: -120px; }
+  .instagram .addon-title {
+    text-align: center; }
+    .instagram .addon-title h3 {
+      display: inline-block;
+      position: relative;
+      padding-bottom: 25px; }
+      .instagram .addon-title h3::before {
+        content: "\f16d";
+        font-family: fontawesome;
+        font-size: 24px;
+        color: #222;
+        margin-right: 5px; }
+      .instagram .addon-title h3::after {
+        content: "#shoe sport";
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 20px;
+        color: #222; }
+
+.newsletter .block_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 31px 0 50px; }
+  .newsletter .block_content .addon-title {
+    margin-right: 30px; }
+    .newsletter .block_content .addon-title h3 {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding-bottom: 9px;
+      padding-top: 0; }
+    .newsletter .block_content .addon-title span {
+      font-size: 16px;
+      color: #999; }
+
+.newsletter .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 23px; }
+  .newsletter .form-group #newsletter-input {
+    height: 50px;
+    padding-left: 28px;
+    min-width: 434px; }
+    .newsletter .form-group #newsletter-input:active, .newsletter .form-group #newsletter-input:focus {
+      border-color: #eee; }
+  .newsletter .form-group .newsletter-btn {
+    margin-top: 0;
+    font-size: 14px;
+    border-radius: 0 3px 3px 0;
+    min-width: 115px;
+    height: 50px; }
+
+#footer {
+  background: #f3f3f3;
+  padding-top: 39px; }
+  #footer .addon-title h3 {
+    font-size: 18px;
+    padding-bottom: 32px; }
+
+.footer_t {
+  padding-bottom: 48px; }
+  .footer_t .account li, .footer_t .reason li, .footer_t .info li {
+    padding-bottom: 14px; }
+  .footer_t #social_block ul li {
+    margin-right: 7px; }
+  .footer_t #social_block a {
+    color: #555;
+    background: #e0e0e0; }
+    .footer_t #social_block a:hover {
+      color: #fff;
+      background: #000; }
+  .footer_t .contact .phone {
+    margin-top: 25px;
+    margin-bottom: 38px; }
+  .footer_t .contact .address {
+    margin-bottom: 34px;
+    padding-right: 70px; }
+    .footer_t .contact .address p {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.5; }
+  .footer_t .contact h5 {
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 16px; }
+  .footer_t .contact h4 {
+    font-size: 18px;
+    font-weight: 600px;
+    padding-bottom: 0; }
+  .footer_t .contact p {
+    font-size: 18px;
+    margin-bottom: 0; }
+  .footer_t .contact .phone, .footer_t .contact .contact_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .footer_t .contact .storm-headset {
+    font-size: 39px;
+    padding-right: 20px; }
+  .footer_t .contact .storm-pin {
+    font-size: 25px;
+    padding-right: 10px; }
+
+.footer_b {
+  background: #222; }
+  .footer_b .left p {
+    color: #aaa; }
+    .footer_b .left p b {
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px; }
+  .footer_b p {
+    margin-bottom: 0;
+    line-height: 61px; }
+  .footer_b .right img:not(:last-child) {
+    margin-right: 5px; }
+  .footer_b .right p {
+    float: right; }
+    .footer_b .right p img {
+      margin-left: 11px; }
+
+@media (min-width: 1800px) {
+  .footer_t .reason {
+    padding-left: 43px; } }

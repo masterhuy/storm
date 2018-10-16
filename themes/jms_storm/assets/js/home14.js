@@ -62,6 +62,39 @@ jQuery(function ($) {
 		});
 	}
 
+	if($(".blog-carousel").length) {
+		var blogCarousel = $(".blog-carousel");		
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		blogCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:blog_itemsDesktop
+				},
+				991:{
+					items:blog_itemsDesktopSmall
+				},
+				768:{
+					items:blog_itemsTablet
+				},
+				481:{
+					items:blog_itemsMobile
+				},
+				0: {
+					items:1
+				}
+			},
+				rtl: rtl,
+				margin:30,
+				nav: p_nav_blog,
+		        dots: p_pag_blog,
+				autoplay:auto_play_blog,
+				loop: true,
+				slideSpeed: 800,	
+		});
+	}
+
 	if($(".product-carousel-col1").length) {		
 		var productCarouselcol1 = $(".product-carousel-col1");			
 		var rtl = false;
@@ -244,15 +277,10 @@ jQuery(function ($) {
 
 
 jQuery(document).ready(function($) {
-	$(".hot_product .product-miniature").hover(function(){
-	    $(".hot_product").css("z-index", "4");
-		}, function(){
-        $(".hot_product").css("z-index", "2");
-	});
 	$(".product_tab .product-miniature").hover(function(){
-	    $(".product_tab").css("z-index", "5");
+	    $(".product_tab").css("z-index", "3");
 		}, function(){
-        $(".product_tab").css("z-index", "3");
+        $(".product_tab").css("z-index", "1");
 	});
 	$(".men .product-miniature").hover(function(){
 	    $(".men").css("z-index", "3");
