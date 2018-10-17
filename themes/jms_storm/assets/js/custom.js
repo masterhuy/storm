@@ -12,7 +12,6 @@
 		event: jmmm_event,
 		duration: jmmm_duration
 	});
-	$('[data-toggle="tooltip"]').tooltip();
 });
  
 $('body').on('click', '.ajax-add-to-cart', function (event) {	

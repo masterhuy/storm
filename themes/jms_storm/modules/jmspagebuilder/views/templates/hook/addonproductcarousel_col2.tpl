@@ -24,14 +24,14 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <script type="text/javascript">
-	var p1_items = {if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if};
-	var p1_itemsDesktop = {if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if};
-	var p1_itemsDesktopSmall = {if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if};
-	var p1_itemsTablet = {if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if};
-	var p1_itemsMobile = {if $cols_xs}{$cols_xs|escape:'htmlall':'UTF-8'}{else}1{/if};
-	var p1_nav = {if $navigation == 1}true{else}false{/if};
-	var p1_pag = {if $pagination == 1}true{else}false{/if};
-	var p1_auto_play_carousel = {if $autoplay == 1}true{else}false{/if};
+	var p2_items = {if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if};
+	var p2_itemsDesktop = {if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if};
+	var p2_itemsDesktopSmall = {if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if};
+	var p2_itemsTablet = {if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if};
+	var p2_itemsMobile = {if $cols_xs}{$cols_xs|escape:'htmlall':'UTF-8'}{else}1{/if};
+	var p2_nav = {if $navigation == 1}true{else}false{/if};
+	var p2_pag = {if $pagination == 1}true{else}false{/if};
+	var p2_auto_play_carousel = {if $autoplay == 1}true{else}false{/if};
 </script>
 {if $addon_title}
 <div class="addon-title">
@@ -39,7 +39,7 @@
 </div>
 {/if}
 <div class="product_box">
-	<div class="product-carousel-col1 custom_carousel">	
+	<div class="product-carousel-col2 custom_carousel">	
 		{foreach from = $products_slides item = products_slide}
 			<div class="item ajax_block_product">
 				{foreach from = $products_slide item = product}

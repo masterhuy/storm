@@ -56,7 +56,7 @@
 							{/if}
 							<div class="c_item-info">
 								<a class="cat-name" href="{$categoryLink nofilter}">{$c_item.name nofilter}</a>
-								<ul class="child">
+								<ul class="child" style="margin-bottom: 0;">
 									{foreach from=$c_item.cat_childs item=child}
 										{assign var='childLink' value=$link->getcategoryLink($child.id_category, $c_item.link_rewrite)}
 										<li>

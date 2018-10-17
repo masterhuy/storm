@@ -5227,7 +5227,9 @@ footer .blog-carousel {
 .home_13 .back-to-top:hover {
   background: #000;
 }
-
+.home_15 .back-to-top:hover {
+  background: #edb402;
+}
 
 
 .slides .btn-shopnow{

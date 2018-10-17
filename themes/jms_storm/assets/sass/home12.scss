@@ -1067,12 +1067,13 @@ body{
 
 // footer
 #footer{
-	padding-top: 35px;
+	background: #222;
 	// newsletter
 	.addon-title{
 		border-bottom: 0;
 	}
 	.newsletter{
+		border-bottom: 1px solid rgba(255,255,255,0.11);
 		.popup.addon-title, .input_popup, .btn-popup  {
 			display: none;
 		}
@@ -1081,7 +1082,6 @@ body{
 			justify-content: center;
 			align-items: center;
 			padding: 41px 0 36px;
-			border-bottom: 1px solid #323232;
 			.addon-title{
 				margin-right: 30px;
 				h3{
@@ -1089,6 +1089,7 @@ body{
 					font-weight: 600;
 					padding-bottom: 3px;
 					padding-top: 0;
+					color: #fff;
 				}
 				span{
 					font-size: 16px;
