@@ -77,7 +77,7 @@
 		  		<li><a class="logout" href="{$logout_url}" rel="nofollow" >{l s='Log out' d='Shop.Theme.Actions'}</a></li>
 		  	</ul>
 	    {else}   
-		  	<a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">
+		  	<a href="{$link->getPageLink('my-account', true)}" title="{l s='Login/Register' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">
 		  		{l s='Login/Register' d='Shop.Theme.Actions'}
 		  	</a>
 	    {/if}

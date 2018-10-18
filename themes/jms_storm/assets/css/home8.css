@@ -568,8 +568,11 @@
       .instagram_title .addon-title h3 span {
         font-weight: 500p; }
 
-.instagram .addon-title {
-  display: none; }
+.instagram {
+  max-width: 1920px;
+  margin: 0 auto; }
+  .instagram .addon-title {
+    display: none; }
 
 #footer .addon-title h3 {
   padding-bottom: 30px;
