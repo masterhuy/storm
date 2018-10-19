@@ -131,6 +131,41 @@ jQuery(function ($) {
 		});
 	}
 
+	if($(".product-carousel2").length) {		
+		var productCarousel2 = $(".product-carousel2");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		productCarousel2.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:p_itemsDesktop
+				},
+				991:{
+					items:p_itemsDesktopSmall
+				},
+				768:{
+					items:p_itemsTablet
+				},
+				481:{
+					items:p_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin:0,
+			nav: p_nav,
+			dots: p_pag,
+			autoplay: auto_play_carousel,
+			slideSpeed: 800,
+		});
+	}
+
 	if($(".brand-carousel").length) {
 		var brandCarousel = $(".brand-carousel");		
 		var rtl = false;
@@ -425,10 +460,10 @@ jQuery(document).ready(function($) {
 		}, function(){
         $(".new_arrivals").css("z-index", "1");
 	});
-	$(".product_tab .product-miniature").hover(function(){
-	    $(".product_tab").css("z-index", "3");
+	$(".hot_deal .product-miniature").hover(function(){
+	    $(".hot_deal").css("z-index", "3");
 		}, function(){
-        $(".product_tab").css("z-index", "1");
+        $(".hot_deal").css("z-index", "1");
 	});
 	$(".product_carousel .product-miniature").hover(function(){
 	    $(".product_carousel").css("z-index", "3");

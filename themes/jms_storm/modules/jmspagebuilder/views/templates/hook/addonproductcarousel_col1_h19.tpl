@@ -43,7 +43,7 @@
 		{foreach from = $products_slides item = products_slide}
 			<div class="item ajax_block_product">
 				{foreach from = $products_slide item = product}
-					{include file="catalog/_partials/miniatures/product2.tpl" product=$product}
+					{include file="catalog/_partials/miniatures/product3.tpl" product=$product}
 				{/foreach}
 			</div>
 		{/foreach}

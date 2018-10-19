@@ -5233,8 +5233,19 @@ footer .blog-carousel {
 .home_16 .back-to-top:hover {
   background: #9d3bc6;
 }
+.home_19 .back-to-top:hover {
+  background: #f15a2b;
+}
+.home_20 .back-to-top:hover {
+  background: #f15a2b;
+}
 
 
+
+
+.label.label-sale {
+  display: none;
+}
 .slides .btn-shopnow{
   transition: unset;
 }

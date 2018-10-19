@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-08 03:10:02
+/* Smarty version 3.1.32, created on 2018-10-19 02:48:06
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmspagebuilder\views\templates\hook\addonfeature.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bbb02ca51ab60_67529797',
+  'unifunc' => 'content_5bc97e2606afd3_18132335',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a1a96cd88ecb408154c3d7f5016e009e5a9aa500' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\modules\\jmspagebuilder\\views\\templates\\hook\\addonfeature.tpl',
-      1 => 1538973205,
+      1 => 1539931674,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bbb02ca51ab60_67529797 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bc97e2606afd3_18132335 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="feature-box<?php if ($_smarty_tpl->tpl_vars['box_class']->value) {?> <?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['box_class']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');
-}?>" <?php if ($_smarty_tpl->tpl_vars['text_align']->value) {?>style="align:<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['text_align']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+}?>" <?php if ($_smarty_tpl->tpl_vars['text_align']->value) {?>style="text-align:<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['text_align']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 ;"<?php }?>>
 	<?php if ($_smarty_tpl->tpl_vars['image_type']->value == 'image' && $_smarty_tpl->tpl_vars['image']->value) {?>	
 		<div class="image"><img src="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['root_url']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');

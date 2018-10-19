@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-18 02:46:09
+/* Smarty version 3.1.32, created on 2018-10-18 23:53:24
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmsajaxsearch\views\templates\hook\jmsajaxsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bc82c3148b142_92362629',
+  'unifunc' => 'content_5bc9553412d2e9_60443487',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '81e1d46057f39725d126cac9b0ce7ccc34ad5157' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\modules\\jmsajaxsearch\\views\\templates\\hook\\jmsajaxsearch.tpl',
-      1 => 1539845165,
+      1 => 1539921201,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bc82c3148b142_92362629 (Smarty_Internal_Template $_smarty_tpl) {
-if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == 6 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 8 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 11 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 19) {?>
+function content_5bc9553412d2e9_60443487 (Smarty_Internal_Template $_smarty_tpl) {
+if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == 6 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 8 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 11 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 19 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 20) {?>
 <div class="btn-group compact-hidden jms_ajax_search" id="jms_ajax_search">
 	<a href="#" class="btn-xs icon_search" title="Search">
 		<span class="button-search storm-zoom"></span>
