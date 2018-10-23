@@ -5169,6 +5169,10 @@ footer .blog-carousel {
 }
 /*# sourceMappingURL=custom.css.map */
 
+.jms-vermegamenu .nav > li.sub-h18{
+  display: none;
+}
+
 .home_2 a:hover{
   color: #ed2b2b;
 }
@@ -5235,6 +5239,9 @@ footer .blog-carousel {
 }
 .home_17 .back-to-top:hover {
   background: #fed700;
+}
+.home_18 .back-to-top:hover {
+  background: #085a9d;
 }
 .home_19 .back-to-top:hover {
   background: #f15a2b;

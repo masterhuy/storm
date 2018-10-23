@@ -638,10 +638,13 @@
 }
 
 // instagram
-.instagram{
+.jms-row.instagram{
 	position: relative;
 	z-index: 2;
 	margin-top: -120px;
+	.container-fluid{
+		max-width: 1920px;
+	}
 	.layout-column{
 		margin-top: -120px;
 	}

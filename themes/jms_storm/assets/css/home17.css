@@ -165,7 +165,7 @@
   padding: 23px 0 19px; }
   .header #advsearch_result {
     top: 47px;
-    width: calc(100% + 12px);
+    width: 100%;
     -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     border-radius: 3px; }
@@ -215,7 +215,8 @@
     min-width: 90px;
     background: #fff;
     padding: 0;
-    display: block; }
+    display: block;
+    top: calc(100% + 10px); }
     .header .right #_desktop_currency_selector .dropdown-menu li {
       padding: 5px 0; }
       .header .right #_desktop_currency_selector .dropdown-menu li a:hover {
@@ -511,7 +512,7 @@
     bottom: 83px; }
     .testimonial .owl-dots .owl-dot.active span {
       width: 27px;
-      border-color: #c09749;
+      border-color: #fed700;
       background: #fff; }
     .testimonial .owl-dots span {
       width: 17px;
@@ -701,7 +702,7 @@
         text-transform: uppercase;
         font-weight: 600; }
         .footer_m .row2 ul li a:hover {
-          color: #9cb130; }
+          color: #fed700; }
   .footer_m .row3 p {
     color: #666;
     padding: 0 60px;

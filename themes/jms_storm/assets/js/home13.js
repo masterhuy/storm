@@ -159,7 +159,7 @@ jQuery(function ($) {
 				}
 			},
 			rtl: rtl,
-			margin: 5,
+			margin: 0,
 			nav: false,
 			dots: false,
 			autoplay: true,

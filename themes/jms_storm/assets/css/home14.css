@@ -305,7 +305,7 @@
   .banner_2 .layout-column {
     margin-top: -100px; }
   .banner_2 .container-fluid {
-    max-width: 100%; }
+    max-width: 1920px; }
   .banner_2 img {
     width: 100%; }
 
@@ -361,6 +361,8 @@
 .jms-row.instagram {
   margin-top: 50px;
   margin-bottom: 38px; }
+  .jms-row.instagram .container-fluid {
+    max-width: 1920px; }
   .jms-row.instagram .addon-title {
     text-align: center; }
     .jms-row.instagram .addon-title h3 {

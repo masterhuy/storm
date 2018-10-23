@@ -38,6 +38,9 @@
 	<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
 </div>
 {/if}
+{if $addon_desc}
+<p class="addon-desc">{$addon_desc nofilter}</p>
+{/if}
 <div class="product_box">
 	<div class="product-carousel2 custom_carousel">	
 		{foreach from = $products_slides item = products_slide}

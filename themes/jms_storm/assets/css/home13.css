@@ -513,25 +513,27 @@
   .men .owl-stage-outer {
     padding-bottom: 150px; }
 
-.instagram {
+.jms-row.instagram {
   position: relative;
   z-index: 2;
   margin-top: -120px; }
-  .instagram .layout-column {
+  .jms-row.instagram .container-fluid {
+    max-width: 1920px; }
+  .jms-row.instagram .layout-column {
     margin-top: -120px; }
-  .instagram .addon-title {
+  .jms-row.instagram .addon-title {
     text-align: center; }
-    .instagram .addon-title h3 {
+    .jms-row.instagram .addon-title h3 {
       display: inline-block;
       position: relative;
       padding-bottom: 25px; }
-      .instagram .addon-title h3::before {
+      .jms-row.instagram .addon-title h3::before {
         content: "\f16d";
         font-family: fontawesome;
         font-size: 24px;
         color: #222;
         margin-right: 5px; }
-      .instagram .addon-title h3::after {
+      .jms-row.instagram .addon-title h3::after {
         content: "#shoe sport";
         text-transform: uppercase;
         font-weight: 500;

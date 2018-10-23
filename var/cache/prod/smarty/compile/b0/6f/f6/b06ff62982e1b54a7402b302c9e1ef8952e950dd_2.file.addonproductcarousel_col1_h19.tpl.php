@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-18 22:19:08
+/* Smarty version 3.1.32, created on 2018-10-23 05:44:44
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmspagebuilder\views\templates\hook\addonproductcarousel_col1_h19.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bc93f1c482f29_43670025',
+  'unifunc' => 'content_5bceed8cefbdd2_20103593',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b06ff62982e1b54a7402b302c9e1ef8952e950dd' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\modules\\jmspagebuilder\\views\\templates\\hook\\addonproductcarousel_col1_h19.tpl',
-      1 => 1539915546,
+      1 => 1540204471,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product3.tpl' => 1,
   ),
 ),false)) {
-function content_5bc93f1c482f29_43670025 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bceed8cefbdd2_20103593 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 	var p1_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {
@@ -49,6 +49,10 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 	<h3><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['addon_title']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 </h3>
 </div>
+<?php }
+if ($_smarty_tpl->tpl_vars['addon_desc']->value) {?>
+<p class="addon-desc"><?php echo $_smarty_tpl->tpl_vars['addon_desc']->value;?>
+</p>
 <?php }?>
 <div class="product_box">
 	<div class="product-carousel-col1 custom_carousel">	

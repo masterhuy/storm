@@ -26,24 +26,24 @@ $(window).load(function(){
 
 jQuery(function ($) {
     "use strict";
-    if($(".product-carousel-col1").length) {		
-		var productCarouselcol1 = $(".product-carousel-col1");			
+    if($(".flashsales-carousel").length) {		
+		var flashsalesCarousel = $(".flashsales-carousel");			
 		var rtl = false;
 		if ($("body").hasClass("rtl")) rtl = true;				
-		productCarouselcol1.owlCarousel({
+		flashsalesCarousel.owlCarousel({
 			responsiveClass:true,
 			responsive:{			
 				1199:{
-					items:p1_itemsDesktop
+					items:2
 				},
 				991:{
-					items:p1_itemsDesktopSmall
+					items:2
 				},
 				768:{
-					items:p1_itemsTablet
+					items:1
 				},
 				481:{
-					items:p1_itemsMobile
+					items:1
 				},
 				361:{
 					items:1
@@ -54,46 +54,10 @@ jQuery(function ($) {
 			},
 			rtl: rtl,
 			margin:0,
-			nav: p1_nav,
-			dots: p1_pag,
+			nav: true,
+			dots: false,
+			autoplay: false,
 			loop: true,
-			autoplay: p1_auto_play_carousel,
-			slideSpeed: 800,
-		});
-	}
-
-    if($(".product-carousel-col2").length) {		
-		var productCarouselcol2 = $(".product-carousel-col2");			
-		var rtl = false;
-		if ($("body").hasClass("rtl")) rtl = true;				
-		productCarouselcol2.owlCarousel({
-			responsiveClass:true,
-			responsive:{			
-				1199:{
-					items:p2_itemsDesktop
-				},
-				991:{
-					items:p2_itemsDesktopSmall
-				},
-				768:{
-					items:p2_itemsTablet
-				},
-				481:{
-					items:p2_itemsMobile
-				},
-				361:{
-					items:1
-				},
-				0:{
-					items:1
-				}
-			},
-			rtl: rtl,
-			margin:0,
-			nav: p2_nav,
-			dots: p2_pag,
-			loop: true,
-			autoplay: p2_auto_play_carousel,
 			slideSpeed: 800,
 		});
 	}
@@ -200,6 +164,39 @@ jQuery(function ($) {
 		});
 	}
 
+	if($(".brand-carousel").length) {
+		var brandCarousel = $(".brand-carousel");		
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		brandCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:brand_itemsDesktop
+				},
+				991:{
+					items:brand_itemsDesktopSmall
+				},
+				768:{
+					items:brand_itemsTablet
+				},
+				481:{
+					items:brand_itemsMobile
+				},
+				0: {
+					items:1
+				}
+			},
+				rtl: rtl,
+				margin:0,
+				nav: p_nav_brand,
+		        dots: p_pag_brand,
+				autoplay:auto_play_brand,
+				loop: true,
+				slideSpeed: 800,	
+		});
+	}
+
 	if($(".categories-carousel2").length) {
 		var cateCarousel = $(".categories-carousel2");
 		var rtl = false;
@@ -225,7 +222,7 @@ jQuery(function ($) {
 
 			},
 			rtl: rtl,
-			margin: 30,
+			margin: 0,
 			nav: cs_nav,
 			dots: cs_pag,
 			autoplay: cs_auto_play_carousel,
@@ -413,26 +410,19 @@ jQuery(function ($) {
 
 
 jQuery(document).ready(function($) {
-	$('.topbar .icon_search').click(function(event) {
-		$('.topbar .search-box').addClass('open');
-	});
-	$('.topbar .close-search').click(function(event) {
-		$('.topbar .search-box').removeClass('open');
-	});
-
-	$(".new_arrivals .product-miniature").hover(function(){
-	    $(".new_arrivals").css("z-index", "3");
-		}, function(){
-        $(".new_arrivals").css("z-index", "1");
-	});
 	$(".product_tab .product-miniature").hover(function(){
 	    $(".product_tab").css("z-index", "3");
 		}, function(){
         $(".product_tab").css("z-index", "1");
 	});
-	$(".product_carousel .product-miniature").hover(function(){
-	    $(".product_carousel").css("z-index", "3");
+	$(".categorytab-carousel .product-miniature").hover(function(){
+	    $(".categorytab-carousel").css("z-index", "4");
 		}, function(){
-        $(".product_carousel").css("z-index", "1");
+        $(".categorytab-carousel").css("z-index", "2");
+	});
+	$(".most_view .product-miniature").hover(function(){
+	    $(".most_view ").css("z-index", "3");
+		}, function(){
+        $(".most_view ").css("z-index", "1");
 	});
 });

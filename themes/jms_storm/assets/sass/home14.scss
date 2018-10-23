@@ -375,13 +375,13 @@
 // banner2
 .banner_2{
 	position: relative;
-	z-index: 2;;
+	z-index: 2;
 	margin-top: -10px;
 	.layout-column{
 		margin-top: -100px;
 	}
 	.container-fluid{
-		max-width: 100%;
+		max-width: 1920px;;
 	}
 	img{
 		width: 100%;
@@ -454,6 +454,9 @@
 .jms-row.instagram{
 	margin-top: 50px;
 	margin-bottom: 38px;
+	.container-fluid{
+		max-width: 1920px;
+	}
 	.addon-title{
 		text-align: center;
 		h3{

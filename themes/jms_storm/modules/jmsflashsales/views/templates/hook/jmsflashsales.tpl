@@ -23,7 +23,23 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-
+{if $jpb_homepage == 18}
+<div class="jmsflashsales">
+	<div class="title">
+		<div class="addon-title">
+			<h3>Daily deals</h3>
+		</div>
+		<div class="flashsales-countdown">{$expiretime|escape:'htmlall':'UTF-8'}</div>
+	</div>
+	<div class="flashsales-carousel">	
+		{foreach from=$products item=product key=k}	
+			<div class="item ajax_block_product">		
+				{include file="catalog/_partials/miniatures/product_flashdeal.tpl" product=$product}
+			</div>
+		{/foreach}
+	</div>
+</div>
+{else}
 <div class="jmsflashsales">
 	<div class="product_box">
 		<div class="title">
@@ -42,3 +58,4 @@
 		</div>
 	</div>
 </div>
+{/if}
