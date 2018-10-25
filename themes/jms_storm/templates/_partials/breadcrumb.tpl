@@ -22,20 +22,19 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
- <div class="breadcrumb">
-<div class="breadcrumb-box container">
-<span class="title_meta">{$page.meta.title}</span>
-	<div data-depth="{$breadcrumb.count}" class="breadcrumb-inner hidden-sm-down">
-  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-    {foreach from=$breadcrumb.links item=path name=breadcrumb}
-      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a itemprop="item" href="{$path.url}">
-           <span itemprop="name">{$path.title}</span>
-        </a>
-        <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
-      </li>
-    {/foreach}
-  </ol>
-</div>
-</div>
+<div class="breadcrumb">
+    <div class="breadcrumb-box container">
+        <div data-depth="{$breadcrumb.count}" class="breadcrumb-inner hidden-sm-down">
+            <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+                {foreach from=$breadcrumb.links item=path name=breadcrumb}
+                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <a itemprop="item" href="{$path.url}">
+                            <span itemprop="name">{$path.title}</span>
+                        </a>
+                        <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
+                    </li>
+                {/foreach}
+            </ol>
+        </div>
+    </div>
 </div>

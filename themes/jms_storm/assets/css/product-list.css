@@ -1,11 +1,12 @@
-
+#product_list {
+	margin-bottom: 80px;
+}
 #search_filters .filter-box {
-	margin: 28px 0;
+	margin: 28px 0 40px;
 }
 #search_filters .facet {
-    border-bottom: 1px solid #ebebeb;
-    margin-bottom: 35px;
-    padding-bottom: 24px;
+    margin-bottom: 44px;
+    padding-bottom: 0;
 	margin-right:0px;
 }
 #search_filters .facet.color {
@@ -13,36 +14,49 @@
     margin-bottom: 0;
 }
 #search_filters .facet .facet-title {
-    color: rgba(17, 17, 17, 0.7);
-    font-size: 14px;
+    color: #222;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.5px;
     line-height: 26px;
+    display: inline-block;
     text-transform: uppercase;
-	padding-bottom: 14px;
+	padding-bottom: 4px;
+	border-bottom: 2px solid;
+	margin-bottom: 17px;
 }
 #search_filters .facet.size ul li a {
-	background: #f1f1f1 none repeat scroll 0 0;
-	color: rgba(17, 17, 17, 0.75);
+	background: transparent;
+	color: #222;
 	display: inline-block;
 	font-size: 15px;
 	font-weight: 500;
-	line-height: 30px;
-	min-width: 30px;
+	line-height: 32px;
+	min-width: 54px;
 	text-align: center;
+	border: 2px solid #eee;
+}
+#search_filters {
+	margin-bottom: 41px;
 }
 #search_filters .facet.size .custom-checkbox {
 	display:none;
 }
-#search_filters .facet.size ul {
-	display:flex;
-	justify-content:flex-start;
-}
 #search_filters .facet li {
-    padding: 3px 0;
+	padding: 8px 0;
+	border-bottom: 1px solid #e6e6e6;
+}
+#search_filters .facet.color li {
+	padding: 6px 0;
 }
 #search_filters .facet.size ul li {
-	margin-right:5px;
+	margin-right:10px;
+	float: left;
+}
+#category .product-preview .preview,
+#category .product-preview .product-info {
+	z-index: 9;
+	position: relative;
 }
 
 .filters-panel .view-mode > a > span {
@@ -59,10 +73,6 @@
 	font-size: 13px;
 	font-weight: 400;
 	margin-right: 10px;
-}
-.filters-panel {
-	border-bottom: 1px solid #ebebeb;
-	padding-bottom: 10px;
 }
 .filters-panel .right {
 	text-align:right;
@@ -194,10 +204,16 @@
     color: rgba(17, 17, 17, 0.8);
     font-size: 15px;
 }
-#category .facet ul li a .magnitude {
+#category .facet.size ul li a .magnitude {
 	position: absolute;
 	right: 30px;
 	top: calc(50% - 8.5px;);
+}
+#category .facet.size ul li{
+	border-bottom: 0;
+}
+#category .facet ul li a .magnitude {
+	display: none;
 }
 #category .custom-checkbox {
     padding-right: 5px;
@@ -211,9 +227,33 @@
 #category .color-style .custom-checkbox .color {
 	border-radius: 50%;
 	display: block;
-	height: 10px;
-	width: 10px;
+	height: 26px;
+	width: 26px;
 	cursor: pointer;
+	margin-right: 10px;
+	position: relative;
+	box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+#category .color-style .custom-checkbox .color::after{
+	left: 9px;
+	top: 6px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	content: "";
+	position: absolute;
+	display: none;
+}
+#category .color-style .custom-checkbox input:checked ~ .color::after {
+	display: block;
 }
 #category .facet >.flex-box {
 	display: flex;
@@ -227,13 +267,10 @@
 	font-size: 14px;
 }
 #category .facet .color-style .facet-label {
-    display: inline-flex;
-    float: left;
 	width:100%;
 }
 #category .color-style .custom-checkbox {
-    position: relative;
-    top: 10px;
+	padding: 0;
 }
 
 /* Pagination css */

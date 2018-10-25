@@ -1,24 +1,28 @@
 .block-categories {
-    border-bottom: 1px solid #ebebeb;
-    margin-bottom: 40px;
-    padding-bottom: 26px;
+    margin-bottom: 57px;
+    padding-bottom: 0;
 }
 .title-block h3 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
-    padding-bottom: 30px;
+    padding-bottom: 4px;
     text-transform: uppercase;
+    border-bottom: 2px solid;
+    display: inline-block;
+    color: #222;
+    margin-bottom: 17px;
 }
 .block-categories .title-block h3 {
-    padding-bottom: 16px;
+    padding-bottom: 4px;
 }
 .block-categories li a {
-	color: rgba(17, 17, 17, 0.8);
+	color: #666;
 	display: block;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 400;
-	line-height: 32px;
+	line-height: 39px;
 	padding: 0 30px 0 0;
+    border-bottom: 1px solid #e6e6e6;
 }
 .block-categories .title-block h3:before {
   bottom: -2px;
@@ -45,7 +49,7 @@
     font-style: normal;
     position: absolute;
     right: 0;
-    top: 8px;
+    top: 13px;
 }
 .block-categories .collapse-icons[aria-expanded="true"] i:before {
 	content: "\f107";

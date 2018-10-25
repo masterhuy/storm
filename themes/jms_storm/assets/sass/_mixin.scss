@@ -6,3 +6,39 @@
 		@content;
 	}
 }
+
+@mixin facetLabelActive($home, $color){
+	.home_#{$home} .facet-label.active a{
+		background: #{$color} !important;
+		border-color: #{$color} !important;
+	}
+}
+
+@mixin underlineTitle($home, $color){
+	.home_#{$home} #search_filters .facet .facet-title,
+	.home_#{$home} .title-block h3{
+		border-bottom-color: #{$color};
+	}
+}
+
+@mixin paginationCurrent($home, $color){
+	.home_#{$home} .pagination .current a,
+	.home_#{$home} .pagination a:hover {
+		background-color: #{$color} !important;
+		border-color: #{$color};
+		font-weight: 600;
+	}
+}
+
+@mixin buttonActive($home, $color){
+	.home_#{$home} .view-mode .button a.active{
+		color: #{$color};
+	}
+}
+
+@mixin wishlistHover($home, $color){
+	.home_#{$home} .products-list-in-row .addToWishlist:hover{
+		background-color: #{$color};
+		border-color: #{$color};
+	}
+}

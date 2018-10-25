@@ -8,12 +8,32 @@
 	max-width: 1800px;
 	width: 100%;
 }
+.page-index .container{
+	width: 1434px;
+}
 #jmstools .btn-action .btn:hover{
 	background: $active-h1;
 }
 .btn-default.active,
 .btn-active{
 	background: $active-h1;
+}
+.product-preview {
+	.quick-view {
+		span {
+			background: rgba(30,199,166,0.3);
+		}
+		&:hover span{
+			background: rgba(30,199,166,1);
+		}
+	}
+	button.cart-button:hover {
+	    background: $active-h1;
+	    border-color: $active-h1;
+	}
+	.addToWishlist.product-btn:hover{
+		color: $active-h1;
+	}
 }
 
 // topbar

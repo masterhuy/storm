@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-09-18 22:25:10
+/* Smarty version 3.1.32, created on 2018-10-24 00:15:06
   from 'D:\xamppp\htdocs\jms_storm\admin063ihraim\themes\default\template\nav.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5ba1b3868b8e32_94122137',
+  'unifunc' => 'content_5bcff1ca337941_39378250',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ba1b3868b8e32_94122137 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bcff1ca337941_39378250 (Smarty_Internal_Template $_smarty_tpl) {
 ?><nav class="nav-bar d-none d-md-block" role="navigation" id="nav-sidebar">
 	<span class="menu-collapse">
 		<i class="material-icons">chevron_left</i>

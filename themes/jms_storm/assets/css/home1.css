@@ -5,12 +5,28 @@
   max-width: 1800px;
   width: 100%; }
 
+.page-index .container {
+  width: 1434px; }
+
 #jmstools .btn-action .btn:hover {
   background: #1ec7a6; }
 
 .btn-default.active,
 .btn-active {
   background: #1ec7a6; }
+
+.product-preview .quick-view span {
+  background: rgba(30, 199, 166, 0.3); }
+
+.product-preview .quick-view:hover span {
+  background: #1ec7a6; }
+
+.product-preview button.cart-button:hover {
+  background: #1ec7a6;
+  border-color: #1ec7a6; }
+
+.product-preview .addToWishlist.product-btn:hover {
+  color: #1ec7a6; }
 
 .topbar {
   background: rgba(59, 59, 59, 0.77);

@@ -1,0 +1,201 @@
+@import "mixin";
+@import "varians";
+
+.breadcrumb-inner ol li{
+	&:last-child a{
+		color: #222;
+		font-weight: 600;
+	}
+	a{
+		text-transform: uppercase;
+		color: #888;
+	}
+}
+#_desktop_search_filters_clear_all button{
+	background: #111;
+	border-color: #111;
+}
+.facet.color {
+	ul li{
+		float: left;
+		border-bottom: 0 !important;
+		a{
+			display: none;
+		}
+	}
+}
+.products-list-in-column .js-product-miniature:hover{
+	border-radius: 0;
+}
+.facet-label.active a{
+	color: #fff !important;
+}
+
+@include facetLabelActive(1, $active-h1);
+@include facetLabelActive(2, $active-h2);
+@include facetLabelActive(3, $active-h3);
+@include facetLabelActive(4, $active-h4);
+@include facetLabelActive(5, $active-h5);
+@include facetLabelActive(6, $active-h6);
+@include facetLabelActive(7, $active-h7);
+@include facetLabelActive(8, $active-h8);
+@include facetLabelActive(9, $active-h9);
+@include facetLabelActive(10, $active-h10);
+@include facetLabelActive(11, $active-h11);
+@include facetLabelActive(12, $active-h12);
+@include facetLabelActive(13, $active-h13);
+@include facetLabelActive(14, $active-h14);
+@include facetLabelActive(15, $active-h15);
+@include facetLabelActive(16, $active-h16);
+@include facetLabelActive(17, $active-h17);
+@include facetLabelActive(18, $active-h18);
+@include facetLabelActive(19, $active-h19);
+@include facetLabelActive(20, $active-h20);
+
+@include underlineTitle(1, $active-h1);
+@include underlineTitle(2, $active-h2);
+@include underlineTitle(3, $active-h3);
+@include underlineTitle(4, $active-h4);
+@include underlineTitle(5, $active-h5);
+@include underlineTitle(6, $active-h6);
+@include underlineTitle(7, $active-h7);
+@include underlineTitle(8, $active-h8);
+@include underlineTitle(9, $active-h9);
+@include underlineTitle(10, $active-h10);
+@include underlineTitle(11, $active-h11);
+@include underlineTitle(12, $active-h12);
+@include underlineTitle(13, $active-h13);
+@include underlineTitle(14, $active-h14);
+@include underlineTitle(15, $active-h15);
+@include underlineTitle(16, $active-h16);
+@include underlineTitle(17, $active-h17);
+@include underlineTitle(18, $active-h18);
+@include underlineTitle(19, $active-h19);
+@include underlineTitle(20, $active-h20);
+
+@include paginationCurrent(1, $active-h1);
+@include paginationCurrent(2, $active-h2);
+@include paginationCurrent(3, $active-h3);
+@include paginationCurrent(4, $active-h4);
+@include paginationCurrent(5, $active-h5);
+@include paginationCurrent(6, $active-h6);
+@include paginationCurrent(7, $active-h7);
+@include paginationCurrent(8, $active-h8);
+@include paginationCurrent(9, $active-h9);
+@include paginationCurrent(10, $active-h10);
+@include paginationCurrent(11, $active-h11);
+@include paginationCurrent(12, $active-h12);
+@include paginationCurrent(13, $active-h13);
+@include paginationCurrent(14, $active-h14);
+@include paginationCurrent(15, $active-h15);
+@include paginationCurrent(16, $active-h16);
+@include paginationCurrent(17, $active-h17);
+@include paginationCurrent(18, $active-h18);
+@include paginationCurrent(19, $active-h19);
+@include paginationCurrent(20, $active-h20);
+
+@include buttonActive(1, $active-h1);
+@include buttonActive(2, $active-h2);
+@include buttonActive(3, $active-h3);
+@include buttonActive(4, $active-h4);
+@include buttonActive(5, $active-h5);
+@include buttonActive(6, $active-h6);
+@include buttonActive(7, $active-h7);
+@include buttonActive(8, $active-h8);
+@include buttonActive(9, $active-h9);
+@include buttonActive(10, $active-h10);
+@include buttonActive(11, $active-h11);
+@include buttonActive(12, $active-h12);
+@include buttonActive(13, $active-h13);
+@include buttonActive(14, $active-h14);
+@include buttonActive(15, $active-h15);
+@include buttonActive(16, $active-h16);
+@include buttonActive(17, $active-h17);
+@include buttonActive(18, $active-h18);
+@include buttonActive(19, $active-h19);
+@include buttonActive(20, $active-h20);
+
+@include wishlistHover(1, $active-h1);
+@include wishlistHover(2, $active-h2);
+@include wishlistHover(3, $active-h3);
+@include wishlistHover(4, $active-h4);
+@include wishlistHover(5, $active-h5);
+@include wishlistHover(6, $active-h6);
+@include wishlistHover(7, $active-h7);
+@include wishlistHover(8, $active-h8);
+@include wishlistHover(9, $active-h9);
+@include wishlistHover(10, $active-h10);
+@include wishlistHover(11, $active-h11);
+@include wishlistHover(12, $active-h12);
+@include wishlistHover(13, $active-h13);
+@include wishlistHover(14, $active-h14);
+@include wishlistHover(15, $active-h15);
+@include wishlistHover(16, $active-h16);
+@include wishlistHover(17, $active-h17);
+@include wishlistHover(18, $active-h18);
+@include wishlistHover(19, $active-h19);
+@include wishlistHover(20, $active-h20);
+
+
+
+#content-wrapper {
+	margin-bottom: 70px;
+}
+.pagination .current a {
+	background-color: #111 !important;
+	color: #fff;
+}
+.view-mode .button {
+	display: inline-block;
+	padding: 10px 20px;
+	border: 2px solid #e6e6e6;
+	border-radius: 30px;
+}
+.products-list-in-row{
+	.product-preview:hover{
+		box-shadow: unset;
+	}
+	.product-link{
+		text-align: left;
+		padding: 0;
+	}
+	.content_price{
+		text-align: left;
+	}
+	.ajax-add-to-cart {
+	    border-radius: 30px !important;
+	    min-width: 180px;
+	    max-height: 45px;
+	    margin-top: 0 !important;
+	    bottom: 0 !important;
+	}
+	.addToWishlist{
+		margin-left: 18px;
+		&:hover{
+			color: #fff !important;
+		}
+	}
+	.product-info .color_to_pick_list{
+		display: block;
+	}
+	.product-preview .color_to_pick_list{
+		display: inline-flex;
+		margin-bottom: 35px;
+		a{
+			margin: 0;
+			margin-right: 10px;
+			border-radius: 50%;
+		}
+		.js-count.count {
+			display: none;
+		}
+		> .variant-links{
+			display: inline-flex;
+			padding: 0;
+		}
+	}
+}
+
+.product-info .color_to_pick_list{
+	display: none;
+}

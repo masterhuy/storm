@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-09-28 05:39:02
+/* Smarty version 3.1.32, created on 2018-10-24 00:15:07
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\templates\catalog\_partials\variant-links.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5badf6b6a65ce9_44634208',
+  'unifunc' => 'content_5bcff1cb533663_84935128',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5badf6b6a65ce9_44634208 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bcff1cb533663_84935128 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="variant-links">
   <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['variants']->value, 'variant');

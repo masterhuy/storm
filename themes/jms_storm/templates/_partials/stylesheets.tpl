@@ -27,6 +27,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="{$urls.theme_assets}/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
 <link rel="stylesheet" type="text/css" href="{$urls.theme_assets}/fonts/storm/storm.css" />
+<link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/global.css" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 {foreach $stylesheets.external as $stylesheet}
 <link rel="stylesheet" href="{$stylesheet.uri}" type="text/css" media="{$stylesheet.media}">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-09-26 23:13:31
+/* Smarty version 3.1.32, created on 2018-10-24 00:15:08
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\templates\_partials\stylesheets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bac4adb82d932_78831882',
+  'unifunc' => 'content_5bcff1cc8507d7_65758905',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '56ba652f01e593d31503bdcee7a8dbb9a94403b4' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\templates\\_partials\\stylesheets.tpl',
-      1 => 1538018002,
+      1 => 1540345826,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bac4adb82d932_78831882 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bcff1cc8507d7_65758905 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
 css/linearicon.css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
@@ -29,6 +29,8 @@ css/linearicon.css" />
 /css/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
 /fonts/storm/storm.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
+css/global.css" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['stylesheets']->value['external'], 'stylesheet');

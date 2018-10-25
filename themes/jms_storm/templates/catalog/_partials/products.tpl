@@ -34,11 +34,4 @@
   {block name='pagination'}
     {include file='_partials/pagination.tpl' pagination=$listing.pagination}
   {/block}
-
-  <div class="hidden-md-up text-xsright up">
-    <a href="#header" class="btn btn-secondary button-small btn-default btn-effect">
-      {l s='Back to top' d='Shop.Theme.Actions'}
-     
-    </a>
-  </div>
 </div>

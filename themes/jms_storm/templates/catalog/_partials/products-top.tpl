@@ -22,21 +22,24 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-	<div id="js-product-list-top" class="filters-panel">
-		<div class="row">
-		
-			<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 view-mode left clearfix">
+<div id="js-product-list-top" class="filters-panel">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 view-mode left clearfix">
+			<div class="button">
 				<a class="view-grid {if $jpb_grid == 1}active{/if}" href="#">
-					</a> 
-					<a class="view-list {if $jpb_grid == 0}active{/if}" href="#">
-					</a>
+					<i class="storm-four-dots"></i>
+				</a> 
+				<a class="view-list {if $jpb_grid == 0}active{/if}" href="#">
+					<i class="storm-text"></i>
+				</a>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12 right">
-				<div class="view-mode ">
-					{block name='sort_by'}
-					{include file='catalog/_partials/sort-orders.tpl' sort_orders=$listing.sort_orders}
-				{/block}
-				</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12 right">
+			<div class="view-mode ">
+				{block name='sort_by'}
+				{include file='catalog/_partials/sort-orders.tpl' sort_orders=$listing.sort_orders}
+			{/block}
 			</div>
 		</div>
 	</div>
+</div>

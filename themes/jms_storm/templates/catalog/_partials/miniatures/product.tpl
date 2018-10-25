@@ -92,16 +92,30 @@
 			  </div>
 			{/if}
 		{/block}
+
+		{block name='product_variants'}
+			{if $product.main_variants}
+				<div class="color_to_pick_list">
+					{include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
+				</div>
+			{/if}
+		{/block}
+		
 		<div class="product-description">
 			{$product.description_short|truncate:170:'...' nofilter}
-		 </div>
+		</div>
         <div class="product_button">
-			<a {if $product.quantity < 1}disabled{/if} class="ajax-add-to-cart product-btn cart-button btn-effect btn-default {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
-				<span class="text-addcart">{l s='Add to cart' d='Shop.Theme.Actions'}	</span>	
-				<span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>
-                <span class="fa fa-spin fa-spinner"></span>
-			    <span class="pe pe-7s-check"></span>								   
+			<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+				<span class="fa fa-spin fa-spinner"></span>
+				<span class="fa fa-check"></span>
+				<span class="text-addcart"><i class="storm-shopping-bag"></i>{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
+				<span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>								   
+			</button>
+			{if isset($jpb_wishlist) && $jpb_wishlist}							
+			<a class="addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
+				<i class="storm-heart"></i>
 			</a>
+		{/if}
 		</div>
 	</div>
 	<div class="product_action">

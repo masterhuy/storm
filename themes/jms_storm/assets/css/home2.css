@@ -19,6 +19,28 @@
 .btn-active {
   background: #ed2b2b; }
 
+.product-preview .quick-view span {
+  background: rgba(237, 43, 43, 0.3); }
+
+.product-preview .quick-view:hover span {
+  background: #ed2b2b; }
+
+.product-preview .product_action button.cart-button:hover {
+  background: #ed2b2b;
+  border-color: #ed2b2b; }
+
+.product-preview .addToWishlist.product-btn:hover {
+  color: #ed2b2b; }
+
+.product-preview .product-link {
+  min-height: auto;
+  color: #0163d2;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+  .product-preview .product-link:hover {
+    text-decoration: underline; }
+
 .topbar {
   background: #f7f8f8;
   color: #333; }
