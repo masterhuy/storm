@@ -26,6 +26,7 @@
   {if isset($configuration.is_catalog) && !$configuration.is_catalog}
     {block name='product_quantity'}
       <div class="product-quantity">
+      		<span class="text">Qty:</span>
 			<div class="qty">
 			  <input
 				type="text"
@@ -37,10 +38,11 @@
 			  />
 			</div>
         <div class="add">
-			
-				<button class="btn-effect add-to-cart btn-default btn-active" data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}>
-					  <span class="text-addcart">{l s='Add to cart' d='Shop.Theme.Actions'}	</span>		
-					  <span class="text-outofstock">{l s='Sold out' d='Shop.Theme.Actions'}</span>
+				<button class="btn-effect product-btn add-to-cart btn-default btn-active" data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}>
+					<span class="fa fa-spin fa-spinner"></span>
+					<span class="fa fa-check"></span>
+					<span class="text-addcart"><i class="storm-shopping-bag"></i>{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
+					<span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>
 				</button>
 			
 				{block name='product_availability'}

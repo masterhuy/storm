@@ -132,3 +132,12 @@ jQuery(function ($) {
 		});
 	}
 });
+
+
+jQuery(document).ready(function($) {
+	$(".cate_tab .product-miniature").hover(function(){
+	    $(".cate_tab").css("z-index", "3");
+		}, function(){
+        $(".cate_tab").css("z-index", "1");
+	});
+});

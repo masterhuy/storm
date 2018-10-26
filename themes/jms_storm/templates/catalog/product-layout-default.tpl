@@ -86,7 +86,7 @@
             {/block}
 			<div class="product-information">
 				{block name='product_description_short'}
-					<div id="product-description-short-{$product.id}" class="product-desc"itemprop="description">{$product.description_short|strip_tags|truncate:100:"..."}</div>
+					<div id="product-description-short-{$product.id}" class="product-desc"itemprop="description">{$product.description_short|strip_tags|truncate:150:"..."}</div>
 				{/block}
 			
 				{if $product.is_customizable && count($product.customizations.fields)}
@@ -103,12 +103,6 @@
 							<span class="editable">{$product.reference}</span>
 						</li>
 						{/if}
-						<li id="pQuantityAvailable">
-							<label>{l s='Quantity:' d='Shop.Theme.Catalog'}</label>
-							<span id="quantityAvailable">{$product.quantity|intval}</span>
-							<span {if $product.quantity > 1} style="display: none;"{/if}>{l s='Item' d='Shop.Theme.Catalog'}</span>
-							<span {if $product.quantity == 1} style="display: none;"{/if}>{l s='Items' d='Shop.Theme.Catalog'}</span>
-						</li>
 												<!-- availability or doesntExist -->
 						<li id="availability_statut">
 							<label id="availability_label">
@@ -173,8 +167,9 @@
 				{hook h='displayReassurance'}
 				
 			</div>
-			<!-- Go to www.addthis.com/dashboard to customize your tools -->
-                    <div class="addthis_inline_share_toolbox share-group"></div>
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          <div class="addthis_inline_share_toolbox_ld1s"></div>
+            
 		</div>
 	
     </div>
@@ -191,7 +186,7 @@
                          href="#description"
                          role="tab"
                          aria-controls="description"
-                         {if $product.description} aria-selected="true"{/if}>{l s='Description' d='Shop.Theme.Catalog'}</a>
+                         {if $product.description} aria-selected="true"{/if}>{l s='Descriptions' d='Shop.Theme.Catalog'}</a>
                     </li>
                   {/if}
                   <li class="nav-item">

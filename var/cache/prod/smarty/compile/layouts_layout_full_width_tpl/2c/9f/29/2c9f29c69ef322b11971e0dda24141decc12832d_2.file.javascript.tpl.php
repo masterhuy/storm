@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-24 00:15:08
+/* Smarty version 3.1.32, created on 2018-10-26 06:24:29
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\templates\_partials\javascript.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bcff1cc87f5e0_91547342',
+  'unifunc' => 'content_5bd2eb5d3479c5_67034475',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2c9f29c69ef322b11971e0dda24141decc12832d' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\templates\\_partials\\javascript.tpl',
-      1 => 1537777702,
+      1 => 1540529373,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bcff1cc87f5e0_91547342 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bd2eb5d3479c5_67034475 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['javascript']->value['external'], 'js');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['js']->value) {
@@ -68,18 +68,10 @@ foreach ($_from as $_smarty_tpl->tpl_vars['var_name']->value => $_smarty_tpl->tp
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
   <?php echo '</script'; ?>
 >
-<?php }
-if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == 8) {
-echo '<script'; ?>
- type="text/javascript" src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
-themes/<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['themename']->value, ENT_QUOTES, 'UTF-8');?>
-/assets/js/jquery.multiscroll.extensions.min.js"><?php echo '</script'; ?>
->
+<?php }?>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
 <?php echo '<script'; ?>
- type="text/javascript" src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
-themes/<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['themename']->value, ENT_QUOTES, 'UTF-8');?>
-/assets/js/jquery.multiscroll.js"><?php echo '</script'; ?>
+ type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b83af218bd4bc00"><?php echo '</script'; ?>
 >
 <?php }
-}
 }

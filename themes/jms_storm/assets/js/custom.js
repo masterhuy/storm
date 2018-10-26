@@ -40,6 +40,15 @@ $('body').on('click', '.ajax-add-to-cart', function (event) {
 	    prestashop.emit('handleError', { eventType: 'addProductToCart', resp: resp });
 	});
 });
+
+
+$('body').on('click', '[data-button-action="add-to-cart"]', function (event) {
+    $(this).removeClass('addtocart-selected');
+    $(this).addClass('addtocart-selected');
+    $(this).removeClass('checked');
+    $(this).addClass('checking');
+});
+
 function view_as() { 
     var viewGrid = $(".view-grid"),
         viewList = $(".view-list"),
@@ -59,10 +68,11 @@ function view_as() {
         e.preventDefault()
     })
 }
-jQuery(function ($) {
-    "use strict";
-    $(".view-grid").addClass('active');
-    view_as();
+$(document).ready(function () {
+ view_as();
+ prestashop.on('updateProductList', function (event) {
+  view_as();
+ });
 });
 
 jQuery(function ($) {
@@ -75,7 +85,7 @@ jQuery(function ($) {
 			responsiveClass:true,
 			responsive:{            
 				1199:{
-                  items:3
+                  items:4
 				},
 				991:{
 					items:3
@@ -94,12 +104,12 @@ jQuery(function ($) {
 				}
 			},
 			rtl: rtl,
-			margin: 30,
+			margin: 0,
 			nav: true,
 			dots: false,
-			autoplay: true,
+			autoplay: false,
 			slideSpeed: 200,
-			loop:false,
+			loop:true,
 		});
 	}
 });

@@ -94,6 +94,10 @@ $(document).ready(function () {
 				$('#cart_block .tab-title').trigger('click');
 				$('#cart_block').addClass('shoppingcart-bottom');
 		  }
+		  var callerElement = $('.add-to-cart');
+          $(callerElement).removeClass('checking');
+          $(callerElement).addClass('checked');
+          window.setTimeout( function() {$(callerElement).removeClass('checked');}, 2000 );
         }).fail(function (resp) {
           prestashop.emit('handleError', {eventType: 'updateShoppingCart', resp: resp});
         });

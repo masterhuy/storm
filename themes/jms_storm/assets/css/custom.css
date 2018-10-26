@@ -1133,7 +1133,11 @@ fieldset[disabled] .btn-default {
   font-weight: 600;
   font-family: 'Poppins';
   padding: 10px 30px;
-  cursor: pointer; }
+  cursor: pointer;
+  display: inline-block; }
+  .btn-shopnow:hover{
+    color: #fff !important;
+  }
 
 .btn-effect1, .btn-effect {
   -webkit-transform: perspective(1px) translateZ(0px);
@@ -2193,7 +2197,8 @@ li.product-flag {
     margin-left: 10px; }
 
 .featured-products {
-  margin-top: 50px; }
+  margin-top: 59px;
+}
 
 /*==================================================
 =            Product List          =

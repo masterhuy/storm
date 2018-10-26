@@ -39,7 +39,7 @@
             {$listing.rendered_active_filters nofilter}
           </div>
         {/block}
-<div id="product_list" class="product_list {if $jpb_grid == 1}products-list-in-column{else}products-list-in-row{/if}  products-list-{$jpb_productperrow}">
+<div id="product_list" class="product_list item-gutter-{$jpb_gutterwidth} {if $jpb_grid == 1}products-list-in-column{else}products-list-in-row{/if}  products-list-{$jpb_productperrow}">
           {block name='product_list'}
             {include file='catalog/_partials/products.tpl' listing=$listing}
           {/block}

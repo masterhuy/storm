@@ -92,7 +92,7 @@
 			  </div>
 			{/if}
 		{/block}
-
+		
 		{block name='product_variants'}
 			{if $product.main_variants}
 				<div class="color_to_pick_list">

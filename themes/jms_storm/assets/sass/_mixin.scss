@@ -42,3 +42,23 @@
 		border-color: #{$color};
 	}
 }
+
+@mixin scrollArrowHover($home, $color){
+	.home_#{$home} .scroll-box-arrows i:hover{
+		background-color: #{$color};
+		border-color: #{$color};
+	}
+}
+
+@mixin inForBlockActive($home, $color){
+	.home_#{$home} #more_info_block .tabs li a.active{
+		border-bottom: 3px solid #{$color} !important;
+	}
+}
+
+@mixin thumbnailsSelected($home, $color){
+	.home_#{$home} .product-images > li.thumb-container > .thumb.selected,
+	.home_#{$home} .product-images > li.thumb-container > .thumb:hover {
+	    border: 1px solid #{$color};
+	}
+}

@@ -22,17 +22,19 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<section class="featured-products clearfix mt-3  addon-title">
+<section class="featured-products clearfix mt-3 addon-title">
   <h3>
-    {if $products|@count == 1}
-      {l s='%s other product in the same category:' sprintf=[$products|@count] d='Shop.Theme.Catalog'}
-    {else}
-      {l s='%s other products in the same category:' sprintf=[$products|@count] d='Shop.Theme.Catalog'}
-    {/if}
+    {l s='RELATED PRODUCTS' d='Shop.Theme.Catalog'}
   </h3>
-  <div class="products customs-carousel-product">
-      {foreach from=$products item="product"}
-          {include file="catalog/_partials/miniatures/product.tpl" product=$product}
-      {/foreach}
+  <div class="product_box">
+    <div class="products customs-carousel-product">
+        
+            {foreach from=$products item="product"}
+                <div class="item ajax_block_product">
+                    {include file="catalog/_partials/miniatures/product.tpl" product=$product}
+                </div>
+            {/foreach}
+        
+    </div>
   </div>
 </section>

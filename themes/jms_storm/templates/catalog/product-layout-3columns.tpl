@@ -176,7 +176,7 @@
 				
 				{hook h='displayReassurance'}
 			  <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                    <div class="addthis_inline_share_toolbox share-group"></div>
+                    <div class="addthis_inline_share_toolbox_ld1s"></div>
 			</div>
 			
 		</div>

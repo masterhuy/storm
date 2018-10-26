@@ -32,21 +32,12 @@
 			background: rgba(237,43,43,1);
 		}
 	}
-	.product_action button.cart-button:hover {
+	button.cart-button:hover {
 	    background: $active-h2;
 	    border-color: $active-h2;
 	}
-	.addToWishlist.product-btn:hover{
+	.addToWishlist:hover{
 		color: $active-h2;
-	}
-	.product-link {
-	    min-height: auto;
-	    color: #0163d2;
-	    white-space: nowrap;
-	    text-overflow: ellipsis;
-	    &:hover{
-	    	text-decoration: underline;
-	    }
 	}
 }
 

@@ -136,7 +136,68 @@
 @include wishlistHover(19, $active-h19);
 @include wishlistHover(20, $active-h20);
 
+@include scrollArrowHover(1, $active-h1);
+@include scrollArrowHover(2, $active-h2);
+@include scrollArrowHover(3, $active-h3);
+@include scrollArrowHover(4, $active-h4);
+@include scrollArrowHover(5, $active-h5);
+@include scrollArrowHover(6, $active-h6);
+@include scrollArrowHover(7, $active-h7);
+@include scrollArrowHover(8, $active-h8);
+@include scrollArrowHover(9, $active-h9);
+@include scrollArrowHover(10, $active-h10);
+@include scrollArrowHover(11, $active-h11);
+@include scrollArrowHover(12, $active-h12);
+@include scrollArrowHover(13, $active-h13);
+@include scrollArrowHover(14, $active-h14);
+@include scrollArrowHover(15, $active-h15);
+@include scrollArrowHover(16, $active-h16);
+@include scrollArrowHover(17, $active-h17);
+@include scrollArrowHover(18, $active-h18);
+@include scrollArrowHover(19, $active-h19);
+@include scrollArrowHover(20, $active-h20);
 
+@include inForBlockActive(1, $active-h1);
+@include inForBlockActive(2, $active-h2);
+@include inForBlockActive(3, $active-h3);
+@include inForBlockActive(4, $active-h4);
+@include inForBlockActive(5, $active-h5);
+@include inForBlockActive(6, $active-h6);
+@include inForBlockActive(7, $active-h7);
+@include inForBlockActive(8, $active-h8);
+@include inForBlockActive(9, $active-h9);
+@include inForBlockActive(10, $active-h10);
+@include inForBlockActive(11, $active-h11);
+@include inForBlockActive(12, $active-h12);
+@include inForBlockActive(13, $active-h13);
+@include inForBlockActive(14, $active-h14);
+@include inForBlockActive(15, $active-h15);
+@include inForBlockActive(16, $active-h16);
+@include inForBlockActive(17, $active-h17);
+@include inForBlockActive(18, $active-h18);
+@include inForBlockActive(19, $active-h19);
+@include inForBlockActive(20, $active-h20);
+
+@include thumbnailsSelected(1, $active-h1);
+@include thumbnailsSelected(2, $active-h2);
+@include thumbnailsSelected(3, $active-h3);
+@include thumbnailsSelected(4, $active-h4);
+@include thumbnailsSelected(5, $active-h5);
+@include thumbnailsSelected(6, $active-h6);
+@include thumbnailsSelected(7, $active-h7);
+@include thumbnailsSelected(8, $active-h8);
+@include thumbnailsSelected(9, $active-h9);
+@include thumbnailsSelected(10, $active-h10);
+@include thumbnailsSelected(11, $active-h11);
+@include thumbnailsSelected(12, $active-h12);
+@include thumbnailsSelected(13, $active-h13);
+@include thumbnailsSelected(14, $active-h14);
+@include thumbnailsSelected(15, $active-h15);
+@include thumbnailsSelected(16, $active-h16);
+@include thumbnailsSelected(17, $active-h17);
+@include thumbnailsSelected(18, $active-h18);
+@include thumbnailsSelected(19, $active-h19);
+@include thumbnailsSelected(20, $active-h20);
 
 #content-wrapper {
 	margin-bottom: 70px;
@@ -199,3 +260,89 @@
 .product-info .color_to_pick_list{
 	display: none;
 }
+#product{
+	 #footer {
+		margin-top: -186px;
+	}
+}
+#category{
+	#header{
+		position: relative;
+		z-index: 2;
+	}
+	#wrapper{
+		position: relative;
+		z-index: 1;
+	}
+	.product-preview:hover .preview {
+		border-radius: 0;
+	}
+}
+#more_info_block + .featured-products{
+	.owl-stage-outer{
+		padding-bottom: 150px;
+	}
+	.product-link{
+		min-height: auto;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	.customs-carousel-product{
+		padding-top: 5px;
+	}
+	.content_price {
+		text-align: center;
+	}
+	.owl-theme .owl-controls {
+		top: -45px;
+	}
+	h3{
+		border-bottom: 1px solid #e6e6e6;
+		padding-bottom: 16px;
+	}
+}
+
+#product{
+	.content_price{
+		text-align: left;
+	}
+	.product-variants-item.size input{
+		+ span{
+			display: flex;
+			min-width: 54px;
+		    min-height: 32px;
+		    align-items: center;
+		    justify-content: center;
+			&::before{
+				content: "";
+			    position: absolute;
+			    width: 54px;
+			    height: 32px;
+			    left: 50%;
+			    top: 50%;
+			    transform: translate(-50%, -50%);
+			    border: 2px solid #e6e6e6;
+			    border-radius: 3px;
+			    z-index: -1;
+			}
+		}
+		&:checked + span{
+		    position: relative;
+		    color: #fff;
+		    &::after{
+		    	content: "";
+			    position: absolute;
+			    width: 53px;
+			    height: 32px;
+			    left: 50%;
+			    top: 50%;
+			    border-radius: 3px;
+			    transform: translate(-50%, -50%);
+			    background: $active-h1;
+			    z-index: -1;
+		    }
+		}
+	}
+}
+

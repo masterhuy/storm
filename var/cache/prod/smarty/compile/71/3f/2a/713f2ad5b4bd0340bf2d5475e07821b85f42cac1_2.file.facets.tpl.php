@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-24 00:15:05
+/* Smarty version 3.1.32, created on 2018-10-26 06:23:26
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\templates\catalog\_partials\facets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bcff1c9497232_03563873',
+  'unifunc' => 'content_5bd2eb1e3d9b38_66982190',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bcff1c9497232_03563873 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bd2eb1e3d9b38_66982190 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_storm\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>  <div id="search_filters">
 	<div class="filter-box">	
