@@ -718,6 +718,42 @@
     display: inline-flex;
     padding: 0; }
 
+#off-canvas-menu #_desktop_user_info ul li a {
+  padding: 0;
+  text-align: center; }
+
+#off-canvas-menu #_desktop_user_info .type2 {
+  display: block;
+  text-align: center;
+  padding: 0 30px; }
+
+#off-canvas-menu #_desktop_user_info .type1, #off-canvas-menu #_desktop_user_info .type3 {
+  display: none; }
+
+#off-canvas-menu .languages-info > span {
+  font-weight: 600; }
+
+#off-canvas-menu .languages-info ul {
+  margin-top: 10px; }
+  #off-canvas-menu .languages-info ul li a {
+    padding: 0; }
+
+#off-canvas-menu .languages-info.type1, #off-canvas-menu .languages-info.type2, #off-canvas-menu .languages-info.type4 {
+  display: none; }
+
+#off-canvas-menu .languages-info.type3 {
+  display: block; }
+
+#off-canvas-menu #_desktop_currency_selector ul li a {
+  text-align: center;
+  padding: 0; }
+
+#off-canvas-menu #_desktop_currency_selector.type1, #off-canvas-menu #_desktop_currency_selector.type2 {
+  display: none; }
+
+#off-canvas-menu #_desktop_currency_selector.type3 {
+  display: block; }
+
 .product-info .color_to_pick_list {
   display: none; }
 
@@ -803,3 +839,55 @@
     transform: translate(-50%, -50%);
     background: #1ec7a6;
     z-index: -1; }
+
+@media (max-width: 481px) {
+  .product_tab .jms-tab ul {
+    display: block;
+    margin-bottom: 25px;
+    border-bottom: 0; }
+    .product_tab .jms-tab ul li {
+      text-align: center; }
+  .product_tab .owl-theme .owl-controls {
+    top: -15px;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .cate_tab .addon-title h3 {
+    float: none;
+    width: 100%;
+    text-align: center; }
+  .cate_tab .addon-title .jms-tab {
+    float: left;
+    width: 100%;
+    border-bottom: 0 !important; }
+  .cate_tab .jms-tab ul {
+    display: block;
+    margin-bottom: 45px;
+    border-bottom: 0; }
+    .cate_tab .jms-tab ul li {
+      text-align: center; }
+  .cate_tab .owl-theme .owl-controls {
+    top: -15px;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .service .feature-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center !important;
+    margin: 10px 0; }
+  .footer_t div.layout-column {
+    min-height: auto; }
+  .footer_b .addon-box p {
+    line-height: 2; }
+    .footer_b .addon-box p img {
+      margin: 5px 0; } }

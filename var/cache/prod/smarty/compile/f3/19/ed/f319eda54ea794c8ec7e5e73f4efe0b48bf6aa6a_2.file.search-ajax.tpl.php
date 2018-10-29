@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-09-19 04:34:24
+/* Smarty version 3.1.32, created on 2018-10-29 06:13:04
   from 'D:\xamppp\htdocs\jms_storm\modules\jmsajaxsearch\views\templates\hook\search-ajax.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5ba20a10a7f624_20232445',
+  'unifunc' => 'content_5bd6dd30dd1183_51274794',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ba20a10a7f624_20232445 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bd6dd30dd1183_51274794 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="result_div">
     <?php if ($_smarty_tpl->tpl_vars['products']->value) {?>
         <div class="results">
