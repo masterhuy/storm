@@ -199,6 +199,27 @@
 @include thumbnailsSelected(19, $active-h19);
 @include thumbnailsSelected(20, $active-h20);
 
+@include colorItemSize(1, $active-h1);
+@include colorItemSize(2, $active-h2);
+@include colorItemSize(3, $active-h3);
+@include colorItemSize(4, $active-h4);
+@include colorItemSize(5, $active-h5);
+@include colorItemSize(6, $active-h6);
+@include colorItemSize(7, $active-h7);
+@include colorItemSize(8, $active-h8);
+@include colorItemSize(9, $active-h9);
+@include colorItemSize(10, $active-h10);
+@include colorItemSize(11, $active-h11);
+@include colorItemSize(12, $active-h12);
+@include colorItemSize(13, $active-h13);
+@include colorItemSize(14, $active-h14);
+@include colorItemSize(15, $active-h15);
+@include colorItemSize(16, $active-h16);
+@include colorItemSize(17, $active-h17);
+@include colorItemSize(18, $active-h18);
+@include colorItemSize(19, $active-h19);
+@include colorItemSize(20, $active-h20);
+
 #content-wrapper {
 	margin-bottom: 70px;
 }
@@ -259,6 +280,7 @@
 
 #off-canvas-menu{
 	#_desktop_user_info{
+		padding: 0 30px;
 		ul{
 			li{
 				a{
@@ -270,13 +292,14 @@
 		.type2{
 			display: block;
 			text-align: center;
-			padding: 0 30px;
 		}
 		.type1, .type3{
 			display: none;
 		}
 	}
 	.languages-info{
+		padding: 0 30px;
+		text-align: center;
 		> span{
 			font-weight: 600;
 		}
@@ -296,6 +319,8 @@
 		}
 	}
 	#_desktop_currency_selector{
+		padding: 0 30px;
+		text-align: center;
 		ul{
 			li{
 				a{
@@ -358,8 +383,64 @@
 		padding-bottom: 16px;
 	}
 }
-
-#product{
+.product_list{
+	&.item-gutter-0{
+		.products.row{
+			margin: 0;
+		}
+		.product-info{
+			background: #fff;
+		}
+		.product_action{
+			width: 100%;
+		}
+	}
+	&.item-gutter-10{
+		.products.row{
+			margin: -5px;
+		}
+		.product-info{
+			background: #fff;
+		}
+		.product_action{
+			width: calc(100% - 10px);
+		}
+	}
+	&.item-gutter-20{
+		.products.row{
+			margin: -10px;
+		}
+		.product-info{
+			background: #fff;
+		}
+		.product_action{
+			width: calc(100% - 20px);
+		}
+	}
+	&.item-gutter-40{
+		.products.row{
+			margin: -20px;
+		}
+		.product-info{
+			background: #fff;
+		}
+		.product_action{
+			width: calc(100% - 40px);
+		}
+	}
+	&.item-gutter-60{
+		.products.row{
+			margin: -30px;
+		}
+		.product-info{
+			background: #fff;
+		}
+		.product_action{
+			width: calc(100% - 60px);
+		}
+	}
+}
+#product, .quickview{
 	.content_price{
 		text-align: left;
 	}
@@ -370,6 +451,7 @@
 		    min-height: 32px;
 		    align-items: center;
 		    justify-content: center;
+		    z-index: 0;
 			&::before{
 				content: "";
 			    position: absolute;
@@ -395,15 +477,29 @@
 			    top: 50%;
 			    border-radius: 3px;
 			    transform: translate(-50%, -50%);
-			    background: $active-h1;
 			    z-index: -1;
 		    }
 		}
 	}
 }
 
-
+.ver_mobile{
+	display: none;
+}
 @media (max-width: 481px){
+	#searchbox #selector_cat{
+		max-width: 121px;
+	}
+	div.fraction-slider{
+		.prev, .next{
+			width: 20px;
+			height: 20px;
+			font-size: 10px;
+		}
+	}
+	div.jms-advsearch .input-group-addon.input-group-search{
+		padding: 0 15px;
+	}
 	.product_tab{
 		.jms-tab{
 			ul{
@@ -466,5 +562,75 @@
 		img{
 			margin: 5px 0;
 		}
+	}
+}
+@media (max-width: 991px){
+	.ver_mobile{
+		display: block;
+	}
+	.ver_mobile .addon-box{
+		&.open + .addon-box{
+			opacity: 1;
+			visibility: visible;
+		}
+		&:last-child {
+			opacity: 0;
+			visibility: hidden;
+			position: absolute;
+			z-index: 1000;
+			width: calc(100% - 30px);
+			background: #fff;
+		}
+	}
+}
+@media (max-width: 767px){
+	input#ajax_advsearch{
+		width: 100%;
+	}
+}
+
+.quickview{
+	.images-container{
+		display: flex;
+		.product-images > li.thumb-container {
+		    display: block;
+		}
+		.product-cover{
+			order: 2;
+		}
+		.js-qv-mask{
+			order: 1;
+			width: 35%;
+			max-height: 340px;
+			overflow: hidden;
+			margin-right: 0;
+			margin-top: 50px;
+		}
+	}
+	.content_price{
+		text-align: left;
+	}
+	.arrows.js-arrows i{
+		position: unset;
+		&:hover{
+			color: #000;
+		}
+		&.arrow-up{
+			margin-top: 0;
+		}
+		&.arrow-down{
+			position: absolute;
+			bottom: 0;
+			top: auto;
+		}
+	}
+	.arrows {
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    max-height: 441px;
+		left: 43px;
+		width: 0;
+	    z-index: 0;
 	}
 }

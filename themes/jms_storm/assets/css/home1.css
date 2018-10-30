@@ -33,11 +33,11 @@
 .product-preview .addToWishlist.product-btn:hover {
   color: #1ec7a6; }
 
-#header {
+.page-index #header {
   position: relative;
   z-index: 2; }
 
-#wrapper {
+.page-index #wrapper {
   position: relative;
   z-index: 1; }
 
@@ -662,7 +662,7 @@
     overflow: hidden;
     min-height: auto; }
   .cate_tab .tab-content {
-    width: 42%; }
+    width: 38%; }
   .cate_tab .product-miniature {
     margin-bottom: 0; } }
 

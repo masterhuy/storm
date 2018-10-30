@@ -20,7 +20,8 @@
 #advsearch_result {
     left: 0;
     position: absolute;
-    top: 40px;
+    top: 100%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
     width: 250px;
     z-index: 1000;
 }

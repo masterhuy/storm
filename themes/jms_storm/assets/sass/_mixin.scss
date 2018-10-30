@@ -62,3 +62,9 @@
 	    border: 1px solid #{$color};
 	}
 }
+
+@mixin colorItemSize($home, $color){
+	.home_#{$home} .product-variants-item.size input:checked + span::after {
+	    background: #{$color};
+	}
+}

@@ -292,4 +292,9 @@ jQuery(document).ready(function($) {
 		}, function(){
         $(".most_view").css("z-index", "1");
 	});
+	$(".on_sale .product-miniature").hover(function(){
+	    $(".on_sale").css("z-index", "3");
+		}, function(){
+        $(".on_sale").css("z-index", "1");
+	});
 });

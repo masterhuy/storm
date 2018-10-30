@@ -28,7 +28,7 @@
       <div class="thumb-mask">
         <div class="mask">
           <img
-            src = "{$product.cover.medium.url}"
+            src = "{$product.cover.small.url}"
             alt = "{$product.cover.legend}"
             data-full-size-image-url = "{$product.cover.large.url}"
           >

@@ -41,13 +41,15 @@
 	}
 }
 
-#header{
-	position: relative;
-	z-index: 2;
-}
-#wrapper{
-	position: relative;
-	z-index: 1;
+.page-index{
+	#header{
+		position: relative;
+		z-index: 2;
+	}
+	#wrapper{
+		position: relative;
+		z-index: 1;
+	}
 }
 // topbar
 .topbar{
@@ -841,7 +843,7 @@
 			min-height: auto;
 		}
 		.tab-content {
-		    width: 42%;
+		    width: 38%;
 		}
 		.product-miniature{
 			margin-bottom: 0;

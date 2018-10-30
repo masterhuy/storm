@@ -34,7 +34,8 @@
 .jms-vermegamenu .nav > li.more_cates a{
     font-weight: 500;
 }
-.jms-vermegamenu .nav > li a i{
+.jms-vermegamenu .nav > li a i,
+#mobile-vermegamenu .jms-vermegamenu .nav > li a i{
     font-size: 23px;
     position: relative;
     top: 3px;

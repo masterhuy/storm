@@ -30,15 +30,20 @@
          <span aria-hidden="true">&times;</span>
        </button>
      </div>
-     <div class="modal-body">
+     <div class="modal-body" id="main">
       <div class="row">
-        <div class="col-md-6 col-sm-6 hidden-xs-down left">
+        <div class="col-md-7 col-sm-7 hidden-xs-down left">
           {block name='product_cover_tumbnails'}
             {include file='catalog/_partials/product-cover-thumbnails.tpl'}
           {/block}
+					<div class="arrows js-arrows">
+            <i class="material-icons arrow-up js-arrow-up">&#xE316;</i>
+            <i class="material-icons arrow-down js-arrow-down">&#xE313;</i>
+          </div>
+					
         </div>
 		
-        <div class="col-md-6 col-sm-6 right">
+        <div class="col-md-5 col-sm-5 right">
           <h2 class="product-name">{$product.name}</h2>
 		  {block name='product_prices'}
 					{include file='catalog/_partials/product-prices.tpl'}
@@ -54,12 +59,6 @@
 							<span class="editable">{$product.reference}</span>
 						</li>
 						{/if}
-						<li id="pQuantityAvailable">
-							<label>{l s='Quantity:' d='Shop.Theme.Catalog'}</label>
-							<span id="quantityAvailable">{$product.quantity|intval}</span>
-							<span {if $product.quantity > 1} style="display: none;"{/if}>{l s='Item' d='Shop.Theme.Catalog'}</span>
-							<span {if $product.quantity == 1} style="display: none;"{/if}>{l s='Items' d='Shop.Theme.Catalog'}</span>
-						</li>
 												<!-- availability or doesntExist -->
 						<li id="availability_statut">
 							<label id="availability_label">

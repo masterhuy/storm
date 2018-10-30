@@ -57,8 +57,17 @@
 #category .product-preview .product-info {
 	z-index: 9;
 	position: relative;
+	min-height: 112px;
 }
-
+.products-list-in-column.item-gutter-40 .js-product-miniature:hover::after {
+	width: calc(100% - 40px);
+}
+.products-list-in-column.item-gutter-60 .js-product-miniature:hover::after {
+	width: calc(100% - 60px);
+}
+#category .products-list-in-column .product-preview .product-info .product-link{
+	padding: 0 10px;
+}
 .filters-panel .view-mode > a > span {
 	font-size: 18px;
 }

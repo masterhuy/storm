@@ -40,6 +40,15 @@
 		color: $active-h2;
 	}
 }
+.jms-banner > a{
+	display: block;
+	img{
+		width: 100%;
+	}
+	&:hover{
+		box-shadow: 0 0 11px rgba(0,0,0,0.3);
+	}
+}
 
 // topbar
 .topbar{
@@ -87,9 +96,9 @@
 					position: absolute;
 					width: 1px;
 					height: 17px;
-					background: rgba(255,255,255,0.2);
+					background: rgba(0,0,0,0.2);
 					right: -21px;
-					top: 19px;
+					top: 17px;
 				}
 			}
 		}
@@ -271,6 +280,9 @@
 }
 
 .menu{
+	.ver_mobile{
+		display: none;
+	}
 	.jms-vermegamenu{
 		box-shadow: unset;
 		background: #fff;
@@ -318,6 +330,7 @@
 			}
 		}
 		#jms-vermegamenu-container{
+			max-height: 528px;
 			transition: all .4s;
 			position: absolute;
 			background: #fff;
@@ -411,30 +424,54 @@
 // banner promotion
 .p_banner{
 	margin-top: -102px;
-	.jms-banner{
-		margin-top: -102px;
-		text-align: center;
-		img{
-			width: 100%;
-			max-width: 1920px;
-		}
-	}
+	padding: 209px 0;
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;
 	.container-fluid{
 		max-width: 100%;
 	}
-	.include_content_s {
-		position: absolute;
-		top: 50%;
-		transform: translate(-50%, -50%);
-		max-width: 1170px;
-		width: 100%;
-		left: 50%;
+	.include_content_s{
+		text-transform: uppercase;
+		text-align: left;
+		color: #fff;
+		.text-1{
+			font-size: 40px;
+			font-weight: 500;
+		}
+		.text-2{
+			font-size: 60px;
+			font-weight: 700;
+			line-height: 0.84;
+			margin-top: -7px;
+		}
+		.text-3{
+			font-size: 26px;
+			font-weight: 500;
+			padding-top: 1px;
+			margin-bottom: 24px;
+		}
+		.btn-shopnow{
+			background: transparent;
+			color: #fff;
+			display: inline-block;
+			padding: 13px 35px;
+			margin-bottom: 17px;
+			border: 1px solid #fff;
+			&:hover{
+				border-color: #111;
+				background: #111;
+			}
+		}
 	}
 }
 
 // trending
 .trending{
 	margin-top: 32px;
+	.addon-title{
+		border-bottom: 1px solid #e6e6e6;
+	}
 	.product-carousel2{
 		padding-top: 13px;
 	}
@@ -450,10 +487,16 @@
 	.owl-dots{
 		bottom: 15px;
 	}
+	.jms-hotdeal .product-box{
+		padding: 10px;
+	}
 }
 
 .blog{
 	margin-top: 37px;
+	.addon-title{
+		border-bottom: 1px solid #e6e6e6;
+	}
 }
 
 // brand
@@ -473,6 +516,7 @@
 	z-index: 4;
 	.container{
 		max-width: 1434px;
+		width: 100%;
 		background: $active-h2;
 		color: #fff;
 		padding: 55px 0 57px;
@@ -659,6 +703,146 @@
 	}
 }
 
-@media (min-width: 1700px){
-
+@media (max-width: 1366px){
+	.p_banner {
+		padding: 120px 0;
+		.include_content_s{
+			.text-2 {
+			    font-size: 40px;
+			    margin-top: 0;
+			    line-height: 1;
+			}
+			.text-1{
+				font-size: 25px;
+			}
+			.text-3{
+				font-size: 20px;
+			}
+			.btn-shopnow {
+			    padding: 7px 20px;
+			    font-size: 14px;
+			}
+		}
+	}
+}
+@media (max-width: 1199px){
+	.topbar{
+		.center{
+			display: none;
+		}
+	}
+	.menu .ver_menu {
+		padding: 17px;
+	}
+}
+@media (max-width: 991px){
+	.header{
+		.container > .row{
+			display: block;
+		}
+		.left{
+			.addon-box{
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+	.menu{
+		.container{
+			position: relative;
+			> .row{
+				display: block;
+			}
+		}
+		.right{
+			position: absolute;
+			right: 0;
+			z-index: 2;
+			top: 8px;
+			width: 75px;
+		}
+		.left{
+			display: none;
+		}
+		.ver_mobile{
+			display: block;
+		}
+		.right{
+			#open-button{
+				display: inline-flex;
+				float: right;
+			}
+		}
+	}
+	.trending{
+		.left{
+			margin-bottom: 30px;
+		}
+		.img-hotdeal{
+			display: flex;
+			justify-content: center;
+		}
+	}
+	.service .feature-box{
+		margin: 10px 0;
+	}
+	.footer_b{
+		.addon-box p{
+			float: none;
+			text-align: center;
+		}
+	}
+}
+@media (max-width: 991px) and (min-width: 768px){
+	.footer_t{
+		.layout-column{
+			min-height: 325px;
+			&.row_2{
+				min-height: auto;
+			}
+		}
+	}
+}
+@media (max-width: 767px){
+	.topbar{
+		display: none;
+	}
+	.menu .right{
+		right: 15px;
+	}
+	.container{
+		padding: 0 15px;
+	}
+	.header{
+		.right{
+			display: flex;
+			justify-content: center;
+			.addon-box{
+				margin: 0;
+				margin: 0 10px;
+				&:not(:first-child) {
+				    margin-right: 10px;
+				}
+				&:first-child{
+					order: 2;
+				}
+				&:last-child{
+					order: 1;
+				}
+			}
+		}
+		#cart_block{
+			position: unset;
+			.shoppingcart-box{
+				right: 15px;
+			}
+		}	
+	}
+}
+@media (max-width: 481px){
+	.banner{
+		.left{
+			margin-bottom: 30px;
+		}
+	}
 }

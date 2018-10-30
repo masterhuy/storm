@@ -61,7 +61,7 @@
     top: 0;
     transition: left 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0s;
     width: 300px;
-    z-index: 3001;
+    z-index: 99999;
 }
 #off-canvas-menu {
 	background: #f5f6f6;
@@ -71,7 +71,7 @@
 	transition: left 0.4s;
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 2px 11px rgba(0, 0, 0, 0.5);
 	left: 0;
 	top:0;
 }

@@ -253,10 +253,12 @@
     border-radius: 50%;
     box-shadow: 0 0 2px rgba(0,0,0,0.5);
 }
-#product .product-variants-item.color input:checked ~ .color::after {
+#product .product-variants-item.color input:checked ~ .color::after,
+.quickview .product-variants-item.color input:checked ~ .color::after {
     display: block;
 }
-#product .product-variants-item.color .color::after {
+#product .product-variants-item.color .color::after,
+.quickview .product-variants-item.color .color::after {
     left: 10px;
     top: 7px;
     width: 5px;
@@ -294,6 +296,7 @@
     cursor: pointer;
     width: 53px;
     height: 32px;
+    z-index: 2;
 }
 .product-variants-item.color {
     margin-bottom: 15px;
