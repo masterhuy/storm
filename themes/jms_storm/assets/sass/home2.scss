@@ -760,18 +760,16 @@
 			z-index: 2;
 			top: 8px;
 			width: 75px;
+			#open-button{
+				display: inline-flex;
+				float: right;
+			}
 		}
 		.left{
 			display: none;
 		}
 		.ver_mobile{
 			display: block;
-		}
-		.right{
-			#open-button{
-				display: inline-flex;
-				float: right;
-			}
 		}
 	}
 	.trending{
@@ -814,6 +812,9 @@
 		padding: 0 15px;
 	}
 	.header{
+		#advsearch_result{
+			width: 100%;
+		}
 		.right{
 			display: flex;
 			justify-content: center;

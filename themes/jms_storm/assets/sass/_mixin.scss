@@ -68,3 +68,11 @@
 	    background: #{$color};
 	}
 }
+
+@mixin btnShoppingHover($home, $color){
+	.home_#{$home} .cart-box .btn-shopping:hover,
+	.home_#{$home} .card.cart-summary .checkout a:hover{
+	    background: #{$color};
+	    border-color: #{$color};
+	}
+}

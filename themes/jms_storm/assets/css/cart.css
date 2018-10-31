@@ -20,8 +20,19 @@
 .cart-items li:last-child {
 	border-bottom:none;
 }
-.cart-box .btn-shopping {
-	float:right;
+.cart-box .btn-shopping,
+.card.cart-summary .checkout a {
+	float: right;
+	font-size: 14px;
+	color: #666;
+	border: 2px solid #e6e6e6;
+	border-radius: 30px;
+	font-weight: 600;
+	padding: 14px 51px;
+}
+.cart-box .btn-shopping:hover,
+.card.cart-summary .checkout a:hover{
+	color: #fff;
 }
 .text-xs-center{
 	text-align:center;
@@ -31,15 +42,20 @@
 	font-weight:300;
 }
 .product-line-info .label {
-	padding:0;
-	font-weight:400;
-	color:#111;
-	font-size:15px
+	padding: 0;
+	font-weight: 600;
+	color: #222;
+	font-size: 14px;
 }
 .product-line-info .label.product-name {
-    color: #111;
-    font-family: "neue einstellung";
-    font-size: 16px;
+	color: #333;
+	font-family: "Poppins";
+	font-size: 16px;
+	display: block;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-weight: 600;
 }
 .product-line-grid {
 	display:flex;
@@ -68,22 +84,23 @@
 .product-line-grid-right span.input-group-btn-vertical button:last-child{
 	margin-right:0;
 }
-.cart-line-product-actions .remove-from-cart{
-	color: rgba(17, 17, 17, 0.5);
+.cart-line-product-actions .remove-from-cart {
+	color: #444;
 	font-size: 18px;
 }
 .cart-summary .label {
-    color: #333;
-    font-family: "neue einstellung";
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
+	color: #000;
+	font-family: "Poppins";
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 .cart-summary .value {
     float: right;
-    font-family: neue einstellung;
+    font-family: Poppins;
     font-size: 14px;
     font-weight: 600;
+    color: #000;
 }
 .cart-grid .cart-overview.js-cart {
   margin-bottom: 35px;
@@ -101,14 +118,6 @@
 }
 .cart-grid-right .right-box .card.cart-summary {
 	padding:30px;
-}
-.card.cart-summary .checkout a {
-    background: #f3f4f6 none repeat scroll 0 0;
-    border: 0 none;
-    font-family: "neue einstellung";
-    font-size: 13px;
-    padding: 10px 0;
-    width: 100%;
 }
 .card.cart-summary .checkout a:hover{
 	  background-color: #111;

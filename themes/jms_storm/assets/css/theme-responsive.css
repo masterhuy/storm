@@ -408,9 +408,17 @@
 		top: 8px;
 		left: 67px;
 	}
-	#cart_block .shoppingcart-box {
+	div#cart_block .shoppingcart-box {
 		min-width: 290px;
 		padding: 20px;
+		margin-top:16px;
+		top: 45px;
+	}
+	div#cart_block .shoppingcart-box {
+		min-width: 290px;
+		padding: 20px;
+		margin-top:16px;
+		top: 35px;
 	}
 	.text-large {
 		font-size: 4.5vw;
@@ -468,9 +476,6 @@
 	.products-list-in-row .product_button a.cart-button.btn-default {
 		margin-right: 5px;
 		padding: 4px 9px;
-	}
-	#cart_block .shoppingcart-box{
-		margin-top:16px;
 	}
 	.product_list .item.ajax_block_product.items-2, .product_list .item.ajax_block_product.items-4, .product_list .item.ajax_block_product.items-5,
     .product_list .item.ajax_block_product.items-6	{

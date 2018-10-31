@@ -112,7 +112,7 @@ jQuery(function ($) {
 					items:cs_itemsTablet
 				},
 				481:{
-					items:2
+					items:cs_itemsMobile
 				},
 				0: {
 					items:1

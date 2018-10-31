@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-30 04:30:41
+/* Smarty version 3.1.32, created on 2018-10-30 21:41:39
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\templates\catalog\_partials\product-cover-thumbnails.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bd816b12d9590_27546073',
+  'unifunc' => 'content_5bd90853b46db2_40403165',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,18 +20,18 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bd816b12d9590_27546073 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bd90853b46db2_40403165 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div class="images-container">
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_246335bd816b12c9b94_89055900', 'product_cover');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_42405bd90853b1fcb8_33563144', 'product_cover');
 ?>
 
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16625bd816b12cda10_62172551', 'product_images');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_75615bd90853b1fcb2_72021088', 'product_images');
 ?>
 
 </div>
@@ -39,12 +39,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16625bd816b12cda10
 
 <?php }
 /* {block 'product_cover'} */
-class Block_246335bd816b12c9b94_89055900 extends Smarty_Internal_Block
+class Block_42405bd90853b1fcb8_33563144 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_cover' => 
   array (
-    0 => 'Block_246335bd816b12c9b94_89055900',
+    0 => 'Block_42405bd90853b1fcb8_33563144',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -64,12 +64,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_cover'} */
 /* {block 'product_images'} */
-class Block_16625bd816b12cda10_62172551 extends Smarty_Internal_Block
+class Block_75615bd90853b1fcb2_72021088 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_images' => 
   array (
-    0 => 'Block_16625bd816b12cda10_62172551',
+    0 => 'Block_75615bd90853b1fcb2_72021088',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

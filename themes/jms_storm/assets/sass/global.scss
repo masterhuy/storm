@@ -220,6 +220,27 @@
 @include colorItemSize(19, $active-h19);
 @include colorItemSize(20, $active-h20);
 
+@include btnShoppingHover(1, $active-h1);
+@include btnShoppingHover(2, $active-h2);
+@include btnShoppingHover(3, $active-h3);
+@include btnShoppingHover(4, $active-h4);
+@include btnShoppingHover(5, $active-h5);
+@include btnShoppingHover(6, $active-h6);
+@include btnShoppingHover(7, $active-h7);
+@include btnShoppingHover(8, $active-h8);
+@include btnShoppingHover(9, $active-h9);
+@include btnShoppingHover(10, $active-h10);
+@include btnShoppingHover(11, $active-h11);
+@include btnShoppingHover(12, $active-h12);
+@include btnShoppingHover(13, $active-h13);
+@include btnShoppingHover(14, $active-h14);
+@include btnShoppingHover(15, $active-h15);
+@include btnShoppingHover(16, $active-h16);
+@include btnShoppingHover(17, $active-h17);
+@include btnShoppingHover(18, $active-h18);
+@include btnShoppingHover(19, $active-h19);
+@include btnShoppingHover(20, $active-h20);
+
 #content-wrapper {
 	margin-bottom: 70px;
 }
@@ -280,6 +301,9 @@
 
 #off-canvas-menu{
 	#_desktop_user_info{
+		.user-info > .logout2 {
+			text-transform: capitalize;
+		}
 		padding: 0 30px;
 		ul{
 			li{
@@ -486,9 +510,12 @@
 .ver_mobile{
 	display: none;
 }
+#off-canvas-menu .home ul > li.menu-item:nth-child(2n+1) {
+	display: none;
+}
 @media (max-width: 481px){
 	#searchbox #selector_cat{
-		max-width: 121px;
+		max-width: 121px !important;
 	}
 	div.fraction-slider{
 		.prev, .next{
@@ -584,8 +611,15 @@
 	}
 }
 @media (max-width: 767px){
+	.container{
+		padding: 0 15px !important;
+	}
 	input#ajax_advsearch{
 		width: 100%;
+	}
+	#advsearch_result {
+	    width: 100% !important;
+	    min-width: auto !important;
 	}
 }
 

@@ -610,15 +610,15 @@
     z-index: 2;
     top: 8px;
     width: 75px; }
+    .menu .right #open-button {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      float: right; }
   .menu .left {
     display: none; }
   .menu .ver_mobile {
     display: block; }
-  .menu .right #open-button {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    float: right; }
   .trending .left {
     margin-bottom: 30px; }
   .trending .img-hotdeal {
@@ -647,6 +647,8 @@
     right: 15px; }
   .container {
     padding: 0 15px; }
+  .header #advsearch_result {
+    width: 100%; }
   .header .right {
     display: -webkit-box;
     display: -ms-flexbox;

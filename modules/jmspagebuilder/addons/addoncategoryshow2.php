@@ -188,6 +188,7 @@ class JmsAddonCategoryShow2 extends JmsAddonBase
         $total_config = $addon->fields[4]->value;
         $rows = $addon->fields[5]->value;
         $cols = $addon->fields[6]->value;
+        $fields = $addon->fields;
         foreach ($category_ids as $id_category) {
             $category = new Category($id_category, (int)Context::getContext()->language->id);
             $categories[$k]['id_category'] = $id_category;
