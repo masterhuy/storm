@@ -61,7 +61,7 @@
             </td>
             <td class="text-xs-center hidden-md-down invoice-icon">
               {if $order.details.invoice_url}
-                <a href="{$order.details.invoice_url}"><i class="material-icons fa fa-download"></i></a>
+                <a href="{$order.details.invoice_url}"><i class="fa fa-download"></i></a>
               {else}
                 -
               {/if}

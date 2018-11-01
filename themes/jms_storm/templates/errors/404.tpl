@@ -29,5 +29,5 @@
 {/block}
 
 {block name='page_content_container'}
-  {include file='errors/not-found.tpl'}
+  {include file='errors/page-not-found.tpl'}
 {/block}

@@ -61,7 +61,7 @@
 							</a>
 						</div>
 						<div class="product_infos">
-							<p id="s_title" class="product_name">{$product.name|truncate:30:'...'|escape:'html':'UTF-8'}</p>
+							<p id="s_title" class="product_name">{$product.name|truncate:40:'...'|escape:'html':'UTF-8'}</p>
 							<span class="wishlist_product_detail">
 								{if isset($product.attributes_small)}
 								<a href="{$link->getProductlink($product.id_product, $product.link_rewrite, $product.category_rewrite)|escape:'html'}" title="{l s='Product detail' d='Shop.Theme'}">{$product.attributes_small|escape:'html':'UTF-8'}</a>
@@ -99,21 +99,18 @@
 
 					</div>
 					<br />
-					<div class="btn_action btn-default button-small">
-						<a href="javascript:;" class="exclusive lnksave" onclick="WishlistProductManage('wlp_bought_{$product.id_product_attribute}', 'update', '{$id_wishlist}', '{$product.id_product}', '{$product.id_product_attribute}', $('#quantity_{$product.id_product}_{$product.id_product_attribute}').val(), $('#priority_{$product.id_product}_{$product.id_product_attribute}').val());" title="{l s='Save' d='Shop.Theme'}">{l s='Save' d='Shop.Theme'}</a>
+					<div class="group_btn">
+						<a class="btn-default button-small" href="javascript:;" class="exclusive lnksave" onclick="WishlistProductManage('wlp_bought_{$product.id_product_attribute}', 'update', '{$id_wishlist}', '{$product.id_product}', '{$product.id_product_attribute}', $('#quantity_{$product.id_product}_{$product.id_product_attribute}').val(), $('#priority_{$product.id_product}_{$product.id_product_attribute}').val());" title="{l s='Save' d='Shop.Theme'}">{l s='Save' d='Shop.Theme'}</a>
+						<a class="btn-default button-small" href="javascript:;" class="lnkdel" onclick="WishlistProductManage('wlp_bought', 'delete', '{$id_wishlist}', '{$product.id_product}', '{$product.id_product_attribute}', $('#quantity_{$product.id_product}_{$product.id_product_attribute}').val(), $('#priority_{$product.id_product}_{$product.id_product_attribute}').val());" title="{l s='Delete' d='Shop.Theme'}">{l s='Delete' d='Shop.Theme'}</a>
 					</div>
-					<div class="delete-action button-small btn-default">
-					<a href="javascript:;" class="lnkdel" onclick="WishlistProductManage('wlp_bought', 'delete', '{$id_wishlist}', '{$product.id_product}', '{$product.id_product_attribute}', $('#quantity_{$product.id_product}_{$product.id_product_attribute}').val(), $('#priority_{$product.id_product}_{$product.id_product_attribute}').val());" title="{l s='Delete' d='Shop.Theme'}">{l s='Delete' d='Shop.Theme'}
-					</a>
-					</div>
-				</li>
+				
 				{/foreach}
 			</ul>
 		</div>
 		{if !$refresh}
 		<form method="post" class="wl_send std" onsubmit="return (false);" style="display: none;">
 			<a id="hideSendWishlist" class="button_account btn icon"  href="#" onclick="WishlistVisibility('wl_send', 'SendWishlist'); return false;" rel="nofollow" title="{l s='Close this wishlist' d='Shop.Theme'}">
-				<i class="icon-remove"></i>
+				<i class="fa fa-close"></i>
 			</a>
 			<fieldset>
 				<p class="required">
@@ -127,7 +124,7 @@
 				</p>
 				{/section}
 				<p class="submit">
-					<input class="button" type="submit" value="{l s='Send' d='Shop.Theme'}" name="submitWishlist" onclick="WishlistSend('wl_send', '{$id_wishlist}', 'email');" />
+					<input class="btn-default button" type="submit" value="{l s='Send' d='Shop.Theme'}" name="submitWishlist" onclick="WishlistSend('wl_send', '{$id_wishlist}', 'email');" />
 				</p>
 				<p class="required">
 					<sup>*</sup> {l s='Required field' d='Shop.Theme'}

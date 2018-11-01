@@ -67,7 +67,7 @@
         </div>
 
         <p class="add-address">
-          <a href="{$new_address_delivery_url}" class="btn-default button-small"><i class="material-icons fa fa-plus-circle"></i> {l s='Add New Address' d='Shop.Theme.Actions'}</a>
+          <a href="{$new_address_delivery_url}" class="btn-default button-small"><i class="fa fa-plus-circle"></i> {l s='Add New Address' d='Shop.Theme.Actions'}</a>
         </p>
 
         {if $use_same_address && !$cart.is_virtual}

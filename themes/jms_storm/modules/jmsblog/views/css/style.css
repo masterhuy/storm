@@ -32,9 +32,14 @@
 }
 
 .widget-title, .title_block {
-    font-weight:600;
-    font-size: 16px;
-    text-transform: uppercase;
+	font-weight: 600;
+	font-size: 18px;
+	display: inline-block;
+	text-transform: uppercase;
+	border-bottom: 2px solid;
+	padding-bottom: 5px;
+	color: #222;
+	margin-bottom: 11px;
 }
 .widget-tabs h6 {
     font-size: 15px;
@@ -75,14 +80,16 @@
 .blog-widget .comment-item .comment-info p {
 	font-weight:300;
 }
+.blog-widget .item-post {
+	display: flex;
+}
 .blog-widget .comment-item img{
 	width:80px;
 	float:left;
 }
 .blog-widget {
-    border-bottom: 1px solid #ebebeb;
-    margin-bottom: 40px;
-    padding-bottom: 22px;
+	margin-bottom: 43px;
+	padding-bottom: 0;
 }
 .blog-widget:last-child{
 	border-bottom:0;
@@ -90,6 +97,15 @@
 .blog-widget .post-list .entry-thumb{
 	margin-bottom:10px;
 }
+.widget-archives li a {
+		display: block;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 36px;
+		position: relative;
+		text-transform: capitalize;
+		color: #666;
+	}
 .blog-widget .entry-title {
 	color: #111;
 	font-size: 14px;
@@ -125,12 +141,13 @@
 	display:flex;
 }
 .widget-categories li a {
-    display: block;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 30px;
-    position: relative;
-    text-transform: capitalize;
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 36px;
+	position: relative;
+	text-transform: capitalize;
+	color: #666;
 }
 .blog-widget .post-list li:last-child {
 	margin-bottom:0;
@@ -198,18 +215,18 @@
 	margin:10px 0;
 }
 /* Single Post Page */
-.single-blog .title{
-	color: #111;
-	font-size: 20px;
-	font-weight: 500;
+.single-blog .title {
+	color: #222;
+	font-size: 18px;
+	font-weight: 600;
 	padding: 0;
 	text-transform: uppercase;
 }
-.single-blog .post-meta{
-	display:flex;
-	margin:10px 0;
-	margin-bottom: 30px;
-	font-weight:300;
+.single-blog .post-meta {
+	display: flex;
+	margin: 10px 0;
+	margin-bottom: 22px;
+	font-weight: 300;
 }
 .single-blog .post-fulltext {
 	color:rgba(17,17,17,0.85);
@@ -219,12 +236,18 @@
 	color:#111;
 }
 .single-blog .post-meta li {
-    padding: 0 13px 0 0;
+	padding: 0 13px 0 0;
+	font-size: 16px;
+	position: relative;
+}
+.single-blog .post-meta li:not(:last-child)::after{
+	content: '/';
+	margin-left: 10px;
 }
 .single-blog .post-meta a{
 	font-weight:500;
-	font-family:'neue einstellung'
-	
+	font-family:'Poppins';
+	color: #333;
 }
 .single-blog .post-meta li:last-child {
 	margin-right:0;
@@ -320,7 +343,7 @@ h4.heading {
     padding: 30px 15px;
 }
 #module-jmsblog-archive .post-category a {
-    font-family: "neue einstellung";
+    font-family: "Poppins";
     font-weight: 500;
 }
 /* Tag Page */

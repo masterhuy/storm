@@ -58,7 +58,7 @@
                             </div>
                             {/if}
                             <div class="{if $carrier.logo}col-xs-9{else}col-xs-12{/if}">
-                              <span class="h6 carrier-name">{$carrier.name}</span>
+                              <span class="carrier-name">{$carrier.name}</span>
                             </div>
                           </div>
                         </div>
@@ -106,7 +106,7 @@
             {/if}
           </div>
         </div>
-        <button type="submit" class="continue btn btn-primary button-small pull-xs-right" name="confirmDeliveryOption" value="1">
+        <button type="submit" class="btn-default continue btn btn-primary button-small pull-xs-right" name="confirmDeliveryOption" value="1">
           {l s='Continue' d='Shop.Theme.Actions'}
         </button>
       </form>

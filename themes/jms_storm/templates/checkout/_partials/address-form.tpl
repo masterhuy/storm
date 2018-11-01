@@ -26,7 +26,7 @@
     <a class="js-cancel-address cancel-address pull-xs-right btn-default button-small" href="?cancelAddress={$type}">{l s='Cancel' d='Shop.Theme.Actions'}</a>
   {else}
     <form>
-      <button type="submit" class="continue btn btn-primary button-small pull-xs-right button-small" name="confirm-addresses" value="1">
+      <button type="submit" class="btn-default continue btn btn-primary button-small pull-xs-right button-small" name="confirm-addresses" value="1">
           {l s='Continue' d='Shop.Theme.Actions'}
       </button>
       {if $customer.addresses|count > 0}

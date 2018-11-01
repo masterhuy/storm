@@ -38,7 +38,7 @@
 			{$html_content nofilter}
 		{/if}
 		{if $button_text}
-			<a class="btn-default btn-active btn-shopnow"  href="{if $button_link}{$button_link|escape:'htmlall':'UTF-8'}{else}#{/if}"{if $target == 'new window'} target="_blank"
+			<a class="btn-default active btn-shopnow"  href="{if $button_link}{$button_link|escape:'htmlall':'UTF-8'}{else}#{/if}"{if $target == 'new window'} target="_blank"
 			{/if}>{$button_text|escape:'htmlall':'UTF-8'}</a>
 		{/if}
 	</div>

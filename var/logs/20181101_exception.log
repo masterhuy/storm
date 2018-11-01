@@ -1,0 +1,2 @@
+*ERROR* 	v1.7.4.2	2018/11/01 - 04:40:59: Dispatcher::createUrl() miss required parameter "category_id" for route "jmsblog-category" at line 808 in file classes/Dispatcher.php
+*ERROR* 	v1.7.4.2	2018/11/01 - 04:41:55: Dispatcher::createUrl() miss required parameter "category_id" for route "jmsblog-category" at line 808 in file classes/Dispatcher.php

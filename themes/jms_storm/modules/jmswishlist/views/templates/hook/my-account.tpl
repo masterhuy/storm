@@ -24,7 +24,13 @@
 *}
 
 <!-- MODULE WishList -->
-<a class=" wishlist_top lnk_wishlist col-lg-4 col-md-6 col-sm-6 col-xs-12" href="{$link->getModuleLink('jmswishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}" title="{l s='My wishlists' d='Shop.Theme'}">
+<a class=" wishlist_top home_page lnk_wishlist col-lg-4 col-md-6 col-sm-6 col-xs-12" href="{$link->getModuleLink('jmswishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}" title="{l s='My wishlists' d='Shop.Theme'}">
 	<i class="storm-heart"></i>
+</a>
+<a class=" wishlist_top my_account lnk_wishlist col-lg-4 col-md-6 col-sm-6 col-xs-12" href="{$link->getModuleLink('jmswishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}" title="My wishlists">
+  <span class="link-item">
+		<i class="fa fa-heart"></i>
+		My wishlists
+	</span>
 </a>
 <!-- END : MODULE WishList -->

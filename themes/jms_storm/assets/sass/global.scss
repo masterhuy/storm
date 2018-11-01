@@ -241,8 +241,153 @@
 @include btnShoppingHover(19, $active-h19);
 @include btnShoppingHover(20, $active-h20);
 
+@include btnDefaultHover(1, $active-h1);
+@include btnDefaultHover(2, $active-h2);
+@include btnDefaultHover(3, $active-h3);
+@include btnDefaultHover(4, $active-h4);
+@include btnDefaultHover(5, $active-h5);
+@include btnDefaultHover(6, $active-h6);
+@include btnDefaultHover(7, $active-h7);
+@include btnDefaultHover(8, $active-h8);
+@include btnDefaultHover(9, $active-h9);
+@include btnDefaultHover(10, $active-h10);
+@include btnDefaultHover(11, $active-h11);
+@include btnDefaultHover(12, $active-h12);
+@include btnDefaultHover(13, $active-h13);
+@include btnDefaultHover(14, $active-h14);
+@include btnDefaultHover(15, $active-h15);
+@include btnDefaultHover(16, $active-h16);
+@include btnDefaultHover(17, $active-h17);
+@include btnDefaultHover(18, $active-h18);
+@include btnDefaultHover(19, $active-h19);
+@include btnDefaultHover(20, $active-h20);
+
+@include blogWigetTitle(1, $active-h1);
+@include blogWigetTitle(2, $active-h2);
+@include blogWigetTitle(3, $active-h3);
+@include blogWigetTitle(4, $active-h4);
+@include blogWigetTitle(5, $active-h5);
+@include blogWigetTitle(6, $active-h6);
+@include blogWigetTitle(7, $active-h7);
+@include blogWigetTitle(8, $active-h8);
+@include blogWigetTitle(9, $active-h9);
+@include blogWigetTitle(10, $active-h10);
+@include blogWigetTitle(11, $active-h11);
+@include blogWigetTitle(12, $active-h12);
+@include blogWigetTitle(13, $active-h13);
+@include blogWigetTitle(14, $active-h14);
+@include blogWigetTitle(15, $active-h15);
+@include blogWigetTitle(16, $active-h16);
+@include blogWigetTitle(17, $active-h17);
+@include blogWigetTitle(18, $active-h18);
+@include blogWigetTitle(19, $active-h19);
+@include blogWigetTitle(20, $active-h20);
+
 #content-wrapper {
 	margin-bottom: 70px;
+}
+a.wishlist_top{
+	display: none;
+}
+#header{
+	a.wishlist_top{
+		&.home_page{
+			display: block;
+		}
+		&.my_account{
+			display: none !important;
+		}
+	}
+}
+#my-account a.wishlist_top.my_account{
+	display: block;
+}
+#customer-form{
+	.custom-checkbox {
+		display: flex;
+		align-items: baseline;
+		input {
+		    margin-right: 4px;
+		    position: relative;
+		    top: 1px;
+		}
+	}
+}
+.wlp_bought_list{
+	margin: 0 -15px;
+}
+.wlp_bought{
+	.group_btn{
+		a{
+			display: inline-block;
+		}
+	}
+}
+#module-jmswishlist-mywishlist{
+	.wl_send{
+		.submit input{
+			padding: 0 20px;
+			background: transparent;
+			border-radius: 3px;
+			font-size: 14px;
+		}
+		input{
+			border: 1px solid #ccc;
+			height: 40px;
+			border-radius: 3px;
+		}
+	}
+}
+
+#sitemap{
+	ul.nested > li {
+		margin: 0 0 0 21px;
+		padding: 5px 0 0 33px;
+		border-left: 1px solid #d6d4d4;
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAIAAABR8BlyAAAADklEQVQI12O4duUK2QgA8Owx2QWUkx4AAAAASUVORK5CYII=) no-repeat left 15px transparent;
+	}
+}
+#history{
+	.text-xs-right div {
+	    text-align: right;
+	}
+	.order > .row {
+		display: flex;
+		align-items: center;
+	}
+}
+.text-xs-center.order-actions > a {
+	font-size: 14px;
+	text-transform: capitalize;
+}
+.label.label-pill {
+	color: #fff;
+	padding: .2em .6em;
+	font-size: 12px;
+	font-weight: 500;
+}
+.form-footer.clearfix button {
+	font-size: 14px;
+}
+#conditions-to-approve .js-terms > a {
+	font-size: 14px;
+	font-weight: 700;
+}
+#order-confirmation{
+	#content-wrapper {
+		margin-bottom: 0px;
+	}
+	#content-hook-order-confirmation-footer{
+		.owl-stage-outer{
+			padding-bottom: 150px;
+		}
+	}
+}
+.js-modal-content {
+	padding: 20px;
+}
+.ps-shown-by-js button {
+	cursor: pointer;
 }
 .pagination .current a {
 	background-color: #111 !important;
@@ -296,6 +441,30 @@
 			display: inline-flex;
 			padding: 0;
 		}
+	}
+}
+.product-line-grid-right{
+	.material-icons {
+	    display: none;
+	}
+	.btn-touchspin:hover::before {
+		color: #222;
+	}
+	.bootstrap-touchspin-up::before {
+		content: "\f0d8";
+		font-family: FontAwesome;
+		font-size: 16px;
+		color: #888;
+		position: relative;
+		top: 3px;
+	}
+	.bootstrap-touchspin-down::before {
+		content: "\f0d7";
+		font-family: FontAwesome;
+		font-size: 16px;
+		color: #888;
+		position: relative;
+		bottom: 3px;
 	}
 }
 
@@ -666,5 +835,69 @@
 		left: 43px;
 		width: 0;
 	    z-index: 0;
+	}
+}
+
+// blog widget
+.single-blog{
+	.post-fulltext{
+		.p1, .p3{
+			color: #555;
+			line-height: 1.73;
+		}
+		.p2{
+			position: relative;
+			&::before{
+				content: '“';
+			}
+			&::after{
+				content: '”';
+			}
+			.placeholder {
+				font-size: 16px;
+				color: #666;
+			}
+		}
+		h1{
+				font-size: 20px;
+				font-weight: 500;
+				color: #333;
+				span{
+					color: #666;
+				}
+			}
+	}
+}
+.blog-widget{
+	.comment-item{
+		span{
+			font-weight: 600;
+		}
+	}
+	&.widget-recent-post{
+		h3{
+			margin-bottom: 30px;
+		}
+	}
+	.item-post{
+		margin-bottom: 30px;
+		.post-thumb{
+			width: 58%;
+		}
+		.left{
+			width: 42%;
+			margin-left: 10px;
+			h6{
+				font-size: 15px;
+				text-transform: uppercase;
+				font-weight: 600;
+				padding-bottom: 17px;
+				margin-top: -3px;
+			}
+			.post-created {
+				color: #666;
+				margin: 0;
+			}
+		}
 	}
 }

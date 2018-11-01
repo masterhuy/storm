@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-30 08:26:02
+/* Smarty version 3.1.32, created on 2018-11-01 03:52:06
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmswishlist\views\templates\front\managewishlist.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bd84dda84c382_10103028',
+  'unifunc' => 'content_5bdab0a6a59d77_35447084',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e2b3a8abb05cbe8bb6df62f153f774a66dc307c4' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\modules\\jmswishlist\\views\\templates\\front\\managewishlist.tpl',
-      1 => 1537323325,
+      1 => 1541058669,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bd84dda84c382_10103028 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bdab0a6a59d77_35447084 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_storm\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?>
 	<?php if ($_smarty_tpl->tpl_vars['products']->value) {?>
@@ -88,7 +88,7 @@ _<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_produc
 							</a>
 						</div>
 						<div class="product_infos">
-							<p id="s_title" class="product_name"><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['product']->value['name'],30,'...' )),'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+							<p id="s_title" class="product_name"><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['product']->value['name'],40,'...' )),'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 </p>
 							<span class="wishlist_product_detail">
 								<?php if (isset($_smarty_tpl->tpl_vars['product']->value['attributes_small'])) {?>
@@ -170,8 +170,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
 					</div>
 					<br />
-					<div class="btn_action btn-default button-small">
-						<a href="javascript:;" class="exclusive lnksave" onclick="WishlistProductManage('wlp_bought_<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_product_attribute'], ENT_QUOTES, 'UTF-8');?>
+					<div class="group_btn">
+						<a class="btn-default button-small" href="javascript:;" class="exclusive lnksave" onclick="WishlistProductManage('wlp_bought_<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_product_attribute'], ENT_QUOTES, 'UTF-8');?>
 ', 'update', '<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_wishlist']->value, ENT_QUOTES, 'UTF-8');?>
 ', '<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_product'], ENT_QUOTES, 'UTF-8');?>
 ', '<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_product_attribute'], ENT_QUOTES, 'UTF-8');?>
@@ -182,9 +182,7 @@ _<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_produc
 ').val());" title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Save','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 "><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Save','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 </a>
-					</div>
-					<div class="delete-action button-small btn-default">
-					<a href="javascript:;" class="lnkdel" onclick="WishlistProductManage('wlp_bought', 'delete', '<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_wishlist']->value, ENT_QUOTES, 'UTF-8');?>
+						<a class="btn-default button-small" href="javascript:;" class="lnkdel" onclick="WishlistProductManage('wlp_bought', 'delete', '<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_wishlist']->value, ENT_QUOTES, 'UTF-8');?>
 ', '<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_product'], ENT_QUOTES, 'UTF-8');?>
 ', '<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_product_attribute'], ENT_QUOTES, 'UTF-8');?>
 ', $('#quantity_<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_product'], ENT_QUOTES, 'UTF-8');?>
@@ -193,10 +191,9 @@ _<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_produc
 _<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_product_attribute'], ENT_QUOTES, 'UTF-8');?>
 ').val());" title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Delete','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 "><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Delete','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
-
-					</a>
+</a>
 					</div>
-				</li>
+				
 				<?php
 }
 }
@@ -207,7 +204,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		<form method="post" class="wl_send std" onsubmit="return (false);" style="display: none;">
 			<a id="hideSendWishlist" class="button_account btn icon"  href="#" onclick="WishlistVisibility('wl_send', 'SendWishlist'); return false;" rel="nofollow" title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Close this wishlist','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 ">
-				<i class="icon-remove"></i>
+				<i class="fa fa-close"></i>
 			</a>
 			<fieldset>
 				<p class="required">
@@ -234,7 +231,7 @@ echo htmlspecialchars((isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value
 }
 ?>
 				<p class="submit">
-					<input class="button" type="submit" value="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Send','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
+					<input class="btn-default button" type="submit" value="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Send','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 " name="submitWishlist" onclick="WishlistSend('wl_send', '<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_wishlist']->value, ENT_QUOTES, 'UTF-8');?>
 ', 'email');" />
 				</p>

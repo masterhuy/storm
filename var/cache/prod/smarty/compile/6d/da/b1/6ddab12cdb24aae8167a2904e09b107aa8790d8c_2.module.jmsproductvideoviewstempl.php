@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-30 04:30:41
+/* Smarty version 3.1.32, created on 2018-11-01 04:08:08
   from 'module:jmsproductvideoviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bd816b126bf83_91883763',
+  'unifunc' => 'content_5bdab468b82d32_48667469',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bd816b126bf83_91883763 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bdab468b82d32_48667469 (Smarty_Internal_Template $_smarty_tpl) {
 ?><style>
 	.jms-popup-wrap {
 		width : <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['video_width']->value, ENT_QUOTES, 'UTF-8');?>

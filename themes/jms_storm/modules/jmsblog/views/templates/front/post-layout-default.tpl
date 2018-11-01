@@ -33,18 +33,9 @@
 {block name="page_content"}
 {capture name=path}{$post.title|escape:'html':'UTF-8'}{/capture}
 <div class="single-blog">
-<div class="blog-post">
-		{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}	
-		{if $post.link_video && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
-			<div class="post-video">
-				{$post.link_video}
-			</div>
-		{elseif $post.image && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
-			<div class="post-thumb">
-				<img src="{$image_baseurl|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'}" alt="{l s='Image Blog' d='Modules.JmsBlog'}" />
-			</div>
-		{/if}
+	<div class="blog-post">
 		<h1 class="title">{$post.title|escape:'html':'UTF-8'}</h1>
+		{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}	
 		<ul class="post-meta">
 			{if $jmsblog_setting.JMSBLOG_SHOW_CATEGORY}
 				<li>
@@ -59,17 +50,18 @@
 			<li>
 				<span>{$post.created|escape:'html':'UTF-8'|date_format:"%B %e, %Y"}</span>
 			</li>
-			{if $jmsblog_setting.JMSBLOG_SHOW_COMMENTS}
-				<li>
-					<span>{$comments|@count}{l s=' comments' d='Modules.JmsBlog'}</span>
-				</li>
-			{/if}
-			{if $jmsblog_setting.JMSBLOG_SHOW_VIEWS}
-				<li>
-					<span>{$post.views|escape:'html':'UTF-8'} {l s='view(s)' d='Modules.JmsBlog'}</span>
-				</li>
-			{/if}
 		</ul>
+		{if $post.link_video && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
+			<div class="post-video">
+				{$post.link_video}
+			</div>
+		{elseif $post.image && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
+			<div class="post-thumb">
+				<img src="{$image_baseurl|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'}" alt="{l s='Image Blog' d='Modules.JmsBlog'}" />
+			</div>
+		{/if}
+		
+		
 		<div class="post-fulltext">
 			{$post.fulltext nofilter}	
 		</div>

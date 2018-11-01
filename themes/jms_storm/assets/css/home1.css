@@ -109,6 +109,8 @@
     content: "\f107";
     font-family: "FontAwesome";
     padding-left: 1px; }
+  .topbar .right #_desktop_user_info .dropdown-menu {
+    left: -18px; }
   .topbar .right #_desktop_user_info .type1, .topbar .right #_desktop_user_info .type2 {
     display: none; }
   .topbar .right #_desktop_user_info .type3 {

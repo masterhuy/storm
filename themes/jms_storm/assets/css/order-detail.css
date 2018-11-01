@@ -21,10 +21,15 @@
 #order-detail td.product-image img {
 	width:100%;
 }
+#order-detail .order-message-form.box button {
+	font-size: 14px;
+}
+#order-detail #order-infos a {
+	font-size: 14px;
+}
 .table > thead > tr > th.order-title {
 	padding:10px 8px;
 	text-transform:uppercase;
-	color:#fff;
 	font-weight:500;
 	font-size:15px;
 }

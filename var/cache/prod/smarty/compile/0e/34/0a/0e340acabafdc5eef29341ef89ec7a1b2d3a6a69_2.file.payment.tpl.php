@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-09-25 22:59:39
+/* Smarty version 3.1.32, created on 2018-11-01 00:02:14
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\templates\checkout\_partials\steps\payment.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5baaf61b4cedb3_54272586',
+  'unifunc' => 'content_5bda7ac6398998_59947576',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0e340acabafdc5eef29341ef89ec7a1b2d3a6a69' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\templates\\checkout\\_partials\\steps\\payment.tpl',
-      1 => 1537323326,
+      1 => 1541044678,
       2 => 'file',
     ),
   ),
@@ -21,25 +21,25 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:checkout/_partials/order-final-summary.tpl' => 1,
   ),
 ),false)) {
-function content_5baaf61b4cedb3_54272586 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bda7ac6398998_59947576 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_91375baaf61b480bb2_83858330', 'step_content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_222125bda7ac6371890_57473003', 'step_content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'checkout/_partials/steps/checkout-step.tpl');
 }
 /* {block 'step_content'} */
-class Block_91375baaf61b480bb2_83858330 extends Smarty_Internal_Block
+class Block_222125bda7ac6371890_57473003 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'step_content' => 
   array (
-    0 => 'Block_91375baaf61b480bb2_83858330',
+    0 => 'Block_222125bda7ac6371890_57473003',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -234,6 +234,11 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
   <div class="modal fade" id="modal">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Close','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="js-modal-content"></div>
       </div>
     </div>
   </div>

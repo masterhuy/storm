@@ -3,8 +3,10 @@
   padding-left: 1.875rem; }
   #order-details > .card-title {
     margin-bottom: 1.875rem; }
-  #order-details ul {
-    margin-bottom: 1.25rem; }
+#order-details ul {
+  margin-bottom: 1.25rem;
+  margin-top: 15px;
+}
     #order-details ul li {
       margin-bottom: 0.625rem; }
 
@@ -48,8 +50,9 @@
 	padding:10px 15px;
 }
 #order-confirmation .title-block .card-title {
-	font-size:26px;
-	color: #fff;
+  font-size: 26px;
+  color: #fff;
+  border: 0;
 }
 #order-confirmation .title-block p{
 	margin-bottom:0;

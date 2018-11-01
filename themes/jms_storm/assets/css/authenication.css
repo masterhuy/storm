@@ -31,9 +31,6 @@
 	margin-bottom:0;
 	line-height:40px;
 }
-#authentication .forgot-password a, #authentication .no-account a {
-	color:rgba(17,17,17,0.7);
-}
 #authentication .register-form .custom-radio input{
 	top:9px;
 }

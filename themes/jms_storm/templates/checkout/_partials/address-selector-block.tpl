@@ -49,14 +49,14 @@
           data-link-action="delete-address"
           href="{url entity='order' params=['id_address' => $address.id, 'deleteAddress' => true, 'token' => $token]}"
         >
-          <i class="material-icons delete fa fa-trash"></i>{l s='Delete' d='Shop.Theme.Actions'}
+          <i class="delete fa fa-trash"></i>{l s='Delete' d='Shop.Theme.Actions'}
         </a>
 		<a
           class="edit-address text-muted btn-default button-small"
           data-link-action="edit-address"
           href="{url entity='order' params=['id_address' => $address.id, 'editAddress' => $type, 'token' => $token]}"
         >
-          <i class="material-icons edit fa fa-pencil-square-o"></i>{l s='Edit' d='Shop.Theme.Actions'}
+          <i class="edit fa fa-pencil-square-o"></i>{l s='Edit' d='Shop.Theme.Actions'}
         </a>
       {/if}
     </footer>

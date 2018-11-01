@@ -7,7 +7,7 @@
 				<div class="col-md-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="title-block">
 						<h3 class="h1 card-title">
-						<i class="material-icons done fa fa-check-circle-o"></i>{l s='Your order is confirmed' d='Shop.Theme.Checkout'}
+						<i class="done fa fa-check-circle-o"></i>{l s='Your order is confirmed' d='Shop.Theme.Checkout'}
 					</h3>
 					<p>
 						{l s='An email has been sent to your mail address %email%.' d='Shop.Theme.Checkout' sprintf=['%email%' => $customer.email]}

@@ -134,6 +134,9 @@
 			@include icon_dropdown(1);
 		}
 		#_desktop_user_info{
+			.dropdown-menu{
+				left: -18px;
+			}
 			.type1, .type2{
 				display: none;
 			}

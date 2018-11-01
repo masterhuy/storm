@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-09-25 22:59:32
+/* Smarty version 3.1.32, created on 2018-11-01 00:02:14
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\templates\checkout\_partials\steps\shipping.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5baaf614b2bb58_77795356',
+  'unifunc' => 'content_5bda7ac62ae390_93763032',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '01f54f0bb9270c807f67b871b4425d0132d1fcbb' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\templates\\checkout\\_partials\\steps\\shipping.tpl',
-      1 => 1537323326,
+      1 => 1541044416,
       2 => 'file',
     ),
   ),
@@ -20,20 +20,20 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5baaf614b2bb58_77795356 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bda7ac62ae390_93763032 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_250345baaf614b04a59_36457876', 'step_content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_282045bda7ac62ae390_09254745', 'step_content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'checkout/_partials/steps/checkout-step.tpl');
 }
 /* {block 'delivery_options'} */
-class Block_243795baaf614b04a50_52235166 extends Smarty_Internal_Block
+class Block_2455bda7ac62ae397_97437677 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -67,7 +67,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['carrier_id']->value => $_smarty_tpl->
                             </div>
                             <?php }?>
                             <div class="<?php if ($_smarty_tpl->tpl_vars['carrier']->value['logo']) {?>col-xs-9<?php } else { ?>col-xs-12<?php }?>">
-                              <span class="h6 carrier-name"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['carrier']->value['name'], ENT_QUOTES, 'UTF-8');?>
+                              <span class="carrier-name"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['carrier']->value['name'], ENT_QUOTES, 'UTF-8');?>
 </span>
                             </div>
                           </div>
@@ -98,16 +98,16 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'delivery_options'} */
 /* {block 'step_content'} */
-class Block_250345baaf614b04a59_36457876 extends Smarty_Internal_Block
+class Block_282045bda7ac62ae390_09254745 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'step_content' => 
   array (
-    0 => 'Block_250345baaf614b04a59_36457876',
+    0 => 'Block_282045bda7ac62ae390_09254745',
   ),
   'delivery_options' => 
   array (
-    0 => 'Block_243795baaf614b04a50_52235166',
+    0 => 'Block_2455bda7ac62ae397_97437677',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -129,7 +129,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
       >
         <div class="form-fields">
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_243795baaf614b04a50_52235166', 'delivery_options', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2455bda7ac62ae397_97437677', 'delivery_options', $this->tplIndex);
 ?>
 
           <div class="order-options">
@@ -164,7 +164,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_243795baaf614b04a5
             <?php }?>
           </div>
         </div>
-        <button type="submit" class="continue btn btn-primary button-small pull-xs-right" name="confirmDeliveryOption" value="1">
+        <button type="submit" class="btn-default continue btn btn-primary button-small pull-xs-right" name="confirmDeliveryOption" value="1">
           <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Continue','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 
         </button>

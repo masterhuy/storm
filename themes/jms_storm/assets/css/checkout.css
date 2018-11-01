@@ -25,7 +25,7 @@
 	padding-left:0;
 }
 .content ul li a {
-    font-family: "neue einstellung";
+    font-family: "Poppins";
     font-size: 16px;
 }
 .tab-content .form-group label{
@@ -65,10 +65,11 @@
 	top: 1px;
 }
 .pasword-form .show-pass button {
-    border-radius: 0;
-    font-size: 13px;
-    margin-left: 0;
-    padding: 6px 17px;
+	border-radius: 0;
+	font-size: 14px;
+	margin-left: -1px;
+	padding: 8px 17px;
+	border-color: #eee;
 }
 .form-control-comment {
 	line-height:40px;
@@ -90,51 +91,52 @@
 #checkout .address-footer a i{
 	margin-right:5px;
 }
-#checkout .address-footer a{
-	margin-right:20px;
+#checkout .address-footer a {
+	margin-right: 20px;
+	display: inline-block;
 }
 #checkout .address-footer a:last-child {
 	margin-right:0px;
 }
-#checkout .address-footer .delete-address, .address-footer .delete-address:hover {
-	background:#f24242;
-}
 #checkout #delivery-address .form-footer{
 		text-align:right;
+}
+#checkout #footer{
+	margin-top: 80px;
 }
 #checkout #delivery-address .form-footer button {
 	margin-right:10px;
 }
 #checkout section#content #js-checkout-summary p {
-	font-size:16px;
-	font-weight:400;
-	text-transform:capitalize;
-	color:rgba(17,17,17,0.9);
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: capitalize;
+	color: #000;
 }
 #checkout section#content #js-checkout-summary p a {
-    color: red;
-    font-size: 15px;
-    font-weight: 700;
+	font-size: 14px;
+	font-weight: 400;
 }
-#checkout section#content #cart-summary-product-list .media-list .media-body{
-	padding: 10px 0;
+#checkout section#content #cart-summary-product-list .media-list .media-body {
+	padding: 0;
 }
 #checkout section#content #cart-summary-product-list .media-list .media{
 	margin-bottom:15px;
 }
 #checkout section#content #js-checkout-summary .card-block .label {
-    color: rgba(17, 17, 17, 0.9);
-    font-family: neue einstellung;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 30px;
-    padding: 0;
-    text-transform: uppercase;
+	color: #000;
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 30px;
+	padding: 0;
+	text-transform: uppercase;
 }
-#checkout section#content #js-checkout-summary .card-block .value{
-	 font-family: neue einstellung;
-    font-size: 14px;
-    font-weight: 600;
+#checkout section#content #js-checkout-summary .card-block .value {
+	font-family: Poppins;
+	font-size: 14px;
+	font-weight: 600;
+	color: #000;
 }
 .price .product-price {
     display: block;

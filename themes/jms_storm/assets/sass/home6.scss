@@ -5,11 +5,16 @@
 	color: $active-h6;
 }
 
+#content-wrapper {
+	margin-bottom: 0;
+}
 .main-site{
 	margin-left: 330px;
 }
 .container{
-	max-width: 1530px;
+	max-width: 1560px;
+	width: 100%;
+	padding: 0 15px;
 }
 .container-fluid{
 	max-width: 100%;
@@ -56,6 +61,12 @@
 		color: $active-h6;
 	}
 }
+.jms-banner > a{
+	img{
+		width: 100%;
+	}
+}
+
 
 // header
 #header {
@@ -96,6 +107,7 @@
 .leftbar{
 	.container{
 		padding: 0 30px;
+		max-width: 100%;
 	}
 	.dropdown-menu{
 		background: #fff;
@@ -406,11 +418,14 @@
 	.categories-wrapper{
 		position: relative;
 	}
+	.categoy-image img{
+		min-height: 500px;
+	}
 	.c_item-info{
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		left: 235px;
+		right: 20px;
 		max-width: 365px;
 		.cat-name{
 			font-size: 30px;
@@ -777,6 +792,113 @@
 		}
 		p{
 			float: right;
+		}
+	}
+}
+@media (max-width: 1366px){
+	.cates .c_item-info{
+		max-width: 140px;
+		overflow: hidden;
+		ul li a {
+			&.cat-name{
+				white-space: nowrap;
+			    text-overflow: ellipsis;
+			    overflow: hidden;
+			}
+		    white-space: nowrap;
+		    text-overflow: ellipsis;
+		    overflow: hidden;
+
+		}
+	}
+	.newsletter {
+		padding: 100px 0;
+	}
+}
+@media (max-width: 1199px){
+	#header{
+		width: 265px;
+	}
+	.main-site {
+		margin-left: 265px;
+	}
+	.footer_t .account{
+		margin-bottom: 55px;
+	}
+	.footer_b{
+		.container > .row{
+			display: block;
+		}
+		.addon-box p{
+			text-align: center;
+			float: none;
+		}
+	}
+	.service{
+		.row .layout-column:not(:last-child) .feature-box::after{
+			display: none;
+		}
+		.feature-box{
+			margin: 10px 0;
+		}
+	}
+}
+@media (max-width: 991px){
+	div.container{
+		width: 750px;
+	}
+	#header{
+		width: 100%;
+		position: relative !important;
+		height: auto;
+	}
+	.leftbar{
+		.first {
+			margin-bottom: 10px;
+			margin-top: 15px;
+		}
+		.second{
+			margin-bottom: 15px;
+		}
+		.third{
+			margin-bottom: 15px;
+			.jms-megamenu-wrap {
+				display: flex;
+				justify-content: center;
+			}
+			#open-button{
+				display: inline-block;
+			}
+		}
+		.fifth{
+			margin-bottom: 20px;
+		}
+		.fourth, .sixth{
+			display: none;
+		}
+	}
+	.main-site {
+		margin-left: 0;
+	}
+}
+@media (max-width: 767px){
+	div.container {
+		width: auto;
+	}
+	.banner{
+		.left, .center{
+			margin-bottom: 15px;
+		}
+	}
+	.footer_t .account {
+		margin-bottom: 0;
+	}
+}
+@media (max-width: 481px){
+	.newsletter{
+		padding: 60px 0;
+		#newsletter-input{
+			max-width: 173px;
 		}
 	}
 }
