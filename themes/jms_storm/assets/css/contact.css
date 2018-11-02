@@ -24,7 +24,6 @@
 #contact #wrapper #content-wrapper .contact-form .form-fields .bootstrap-filestyle .group-span-filestyle label {
     border: 1px solid #ebebeb;
     border-radius: 0;
-    color: #111;
     font-size: 12px;
     line-height: 18px;
 }
@@ -43,9 +42,8 @@
 #contact #wrapper #content-wrapper .contact-form .form-footer input {
 	padding:0 30px;
 	margin-top:20px;
-	border-radius:0;
+	border-radius:30px;
 	height:40px;
-	line-height:40px;
 }
 #contact #wrapper #content-wrapper .contact-form .form-footer {
 	text-align:right;

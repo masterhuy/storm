@@ -1,28 +1,27 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-01 06:25:51
+/* Smarty version 3.1.32, created on 2018-11-02 00:05:37
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bdad4af16a6b9_84040004',
+  'unifunc' => 'content_5bdbcd11382e86_92182534',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '531dbd0adce38aafbd550bd8532983147884ff44' => 
     array (
       0 => 'module:jmsblogviewstemplatesfron',
-      1 => 1541061840,
+      1 => 1541127437,
       2 => 'module',
     ),
   ),
   'includes' => 
   array (
-    'file:modules/jmsblog/views/templates/front/comment_default.tpl' => 1,
     'file:modules/jmsblog/views/templates/front/comment_facebook.tpl' => 1,
   ),
 ),false)) {
-function content_5bdad4af16a6b9_84040004 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bdbcd11382e86_92182534 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?> 
@@ -34,7 +33,7 @@ if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?>
 }?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_294445bdad4af133bb5_25134349', "page_content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_159775bdbcd11334c82_71019874', "page_content");
 ?>
 
 
@@ -42,12 +41,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_294445bdad4af133bb
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block "page_content"} */
-class Block_294445bdad4af133bb5_25134349 extends Smarty_Internal_Block
+class Block_159775bdbcd11334c82_71019874 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_294445bdad4af133bb5_25134349',
+    0 => 'Block_159775bdbcd11334c82_71019874',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -138,9 +137,119 @@ if ($_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_SHOW_EMAIL']) {?>
 </div>
 	<?php if ($_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_COMMENT_ENABLE']) {?>	
 		<div id="comments">
-			<?php if ($_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_FACEBOOK_COMMENT'] == 0) {?>
-				<?php $_smarty_tpl->_subTemplateRender("file:modules/jmsblog/views/templates/front/comment_default.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>		
+			<?php if ($_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_FACEBOOK_COMMENT'] == 0) {?>	
+				<?php if ($_smarty_tpl->tpl_vars['msg']->value == 1) {?><div class="success"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Your comment submited','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
+ ! <?php if ($_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_AUTO_APPROVE_COMMENT'] == 0) {?> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Please waiting approve from Admin','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
+.<?php }?></div><?php }?>
+				<?php if (count($_smarty_tpl->tpl_vars['cerrors']->value) > 0) {?>
+					<ul>
+					<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['cerrors']->value, 'cerror');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['cerror']->value) {
+?>
+						<li class="error"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cerror']->value, ENT_QUOTES, 'UTF-8');?>
+</li>
+					<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>	
+					</ul>
+				<?php }?>
+				<div id="accordion" class="panel-group">
+					<div class="panels">		
+						<div id="post-comments">
+						<?php if ($_smarty_tpl->tpl_vars['comments']->value) {?>
+							<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['comments']->value, 'comment', false, 'k');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['comment']->value) {
+?>
+								<div class="post-comment clearfix">
+									<div class="post-comment-info">
+										<img class="attachment-widget wp-post-image img-responsive" src="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['image_baseurl']->value,'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+user.png" />
+										<div class="left">
+											<div class="title">
+												<h6>
+													By <span><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['comment']->value['customer_name'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+</span>
+													on <?php echo htmlspecialchars(smarty_modifier_date_format(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['comment']->value['time_add'],'html','UTF-8' )),'%B %e, %Y'), ENT_QUOTES, 'UTF-8');?>
+
+												</h6>
+											</div>
+											<p class="post-comment-content"><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['comment']->value['comment'],120,'...' )),'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+</p>
+										</div>
+										
+									</div>
+								</div>
+							<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>	
+						<?php }?>
+						</div>
+					</div>
+				</div>
+				<?php if ($_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_ALLOW_GUEST_COMMENT'] || (!$_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_ALLOW_GUEST_COMMENT'] && $_smarty_tpl->tpl_vars['logged']->value)) {?>	
+				<div class="commentForm">
+					<form id="commentForm" enctype="multipart/form-data" method="post" action="index.php?fc=module&module=jmsblog&controller=post&post_id=<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['post_id'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+&action=submitComment">	
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<label><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Name','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
+</label>
+								<div class="form-group">
+									<input id="customer_name" placeholder="Your name *" class="form-control" name="customer_name" type="text" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['customer']->value['firstname'], ENT_QUOTES, 'UTF-8');
+echo htmlspecialchars($_smarty_tpl->tpl_vars['customer']->value['lastname'], ENT_QUOTES, 'UTF-8');?>
+" required />
+								</div>	
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<label><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Email','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
+</label>
+								<div class="form-group">
+									<input id="comment_title" placeholder="Your email *" class="form-control" name="email" type="text" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['customer']->value['email'], ENT_QUOTES, 'UTF-8');?>
+" required />
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="lb-comment"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Comments','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
+</label>
+							<textarea id="comment" placeholder="Write your comment..." class="form-control" name="comment" rows="6" required></textarea>
+						</div>
+						<div id="new_comment_form_footer">
+							<input id="item_id_comment_send" name="post_id" type="hidden" value="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['post_id'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+" />
+							<input id="item_id_comment_reply" name="post_id_comment_reply" type="hidden" value="" />
+							<p class="">
+								<button id="submitComment" class="btn btn-default" name="submitComment" type="submit"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Post comment','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
+</button>
+							</p>
+						</div>
+					</form>
+					<?php echo '<script'; ?>
+>
+					$("#commentForm").validate({
+					  rules: {		
+						customer_name: "required",		
+						email: {
+						  required: true,
+						  email: true
+						}
+					  }
+					});
+					<?php echo '</script'; ?>
+>
+				</div>
+				<?php }?>
+				<?php if (!$_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_ALLOW_GUEST_COMMENT'] && !$_smarty_tpl->tpl_vars['logged']->value) {?>
+					<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Please Login to comment','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
+
+				<?php }?>
 			<?php } else { ?>
 				<?php $_smarty_tpl->_subTemplateRender("file:modules/jmsblog/views/templates/front/comment_facebook.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>		

@@ -7,6 +7,7 @@
 
 .container{
 	max-width: 1170px;
+	width: 100%;
 }
 .container-fluid{
 	max-width: 100%;
@@ -65,6 +66,32 @@
 		margin: 0 -15px;
 	}
 }
+.jms-banner > a{
+	display: block;
+	position: relative;
+	&:hover::before{
+		opacity: 0;
+		border: 0 double rgba(255, 255, 255, 0.7);
+		visibility: hidden;
+	}
+	&::before{
+		bottom: 0;
+		content: "";
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: all 0.4s cubic-bezier(0.94, 0.85, 0.1, 0.62) 0s;
+		z-index: 1;
+		border: 100px double transparent;
+		opacity: 1;
+		visibility: visible;
+	}
+	img{
+		width: 100%;
+	}
+}
+
 
 // topbar
 .topbar{
@@ -176,6 +203,7 @@
 			&.type2, &.type3{
 				display: none;
 			}
+			@include icon_dropdown(1);
 		}
 		#_desktop_user_info{
 			padding-left: 25px;
@@ -237,6 +265,12 @@
 	}
 	.center{
 		.jms-advsearch{
+			#ajax_advsearch{
+				width: 100%;
+			}
+			#advsearch_result{
+				width: 100%;
+			}
 			.input-group-addon.icon-drop-down::before{
 				content: "";
 				position: absolute;
@@ -366,6 +400,9 @@
 
 // menu
 .menu{
+	.ver_menu_mobile{
+		display: none;
+	}
 	.container > .row{
 		display: flex;
 		align-items: center;
@@ -401,6 +438,7 @@
 		}
 	}
 	#jms-vermegamenu-container{
+		max-height: 503px;
 		box-shadow: 0 0 5px rgba(0,0,0,0.2);
 	}
 	.jms-vermegamenu{
@@ -498,7 +536,7 @@
 			span{
 				text-transform: lowercase;
 				font-family: 'Dancing Script', cursive;
-				font-size: 40px;
+				font-size: 2vw;
 				font-weight: 400;
 				color: #666;
 			}
@@ -976,6 +1014,8 @@
 
 .brand{
 	margin-top: -136px;
+	display: inline-flex;
+	width: 100%;
 	.layout-column{
 		margin-top: -136px;
 	}
@@ -1096,7 +1136,7 @@
 	}
 }
 .footer_b{
-	line-height: 55px;
+	padding: 15px 0;
 	background: #333;
 	ul{
 		margin-bottom: 0;
@@ -1114,5 +1154,192 @@
 	}
 	.left b{
 		font-size: 16px;
+	}
+}
+
+@media (max-width: 1199px){
+	.page-index #wrapper {
+		max-width: 970px;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.left_column{
+		.container{
+			width: auto;
+		}
+	}
+	.main_column{
+		.banner_1{
+			display: flow-root;
+		}
+		.hotdeal{
+			.countdown-row .countdown-section:not(:last-child)::after{
+				right: -5px;
+			}
+			.countdown-section{
+				margin: 0 3.5px;
+			}
+		}
+		.container{
+			width: auto;
+		}
+	}
+	.container{
+		width: 970px;
+	}
+	.header .right .addon-box:not(:first-child) {
+		margin-right: 10px;
+	}
+}
+@media (max-width: 991px){
+	.header{
+		.container > .row{
+			display: block;
+		}
+		.left{
+			.addon-box{
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+	.menu{
+		.ver_menu_mobile {
+			display: block;
+		}
+		.container{
+			position: relative;
+			> .row{
+				display: block;
+			}
+		}
+		.right{
+			position: absolute;
+			right: 0;
+			z-index: 2;
+			top: 5px;
+			width: 75px;
+			#open-button{
+				display: inline-flex;
+				float: right;
+			}
+		}
+		.left{
+			display: none;
+		}
+		.ver_mobile{
+			display: block;
+		}
+	}
+	.page-index #wrapper {
+		max-width: auto;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.container{
+		width: 750px;
+	}
+	.left_column{
+		float: none;
+		width: 100%;
+		padding: 0;
+		.jms-banner{
+			display: flex;
+			justify-content: center;
+			img{
+				width: auto;
+			}
+		}
+		.container{
+			width: 750px;
+		}
+	}
+	.main_column{
+		float: none;
+		width: 100%;
+		padding: 0;
+		.container{
+			width: 750px;
+		}
+	}
+	.footer_b{
+		.addon-box p{
+			text-align: center;
+		}
+		ul{
+			text-align: center;
+		}
+	}
+}
+@media (max-width: 767px){
+	.brand{
+		display: block;
+		width: auto;
+		margin-top: 0;
+	}
+	.left_column, .main_column{
+		padding: 0 15px;
+	}
+	.main_column .banner_1 .addon-box{
+		float: none;
+		width: 100%;
+		&:first-child{
+			margin-bottom: 15px;
+		}
+	}
+	.container{
+		width: auto;
+	}
+	.topbar{
+		display: none;
+	}
+	.header .right{
+		display: flex;
+		justify-content: center;
+		#cart_block{
+			position: unset;
+			.shoppingcart-box{
+				right: 15px;
+				top: calc(100% + 20px);
+			}
+		}
+		.addon-box{
+			float: none;
+			&:not(:first-child){
+				order: 1;
+			}
+			&:first-child{
+				order: 2;
+			}
+			margin: 0 10px;
+		}
+	}
+	.menu .right{
+		right: 15px;
+	}
+	.left_column .container, .main_column .container{
+		width: auto;
+	}
+	.product_carousel{
+		.container{
+			margin: 0 15px;
+		}
+	}
+}
+@media (max-width: 481px){
+	div#cart_block .shoppingcart-box{
+		margin-top: 0 !important;
+	}
+	.main_column .healthy_eat{
+		.addon-title, .product_box{
+			float: none;
+			width: 100%;
+		}
+		.product_box{
+			margin: 0 -15px;
+		}
+		.addon-box{
+			background: none;
+		}
 	}
 }

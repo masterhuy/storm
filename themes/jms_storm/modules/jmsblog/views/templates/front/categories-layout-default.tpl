@@ -46,7 +46,7 @@
 				{/if}
 				<div class="category-info">
 					<h4 class="post-title"><a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{$category.title|escape:'htmlall':'UTF-8'}</a></h4>	
-					<div class="blog-intro">{$category.introtext nofilter}</div>
+					<div class="blog-intro">{$category.introtext|truncate:120:'...' nofilter}</div>
 				</div>			
 			</div>
 		{/foreach}

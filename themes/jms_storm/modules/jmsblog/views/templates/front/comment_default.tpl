@@ -22,6 +22,7 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
+
 {if $msg == 1}<div class="success">{l s='Your comment submited' d='Modules.JmsBlog'} ! {if $jmsblog_setting.JMSBLOG_AUTO_APPROVE_COMMENT == 0} {l s='Please waiting approve from Admin' d='Modules.JmsBlog'}.{/if}</div>{/if}
 {if $cerrors|@count gt 0}
 	<ul>

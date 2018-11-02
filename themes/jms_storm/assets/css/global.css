@@ -1531,14 +1531,26 @@ a.wishlist_top {
 
 .single-blog .post-fulltext .p1, .single-blog .post-fulltext .p3 {
   color: #555;
-  line-height: 1.73; }
+  line-height: 1.73;
+  margin-bottom: 31px; }
 
 .single-blog .post-fulltext .p2 {
-  position: relative; }
+  position: relative;
+  display: block;
+  line-height: 1.5;
+  padding: 0 33px; }
   .single-blog .post-fulltext .p2::before {
-    content: '“'; }
+    content: '“';
+    font-size: 105px;
+    position: absolute;
+    top: -46px;
+    left: 0; }
   .single-blog .post-fulltext .p2::after {
-    content: '”'; }
+    content: '”';
+    font-size: 105px;
+    position: absolute;
+    bottom: -93px;
+    right: 12px; }
   .single-blog .post-fulltext .p2 .placeholder {
     font-size: 16px;
     color: #666; }
@@ -1546,7 +1558,9 @@ a.wishlist_top {
 .single-blog .post-fulltext h1 {
   font-size: 20px;
   font-weight: 500;
-  color: #333; }
+  color: #333;
+  padding: 0 33px;
+  margin-bottom: 41px; }
   .single-blog .post-fulltext h1 span {
     color: #666; }
 
@@ -1572,3 +1586,65 @@ a.wishlist_top {
     .blog-widget .item-post .left .post-created {
       color: #666;
       margin: 0; }
+
+.post-comment-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .post-comment-info .left h6 {
+    padding-bottom: 0;
+    font-size: 14px;
+    color: #333; }
+    .post-comment-info .left h6 span {
+      font-weight: 500;
+      font-size: 16px; }
+  .post-comment-info .left .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 11px; }
+  .post-comment-info .post-comment-content {
+    color: #888;
+    margin-bottom: 0; }
+
+#module-jmsblog-post .breadcrumb {
+  margin-bottom: 58px; }
+
+#commentForm {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 55px;
+  margin-top: 45px; }
+  #commentForm .form-group {
+    margin-bottom: 16px; }
+  #commentForm input {
+    height: 50px; }
+  #commentForm label {
+    color: #222;
+    margin-bottom: 9px; }
+    #commentForm label.lb-comment {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 26px; }
+  #commentForm #new_comment_form_footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    #commentForm #new_comment_form_footer button {
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 30px; }
+
+#module-jmsblog-categories .category-info {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 50px; }
+
+.cat-post-list.more-columns {
+  margin: 0 -15px; }

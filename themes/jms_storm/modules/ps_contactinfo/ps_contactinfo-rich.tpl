@@ -24,7 +24,7 @@
 *}
 
 <div class="contact-rich">
-  <h4> <i class="material-icons fa fa-map-marker"></i> {l s='Store information' d='Shop.Theme'}</h4>
+  <h4> <i class="fa fa-map-marker"></i> {l s='Store information' d='Shop.Theme'}</h4>
   <div class="block">
     <div class="data">{$contact_infos.address.formatted nofilter}</div>
   </div>
@@ -51,7 +51,7 @@
   {if $contact_infos.email}
     <hr/>
     <div class="block">
-      <div class="icon"><h4> <i class="material-icons fa fa-envelope"></i>{l s='Email Contact' d='Shop.Theme'} </h4></div>
+      <div class="icon"><h4> <i class="fa fa-envelope"></i>{l s='Email Contact' d='Shop.Theme'} </h4></div>
       <div class="data email">
         {l s='Email us:' d='Shop.Theme'}<br/>
        </div>

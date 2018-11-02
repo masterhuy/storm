@@ -29,7 +29,6 @@
 {elseif $sidebar == 'no'}	
 	{assign var="layout" value="layouts/layout-full-width.tpl"}
 {/if}
-{include file="module:jmsblog/views/templates/front/$categories_layout"}
 {extends file='page.tpl'}
 {block name="page_content"}
 {capture name=path}{l s='Categories'}{/capture}

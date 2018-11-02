@@ -211,7 +211,7 @@ class JmsAddonBlog extends JmsAddonBase
             LEFT JOIN '._DB_PREFIX_.'jmsblog_categories_lang catsl ON (catsl.category_id = hss.category_id)
             WHERE hss.active = 1 AND hssl.id_lang = '.(int)$id_lang.' AND catsl.id_lang = '.(int)$id_lang.
             ' GROUP BY hss.post_id
-            ORDER BY hss.created DESC
+            ORDER BY hss.created ASC
             LIMIT 0,'.$addon->fields[2]->value;
         $posts = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($query);
         for ($i = 0; $i < count($posts); $i++) {

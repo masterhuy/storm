@@ -27,11 +27,11 @@
 {capture name=path}{$tag|escape:'html':'UTF-8'}{/capture}
 <h1 class="page-heading">{l s='Tag' d='Modules.JmsBlog'} : {$tag}</h1>
 {if isset($posts) AND $posts}		
-	<div class="cat-post-list">
+	<div class="cat-post-list more-columns">
 		{foreach from=$posts item=post}
 			{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
 			{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}				
-			<div class="item">
+			<div class="item col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="blog-post">
 					{if $post.link_video && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
 						<div class="post-thumb">
@@ -39,7 +39,8 @@
 						</div>
 					{elseif $post.image && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
 						<div class="post-thumb">
-							<a href="{jmsblog::getPageLink('jmsblog-post', $params)}" style="background-image:url({$image_baseurl|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'});">
+							<a href="{jmsblog::getPageLink('jmsblog-post', $params)}">
+								<img src="{$image_baseurl|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'}" alt="{$post.title|escape:'htmlall':'UTF-8'}">
 							</a>
 						</div>
 					{/if}

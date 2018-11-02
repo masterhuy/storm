@@ -5401,6 +5401,12 @@ footer .blog-carousel {
 #product-availability {
   display: none;
 }
+#comment:focus{
+  border-color: #eee;
+}
+#comment::placeholder{
+  color: rgba(40, 33, 31, 0.5);
+}
 
 
 a,

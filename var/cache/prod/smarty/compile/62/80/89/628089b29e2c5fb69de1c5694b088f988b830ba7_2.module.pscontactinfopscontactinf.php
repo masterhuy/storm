@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-29 06:09:38
+/* Smarty version 3.1.32, created on 2018-11-02 00:20:19
   from 'module:pscontactinfopscontactinf' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bd6dc62050b77_26589668',
+  'unifunc' => 'content_5bdbd083ce59f8_95241874',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '628089b29e2c5fb69de1c5694b088f988b830ba7' => 
     array (
       0 => 'module:pscontactinfopscontactinf',
-      1 => 1537323325,
+      1 => 1541131904,
       2 => 'module',
     ),
   ),
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bd6dc62050b77_26589668 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bdbd083ce59f8_95241874 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="contact-rich">
-  <h4> <i class="material-icons fa fa-map-marker"></i> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Store information','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
+  <h4> <i class="fa fa-map-marker"></i> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Store information','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 </h4>
   <div class="block">
     <div class="data"><?php echo $_smarty_tpl->tpl_vars['contact_infos']->value['address']['formatted'];?>
@@ -57,7 +57,7 @@ function content_5bd6dc62050b77_26589668 (Smarty_Internal_Template $_smarty_tpl)
   <?php if ($_smarty_tpl->tpl_vars['contact_infos']->value['email']) {?>
     <hr/>
     <div class="block">
-      <div class="icon"><h4> <i class="material-icons fa fa-envelope"></i><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Email Contact','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
+      <div class="icon"><h4> <i class="fa fa-envelope"></i><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Email Contact','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
  </h4></div>
       <div class="data email">
         <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Email us:','d'=>'Shop.Theme'),$_smarty_tpl ) );?>

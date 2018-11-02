@@ -41,6 +41,30 @@
 .product-preview .addToWishlist.product-btn:hover {
   color: #bf0b26; }
 
+.jms-banner > a {
+  display: block;
+  position: relative; }
+  .jms-banner > a:hover::before {
+    opacity: 0;
+    border: 0 double rgba(255, 255, 255, 0.7);
+    visibility: hidden; }
+  .jms-banner > a::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: all 0.4s cubic-bezier(0.94, 0.85, 0.1, 0.62) 0s;
+    -o-transition: all 0.4s cubic-bezier(0.94, 0.85, 0.1, 0.62) 0s;
+    transition: all 0.4s cubic-bezier(0.94, 0.85, 0.1, 0.62) 0s;
+    z-index: 1;
+    border: 100px double transparent;
+    opacity: 1;
+    visibility: visible; }
+  .jms-banner > a img {
+    width: 100%; }
+
 .topbar {
   background: #fff;
   color: #333;
@@ -125,6 +149,10 @@
     display: block; }
   .topbar .right #_desktop_currency_selector.type2, .topbar .right #_desktop_currency_selector.type3 {
     display: none; }
+  .topbar .right #_desktop_currency_selector a.dropdown-toggle::after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    padding-left: 1px; }
   .topbar .right #_desktop_user_info {
     padding-left: 25px; }
     .topbar .right #_desktop_user_info a span {
@@ -322,7 +350,7 @@
     width: auto; }
   .cates .item.block_category {
     float: left;
-    margin-right: 30px; }
+    margin: 0 15px; }
   .cates .categories-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -369,20 +397,18 @@
     width: 34.5%; }
 
 .product_tab {
+  position: relative;
+  z-index: 1;
   margin-top: 38px; }
   .product_tab .owl-stage-outer {
     padding-bottom: 150px; }
 
 .banner_full {
+  position: relative;
+  z-index: 2;
   margin-top: -156px; }
   .banner_full .addon-box {
-    margin-top: -156px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+    margin-top: -156px; }
   .banner_full .feature-box {
     position: relative;
     max-width: 1903px; }
@@ -390,12 +416,7 @@
     text-align: center; }
   .banner_full .include_content_s {
     color: #fff;
-    position: absolute;
-    top: calc(50% - 17px);
-    left: 24%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    padding: 136.6px 0; }
     .banner_full .include_content_s .text-1 {
       font-size: 45px;
       color: #ccc;

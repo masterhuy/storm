@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-29 06:09:38
+/* Smarty version 3.1.32, created on 2018-11-02 00:20:19
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\contactform\views\templates\widget\contactform.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bd6dc6208f383_32208608',
+  'unifunc' => 'content_5bdbd083df70f2_59447259',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '287004ca6b783b1578b36f78f1500d7f382508e4' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\modules\\contactform\\views\\templates\\widget\\contactform.tpl',
-      1 => 1537323325,
+      1 => 1541132361,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bd6dc6208f383_32208608 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bdbd083df70f2_59447259 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section class="contact-form">
   <form action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['contact'], ENT_QUOTES, 'UTF-8');?>
 " method="post" <?php if ($_smarty_tpl->tpl_vars['contact']->value['allow_file_upload']) {?>enctype="multipart/form-data"<?php }?>>
@@ -123,7 +123,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
           <label class="col-md-3 form-control-label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Attachment','d'=>'Shop.Forms.Labels'),$_smarty_tpl ) );?>
 </label>
           <div class="col-md-6">
-            <input type="file" name="fileUpload" class="filestyle">
+            <input type="file" name="fileUpload" class="btn-default filestyle" data-buttonText="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Choose file','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+">
           </div>
           <span class="col-md-3 form-control-comment">
             <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'optional','d'=>'Shop.Forms.Help'),$_smarty_tpl ) );?>
@@ -151,7 +152,7 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['contact']->value['message'], ENT_Q
     </section>
 
     <footer class="form-footer text-xs-right">
-      <input class="btn btn-primary btn-effect" type="submit" name="submitMessage" value="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Send','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+      <input class="btn-default btn_submit btn-primary btn-effect" type="submit" name="submitMessage" value="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Submit','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 ">
     </footer>
 

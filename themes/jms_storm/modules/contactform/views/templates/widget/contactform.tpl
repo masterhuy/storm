@@ -64,7 +64,7 @@
         <div class="form-group row">
           <label class="col-md-3 form-control-label">{l s='Attachment' d='Shop.Forms.Labels'}</label>
           <div class="col-md-6">
-            <input type="file" name="fileUpload" class="filestyle">
+            <input type="file" name="fileUpload" class="btn-default filestyle" data-buttonText="{l s='Choose file' d='Shop.Theme.Actions'}">
           </div>
           <span class="col-md-3 form-control-comment">
             {l s='optional' d='Shop.Forms.Help'}
@@ -87,7 +87,7 @@
     </section>
 
     <footer class="form-footer text-xs-right">
-      <input class="btn btn-primary btn-effect" type="submit" name="submitMessage" value="{l s='Send' d='Shop.Theme.Actions'}">
+      <input class="btn-default btn_submit btn-primary btn-effect" type="submit" name="submitMessage" value="{l s='Submit' d='Shop.Theme.Actions'}">
     </footer>
 
   </form>

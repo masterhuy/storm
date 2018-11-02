@@ -28,7 +28,7 @@
 {capture name=path}{$current_category.title|escape:'html':'UTF-8'}{/capture}
 <h1 class="page-heading">{$current_category.title}</h1>
 {if isset($posts) AND $posts}		
-	<div class="cat-post-list">
+	<div class="cat-post-list more-columns">
 		{foreach from=$posts item=post}
 			{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
 			{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}				

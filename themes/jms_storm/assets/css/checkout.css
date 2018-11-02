@@ -106,6 +106,13 @@
 }
 #checkout #delivery-address .form-footer button {
 	margin-right:10px;
+	padding: 9px 16px;
+	position: relative;
+	top: -1px;
+}
+#checkout #delivery-address .form-footer .js-cancel-address{
+	font-size: 14px;
+	display: inline-block;
 }
 #checkout section#content #js-checkout-summary p {
 	font-size: 16px;

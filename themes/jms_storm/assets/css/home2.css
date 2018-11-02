@@ -108,6 +108,10 @@
     content: "\f107";
     font-family: "FontAwesome";
     padding-left: 1px; }
+  .topbar .right #_desktop_user_info .dropdown-menu {
+    left: -20px; }
+    .topbar .right #_desktop_user_info .dropdown-menu > li > a {
+      line-height: 36px; }
   .topbar .right #_desktop_user_info .type1, .topbar .right #_desktop_user_info .type2 {
     display: none; }
   .topbar .right #_desktop_user_info .type3 {

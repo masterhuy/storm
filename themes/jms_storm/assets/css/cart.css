@@ -124,6 +124,7 @@
 	border: 1px solid #ebebeb;
 	padding: 0 10px;
 	line-height: 40px;
+	max-width: 237px;
 }
 .cart-summary .label {
 	color: #000;

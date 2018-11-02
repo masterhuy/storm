@@ -245,6 +245,12 @@ jQuery(document).ready(function($) {
 		$('.header .search-box').removeClass('open');
 	});
 
+	$(".product_tab .product-miniature").hover(function(){
+	    $(".product_tab").css("z-index", "3");
+		}, function(){
+        $(".product_tab").css("z-index", "1");
+	});
+	
 	$(".cate_tab .product-miniature").hover(function(){
 	    $(".cate_tab").css("z-index", "3");
 		}, function(){

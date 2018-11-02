@@ -34,13 +34,16 @@
 #mobile-vermegamenu .dropdown-menu >  li > a {
 	line-height:35px;
 	padding:3px 30px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 #mobile-vermegamenu .dropdown-menu >  li{
 	border-bottom: 1px solid #ccc;
 	margin-left: 20px;
 }
 #mobile-vermegamenu li a {
-    color: #333;
+	color: #333;
 	font-family: "Poppins",serif;
 	font-size: 1em;
 	line-height: 30px;

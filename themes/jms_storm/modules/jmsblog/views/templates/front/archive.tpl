@@ -27,7 +27,7 @@
 {capture name=path}{l s='Archive' d='Modules.JmsBlog'}-{$month|escape:'html':'UTF-8'}{/capture}
 <h1 class="page-heading">{l s='Archive' d='Modules.JmsBlog'} : {$month}</h1>
 {if isset($posts) AND $posts}		
-	<div class="post-list">
+	<div class="cat-post-list more-columns">
 		{foreach from=$posts item=post}
 			{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}			
 			{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}
