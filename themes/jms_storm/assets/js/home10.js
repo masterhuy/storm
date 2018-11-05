@@ -204,6 +204,11 @@ jQuery(function ($) {
 
 
 jQuery(document).ready(function($) {
+	$('.ver_menu_mobile').click(function(event) {
+		$(this).parent().toggleClass('open');
+	}); 
+	
+	$("#mobile-vermegamenu").addClass('collapse');
 	$("#jms-vermegamenu-container").addClass('collapse');
 	$(".page-index #jms-vermegamenu-container").addClass('collapse in');
 	$('.page-index .ver_menu').click(function(event) {

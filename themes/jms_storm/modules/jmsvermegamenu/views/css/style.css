@@ -41,14 +41,17 @@
     top: 3px;
     padding-right: 15px;
 }
-.jms-vermegamenu .nav > li > a  {
-	color:#333;
+.jms-vermegamenu .nav > li > a {
+    color: #333;
     font-family: "Poppins",serif;
     font-size: 1em;
     line-height: 30px;
     padding: 5.5px 0px;
     position: relative;
     text-transform: uppercase;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .jms-vermegamenu .nav > li > a > .caret::after {
     content: "\f105";

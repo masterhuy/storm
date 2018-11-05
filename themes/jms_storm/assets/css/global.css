@@ -7,6 +7,9 @@
   text-transform: uppercase;
   color: #888; }
 
+#_desktop_user_info .dropdown-menu {
+  left: -20px; }
+
 #_desktop_search_filters_clear_all button {
   background: #111;
   border-color: #111; }

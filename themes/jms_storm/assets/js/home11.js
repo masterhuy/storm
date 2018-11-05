@@ -142,4 +142,10 @@ jQuery(document).ready(function($) {
 		}, function(){
         $(".best_seller").css("z-index", "1");
 	});
+
+	$(".featured_product .product-miniature").hover(function(){
+	    $(".featured_product").css("z-index", "3");
+		}, function(){
+        $(".featured_product").css("z-index", "1");
+	});
 });

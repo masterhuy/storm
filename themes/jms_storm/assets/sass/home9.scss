@@ -57,6 +57,9 @@
 	> a{
 		display: block;
 		position: relative;
+		img{
+			width: 100%;
+		}
 		&::before {
 		    content: "";
 		    bottom: 0;
@@ -156,7 +159,7 @@
 				}
 			}
 		}
-		a.account, p > a{
+		a.account{
 			color: #fff;
 		}
 		a{
@@ -194,23 +197,30 @@
 			&.type2, &.type3{
 				display: none;
 			}
+			@include icon_dropdown(1);
 		}
 		#_desktop_user_info{
 			padding-left: 25px;
+			.dropdown-menu a{
+				color: #333;
+				&:hover{
+					color: $active-h9;
+				}
+			}
+			.user-info > a::before{
+				content: "\e915";
+				font-family: Storm;
+				font-size: 17px;
+				position: absolute;
+				left: -24px;
+				top: -15px;
+			}
 			a{
 				span{
 					font-size: 13px;
 					text-transform: capitalize;
 				}
 				&.account{
-					&::before{
-						content: "\e915";
-						font-family: Storm;
-						font-size: 17px;
-						position: absolute;
-						left: -24px;
-						top: -15px;
-					}
 					&.btn-name::before{
 						top: -3px;
 					}
@@ -254,6 +264,9 @@
 		align-items: center;
 	}
 	.center{
+		.advsearch_result{
+			width: calc(100% + 12px);
+		}
 		.jms-advsearch{
 			.input-group-search{
 				padding: 0;
@@ -507,6 +520,8 @@
 		font-weight: 500;
 		text-transform: uppercase;
 		color: #fff;
+		text-align: center;
+		display: inline-block;
 		&:hover{
 			color: #fff;
 		}
@@ -518,6 +533,8 @@
 
 // product tab
 .product_tab{
+	position: relative;
+	z-index: 1;
 	.owl-stage-outer{
 		padding-bottom: 150px;
 	}
@@ -526,24 +543,18 @@
 
 // banner full
 .banner_full{
+	position: relative;
+	z-index: 2;
 	margin-top: -142px;
 	.addon-box{
 		margin-top: -142px;
-		display: flex;
-		justify-content: center;
 	}
 	.feature-box{
 		position: relative;
 		max-width: 1903px;
-	}
-	.image{
-		text-align: center;
-	}
+	} 
 	.include_content_s{
-		position: absolute;
-		top: calc(50% - 17px);
-		left: calc(19% + 5px);
-		transform: translateY(-50%);
+		padding: 174.5px 0;
 		.text-1{
 			font-size: 20px;
 			color: #333;
@@ -771,6 +782,7 @@
 				margin-top: 0;
 				height: 48px;
 				border-radius: 0 3px 3px 0;
+				max-width: 100px;
 			}
 		}
 		#newsletter-input{
@@ -887,5 +899,148 @@
 				}
 			}
 		}
+	}
+}
+
+@media (max-width: 1199px){
+	#ajax_advsearch{
+		width: 200px;
+	}
+	.brand .layout-column {
+		margin-top: 0;
+	}
+	.footer_t .newsletter{
+		.addon-box:nth-child(2) img {
+			margin-right: 3px;
+		}
+	}
+}
+@media (max-width: 991px){
+	.header{
+		.container > .row{
+			display: block;
+		}
+		.left .addon-box{
+			display: flex;
+			justify-content: center;
+			padding: 10px 0;
+		}
+	}
+	.jms-banner > a::before{
+		border: 50px double transparent;
+	}
+	.footer_b{
+		.container > .row{
+			display: block;
+		}
+		.left p{
+			text-align: center;
+		}
+		.right ul{
+			float: none;
+			text-align: center;
+			li{
+				margin: 0 10px;
+				&:not(:last-child)::after {
+				    right: -12px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.topbar{
+		display: none;
+	}
+	.header {
+		padding: 0 0 15px;
+		#advsearch_result{
+			width: 100%;
+		}
+		.right{
+			display: flex;
+			justify-content: center;
+			.addon-box{
+				margin: 0;
+				margin: 0 10px;
+				&:not(:first-child) {
+				    margin-right: 10px;
+				}
+				&:first-child{
+					order: 2;
+				}
+				&:last-child{
+					order: 1;
+				}
+			}
+		}
+		#cart_block{
+			position: unset;
+			.shoppingcart-box{
+				right: 15px;
+			}
+		}
+		.right #cart_block .text-custom {
+		    display: none;
+		}
+	}
+	.slides{
+		margin-bottom: 15px;
+		.left, .right{
+			width: 100%;
+		}
+	}
+	.banner_1, .banner{
+		.left, .center{
+			margin-bottom: 15px;
+		}
+	}
+	.banner_full{
+		.addon-box{
+			margin-top: 0;
+		}
+	}
+	.include_content_s {
+	    padding: 75px 0;
+	}
+	.banner{
+		margin-top: 0;
+		.layout-column{
+			margin-top: 0;
+		}
+	}
+	.footer_t .newsletter #newsletter-input{
+		width: 100%;
+	}
+}
+@media (max-width: 767px) and (min-width: 482px){
+	.banner_1, .banner{
+		.jms-banner{
+			display: flex;
+			justify-content: center;
+			img{
+				width: auto;
+			}
+		}
+	}
+}
+@media (max-width: 481px){
+	.footer_t .newsletter #newsletter-input {
+		width: 200px;
+	}
+	.slides .right .addon-box{
+		width: 100% !important;
+	}
+	.banner_full .include_content_s{
+		.text-2 {
+			font-size: 30px;
+		}
+	}
+	.btn-shopnow{
+		font-size: 14px;
+	}
+	.menu .right .text p{
+		font-size: 11px;
 	}
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-09 05:03:51
+/* Smarty version 3.1.32, created on 2018-11-04 23:34:41
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmspagebuilder\views\templates\hook\addonproductcarousel_m.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bbc6ef7776fb1_00492806',
+  'unifunc' => 'content_5bdfc861a0cb65_38896972',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '17465cc26155743f0cae5359e1cceee6d42ba4e6' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\modules\\jmspagebuilder\\views\\templates\\hook\\addonproductcarousel_m.tpl',
-      1 => 1539075788,
+      1 => 1540204495,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5bbc6ef7776fb1_00492806 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bdfc861a0cb65_38896972 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 	var pm_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {
@@ -49,6 +49,10 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 	<h3><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['addon_title']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 </h3>
 </div>
+<?php }
+if ($_smarty_tpl->tpl_vars['addon_desc']->value) {?>
+<p class="addon-desc"><?php echo $_smarty_tpl->tpl_vars['addon_desc']->value;?>
+</p>
 <?php }?>
 <div class="product_box">
 	<div class="product-carousel-m custom_carousel">	

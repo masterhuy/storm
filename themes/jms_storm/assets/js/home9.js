@@ -242,6 +242,12 @@ jQuery(document).ready(function($) {
         $(".product_carousel").css("z-index", "1");
 	});
 
+	$(".product_tab .product-miniature").hover(function(){
+	    $(".product_tab").css("z-index", "3");
+		}, function(){
+        $(".product_tab").css("z-index", "1");
+	});
+
 	$(".most_view .product-miniature").hover(function(){
 	    $(".most_view").css("z-index", "3");
 		}, function(){

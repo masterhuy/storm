@@ -7,10 +7,14 @@
 
 .container{
 	max-width: 1170px;
+	width: 100%;
 }
 .container-fluid{
 	max-width: 100%;
 	width: 100%;
+}
+.page-index #content-wrapper {
+	margin-bottom: 0;
 }
 .btn-cart:hover {
 	background: $active-h12;
@@ -215,20 +219,34 @@ body{
 			}
 		}
 		#_desktop_user_info{
+			padding-left: 25px;
+			.dropdown-menu{
+				background: #000;
+				border: 1px solid #313131;
+				li{
+					padding: 5px 0;
+				}
+				a{
+					color: #eee;
+					&:hover{
+						color: $active-h11;
+					}
+				}
+			}
+			.user-info > a::before{
+				content: "\e915";
+				font-family: Storm;
+				font-size: 17px;
+				position: absolute;
+				left: -24px;
+				top: -15px;
+			}
 			a{
 				span{
 					font-size: 13px;
 					text-transform: capitalize;
 				}
 				&.account{
-					&::before{
-						content: "\e915";
-						font-family: Storm;
-						font-size: 17px;
-						position: absolute;
-						left: -24px;
-						top: -15px;
-					}
 					&.btn-name::before{
 						top: -3px;
 					}
@@ -547,6 +565,8 @@ body{
 // ver_menu + slider
 .slides{
 	.left{
+		position: relative;
+		top: -20px;
 		.ver_menu{
 			font-size: 14px;
 			font-weight: 600;
@@ -562,8 +582,11 @@ body{
 				margin-right: 15px;
 			}
 		}
+		#jms-vermegamenu-container{
+			box-shadow: unset;
+		}
 		.jms-vermegamenu{
-			padding: 12px 0;
+			padding: 6px 0;
 			box-shadow: unset;
 			.dropdown-menu{
 				left: 100%;
@@ -994,6 +1017,7 @@ body{
 		}
 		.addon-title{
 			padding: 0;
+			border-bottom: 0;
 			h3{
 				color: #fff;
 				padding-bottom: 0;
@@ -1067,6 +1091,8 @@ body{
 
 // footer
 #footer{
+	display: inline-block;
+	width: 100%;
 	background: #222;
 	// newsletter
 	.addon-title{

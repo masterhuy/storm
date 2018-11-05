@@ -219,7 +219,7 @@ jQuery(function ($) {
 					items:4
 				},
 				481:{
-					items:2
+					items:4
 					},
 				0: {
 					items:2

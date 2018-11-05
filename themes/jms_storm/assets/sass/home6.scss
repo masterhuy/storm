@@ -901,4 +901,17 @@
 			max-width: 173px;
 		}
 	}
+	div.leftbar .second .search-box{
+		.searchbox{
+			top: 20%;
+		}
+		#ajax_search{
+			width: 230px;
+		}
+		#search_result{
+			width: 293px;
+			left: 50%;
+			top: calc(30% - 22px);
+		}
+	}
 }
