@@ -242,6 +242,7 @@ jQuery(function ($) {
 
 
 jQuery(document).ready(function($) {
+	$("#mobile-vermegamenu").addClass('collapse');
 	$(".best_seller .product-miniature").hover(function(){
 	    $(".best_seller").css("z-index", "3");
 		}, function(){

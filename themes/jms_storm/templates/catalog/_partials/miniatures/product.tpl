@@ -72,7 +72,7 @@
 			</span>
 	    {/if}
 		{block name='product_name'}
-			<a href="{$product.link|escape:'html'}" title="{$product.name|escape:'html':'UTF-8'}" class="product-link">{$product.name|truncate:50:'...'|escape:'html':'UTF-8'}</a>
+			<a href="{$product.link|escape:'html'}" title="{$product.name|escape:'html':'UTF-8'}" class="product-link">{$product.name|truncate:40:'...'|escape:'html':'UTF-8'}</a>
 		{/block}
 			  
 		{block name='product_price_and_shipping'}

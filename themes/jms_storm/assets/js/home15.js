@@ -360,4 +360,9 @@ jQuery(document).ready(function($) {
 		}, function(){
         $(".men").css("z-index", "1");
 	});
+	$(".best_seller .product-miniature").hover(function(){
+	    $(".best_seller").css("z-index", "3");
+		}, function(){
+        $(".best_seller").css("z-index", "1");
+	});
 });

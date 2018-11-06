@@ -286,6 +286,9 @@
 @include blogWigetTitle(19, $active-h19);
 @include blogWigetTitle(20, $active-h20);
 
+.page-index #content-wrapper{
+	margin-bottom: 0;
+}
 #content-wrapper {
 	margin-bottom: 70px;
 }

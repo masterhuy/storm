@@ -1066,6 +1066,9 @@
 .home_20 .widget-title, .home_20 .title_block {
   border-bottom-color: #f15a2b; }
 
+.page-index #content-wrapper {
+  margin-bottom: 0; }
+
 #content-wrapper {
   margin-bottom: 70px; }
 

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-04 23:22:59
+/* Smarty version 3.1.32, created on 2018-11-06 02:16:06
   from 'module:pssharebuttonsviewstempla' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bdfc5a3d87560_85877611',
+  'unifunc' => 'content_5be13fb6e07f51_82363211',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,20 +20,20 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bdfc5a3d87560_85877611 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be13fb6e07f51_82363211 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_176155bdfc5a3d87567_06461914', 'social_sharing');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_261045be13fb6e00254_10683405', 'social_sharing');
 ?>
 
 <?php }
 /* {block 'social_sharing'} */
-class Block_176155bdfc5a3d87567_06461914 extends Smarty_Internal_Block
+class Block_261045be13fb6e00254_10683405 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'social_sharing' => 
   array (
-    0 => 'Block_176155bdfc5a3d87567_06461914',
+    0 => 'Block_261045be13fb6e00254_10683405',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

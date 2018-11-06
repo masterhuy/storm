@@ -43,11 +43,11 @@
 <div class="jmsflashsales">
 	<div class="product_box">
 		<div class="title">
-			<div class="addon-title col-lg-3">
+			<div class="addon-title col-lg-3 col-md-3 col-sm-3 col-xs-12">
 				<h3>Daily deals</h3>
 			</div>
-			<div class="flashsales-countdown col-lg-6">{$expiretime|escape:'htmlall':'UTF-8'}</div>
-			<div class="col-lg-3"></div>
+			<div class="flashsales-countdown col-lg-6 col-md-6 col-sm-6 col-xs-12">{$expiretime|escape:'htmlall':'UTF-8'}</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"></div>
 		</div>
 		<div class="flashsales-carousel">	
 			{foreach from=$products item=product key=k}	

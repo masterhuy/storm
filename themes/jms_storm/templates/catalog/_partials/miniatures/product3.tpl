@@ -61,7 +61,7 @@
 
     <div class="product-info">
 	    {block name='product_name'}
-			<a href="{$product.link|escape:'html'}" class="product-name">{$product.name|escape:'html':'UTF-8'}</a>
+			<a href="{$product.link|escape:'html'}" class="product-name">{$product.name|truncate:40:'...'|escape:'html':'UTF-8'}</a>
 	    {/block}
 		    {block name='product_price_and_shipping'}
 		        {if $product.show_price}
