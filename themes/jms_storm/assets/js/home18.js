@@ -40,10 +40,10 @@ jQuery(function ($) {
 					items:2
 				},
 				768:{
-					items:1
+					items:2
 				},
 				481:{
-					items:1
+					items:2
 				},
 				361:{
 					items:1
@@ -214,7 +214,7 @@ jQuery(function ($) {
 					items:cs_itemsTablet
 				},
 				481:{
-					items:2
+					items:cs_itemsMobile
 				},
 				0: {
 					items:1

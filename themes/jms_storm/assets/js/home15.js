@@ -46,9 +46,6 @@ jQuery(function ($) {
 				481:{
 					items:p2_itemsMobile
 				},
-				361:{
-					items:1
-				},
 				0:{
 					items:1
 				}
@@ -147,9 +144,6 @@ jQuery(function ($) {
 				},
 				481:{
 					items:p_itemsMobile
-				},
-				361:{
-					items:1
 				},
 				0:{
 					items:1

@@ -29,7 +29,7 @@
 		   		<i class="storm-user"></i>
 		  	</a>
 		  	<ul role="menu" class="dropdown-menu">
-		  		<li>{$customerName}</li>
+		  		<li><a>{$customerName}</a></li>
 				<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='My Account' d='Shop.Theme.CustomerAccount'} </a></li>		
 				<li><a href="{$link->getModuleLink('jmswishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}" title="{l s='My wishlists' d='Shop.Theme'}">{l s='My Wishlist' d='Shop.Theme.CustomerAccount'} </a></li>
 				<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
@@ -69,7 +69,7 @@
 	 <div class="user-info btn-group compact-hidden type3">
 		{if $logged} 
 		 	<a class="btn-name account btn-xs dropdown-toggle" data-toggle="dropdown" href="{$my_account_url}"  title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" rel="nofollow">
-		    	<span class="hidden-sm-down">{$customerName}</span>
+		    	{$customerName}
 		  	</a>	
 	      	<ul role="menu" class="dropdown-menu">
 				<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Account' d='Shop.Theme.CustomerAccount'} </a></li>		

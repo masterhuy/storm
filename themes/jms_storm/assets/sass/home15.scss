@@ -890,11 +890,14 @@
 	.slides {
 		margin-top: -108px;
 	}
+	#searchbox #selector_cat{
+		width: 120px;
+	}
 }
 @media (max-width: 991px){
 	.header{
 		.container-fluid > .row{
-			display: block;
+			flex-direction: column;
 		}
 		.left .addon-box{
 			display: flex;
@@ -903,6 +906,62 @@
 		}
 		#search_result{
 			top: 100%;
+		}
+		.right{
+			display: flex;
+			justify-content: center;
+			.addon-box{
+				margin: 0;
+				margin: 0 10px;
+				&:not(:first-child) {
+				    margin-right: 10px;
+				}
+				&:first-child{
+					order: 2;
+				}
+				&:last-child{
+					order: 1;
+				}
+			}
+		}
+		.menu{
+			margin-bottom: 10px;
+			#open-button{
+				display: flex;
+				justify-content: center;
+			}
+			.addon-box{
+				&:first-child{
+					display: none;
+				}
+				&:nth-child(2){
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+	}
+	.slides {
+		margin-top: 0;
+	}
+	.women .left{
+		.text-1{
+			font-size: 16px;
+		}
+		.text-2{
+			font-size: 20px;
+			margin-bottom: 0;
+		}
+		.text-3{
+			font-size: 50px;
+		}
+	}
+	.men .right{
+		.text-1{
+			font-size: 16px;
+		}
+		.text-2 {
+			font-size: 30px;
 		}
 	}
 	#footer .newsletter .block_content{
@@ -920,5 +979,70 @@
 		.account{
 			margin-bottom: 10px;
 		}
+	}
+}
+@media (max-width: 767px){
+	.topbar{
+		display: none;
+	}
+	.header{
+		padding-top: 0;
+		.center{
+			.addon-box{
+				display: flex;
+				justify-content: center;
+			}
+			.jms-advsearch{
+				float:none;
+			}
+		}
+		#cart_block{
+			position: unset;
+			.shoppingcart-box{
+				right: 15px;
+			}
+		}
+	}
+	.women{
+		max-height: unset !important;
+		.left .content {
+			float: none;
+			padding-top: 0;
+		}
+	}
+	.cates .addon-title h3 {
+		padding-bottom: 70px;
+	}
+	.men{
+		max-height: unset !important;
+		.right .content {
+		    float: none;
+		    padding-top: 0;
+
+		}
+	}
+	.product_tab{
+		margin-top: 20px;
+	}
+}
+@media (max-width: 481px){
+	.women{
+		padding-bottom: 0;
+	}
+	.product_tab .addon-title{
+		h3 {
+			float: none;
+			text-align: center;
+		}
+		.jms-tab{
+			float: none;
+		}
+	}
+	.cates .addon-title h3::after{
+		width: 100%;
+	}
+	#footer .newsletter .form-group #newsletter-input{
+		max-width: 175px;
+		min-width: auto;
 	}
 }

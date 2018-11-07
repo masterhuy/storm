@@ -55,6 +55,45 @@
 		color: $active-h18;
 	}
 }
+.jms-banner > a{
+	display: block;
+	position: relative;
+	img{
+		width: 100%;
+	}
+	&:hover::before{
+		left: 0;
+		right: 0;
+		opacity: 0;
+	}
+	&:hover::after{
+		top: 0;
+		bottom: 0;
+		opacity: 0;
+	}
+	&::before{
+		content: "";
+		background: rgba(255, 255, 255, 0.2);
+		bottom: 0;
+		left: 50%;
+		position: absolute;
+		right: 50%;
+		top: 0;
+		opacity: 1;
+		transition: all 900ms;
+	}
+	&::after{
+		content: "";
+		background: rgba(255, 255, 255, 0.2);
+		bottom: 50%;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		opacity: 1;
+		transition: all 900ms;
+	}
+}
 
 // topbar
 .topbar{
@@ -151,16 +190,31 @@
 			@include icon_dropdown(1);
 		}
 		#_desktop_user_info{
-			.type1, .type2{
-				display: none;
+			padding-left: 20px;
+			.user-info > a::before{
+				content: "\e915";
+				font-family: Storm;
+				font-size: 17px;
+				position: absolute;
+				left: -24px;
+				top: -15px;
+			}
+			a{
+				span{
+					font-size: 13px;
+					text-transform: capitalize;
+				}
+				&.account{
+					&.btn-name::before{
+						top: -3px;
+					}
+				}
 			}
 			.type3{
 				display: block;
 			}
-			a.account::before {
-			    content: "\e915";
-			    font-family: Storm;
-			    font-size: 12px;
+			.type1, .type2{
+				display: none;
 			}
 		}
 		a{
@@ -408,22 +462,25 @@
 		color: #fff;
 		line-height: 56px;
 	}
+	.ver_mobile{
+		display: none;
+	}
 	.ver_menu{
-			font-size: 14px;
-			font-weight: 600;
-			background: #01457d;
-			text-transform: uppercase;
-			color: #fff;
-			padding: 16px 25px;
-			margin-bottom: 0;
-			cursor: pointer;
-			border-radius: 5px 5px 0 0;
-			&::before{
-				content: "\f0ca";
-				font-family: FontAwesome;
-				margin-right: 15px;
-			}
+		font-size: 14px;
+		font-weight: 600;
+		background: #01457d;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 16px 25px;
+		margin-bottom: 0;
+		cursor: pointer;
+		border-radius: 5px 5px 0 0;
+		&::before{
+			content: "\f0ca";
+			font-family: FontAwesome;
+			margin-right: 15px;
 		}
+	}
 	.right{
 		.addon-box{
 			display: flex;
@@ -957,6 +1014,9 @@
 	border-top: 1px solid #c2c2c2;
 	padding-top: 30px;
 	text-align: center;
+	img{
+		width: 100%;
+	}
 	.row1{
 		margin-bottom: 9px;
 	}
@@ -1009,6 +1069,135 @@
 		b{
 			font-weight: 600;
 			font-size: 16px;
+		}
+	}
+}
+@media (max-width: 1199px){
+	.menu{
+		.container{
+			position: relative;
+		}
+		.right{
+			position: unset;
+		}
+		.jms-megamenu .nav > li{
+			padding: 0 16px;
+		}
+	}
+	.jms-megamenu .nav > li.mega-fullwidth > .dropdown-menu {
+		width: 970px !important;
+	}
+	.slides{
+		.countdown-section{
+			margin-right: 7px !important;
+		}
+		.countdown-row .countdown-section:not(:last-child)::after {
+			right: -6px;
+		}
+	}
+	.footer_t .newsletter{
+		#newsletter-input {
+			width: 200px;
+		}
+		.addon-box:nth-child(2) img {
+			margin-right: 3px;
+		}
+	}
+}
+@media (max-width: 991px){
+	.header{
+		#cart_block{
+			position: unset;
+			&.open .shoppingcart-box {
+			    top: calc(100% + 20px);
+			}
+			.shoppingcart-box {
+			    top: calc(100% + 20px);
+			}
+		}
+		.container{
+			position: relative;
+			> .row{
+				flex-direction: column;
+			}
+		}
+		.center{
+			.addon-box{
+				display: flex;
+				justify-content: center;
+			}
+			.jms-advsearch{
+				float: none;
+			}
+		}
+		.left .addon-box{
+			display: flex;
+			justify-content: center;
+			padding: 10px 0;
+		}
+		#search_result{
+			top: 100%;
+		}
+		.right{
+			display: flex;
+			justify-content: center;
+			position: unset;
+			.addon-box{
+				margin: 0;
+				margin: 0 10px;
+				&:not(:first-child) {
+				    margin-right: 10px;
+				}
+				&:first-child{
+					order: 2;
+				}
+				&:last-child{
+					order: 1;
+				}
+			}
+		}
+	}
+	.menu{
+		.left{
+			display: none;
+		}
+	}
+	.slides .right .addon-box:last-child{
+		.title{
+			width: 100%;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.flashsales-carousel{
+			width: 100%;
+		}
+	}
+}
+@media (max-width: 767px){
+	.topbar{
+		display: none;
+	}
+	.banner_1{
+		.left{
+			margin-bottom: 20px;
+		}
+	}
+	.header #cart_block .shoppingcart-box{
+		right: 15px;
+	}
+	.cate_tab .addon-title h3 {
+		float: none;
+	}
+}
+@media (max-width: 481px){
+	.banner_2{
+		.layout-column{
+			width: 100%;
+			padding: 0 15px;
+			margin-top: 0;
+			&.left{
+				margin-bottom: 20px;
+			}
 		}
 	}
 }

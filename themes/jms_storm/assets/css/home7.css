@@ -164,24 +164,28 @@
     content: "\f107";
     font-family: "FontAwesome";
     padding-left: 1px; }
-  .topbar .right #_desktop_user_info {
-    padding-left: 25px; }
-    .topbar .right #_desktop_user_info a span {
-      font-size: 13px;
-      text-transform: capitalize; }
-    .topbar .right #_desktop_user_info a.account::before {
-      content: "\e915";
-      font-family: Storm;
-      font-size: 17px;
-      position: absolute;
-      left: -24px;
-      top: -15px; }
-    .topbar .right #_desktop_user_info a.account.btn-name::before {
-      top: -3px; }
-    .topbar .right #_desktop_user_info .type3 {
-      display: block; }
-    .topbar .right #_desktop_user_info .type1, .topbar .right #_desktop_user_info .type2 {
-      display: none; }
+  .topbar .right #_desktop_user_info .user-info > a::before {
+    content: "\e915";
+    font-family: Storm;
+    font-size: 17px;
+    left: -24px;
+    top: -15px; }
+  .topbar .right #_desktop_user_info .dropdown-menu {
+    background: #fff; }
+    .topbar .right #_desktop_user_info .dropdown-menu > li {
+      padding: 0 20px; }
+      .topbar .right #_desktop_user_info .dropdown-menu > li > a {
+        color: #333;
+        padding: 5px 0; }
+  .topbar .right #_desktop_user_info a span {
+    font-size: 13px;
+    text-transform: capitalize; }
+  .topbar .right #_desktop_user_info a.account.btn-name::before {
+    top: -3px; }
+  .topbar .right #_desktop_user_info .type3 {
+    display: block; }
+  .topbar .right #_desktop_user_info .type1, .topbar .right #_desktop_user_info .type2 {
+    display: none; }
   .topbar .right .addon-box {
     float: right;
     position: relative; }

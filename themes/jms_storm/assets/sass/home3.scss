@@ -157,20 +157,30 @@
 			}
 		}
 		#_desktop_user_info{
+			.user-info > a::before{
+				content: "\e915";
+				font-family: Storm;
+				font-size: 17px;
+				position: absolute;
+				left: -24px;
+				top: -15px;
+			}
+			.dropdown-menu{
+				background: #fff;
+				> li{
+					padding: 0 20px;
+					> a{
+						color: #333;
+						padding: 5px 0;
+					}
+				}
+			}
 			a{
 				span{
 					font-size: 13px;
 					text-transform: capitalize;
 				}
 				&.account{
-					&::before{
-						content: "\e915";
-						font-family: Storm;
-						font-size: 17px;
-						position: absolute;
-						left: -24px;
-						top: -15px;
-					}
 					&.btn-name::before{
 						top: -3px;
 					}

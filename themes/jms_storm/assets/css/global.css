@@ -1409,6 +1409,10 @@ a.wishlist_top {
 #off-canvas-menu .home ul > li.menu-item:nth-child(2n+1) {
   display: none; }
 
+@media (max-width: 1199px) {
+  .jms-vermegamenu .dropdown-menu.fullwidth {
+    width: 751px !important; } }
+
 @media (max-width: 481px) {
   #searchbox #selector_cat {
     max-width: 121px !important; }
