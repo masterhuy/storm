@@ -41,7 +41,7 @@
 .tab-content .form-group .input-group-btn button {
     border-color: #ebebeb;
     border-left: 0 none #ebebeb;
-    padding: 6px 20px;
+    padding: 8px 20px;
 }
 #checkout .tab-content > .tab-pane {
 	display: none;
@@ -316,6 +316,7 @@ body#checkout section.checkout-step.-current .content .add-address {
 }
 body#checkout section.checkout-step.-current .content .form-control-select {
 	-moz-appearance: none;
+	-webkit-appearance: none;
 	background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAPklEQVR4Ae3TwREAEBQD0V/6do4SXPZg7EsBhsQ8IEmSMOsiuEfg3gL3oXC7wK0bd1G4o8X9F4yIkyQfSrIByQBjp7QuND8AAAAASUVORK5CYII=") no-repeat scroll right 0.5rem center / 2.25rem 2.25rem !important;
 	height: 40px;
 	padding-right: 2rem;

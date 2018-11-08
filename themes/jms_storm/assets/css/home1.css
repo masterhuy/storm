@@ -416,7 +416,7 @@
 
 .cate_tab {
   padding-top: 93px;
-  padding-bottom: 100px;
+  padding-bottom: 15px;
   position: relative;
   background-repeat: no-repeat;
   z-index: 1; }
@@ -443,7 +443,7 @@
         border-bottom-color: transparent; }
       .cate_tab .addon-title .jms-tab ul .nav-item.active a, .cate_tab .addon-title .jms-tab ul .nav-item a.active {
         border-color: #cfcfcf;
-        border-bottom-color: #f5f6f6;
+        border-bottom: 2px solid #f5f6f6;
         font-weight: 600;
         color: #1ec7a6; }
       .cate_tab .addon-title .jms-tab ul .nav-item a {
@@ -463,16 +463,16 @@
 .brand {
   margin-top: -156px;
   position: relative;
-  z-index: 2; }
-  .brand .layout-column {
-    margin-top: -156px; }
+  z-index: 2;
+  display: inline-block;
+  width: 100%; }
   .brand .brand-carousel {
     padding: 70px 0 76px; }
 
 .service {
   position: relative;
-  top: -6px;
-  z-index: 4; }
+  z-index: 4;
+  margin-top: -12px; }
   .service .container {
     background: #1ec7a6;
     color: #fff;
@@ -631,7 +631,7 @@
     float: right; }
 
 .page-index #footer {
-  margin-top: -162px; }
+  margin-top: -86px; }
 
 @media (min-width: 1900px) {
   .container {
@@ -764,6 +764,8 @@
         top: 2px; } }
 
 @media (max-width: 481px) {
+  .footer_b .right img:not(:last-child) {
+    margin-right: 3px; }
   .header {
     padding: 10px 0; }
     .header .left {

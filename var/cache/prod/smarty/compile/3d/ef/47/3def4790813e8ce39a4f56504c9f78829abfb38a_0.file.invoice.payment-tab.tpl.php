@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-09-25 23:00:15
+/* Smarty version 3.1.32, created on 2018-11-08 04:30:53
   from 'D:\xamppp\htdocs\jms_storm\pdf\invoice.payment-tab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5baaf63f46abc4_74539594',
+  'unifunc' => 'content_5be4024da48cd1_77329790',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5baaf63f46abc4_74539594 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be4024da48cd1_77329790 (Smarty_Internal_Template $_smarty_tpl) {
 ?><table id="payment-tab" width="100%">
 	<tr>
 		<td class="payment center small grey bold" width="44%"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Payment Method','d'=>'Shop.Pdf','pdf'=>'true'),$_smarty_tpl ) );?>

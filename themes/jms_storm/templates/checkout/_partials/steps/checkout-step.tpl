@@ -36,7 +36,7 @@
 			<i class="fa fa-check-circle-o done"></i>
 			<span class="step-number">{$position}</span>
 			{$title}
-			<span class="step-edit text-muted"><i class="fa fa-pencil-square-o edit"></i> edit</span>
+			<span class="step-edit text-muted"><i class="fa fa-pencil-square-o edit"></i>{l s='Edit' d='Shop.Theme.Actions'}</span>
 		</h1>
 		<div class="content">
 			{block name='step_content'}DUMMY STEP CONTENT{/block}

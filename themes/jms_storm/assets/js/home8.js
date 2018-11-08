@@ -198,7 +198,7 @@ jQuery(function ($) {
 		        dots: p_pag_brand,
 				autoplay:auto_play_brand,
 				loop: true,
-				slideSpeed: 800,	
+				slideSpeed: 200,	
 		});
 	}
 
@@ -230,7 +230,7 @@ jQuery(function ($) {
 			nav: false,
 			dots: false,
 			autoplay: false,
-			slideSpeed: 200,
+			slideSpeed: 800,
 			loop: true
 		});
 	}

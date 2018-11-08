@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-09-25 23:00:08
+/* Smarty version 3.1.32, created on 2018-11-08 04:30:55
   from 'D:\xamppp\htdocs\jms_storm\admin063ihraim\themes\default\template\controllers\orders\_documents.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5baaf63847a3e9_75614040',
+  'unifunc' => 'content_5be4024f5a5ae0_84736357',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5baaf63847a3e9_75614040 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be4024f5a5ae0_84736357 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-responsive">
 	<table class="table" id="documents_table">
 		<thead>

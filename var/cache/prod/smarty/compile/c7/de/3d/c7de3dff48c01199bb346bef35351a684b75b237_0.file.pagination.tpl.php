@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-09-25 23:00:15
+/* Smarty version 3.1.32, created on 2018-11-08 04:30:53
   from 'D:\xamppp\htdocs\jms_storm\pdf\pagination.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5baaf63f2e41c4_21815625',
+  'unifunc' => 'content_5be4024d8e1682_56262439',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5baaf63f2e41c4_21815625 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be4024d8e1682_56262439 (Smarty_Internal_Template $_smarty_tpl) {
 ?><p style="text-align: right; vertical-align: text-top;"> {:png:} / {:ptg:} </p>
 <?php }
 }

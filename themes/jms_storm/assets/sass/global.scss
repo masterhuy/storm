@@ -286,6 +286,27 @@
 @include blogWigetTitle(19, $active-h19);
 @include blogWigetTitle(20, $active-h20);
 
+@include arrowFooterHover(1, $active-h1);
+@include arrowFooterHover(2, $active-h2);
+@include arrowFooterHover(3, $active-h3);
+@include arrowFooterHover(4, $active-h4);
+@include arrowFooterHover(5, $active-h5);
+@include arrowFooterHover(6, $active-h6);
+@include arrowFooterHover(7, $active-h7);
+@include arrowFooterHover(8, $active-h8);
+@include arrowFooterHover(9, $active-h9);
+@include arrowFooterHover(10, $active-h10);
+@include arrowFooterHover(11, $active-h11);
+@include arrowFooterHover(12, $active-h12);
+@include arrowFooterHover(13, $active-h13);
+@include arrowFooterHover(14, $active-h14);
+@include arrowFooterHover(15, $active-h15);
+@include arrowFooterHover(16, $active-h16);
+@include arrowFooterHover(17, $active-h17);
+@include arrowFooterHover(18, $active-h18);
+@include arrowFooterHover(19, $active-h19);
+@include arrowFooterHover(20, $active-h20);
+
 .page-index #content-wrapper{
 	margin-bottom: 0;
 }
@@ -689,11 +710,41 @@ a.wishlist_top{
 	display: none;
 }
 @media (max-width: 1199px){
+	#product{
+		.product-quantity .qty{
+			margin-right: 10px;
+		}
+	}
+	div.products-list-in-row .content_price {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		padding-top: 0;
+	}
 	.jms-vermegamenu .dropdown-menu.fullwidth {
 		width: 751px !important;
 	}
 }
 @media (max-width: 481px){
+	#product{
+        .product-quantity{
+            align-items: flex-start;
+            flex-direction: column;
+            .qty{
+            	margin-top: 15px;
+            	margin-bottom: 15px;
+            }
+            .add-to-cart {
+                margin-left: 0;
+            }
+        }
+    }
+	div.products-list-in-row .product-preview{
+		flex-direction: column;
+		.product-info{
+			padding: 0;
+			margin-top: 15px;
+		}
+	}
 	#searchbox #selector_cat{
 		max-width: 121px !important;
 	}
@@ -772,6 +823,19 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 991px){
+	#product{
+		.product-box .flexbox {
+			width: auto;
+		}
+	}
+	#category{
+		.product-preview .product-info{
+			border-right: 1px solid #fff;
+		}
+		.product-box .flexbox {
+			width: auto;
+		}
+	}
 	.ver_mobile{
 		display: block;
 	}
@@ -791,6 +855,12 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 767px){
+	#category{
+		.filters-panel .right {
+			text-align: left;
+			margin-top: 15px;
+		}
+	}
 	.container{
 		padding: 0 15px !important;
 	}

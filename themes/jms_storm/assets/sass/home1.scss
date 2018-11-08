@@ -529,7 +529,7 @@
 // category tab
 .cate_tab{
 	padding-top: 93px;
-	padding-bottom: 100px;
+	padding-bottom: 15px;
 	position: relative;
 	background-repeat: no-repeat;
 	z-index: 1;
@@ -563,7 +563,7 @@
 			ul{
 				.nav-item.active a, .nav-item a.active{
 					border-color: #cfcfcf;
-					border-bottom-color: #f5f6f6;
+					border-bottom: 2px solid #f5f6f6;
 					font-weight: 600;
 					color: $active-h1;
 				}
@@ -596,9 +596,8 @@
 	margin-top: -156px;
 	position: relative;
 	z-index: 2;
-	.layout-column{
-		margin-top: -156px;
-	}
+	display: inline-block;
+	width: 100%;
 	.brand-carousel {
 		padding: 70px 0 76px;
 	}
@@ -607,8 +606,8 @@
 // service
 .service{
 	position: relative;
-	top: -6px;
 	z-index: 4;
+	margin-top: -12px;
 	.container{
 		background: $active-h1;
 		color: #fff;
@@ -797,7 +796,7 @@
 	}
 }
 .page-index #footer{
-	margin-top: -162px;
+	margin-top: -86px;
 }
 
 @media (min-width: 1900px){
@@ -1001,6 +1000,9 @@
 	}
 }
 @media (max-width: 481px){
+	.footer_b .right img:not(:last-child) {
+		margin-right: 3px;
+	}
 	.header{
 		padding: 10px 0;
 		.left{

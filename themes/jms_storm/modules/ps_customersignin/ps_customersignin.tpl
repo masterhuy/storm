@@ -69,16 +69,17 @@
 	 <div class="user-info btn-group compact-hidden type3">
 		{if $logged} 
 		 	<a class="btn-name account btn-xs dropdown-toggle" data-toggle="dropdown" href="{$my_account_url}"  title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" rel="nofollow">
-		    	{$customerName}
+		    	<span>{$customerName}</span>
 		  	</a>	
 	      	<ul role="menu" class="dropdown-menu">
+	      		<li><a>{$customerName}</a></li>
 				<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Account' d='Shop.Theme.CustomerAccount'} </a></li>		
 				<li><a href="{$link->getPageLink('order', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
 		  		<li><a class="logout" href="{$logout_url}" rel="nofollow" >{l s='Log out' d='Shop.Theme.Actions'}</a></li>
 		  	</ul>
 	    {else}   
 		  	<a href="{$link->getPageLink('my-account', true)}" title="{l s='Login/Register' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">
-		  		{l s='Login/Register' d='Shop.Theme.Actions'}
+		  		<span>{l s='Login/Register' d='Shop.Theme.Actions'}</span>
 		  	</a>
 	    {/if}
 	 </div>

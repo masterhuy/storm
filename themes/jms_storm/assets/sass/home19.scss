@@ -364,6 +364,7 @@
 					> a{
 						text-transform: capitalize;
 						padding: 5px 0;
+						font-weight: 400;
 					}
 				}
 			}
@@ -591,10 +592,10 @@
 				top: -12px;
 				font-weight: 600;
 				color: #222;
-				font-size: 20px;
+				font-size: 1vw;
 			}
 			span{
-				font-size: 35px;
+				font-size: 1.8vw;
 				font-weight: 600;
 				color: #222;
 			}
@@ -947,12 +948,15 @@
 		width: 970px !important;
 	}
 	.banner_3{
-		margin-top: 0;
+		display: inline-block;
+		width: 100%;
 	}
 }
 @media (max-width: 991px){
 	.topbar{
-		display: none;
+		.center{
+			display: none;
+		}
 	}
 	.header{
 		.container{
@@ -965,5 +969,90 @@
 			display: flex;
 			justify-content: center;
 		}
+		.right{
+			display: flex;
+			justify-content: center;
+			.addon-box{
+				float: none;
+				margin: 0 10px;
+				&:first-child{
+					order: 3;
+				}
+				&:last-child{
+					order: 1;
+				}
+				&:nth-child(2){
+					order: 2;
+				}
+			}
+		}
+	}
+	.new_arrivals{
+		.left{
+			.owl-stage-outer{
+				padding-bottom: 0;
+			}
+		}
+		.center{
+			width: 50%;
+		}
+		.right{
+			width: 100%;
+		}
+	}
+	.service{
+		display: inline-block;
+		width: 100%;
+		.layout-column{
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+	}
+	#footer .newsletter .block_content{
+		flex-direction: column;
+		.addon-title {
+		    margin-right: 0;
+		    text-align: center;
+		    margin-bottom: 20px;
+		}
+	}
+}
+@media (max-width: 767px){
+	.topbar{
+		display: none;
+	}
+	.header{
+		#cart_block{
+			position: unset;
+			.shoppingcart-box{
+				right: 15px;
+			}
+		}
+	}
+	.banner_3 .layout-column {
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+	#footer .newsletter .form-group #newsletter-input {
+		min-width: auto;
+	}
+}
+@media (max-width: 481px){
+	.header .right{
+		#cart_block .text-custom {
+			display: none;
+		}
+		.wishlist_top::after{
+			display: none;
+		}
+		.addon-box:not(:first-child) {
+		    margin-right: 15px;
+		}
+	}
+	.new_arrivals .center {
+		width: 100%;
+	}
+	#footer .newsletter .form-group #newsletter-input{
+		max-width: 175px;
 	}
 }

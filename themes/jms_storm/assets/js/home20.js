@@ -448,6 +448,10 @@ jQuery(function ($) {
 
 
 jQuery(document).ready(function($) {
+	$('.ver_menu').click(function(event) {
+		$(this).parent().toggleClass('open');
+	});
+	
 	$('.topbar .icon_search').click(function(event) {
 		$('.topbar .search-box').addClass('open');
 	});

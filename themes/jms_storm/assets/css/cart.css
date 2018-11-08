@@ -30,6 +30,10 @@
 	font-weight: 600;
 	padding: 14px 51px;
 }
+.card.cart-summary .checkout a:active,
+.card.cart-summary .checkout a:focus{
+	color: #fff;
+}
 .cart-box .btn-shopping:hover,
 .card.cart-summary .checkout a:hover{
 	color: #fff;
@@ -55,6 +59,7 @@
 	text-overflow: ellipsis;
 	overflow: hidden;
 	font-weight: 600;
+	text-align: left
 }
 .product-line-grid {
 	display:flex;

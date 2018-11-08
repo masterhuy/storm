@@ -11,7 +11,6 @@
 @import url(identity.css);
 @import url(my-account.css);
 @import url(addresses.css);
-@import url(history.css);
 @import url(order-slip.css);
 @import url(manufacturer.css);
 @import url(password.css);
@@ -1941,6 +1940,9 @@ margin-top: 20px;
 }
 .product-preview button.cart-button:hover{
   color: #fff;
+}
+.product-preview button.cart-button:focus{
+  border-color: transparent;
 }
 .product-preview button.cart-button{
   margin-top: 10px;

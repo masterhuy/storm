@@ -24,7 +24,7 @@
 *}
 
 <div class="contact-rich">
-  <h4> <i class="fa fa-map-marker"></i> {l s='Store information' d='Shop.Theme'}</h4>
+  <h4> <i class="fa fa-map-marker"></i> {l s='Store information' d='Shop.Theme.Global'}</h4>
   <div class="block">
     <div class="data">{$contact_infos.address.formatted nofilter}</div>
   </div>
@@ -33,7 +33,7 @@
     <div class="block">
       <div class="icon"><i class="material-icons">&#xE0CD;</i></div>
       <div class="data">
-        {l s='Call us:' d='Shop.Theme'}<br/>
+        {l s='Call us:' d='Shop.Theme.Global'}<br/>
         <a href="tel:{$contact_infos.phone}">{$contact_infos.phone}</a>
        </div>
     </div>
@@ -43,7 +43,7 @@
     <div class="block">
       <div class="icon"><i class="material-icons">&#xE0DF;</i></div>
       <div class="data">
-        {l s='Fax:' d='Shop.Theme'}<br/>
+        {l s='Fax:' d='Shop.Theme.Global'}<br/>
         {$contact_infos.fax}
       </div>
     </div>
@@ -51,9 +51,9 @@
   {if $contact_infos.email}
     <hr/>
     <div class="block">
-      <div class="icon"><h4> <i class="fa fa-envelope"></i>{l s='Email Contact' d='Shop.Theme'} </h4></div>
+      <div class="icon"><h4> <i class="fa fa-envelope"></i>{l s='Email Contact' d='Shop.Theme.Global'} </h4></div>
       <div class="data email">
-        {l s='Email us:' d='Shop.Theme'}<br/>
+        {l s='Email us:' d='Shop.Theme.Global'}<br/>
        </div>
        <a href="mailto:{$contact_infos.email}">{$contact_infos.email}</a>
     </div>

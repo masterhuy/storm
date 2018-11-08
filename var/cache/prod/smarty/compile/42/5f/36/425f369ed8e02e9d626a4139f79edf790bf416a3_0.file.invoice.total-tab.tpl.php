@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-09-25 23:00:15
+/* Smarty version 3.1.32, created on 2018-11-08 04:30:53
   from 'D:\xamppp\htdocs\jms_storm\pdf\invoice.total-tab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5baaf63f4b8dc0_66446264',
+  'unifunc' => 'content_5be4024da7f7e6_08078858',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5baaf63f4b8dc0_66446264 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be4024da7f7e6_08078858 (Smarty_Internal_Template $_smarty_tpl) {
 ?><table id="total-tab" width="100%">
 
 	<tr>

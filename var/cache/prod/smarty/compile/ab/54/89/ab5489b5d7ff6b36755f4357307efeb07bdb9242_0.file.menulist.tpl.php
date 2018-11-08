@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-09-24 22:45:10
+/* Smarty version 3.1.32, created on 2018-11-08 03:00:01
   from 'D:\xamppp\htdocs\jms_storm\modules\jmsvermegamenu\views\templates\admin\jmsvermegamenu_manager\menulist.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5ba9a1367aa146_98039616',
+  'unifunc' => 'content_5be3ed01f2c082_55709707',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ba9a1367aa146_98039616 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be3ed01f2c082_55709707 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="note row">
 	<p class="col-lg-6 pull-left"><i class="icon-info"></i> Drap &amp; Drop Menu Item to Change Order.</p>
 	<p class="col-lg-6 pull-right"><i class="icon-info"></i>Use Collapse tool to Collapse Menu. It will be easy when change order.</p>	

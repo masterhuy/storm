@@ -346,6 +346,9 @@ body{
 		display: flex;
 		align-items: center;
 	}
+	.cart_block_list li {
+		border-bottom: 1px solid #303030;
+	}
 	.jms-megamenu{
 		.nav{
 			> li{

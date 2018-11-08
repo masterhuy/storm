@@ -828,9 +828,6 @@
 	.images-container .thumb-box {
 	  height: 47.1vw;
 	}
-	.images-container .product-images > li.thumb-container > .thumb {
-		width: 8.5vw;
-	}
 	#product #left-column.page-column, #category #left-column.page-column{
 		padding-right:15px;
 	}
@@ -851,7 +848,7 @@
 		padding-bottom: 20px;
 	}
 	#product .product-cover .layer {
-		right: 40px;
+		right: 10px;
 	}
 	#more_info_block {
 	  margin: 40px 0 30px;
@@ -875,9 +872,6 @@
 	#product .pb-right-column, #product .pb-left-column {
 	  width: 100%;
 	  padding:0;
-	}
-	.images-container .product-images > li.thumb-container > .thumb {
-		width: 17vw;
 	}
 	#product .pb-right-column{
 		margin-top:25px;

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-05 20:43:53
+/* Smarty version 3.1.32, created on 2018-11-08 02:29:55
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\templates\catalog\_partials\product-images-modal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5be0f1d968c8b9_09760066',
+  'unifunc' => 'content_5be3e5f3a606f0_64646084',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be0f1d968c8b9_09760066 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be3e5f3a606f0_64646084 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -41,7 +41,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         </figure>
         <aside id="thumbnails" class="thumbnails js-thumbnails text-xs-center">
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_36425be0f1d968c8b8_76459443', 'product_images');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_210155be3e5f3a606f8_74563257', 'product_images');
 ?>
 
           <?php if ($_smarty_tpl->tpl_vars['imagesCount']->value > 4) {?>
@@ -57,12 +57,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_36425be0f1d968c8b8
 </div><!-- /.modal -->
 <?php }
 /* {block 'product_images'} */
-class Block_36425be0f1d968c8b8_76459443 extends Smarty_Internal_Block
+class Block_210155be3e5f3a606f8_74563257 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_images' => 
   array (
-    0 => 'Block_36425be0f1d968c8b8_76459443',
+    0 => 'Block_210155be3e5f3a606f8_74563257',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
