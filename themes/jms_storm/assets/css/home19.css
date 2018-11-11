@@ -427,6 +427,8 @@
 
 .menu {
   background: #222; }
+  .menu.fixed {
+    z-index: 9999 !important; }
   .menu .jms-vermegamenu {
     -webkit-box-shadow: unset;
     box-shadow: unset;

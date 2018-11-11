@@ -262,6 +262,16 @@
 
 .header {
   padding: 25px 0 24px; }
+  .header.fixed {
+    padding: 0;
+    background: #fff;
+    z-index: 9999 !important; }
+    .header.fixed #cart_block .shoppingcart-box {
+      top: calc(100% + 20px); }
+    .header.fixed #cart_block.open .shoppingcart-box {
+      top: calc(100% + 20px); }
+    .header.fixed .jms-megamenu .nav > li > a {
+      line-height: 70px; }
   .header #advsearch_result {
     top: 47px;
     width: calc(100% + 12px);

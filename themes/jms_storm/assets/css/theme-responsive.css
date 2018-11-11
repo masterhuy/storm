@@ -503,5 +503,8 @@
 	}
 }
 
-
-	
+@media (max-height: 720px){
+	#jmstools {
+		top: 100px;
+	}
+}

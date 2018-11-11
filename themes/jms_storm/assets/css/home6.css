@@ -87,6 +87,19 @@
   padding: 0 30px;
   max-width: 100%; }
 
+.leftbar .jms-megamenu .nav > li > a > .caret {
+  display: block;
+  border: 0;
+  top: 0;
+  position: absolute;
+  right: 14px;
+  -webkit-transform: skewX(13deg);
+  -ms-transform: skewX(13deg);
+  transform: skewX(13deg); }
+  .leftbar .jms-megamenu .nav > li > a > .caret::after {
+    content: '\f105';
+    font-family: FontAwesome; }
+
 .leftbar .dropdown-menu {
   background: #fff;
   padding: 10px 0; }

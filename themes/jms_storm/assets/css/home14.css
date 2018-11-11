@@ -82,7 +82,7 @@
         height: 17px;
         background: rgba(255, 255, 255, 0.2);
         right: -21px;
-        top: 19px; }
+        top: 17px; }
   .topbar .right #_desktop_currency_selector .dropdown-menu {
     left: -19px;
     min-width: 90px; }
@@ -146,6 +146,16 @@
 .header {
   position: relative;
   z-index: 2; }
+  .header.fixed {
+    background: #fff; }
+    .header.fixed #search_result {
+      top: calc(100% + 12px); }
+    .header.fixed #cart_block .shoppingcart-box {
+      top: calc(100% + 5px); }
+    .header.fixed #cart_block.open .shoppingcart-box {
+      top: calc(100% + 5px); }
+    .header.fixed .jms-megamenu .nav > li > a {
+      line-height: 70px; }
   .header .button-search {
     color: #222; }
     .header .button-search:hover {

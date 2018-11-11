@@ -160,8 +160,8 @@
       font-family: Storm;
       font-size: 17px;
       position: absolute;
-      left: -24px;
-      top: -15px; }
+      left: -25px;
+      top: -2px; }
     .topbar .right #_desktop_user_info a span {
       font-size: 13px;
       text-transform: capitalize; }
@@ -362,6 +362,8 @@
 
 .menu {
   background: #085a9d; }
+  .menu.fixed {
+    z-index: 9999 !important; }
   .menu .container > .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -797,8 +799,6 @@
   border-top: 1px solid #c2c2c2;
   padding-top: 30px;
   text-align: center; }
-  .footer_m img {
-    width: 100%; }
   .footer_m .row1 {
     margin-bottom: 9px; }
   .footer_m .row2 ul {
@@ -936,6 +936,8 @@
     float: none; } }
 
 @media (max-width: 481px) {
+  .footer_m img {
+    width: 100%; }
   .banner_2 .layout-column {
     width: 100%;
     padding: 0 15px;

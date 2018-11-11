@@ -115,7 +115,7 @@
         height: 17px;
         background: rgba(0, 0, 0, 0.2);
         right: -21px;
-        top: 19px; }
+        top: 17px; }
   .topbar .right #_desktop_currency_selector .dropdown-menu {
     left: -19px;
     min-width: 90px; }
@@ -282,6 +282,10 @@
       font-size: 27px; }
       .header .right .cart-icon i:hover {
         color: #9d3bc6; }
+
+.menu.fixed {
+  background: #fff;
+  z-index: 9999 !important; }
 
 .menu .jms-vermegamenu {
   -webkit-box-shadow: unset;

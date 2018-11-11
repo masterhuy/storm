@@ -168,8 +168,8 @@
       font-family: Storm;
       font-size: 17px;
       position: absolute;
-      left: -24px;
-      top: -15px; }
+      left: -25px;
+      top: -12px; }
     .topbar .right #_desktop_user_info a span {
       font-size: 13px;
       text-transform: capitalize; }
@@ -291,6 +291,9 @@
   border: 1px solid #e6e6e6;
   border-left: 0;
   border-right: 0; }
+  .menu.fixed {
+    background: #fff;
+    z-index: 9999 !important; }
   .menu .jms-megamenu .menu-align-center.open > .dropdown-menu {
     -webkit-transform: translateX(0) translateY(0px) !important;
     -ms-transform: translateX(0) translateY(0px) !important;

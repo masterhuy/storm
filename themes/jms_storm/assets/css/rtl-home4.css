@@ -1,73 +1,129 @@
-.topbar_right .addon-box {
-    border-left: 1px solid #dadada;
-    float: left;
-	border-right:0;
-}
-.topbar_right .addon-box:first-child {
-    border-left: 0 none;
-    border-right: 1px solid #dadada;
-    padding-left: 0;
-    padding-right: 30px;
-}
-.topbar_left ul li {
-    margin-left: 30px;
-    margin-right: 0;
-    padding-left: 30px;
-    padding-right: 0;
-}
-.topbar_left ul li:first-child {
-    border-left: 1px solid #dadada;
-    border-right: 0 none;
-}
-.headerbar_right .addon-box{
-	float:left;
-}
-.banner_second_home4 .banner_beside .banner-content {
-    padding-left: 0;
-    padding-right: 50px;
-}
-.blog_h4 .post-info {
-    padding-left: 0;
-    padding-right: 38px;
-}
- .block_content.block_c_right .newsletter-input{
-	border-radius:0 4px 4px 0;
-}
-.newsletter-btn.buttonh1{
-	border-radius:4px 0 0 4px;
-}
-.banner_home4 .banner-content{
-	left:0;
-}
-.banner_second_home4 .layout-column.banner_center {
-    padding-left: 1px;
-    padding-right: 1px;
-}
-#cart_block .shoppingcart-box{
-	left:0;
-	right:auto;
-}
-.blog_h4 .post-meta li {
-    margin-left: 26px;
-    margin-right: 0;
-}
-.headerbar_right .addon-box:nth-child(2) {
-    padding-left: 28px;
-    padding-right: 0 !important;
-}
-.news_content .block_content.block_c_right{
-	float:right;
-}
-#newsletter_block_left div.textnews_h4, #newsletter_block_left div.news_content {
+.topbar .left .addon-box {
     float: right;
 }
-@media (max-width: 991px){
-	.headerbar_center {
-		right: 0;
-		left:auto;
-	}
-	.headerbar_right{
-		left:0;
-		right:auto;
-	}
+.topbar .left .addon-box:not(:first-child) {
+  margin-right: 45px;
+  margin-left: 0;
 }
+.topbar .left .addon-box:not(:first-child)::before {
+  right: -27px;
+  left: auto;
+}
+.topbar .right #_desktop_user_info .user-info > a::before {
+  left: auto;
+  right: -25px;
+}
+.topbar .right .addon-box {
+  float: left; }
+
+.topbar .right .addon-box:not(:first-child) {
+  margin-left: 41px;
+  margin-right: 0; }
+
+.topbar .right .addon-box:not(:first-child)::after {
+  left: -21px;
+  right: auto; }
+
+.header .right .addon-box {
+    float: left;
+}
+.header .right .addon-box:not(:first-child) {
+    margin-left: 40px;
+    margin-right: 0;
+}
+.header .right #cart_block .text-custom {
+    padding-right: 16px;
+    padding-left: 0;
+}
+.service .feature-img {
+  margin-left: 15px;
+  margin-right: 0;
+}
+.service .feature-img::after {
+  right: auto;
+  left: -6px;
+  border-right: 6px solid #3700ff;
+  border-left: 0;
+}
+.slides .jms-slide-content{
+  text-align: left;
+}
+.menu .right .text {
+  padding-right: 17px;
+  padding-left: 0;
+}
+.menu .jms-megamenu .nav > li.home {
+    padding-right: 0;
+    padding-left: 28px;
+}
+.on_sale .addon-title h3 {
+  float: right;
+}
+.on_sale .addon-title .jms-tab {
+  float: left;
+}
+.on_sale .right .product-box::after {
+  display: none;
+}
+.tv .layout-column{
+    float: left;
+}
+.blog .time {
+    left: auto;
+    right: 10px;
+}
+.p_banner .layout-column{
+  float: right !important;
+}
+.footer_t .contact .storm-headset {
+  padding-left: 20px;
+  padding-right: 0; }
+.footer_t #social_block ul {
+  text-align: left;
+}
+.footer_t .center ul li a::after {
+  right: auto;
+  left: -18px;
+}
+.footer_t .contact .storm-pin {
+  padding-left: 10px;
+  padding-right: 0; }
+
+.footer_t #social_block ul > li {
+    margin-right: 0;
+    margin-left: 7px;
+}
+
+.footer_t .row_2 ul li:not(:last-child)::before {
+  left: -2px;
+  right: auto; }
+.footer_t .contact-info li {
+  padding-left: 0;
+  padding-right: 35px;
+}
+.footer_t .contact-info li.address {
+  padding-left: 100px;
+  padding-right: 35px;
+}
+.footer_t .contact-info li::before {
+  right: 0;
+  left: auto;
+}
+.footer_t #social_block ul {
+    text-align: right;
+}
+#footer .newsletter .form-group .newsletter-btn {
+  border-radius: 3px 0px 0px 3px;
+}
+#footer .newsletter .block_content .addon-title {
+  margin-left: 30px;
+}
+.footer_b .right p {
+  float: left; }
+
+.footer_b .right img {
+  margin-right: 5px !important; }
+
+#footer .addon-title + ul li a::before {
+  padding-left: 3px;
+  padding-right: 0; }

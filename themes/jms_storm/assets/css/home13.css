@@ -169,15 +169,12 @@
       margin-right: 40px; }
       .topbar .right .addon-box:not(:first-child)::after {
         content: "";
-        height: 100%;
-        width: 1px;
-        background: rgba(255, 255, 255, 0.3);
         position: absolute;
-        right: -20px;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%); }
+        width: 1px;
+        height: 17px;
+        background: rgba(0, 0, 0, 0.2);
+        right: -21px;
+        top: 13px; }
     .topbar .right .addon-box:not(:last-child) {
       padding-top: 0.5px; }
 
@@ -269,6 +266,8 @@
 .menu {
   background: #000;
   border-bottom: 1px solid #737373; }
+  .menu.fixed {
+    z-index: 9999 !important; }
   .menu .container > .row {
     display: -webkit-box;
     display: -ms-flexbox;

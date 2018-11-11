@@ -1,4 +1,40 @@
 @charset "UTF-8";
+@media (min-width: 992px) {
+  .jms-row.header.fixed,
+  .jms-row.menu.fixed {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    -webkit-box-shadow: 0 0 11px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.15);
+    z-index: 99;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-name: slideDown;
+    animation-name: slideDown;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease; } }
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); } }
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); } }
+
+.fa.fa-cog {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear; }
+
 .breadcrumb-inner ol li:last-child a {
   color: #222;
   font-weight: 600; }

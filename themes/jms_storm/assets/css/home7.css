@@ -168,8 +168,8 @@
     content: "\e915";
     font-family: Storm;
     font-size: 17px;
-    left: -24px;
-    top: -15px; }
+    left: -25px;
+    top: -12px; }
   .topbar .right #_desktop_user_info .dropdown-menu {
     background: #fff; }
     .topbar .right #_desktop_user_info .dropdown-menu > li {
@@ -322,6 +322,10 @@
     content: "\f107";
     font-family: "FontAwesome";
     padding-left: 1px; }
+
+.menu.fixed {
+  background: #fff;
+  z-index: 9999 !important; }
 
 .menu .ver_menu_mobile {
   display: none; }

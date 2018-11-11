@@ -95,8 +95,8 @@
     font-family: Storm;
     font-size: 17px;
     position: absolute;
-    left: -24px;
-    top: -15px; }
+    left: -25px;
+    top: -12px; }
   .topbar .right #_desktop_user_info .dropdown-menu {
     background: #fff; }
     .topbar .right #_desktop_user_info .dropdown-menu > li {
@@ -268,6 +268,9 @@
 
 .menu {
   border-top: 1px solid #e6e6e6; }
+  .menu.fixed {
+    background: #fff;
+    z-index: 9999 !important; }
   .menu .jms-megamenu {
     text-align: center; }
     .menu .jms-megamenu .nav > li > a {

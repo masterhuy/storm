@@ -172,8 +172,8 @@
       font-family: Storm;
       font-size: 17px;
       position: absolute;
-      left: -24px;
-      top: -15px; }
+      left: -29px;
+      top: -10px; }
     .topbar .right #_desktop_user_info a span {
       font-size: 13px;
       text-transform: capitalize; }
@@ -241,6 +241,10 @@
       margin-right: 17px; }
       .topbar #social_block ul a:hover {
         color: #333333; }
+
+.header.fixed {
+  background: #fff;
+  z-index: 9999 !important; }
 
 .header .container > .row {
   display: -webkit-box;

@@ -148,6 +148,14 @@
   background: rgba(0, 0, 0, 0.77);
   position: relative;
   z-index: 2; }
+  .header.fixed #search_result {
+    top: calc(100% + 12px); }
+  .header.fixed #cart_block .shoppingcart-box {
+    top: calc(100% + 5px); }
+  .header.fixed #cart_block.open .shoppingcart-box {
+    top: calc(100% + 5px); }
+  .header.fixed .jms-megamenu .nav > li > a {
+    line-height: 70px; }
   .header .button-search:hover {
     color: #1ec7a6; }
   .header .jms-megamenu .nav > li > a {

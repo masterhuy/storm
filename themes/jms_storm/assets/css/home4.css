@@ -142,8 +142,8 @@
     font-family: Storm;
     font-size: 17px;
     position: absolute;
-    left: -24px;
-    top: -15px; }
+    left: -25px;
+    top: -12px; }
   .topbar .right #_desktop_user_info .dropdown-menu {
     background: #fff; }
     .topbar .right #_desktop_user_info .dropdown-menu > li {
@@ -297,6 +297,8 @@
 
 .menu {
   background: #02a8f3; }
+  .menu.fixed {
+    z-index: 9999 !important; }
   .menu .jms-megamenu {
     text-align: center; }
     .menu .jms-megamenu .nav > li > a {
@@ -485,6 +487,8 @@
     font-size: 13px;
     color: #888;
     text-transform: uppercase; }
+    .blog .category-name a:hover {
+      color: #02a8f3; }
 
 .blog .post-meta {
   margin-bottom: 17px; }

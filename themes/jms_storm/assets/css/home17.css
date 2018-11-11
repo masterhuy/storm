@@ -161,8 +161,8 @@
       font-family: Storm;
       font-size: 17px;
       position: absolute;
-      left: -24px;
-      top: -15px; }
+      left: -25px;
+      top: -2px; }
     .topbar .right #_desktop_user_info a span {
       font-size: 13px;
       text-transform: capitalize; }
@@ -377,6 +377,10 @@
     .header .right .cart-icon i {
       color: #222;
       font-size: 27px; }
+
+.menu.fixed {
+  background: #fff;
+  z-index: 9999 !important; }
 
 .menu .jms-megamenu .nav {
   text-align: center; }
@@ -732,8 +736,6 @@
   border-top: 1px solid #c2c2c2;
   padding-top: 30px;
   text-align: center; }
-  .footer_m img {
-    width: 100%; }
   .footer_m .row1 {
     margin-bottom: 9px; }
   .footer_m .row2 ul {
@@ -879,6 +881,8 @@
       margin-top: 0; } }
 
 @media (max-width: 481px) {
+  .footer_m img {
+    width: 100%; }
   .video .right .addon-box {
     width: 100%; }
   .product_carousel .left .group-btn a {

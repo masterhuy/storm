@@ -149,6 +149,12 @@
   z-index: 2;
   background: rgba(0, 0, 0, 0.77);
   padding: 25px 0 23px; }
+  .header.fixed {
+    padding: 0; }
+    .header.fixed #cart_block .shoppingcart-box {
+      top: calc(100% + 5px); }
+    .header.fixed #cart_block.open .shoppingcart-box {
+      top: calc(100% + 5px); }
   .header .menu {
     position: unset; }
     .header .menu .jms-megamenu .nav > li.open > a {

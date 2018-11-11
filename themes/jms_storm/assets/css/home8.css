@@ -160,8 +160,8 @@
       font-family: Storm;
       font-size: 17px;
       position: absolute;
-      left: -24px;
-      top: -15px; }
+      left: -25px;
+      top: -12px; }
     .topbar .right #_desktop_user_info a span {
       font-size: 13px;
       text-transform: capitalize; }
@@ -192,6 +192,8 @@
 
 .header {
   background: #bf0b26; }
+  .header.fixed {
+    z-index: 9999 !important; }
   .header .container > .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -204,6 +206,10 @@
     .header .jms-megamenu .nav > li > a {
       color: #fff;
       line-height: 92px; }
+  .header #cart_block .shoppingcart-box {
+    top: calc(100% + 22px); }
+  .header #cart_block.open .shoppingcart-box {
+    top: calc(100% + 22px); }
   .header .right .addon-box {
     float: right; }
   .header .right span.button-search {
