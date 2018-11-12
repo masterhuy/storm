@@ -507,9 +507,9 @@
 .banner_2 {
   position: relative;
   z-index: 2;
-  margin-top: -117px; }
-  .banner_2 .layout-column {
-    margin-top: -117px; }
+  margin-top: -117px;
+  display: inline-block;
+  width: 100%; }
 
 .blog {
   margin-top: 76px; }

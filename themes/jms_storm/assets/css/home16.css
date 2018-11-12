@@ -487,9 +487,9 @@
 .banner_2 {
   position: relative;
   z-index: 2;
-  margin-top: -115px; }
-  .banner_2 .layout-column {
-    margin-top: -115px; }
+  margin-top: -115px;
+  display: inline-block;
+  width: 100%; }
 
 .product_tab {
   margin-top: 76px;
@@ -555,9 +555,11 @@
     height: 50px; }
 
 .blog {
-  margin-top: -118px; }
-  .blog .layout-column {
-    margin-top: -118px; }
+  position: relative;
+  z-index: 2;
+  margin-top: -118px;
+  display: inline-block;
+  width: 100%; }
   .blog .addon-title {
     border-bottom: 1px solid #e6e6e6;
     padding-bottom: 3px; }

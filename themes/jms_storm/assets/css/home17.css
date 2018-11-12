@@ -430,9 +430,9 @@
 .video {
   margin-top: -120px;
   position: relative;
-  z-index: 2; }
-  .video .layout-column {
-    margin-top: -120px; }
+  z-index: 2;
+  display: inline-block;
+  width: 100%; }
   .video .left iframe {
     border: 0; }
   .video .right .jms-banner img {
@@ -540,9 +540,9 @@
 .onsale {
   margin-top: -107px;
   position: relative;
-  z-index: 3; }
-  .onsale .layout-column {
-    margin-top: -107px; }
+  z-index: 3;
+  display: inline-block;
+  width: 100%; }
   .onsale .owl-stage-outer {
     padding-bottom: 150px; }
   .onsale .addon-title {
@@ -559,9 +559,9 @@
 .testimonial {
   position: relative;
   z-index: 4;
-  margin-top: -116px; }
-  .testimonial .layout-column {
-    margin-top: -116px; }
+  margin-top: -116px;
+  display: inline-block;
+  width: 100%; }
   .testimonial .owl-dots {
     bottom: 83px; }
     .testimonial .owl-dots .owl-dot.active span {
@@ -635,9 +635,9 @@
 .brand {
   position: relative;
   z-index: 2;
-  margin-top: -100px; }
-  .brand .layout-column {
-    margin-top: -100px; }
+  margin-top: -100px;
+  display: inline-block;
+  width: 100%; }
   .brand .container {
     background: #f9f9f9; }
 

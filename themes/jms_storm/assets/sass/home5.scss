@@ -117,8 +117,8 @@
 				font-family: Storm;
 				font-size: 17px;
 				position: absolute;
-				left: -24px;
-				top: -15px;
+				left: -25px;
+				top: -12px;
 			}
 			.dropdown-menu{
 				background: #fff;
@@ -337,6 +337,10 @@
 // menu
 .menu{
 	border-top: 1px solid #e6e6e6;
+	&.fixed{
+		background: #fff;
+		z-index: 9999 !important;
+	}
 	.jms-megamenu {
 		text-align: center;
 		.nav > li{
@@ -500,9 +504,10 @@
 .banner_2{
 	position: relative;
 	z-index: 2;
+	display: inline-block;
+	width: 100%;
 	margin-top: -100px;
 	.jms-banner{
-		margin-top: -100px;
 		> a > img{
 			transition: all .4s;
 		}
@@ -557,9 +562,8 @@
 	z-index: 2;
 	margin-top: -120px;
 	margin-bottom: 50px;
-	.layout-column{
-		margin-top: -120px;
-	}
+	display: inline-block;
+	width: 100%;
 	img{
 		padding: 15px 0;
 		background: #f8f8f8;

@@ -443,9 +443,9 @@
   position: relative;
   z-index: 2; }
   .banner_2.first {
-    margin-top: -142px; }
-    .banner_2.first .addon-box {
-      margin-top: -142px; }
+    margin-top: -142px;
+    display: inline-block;
+    width: 100%; }
   .banner_2.type_2 .feature-box {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -644,7 +644,8 @@
     .footer_t .newsletter .form-group .newsletter-btn {
       margin-top: 0;
       height: 48px;
-      border-radius: 0 3px 3px 0; }
+      border-radius: 0 3px 3px 0;
+      max-width: 100px; }
   .footer_t .newsletter #newsletter-input {
     height: 48px; }
     .footer_t .newsletter #newsletter-input:active, .footer_t .newsletter #newsletter-input:focus {

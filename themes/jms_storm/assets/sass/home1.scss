@@ -191,6 +191,22 @@
 	background: rgba(0,0,0,0.77);
 	position: relative;
 	z-index: 2;
+	&.fixed{
+		#search_result{
+			top: calc(100% + 12px);
+		}
+		#cart_block{
+			.shoppingcart-box {
+				top: calc(100% + 5px);
+			}
+			&.open .shoppingcart-box {
+				top: calc(100% + 5px);
+			}
+		}
+		.jms-megamenu .nav > li > a{
+			line-height: 70px;
+		}
+	}
 	.button-search:hover{
 		color: $active-h1;
 	}
@@ -911,6 +927,7 @@
 	}
 }
 @media (max-width: 991px){
+	
 	.footer_t{
 		.layout-column{
 			min-height: 325px;

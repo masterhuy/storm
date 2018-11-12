@@ -325,9 +325,9 @@
 .banner_2 {
   position: relative;
   z-index: 2;
-  margin-top: -100px; }
-  .banner_2 .layout-column {
-    margin-top: -100px; }
+  margin-top: -100px;
+  display: inline-block;
+  width: 100%; }
   .banner_2 .container-fluid {
     max-width: 1920px;
     padding: 0; }

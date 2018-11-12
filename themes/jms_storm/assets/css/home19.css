@@ -606,9 +606,9 @@
 .banner_3 {
   position: relative;
   z-index: 2;
-  margin-top: -113px; }
-  .banner_3 .layout-column {
-    margin-top: -113px; }
+  margin-top: -113px;
+  display: inline-block;
+  width: 100%; }
 
 .product_carousel {
   margin-top: 76px;
@@ -623,9 +623,9 @@
 .service {
   position: relative;
   z-index: 2;
-  margin-top: -115px; }
-  .service .layout-column {
-    margin-top: -115px; }
+  margin-top: -115px;
+  display: inline-block;
+  width: 100%; }
   .service .container {
     padding: 77px 0 74px; }
   .service .feature-box {

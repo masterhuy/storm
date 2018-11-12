@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-08 05:29:21
+/* Smarty version 3.1.32, created on 2018-11-12 05:26:21
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmspagebuilder\views\templates\hook\jmspagebuilder_footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5be4100110fd30_41939959',
+  'unifunc' => 'content_5be9554d027fd0_41202790',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ad2871c740444413612838206e42525cbfdfe0c4' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\modules\\jmspagebuilder\\views\\templates\\hook\\jmspagebuilder_footer.tpl',
-      1 => 1537323325,
+      1 => 1541737961,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be4100110fd30_41939959 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be9554d027fd0_41202790 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['rows']->value, 'row');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['row']->value) {
@@ -85,7 +85,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 if ($_smarty_tpl->tpl_vars['settingpanel']->value) {?>
 <div id="jmstools" class="jmsclose hidden-xs hidden-sm">
-	<a id="jmstools-arrow" class="pull-right"><i class="pe pe-7s-settings"></i></a>
+	<a id="jmstools-arrow" class="pull-right"><i class="fa fa-cog"></i></a>
 	<div id="jmstools-content" class="pull-left">
 		<form action="index.php" method="POST">
 			<?php if (count($_smarty_tpl->tpl_vars['themeskins']->value) > 0) {?>

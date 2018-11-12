@@ -46,7 +46,7 @@
 {/foreach}
 {if $settingpanel}
 <div id="jmstools" class="jmsclose hidden-xs hidden-sm">
-	<a id="jmstools-arrow" class="pull-right"><i class="pe pe-7s-settings"></i></a>
+	<a id="jmstools-arrow" class="pull-right"><i class="fa fa-cog"></i></a>
 	<div id="jmstools-content" class="pull-left">
 		<form action="index.php" method="POST">
 			{if $themeskins|@count > 0}

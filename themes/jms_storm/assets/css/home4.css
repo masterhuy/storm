@@ -410,9 +410,9 @@
   position: relative;
   z-index: 1;
   margin-top: -147px;
-  margin-bottom: 56px; }
-  .banner_2 .row .layout-column:not(:last-child) {
-    margin-top: -147px; }
+  margin-bottom: 56px;
+  display: inline-block;
+  width: 100%; }
 
 .cates_tab {
   position: relative;
@@ -443,9 +443,9 @@
   margin-bottom: 56px;
   margin-top: -138px;
   position: relative;
+  display: inline-block;
+  width: 100%;
   z-index: 2; }
-  .brand .layout-column {
-    margin-top: -138px; }
 
 .blog .addon-title {
   border-bottom: 1px solid #e6e6e6; }

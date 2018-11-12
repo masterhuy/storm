@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-08 04:12:42
+/* Smarty version 3.1.32, created on 2018-11-12 05:15:49
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmsflashsales\views\templates\hook\jmsflashsales.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5be3fe0a92a0f5_35249008',
+  'unifunc' => 'content_5be952d58af200_38944943',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product_flashdeal.tpl' => 2,
   ),
 ),false)) {
-function content_5be3fe0a92a0f5_35249008 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be952d58af200_38944943 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == 18) {?>
 <div class="jmsflashsales">
 	<div class="title">

@@ -1,3 +1,13 @@
+/**
+* 2007-2018 PrestaShop
+*
+* Joommasters Theme
+*
+*  @author    Joommasters <joommasters@gmail.com>
+*  @copyright 2007-2018 Joommasters
+*  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+*  @Website: http://www.joommasters.com
+*/
 $(window).load(function(){
 	if($('.slider').length > 0)
 	$('.slider').fractionSlider({	
@@ -410,15 +420,25 @@ jQuery(function ($) {
 
 
 jQuery(document).ready(function($) {
+	var menu = $(".jms-row.menu");
+
+	$(window).scroll(function () {
+    	if ($(window).scrollTop()){
+			menu.addClass("fixed");
+    	} else {
+			menu.removeClass("fixed");
+    	}
+    });
+    
 	$(".product_tab .product-miniature").hover(function(){
 	    $(".product_tab").css("z-index", "3");
 		}, function(){
         $(".product_tab").css("z-index", "1");
 	});
-	$(".categorytab-carousel .product-miniature").hover(function(){
-	    $(".categorytab-carousel").css("z-index", "4");
+	$(".cate_tab .product-miniature").hover(function(){
+	    $(".cate_tab").css("z-index", "4");
 		}, function(){
-        $(".categorytab-carousel").css("z-index", "2");
+        $(".cate_tab").css("z-index", "2");
 	});
 	$(".most_view .product-miniature").hover(function(){
 	    $(".most_view ").css("z-index", "3");

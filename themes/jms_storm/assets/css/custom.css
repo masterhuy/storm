@@ -2956,6 +2956,10 @@ ul.footer_links {
 .wlp_bought_list > .address {
   display: inline-block;
   padding: 0 15px;
+  margin-bottom: 30px;
+}
+#s_title {
+  margin-top: 10px;
 }
 .delete-action {
   margin-left: 10px; }
@@ -5382,7 +5386,7 @@ footer .blog-carousel {
 .jms-tab ul .nav-item a.active{
   color: #1ec7a6;
   border: 1px solid #e6e6e6;
-  border-bottom-color: #fff;
+  border-bottom: 2px solid #fff;
   position: relative;
   border-radius: 3px 3px 0 0;
   z-index: 9;

@@ -199,8 +199,8 @@
 				font-family: Storm;
 				font-size: 17px;
 				position: absolute;
-				left: -24px;
-				top: -15px;
+				left: -25px;
+				top: -12px;
 			}
 			a{
 				span{
@@ -246,6 +246,9 @@
 // header
 .header{
 	background: $active-h8;
+	&.fixed{
+		z-index: 9999 !important;
+	}
 	.container > .row{
 		display: flex;
 		align-items: center;
@@ -259,6 +262,14 @@
 					line-height: 92px;
 				}
 			}
+		}
+	}
+	#cart_block{
+		.shoppingcart-box{
+			top: calc(100% + 22px);
+		}
+		&.open .shoppingcart-box{
+			top: calc(100% + 22px);
 		}
 	}
 	.right{
@@ -494,9 +505,8 @@
 	position: relative;
 	z-index: 2;
 	margin-top: -156px;
-	.addon-box{
-		margin-top: -156px;
-	}
+	display: inline-block;
+	width: 100%;
 	.feature-box{
 		position: relative;
 		max-width: 1903px;
@@ -586,9 +596,8 @@
 	position: relative;
 	z-index: 2;
 	margin-top: -150px;
-	.layout-column{
-		margin-top: -150px;
-	}
+	display: inline-block;
+	width: 100%;
 }
 
 // most_view
@@ -613,9 +622,8 @@
 	position: relative;
 	z-index: 2;
 	margin-top: -141px;
-	.layout-column{
-		margin-top: -141px;
-	}
+	display: inline-block;
+	width: 100%;
 	.addon-title{
 		padding-bottom: 3px;
 		border-bottom: 1px solid #e6e6e6;

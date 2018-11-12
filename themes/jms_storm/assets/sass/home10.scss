@@ -219,8 +219,8 @@
 				font-family: Storm;
 				font-size: 17px;
 				position: absolute;
-				left: -24px;
-				top: -15px;
+				left: -25px;
+				top: -12px;
 			}
 			a{
 				span{
@@ -402,6 +402,10 @@
 // menu
 .menu{
 	border-top: 1px solid #e6e6e6;
+	&.fixed{
+		background: #fff;
+		z-index: 9999 !important;
+	}
 	.container > .row{
 		display: flex;
 		align-items: center;
@@ -559,9 +563,8 @@
 	z-index: 2;
 	&.first{
 		margin-top: -142px;
-		.addon-box{
-			margin-top: -142px;
-		}
+		display: inline-block;
+		width: 100%;
 	}
 	&.type_2{
 		.feature-box{
@@ -791,6 +794,7 @@
 				margin-top: 0;
 				height: 48px;
 				border-radius: 0 3px 3px 0;
+				max-width: 100px;
 			}
 		}
 		#newsletter-input{

@@ -165,8 +165,8 @@
 				font-family: Storm;
 				font-size: 17px;
 				position: absolute;
-				left: -24px;
-				top: -15px;
+				left: -25px;
+				top: -12px;
 			}
 			.dropdown-menu{
 				background: #fff;
@@ -361,6 +361,9 @@
 // menu
 .menu{
 	background: $active-h4;
+	&.fixed{
+		z-index: 9999 !important;
+	}
 	.jms-megamenu {
 		text-align: center;
 		.nav > li{
@@ -508,9 +511,8 @@
 	z-index: 1;
 	margin-top: -147px;
 	margin-bottom: 56px;
-	.row .layout-column:not(:last-child){
-		margin-top: -147px;
-	}
+	display: inline-block;
+	width: 100%;
 }
 
 // category tab
@@ -557,10 +559,9 @@
 	margin-bottom: 56px;
 	margin-top: -138px;
 	position: relative;
+	display: inline-block;
+	width: 100%;
 	z-index: 2;
-	.layout-column{
-		margin-top: -138px;
-	}
 }
 
 // blog
@@ -598,6 +599,9 @@
 			font-size: 13px;
 			color: #888;
 			text-transform: uppercase;
+			&:hover{
+				color: $active-h4;
+			}
 		}
 	}
 	.post-meta {

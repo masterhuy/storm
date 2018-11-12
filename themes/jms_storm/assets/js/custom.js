@@ -1,7 +1,13 @@
-/*
- * Custom code goes here.
- * A template should always ship with an empty custom.js
- */
+/**
+* 2007-2018 PrestaShop
+*
+* Joommasters Theme
+*
+*  @author    Joommasters <joommasters@gmail.com>
+*  @copyright 2007-2018 Joommasters
+*  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+*  @Website: http://www.joommasters.com
+*/
  /*fixed menu*/
  jQuery(document).ready(function($) {
 	$('.jms-vermegamenu').jmsMegaMenu({    			
@@ -193,22 +199,22 @@ jQuery(function ($) {
 });
 jQuery(function ($) {
     "use strict";
-$('.team-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:1
-        }
-    }
-})
+	$('.team-carousel').owlCarousel({
+	    loop:true,
+	    margin:10,
+	    nav:false,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        600:{
+	            items:3
+	        },
+	        1000:{
+	            items:1
+	        }
+	    }
+	})
 });
 
 function initMap() {

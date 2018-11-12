@@ -541,15 +541,6 @@
       white-space: nowrap;
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis; }
-    .on_sale .left .product-preview .product-image {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-      .on_sale .left .product-preview .product-image img {
-        width: 92%; }
   .on_sale .right .categorytab-carousel {
     padding-top: 22px; }
   .on_sale .right .owl-stage .owl-item.active + .owl-item.active .product-box::after {
@@ -594,9 +585,9 @@
 .banner_2 {
   position: relative;
   z-index: 2;
+  display: inline-block;
+  width: 100%;
   margin-top: -116px; }
-  .banner_2 .layout-column {
-    margin-top: -116px; }
 
 .product_tab {
   margin-top: 42px;
@@ -620,9 +611,9 @@
   margin-top: -137px;
   margin-bottom: 22px;
   position: relative;
+  display: inline-block;
+  width: 100%;
   z-index: 2; }
-  .hot_deal .layout-column {
-    margin-top: -137px; }
   .hot_deal .countdown.is-countdown {
     margin-top: -72px; }
   .hot_deal .img-hotdeal {
@@ -671,10 +662,11 @@
   background: #f3f3f3;
   position: relative;
   z-index: 2;
+  display: inline-block;
+  width: 100%;
   margin-top: -87px; }
   .brand .brand-carousel {
-    padding: 19.5px 0;
-    margin-top: -87px; }
+    padding: 19.5px 0; }
 
 .p_banner {
   padding: 110px 0 339px;

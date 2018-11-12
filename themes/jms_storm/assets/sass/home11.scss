@@ -200,8 +200,8 @@
 				font-family: Storm;
 				font-size: 17px;
 				position: absolute;
-				left: -24px;
-				top: -15px;
+				left: -29px;
+				top: -10px;
 			}
 			a{
 				span{
@@ -299,6 +299,10 @@
 
 // header
 .header{
+	&.fixed{
+		background: #fff;
+		z-index: 9999 !important;
+	}
 	.container > .row{
 		display: flex;
 		align-items: center;
@@ -597,9 +601,8 @@
 	position: relative;
 	z-index: 2;
 	margin-top: -117px;
-	.layout-column{
-		margin-top: -117px;
-	}
+	display: inline-block;
+	width: 100%;
 }
 
 // blog

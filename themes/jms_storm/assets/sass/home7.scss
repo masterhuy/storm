@@ -210,8 +210,8 @@
 				content: "\e915";
 				font-family: Storm;
 				font-size: 17px;
-				left: -24px;
-				top: -15px;
+				left: -25px;
+				top: -12px;
 			}
 			.dropdown-menu{
 				background: #fff;
@@ -408,6 +408,10 @@
 
 // menu
 .menu{
+	&.fixed{
+		background: #fff;
+		z-index: 9999 !important;
+	}
 	.ver_menu_mobile{
 		display: none;
 	}
@@ -1022,10 +1026,18 @@
 
 .brand{
 	margin-top: -136px;
-	display: inline-flex;
+	display: inline-block;
 	width: 100%;
-	.layout-column{
-		margin-top: -136px;
+	.brand-carousel::after {
+		content: "";
+		width: 1000%;
+		height: 100%;
+		background: #f3f3f3;
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 	.addon-box{
 		position: relative;

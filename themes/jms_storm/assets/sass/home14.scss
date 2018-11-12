@@ -100,7 +100,7 @@
 					height: 17px;
 					background: rgba(255,255,255,0.2);
 					right: -21px;
-					top: 19px;
+					top: 17px;
 				}
 			}
 		}
@@ -193,6 +193,23 @@
 .header{
 	position: relative;
 	z-index: 2;
+	&.fixed{
+		background: #fff;
+		#search_result{
+			top: calc(100% + 12px);
+		}
+		#cart_block{
+			.shoppingcart-box {
+				top: calc(100% + 5px);
+			}
+			&.open .shoppingcart-box {
+				top: calc(100% + 5px);
+			}
+		}
+		.jms-megamenu .nav > li > a{
+			line-height: 70px;
+		}
+	}
 	.button-search{
 		color: #222;
 		&:hover{
@@ -395,9 +412,8 @@
 	position: relative;
 	z-index: 2;
 	margin-top: -100px;
-	.layout-column{
-		margin-top: -100px;
-	}
+	display: inline-block;
+	width: 100%;
 	.container-fluid{
 		max-width: 1920px;
 		padding: 0;

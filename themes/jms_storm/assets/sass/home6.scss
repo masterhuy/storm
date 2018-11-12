@@ -109,6 +109,18 @@
 		padding: 0 30px;
 		max-width: 100%;
 	}
+	.jms-megamenu .nav > li > a > .caret {
+		display: block;
+		border: 0;
+		top: 0;
+		position: absolute;
+		right: 14px;
+		transform: skewX(13deg);
+		&::after{
+			content: '\f105';
+			font-family: FontAwesome;
+		}
+	}
 	.dropdown-menu{
 		background: #fff;
 		padding: 10px 0;

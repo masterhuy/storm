@@ -423,9 +423,9 @@
 .cates {
   position: relative;
   z-index: 2;
-  margin-top: -116px; }
-  .cates .layout-column {
-    margin-top: -39px; }
+  margin-top: -116px;
+  display: inline-block;
+  width: 100%; }
   .cates .container-fluid {
     border-top: 1px solid #e6e6e6;
     padding-top: 76px; }

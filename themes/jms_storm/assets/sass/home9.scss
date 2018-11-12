@@ -212,8 +212,8 @@
 				font-family: Storm;
 				font-size: 17px;
 				position: absolute;
-				left: -24px;
-				top: -15px;
+				left: -25px;
+				top: -12px;
 			}
 			a{
 				span{
@@ -367,6 +367,10 @@
 	border: 1px solid #e6e6e6;
 	border-left: 0;
 	border-right: 0;
+	&.fixed{
+		background: #fff;
+		z-index: 9999 !important;
+	}
 	.jms-megamenu .menu-align-center{
 		&.open > .dropdown-menu{
 			transform: translateX(0) translateY(0px) !important;
@@ -546,9 +550,8 @@
 	position: relative;
 	z-index: 2;
 	margin-top: -142px;
-	.addon-box{
-		margin-top: -142px;
-	}
+	display: inline-block;
+	width: 100%;
 	.feature-box{
 		position: relative;
 		max-width: 1903px;
@@ -635,9 +638,8 @@
 	margin-top: -137px;
 	position: relative;
 	z-index: 2;
-	.layout-column{
-		margin-top: -137px;
-	}
+	display: inline-block;
+	width: 100%;
 }
 
 // brand
@@ -646,9 +648,8 @@
 	z-index: 2;
 	margin-top: -137px;
 	background: #f3f3f3;
-	.layout-column{
-		margin-top: -137px;
-	}
+	display: inline-block;
+	width: 100%;
 }
 
 // blog

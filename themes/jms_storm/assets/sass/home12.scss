@@ -241,8 +241,8 @@ body{
 				font-family: Storm;
 				font-size: 17px;
 				position: absolute;
-				left: -24px;
-				top: -15px;
+				left: -25px;
+				top: -12px;
 			}
 			a{
 				span{
@@ -502,6 +502,10 @@ body{
 // menu
 .menu{
 	background: #000;
+	&.fixed{
+		box-shadow: 0 0 11px rgba(255, 255, 255, 0.15) !important;
+		z-index: 9999 !important;
+	}
 	.jms-megamenu .menu-align-center{
 		&.open > .dropdown-menu{
 			transform: translateX(0) translateY(0px) !important;
@@ -1227,6 +1231,9 @@ body{
 		float: right;
 	}
 }
+
+
+
 
 @media (min-width: 1800px){
 	.footer_t .reason{

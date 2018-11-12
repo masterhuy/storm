@@ -298,6 +298,22 @@
 // header
 .header{
 	padding: 25px 0 24px;
+	&.fixed{
+		padding: 0;
+		background: #fff;
+		z-index: 9999 !important;
+		#cart_block{
+			.shoppingcart-box {
+				top: calc(100% + 20px);
+			}
+			&.open .shoppingcart-box {
+				top: calc(100% + 20px);
+			}
+		}
+		.jms-megamenu .nav > li > a{
+			line-height: 70px;
+		}
+	}
 	#advsearch_result {
 		top: 47px;
 		width: calc(100% + 12px);
@@ -670,11 +686,10 @@
 	position: relative;
 	z-index: 2;
 	margin-top: -134px;
-	.layout-column{
-		margin-top: -134px;
-	}
+	display: inline-block;
+	width: 100%;
 	.left{
-		margin-top: -350px;
+		margin-top: -217px;
 		.addon-title{
 			margin-bottom: 3px;
 			border-bottom: 1px solid #e6e6e6;
@@ -720,6 +735,8 @@
 	position: relative;
 	z-index: 2;
 	margin-top: -136px;
+	display: inline-block;
+	width: 100%;
 	.blog-item:hover .post-thumb .img-responsive{
 		transform: unset;
 	}
@@ -760,14 +777,8 @@
 			padding: 1.5px 10px;
 		}
 	}
-	.layout-column{
-		margin-top: -136px;
-		&.right{
-			margin-top: -136px;
-		}
-	}
 	.left{
-		margin-top: -202px;
+		margin-top: -71px;
 		.addon-title{
 			padding-bottom: 3px;
 			border-bottom: 1px solid #e6e6e6;

@@ -416,9 +416,9 @@
 .banner_full {
   position: relative;
   z-index: 2;
-  margin-top: -156px; }
-  .banner_full .addon-box {
-    margin-top: -156px; }
+  margin-top: -156px;
+  display: inline-block;
+  width: 100%; }
   .banner_full .feature-box {
     position: relative;
     max-width: 1903px; }
@@ -481,9 +481,9 @@
 .banner_2 {
   position: relative;
   z-index: 2;
-  margin-top: -150px; }
-  .banner_2 .layout-column {
-    margin-top: -150px; }
+  margin-top: -150px;
+  display: inline-block;
+  width: 100%; }
 
 .most_view {
   position: relative;
@@ -500,9 +500,9 @@
 .blog {
   position: relative;
   z-index: 2;
-  margin-top: -141px; }
-  .blog .layout-column {
-    margin-top: -141px; }
+  margin-top: -141px;
+  display: inline-block;
+  width: 100%; }
   .blog .addon-title {
     padding-bottom: 3px;
     border-bottom: 1px solid #e6e6e6; }

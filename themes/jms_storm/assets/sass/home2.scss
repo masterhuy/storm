@@ -286,6 +286,10 @@
 }
 
 .menu{
+	&.fixed{
+		background: #fff;
+		z-index: 9999 !important;
+	}
 	.ver_mobile{
 		display: none;
 	}
@@ -397,6 +401,13 @@
 	margin-top: 30px;
 	.categories-wrapper{
 		position: relative;
+		overflow: hidden;
+		&:hover img{
+			transform: scale(1.1);
+		}
+		img{
+			transition: .5s all;
+		}
 		.c_item-info{
 			position: absolute;
 			width: 100%;

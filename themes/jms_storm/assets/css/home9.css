@@ -444,9 +444,9 @@
 .banner_full {
   position: relative;
   z-index: 2;
-  margin-top: -142px; }
-  .banner_full .addon-box {
-    margin-top: -142px; }
+  margin-top: -142px;
+  display: inline-block;
+  width: 100%; }
   .banner_full .feature-box {
     position: relative;
     max-width: 1903px; }
@@ -511,17 +511,17 @@
 .banner {
   margin-top: -137px;
   position: relative;
-  z-index: 2; }
-  .banner .layout-column {
-    margin-top: -137px; }
+  z-index: 2;
+  display: inline-block;
+  width: 100%; }
 
 .brand {
   position: relative;
   z-index: 2;
   margin-top: -137px;
-  background: #f3f3f3; }
-  .brand .layout-column {
-    margin-top: -137px; }
+  background: #f3f3f3;
+  display: inline-block;
+  width: 100%; }
 
 .blog {
   position: relative;

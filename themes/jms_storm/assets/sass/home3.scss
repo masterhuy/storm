@@ -162,8 +162,8 @@
 				font-family: Storm;
 				font-size: 17px;
 				position: absolute;
-				left: -24px;
-				top: -15px;
+				left: -25px;
+				top: -12px;
 			}
 			.dropdown-menu{
 				background: #fff;
@@ -357,6 +357,10 @@
 
 // menu
 .menu{
+	&.fixed{
+		background: #fff;
+		z-index: 9999 !important;
+	}
 	.container > .row{
 		display: flex;
 		align-items: center;
@@ -643,13 +647,6 @@
 				white-space: nowrap;
 				text-overflow: ellipsis;
 			}
-			.product-image{
-				display: flex;
-				justify-content: center;
-				img{
-					width: 92%;;
-				}
-			}
 		}
 	}
 	.right{
@@ -712,10 +709,9 @@
 .banner_2{
 	position: relative;
 	z-index: 2;
+	display: inline-block;
+	width: 100%;
 	margin-top: -116px;
-	.layout-column{
-		margin-top: -116px;
-	}
 }
 
 // product tab
@@ -749,10 +745,9 @@
 	margin-top: -137px;
 	margin-bottom: 22px;
 	position: relative;
+	display: inline-block;
+	width: 100%;
 	z-index: 2;
-	.layout-column{
-		margin-top: -137px;
-	}
 	.countdown.is-countdown{
 		margin-top: -72px;
 	}
@@ -822,10 +817,11 @@
 	background: #f3f3f3;
 	position: relative;
 	z-index: 2;
+	display: inline-block;
+	width: 100%;
 	margin-top: -87px;
 	.brand-carousel{
 		padding: 19.5px 0;
-		margin-top: -87px;
 	}
 }
 

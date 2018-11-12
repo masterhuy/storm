@@ -805,12 +805,20 @@
 
 .brand {
   margin-top: -136px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   width: 100%; }
-  .brand .layout-column {
-    margin-top: -136px; }
+  .brand .brand-carousel::after {
+    content: "";
+    width: 1000%;
+    height: 100%;
+    background: #f3f3f3;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
   .brand .addon-box {
     position: relative;
     z-index: 3;

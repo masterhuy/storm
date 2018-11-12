@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-08 05:29:20
+/* Smarty version 3.1.32, created on 2018-11-12 05:26:19
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmsajaxsearch\views\templates\hook\jmsajaxsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5be41000cbff69_10747171',
+  'unifunc' => 'content_5be9554b0084a1_84195545',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be41000cbff69_10747171 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be9554b0084a1_84195545 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == 6 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 8 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 11 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 19 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 20) {?>
 <div class="btn-group compact-hidden jms_ajax_search" id="jms_ajax_search">
 	<a href="#" class="btn-xs icon_search" title="Search">
