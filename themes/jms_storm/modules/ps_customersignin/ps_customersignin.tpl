@@ -58,7 +58,7 @@
 		  	</ul>
 	    {else}   
 		  	<a href="{$my_account_url}" title="{l s='Log in to your customer account' d='Shop.Theme.CustomerAccount'}" rel="nofollow"  class="logout2 hidden-sm-down  btn-xs dropdown-toggle" data-toggle="dropdown">
-	      		<span class="hidden-sm-down">Login/Register</span>
+	      		<span class="hidden-sm-down">{l s='Login/Register' d='Shop.Theme.Actions'}</span>
 	      	</a>
 		  	<ul>
 				<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Account'  d='Shop.Theme.CustomerAccount'} </a></li>		

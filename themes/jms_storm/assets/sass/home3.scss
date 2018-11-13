@@ -1226,15 +1226,17 @@
 	.banner_2{
 		margin-top: 0;
 	}
-	.on_sale .addon-title{
-		h3{
+	.on_sale{
+		.right .addon-title h3{
 			text-align: center;
 		}
-		.jms-tab{
-			float: none;
-			.nav{
-				display: block;
-				text-align: center;
+		.addon-title{
+			.jms-tab{
+				float: none;
+				.nav{
+					display: block;
+					text-align: center;
+				}
 			}
 		}
 	}

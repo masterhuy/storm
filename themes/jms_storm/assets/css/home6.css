@@ -812,4 +812,6 @@
   div.leftbar .second .search-box #search_result {
     width: 293px;
     left: 50%;
-    top: calc(30% - 22px); } }
+    top: calc(30% - 22px); }
+  .footer_b .addon-box p img {
+    margin: 5px 0 !important; } }

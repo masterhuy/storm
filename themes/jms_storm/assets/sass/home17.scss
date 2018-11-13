@@ -473,6 +473,9 @@
 
 // menu
 .menu{
+	li.home{
+		position: relative !important;
+	}
 	&.fixed{
 		background: #fff;
 		z-index: 9999 !important;
@@ -1031,6 +1034,7 @@
 			}
 			.shoppingcart-box {
 			    top: calc(100% + 20px);
+			    right: 15px;
 			}
 		}
 		.container{

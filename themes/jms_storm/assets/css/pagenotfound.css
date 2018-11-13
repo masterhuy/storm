@@ -1,5 +1,6 @@
 .page-not-found {
-	text-align:center;
+	text-align: center;
+	padding-bottom: 150px;
 }
 .page-not-found h3 {
 	text-transform: capitalize;

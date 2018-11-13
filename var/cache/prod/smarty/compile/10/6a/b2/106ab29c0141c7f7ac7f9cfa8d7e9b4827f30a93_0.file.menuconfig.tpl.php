@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-12 03:23:25
+/* Smarty version 3.1.32, created on 2018-11-12 22:37:50
   from 'D:\xamppp\htdocs\jms_storm\modules\jmsmegamenu\views\templates\admin\jmsmegamenu_manager\menuconfig.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5be9387d7259c9_26336145',
+  'unifunc' => 'content_5bea470ecb7f11_96843586',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '106ab29c0141c7f7ac7f9cfa8d7e9b4827f30a93' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\modules\\jmsmegamenu\\views\\templates\\admin\\jmsmegamenu_manager\\menuconfig.tpl',
-      1 => 1537260447,
+      1 => 1542078179,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be9387d7259c9_26336145 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bea470ecb7f11_96843586 (Smarty_Internal_Template $_smarty_tpl) {
 ?><form action="<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['link']->value->getAdminLink('AdminJmsmegamenuManager'),'html','UTF-8' ));?>
 &configure=jmsmegamenu" method="post">
 <div class="menu-config">

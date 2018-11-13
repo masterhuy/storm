@@ -325,15 +325,12 @@
 .slides .slide_3 .text-2 {
   text-transform: uppercase;
   font-weight: 500;
-  letter-spacing: -3px; }
+  letter-spacing: -0.16vw; }
 
 .slides .slide_3 .text-3 {
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: -3.5px; }
-
-.slides .slide_3 .text-4 {
-  max-width: 580px; }
+  letter-spacing: -0.185vw; }
 
 .banner_1 {
   margin-top: 20px; }
@@ -765,7 +762,9 @@
   .footer_b .container > .row {
     display: block; }
   .footer_b .layout-column p {
-    text-align: center; } }
+    text-align: center; }
+  .footer_b .right p {
+    float: none; } }
 
 @media (max-width: 767px) {
   .topbar {
@@ -805,4 +804,6 @@
   .footer_t .account {
     margin-bottom: 0; }
   .service .feature-box i {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .footer_b .addon-box p img {
+    margin: 5px 0 !important; } }

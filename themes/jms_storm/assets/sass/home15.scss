@@ -1036,6 +1036,11 @@
 	}
 }
 @media (max-width: 481px){
+	.women, .men{
+		.container-fluid > .row {
+			margin: 0 -15px;
+		}
+	}
 	.women{
 		padding-bottom: 0;
 	}

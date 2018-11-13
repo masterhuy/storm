@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-12 05:06:22
+/* Smarty version 3.1.32, created on 2018-11-13 04:36:41
   from 'D:\xamppp\htdocs\jms_storm\modules\jmspagebuilder\views\templates\hook\addonvideo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5be9509ec4f2f2_14939616',
+  'unifunc' => 'content_5bea9b299dcee4_82898763',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be9509ec4f2f2_14939616 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bea9b299dcee4_82898763 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 <div class="addon-title">
 	<h3><?php echo $_smarty_tpl->tpl_vars['addon_title']->value;?>

@@ -821,6 +821,8 @@
     margin-top: 20px; } }
 
 @media (max-width: 481px) {
+  .women .container-fluid > .row, .men .container-fluid > .row {
+    margin: 0 -15px; }
   .women {
     padding-bottom: 0; }
   .product_tab .addon-title h3 {

@@ -50,21 +50,21 @@
 <div id="newsletter_block_left" class="block">	
 	<div class="block_content">
 		<div class="textnews_h1 addon-title">
-			<h3>{l s='Newsletter Signup' d='Shop.Theme'}</h3>
-			<span>{l s='Sign up our Newsletter for Exclusive Discount codes' d='Shop.Theme'}</span>
+			<h3>{l s='Newsletter Signup' d='Shop.Theme.Global'}</h3>
+			<span>{l s='Sign up our Newsletter for Exclusive Discount codes' d='Shop.Theme.Global'}</span>
 		</div>
 		<div class="textnews_h5 addon-title">
-			<h3>{l s='Get the latest news delivered daily' d='Shop.Theme'}</h3>
-			<span>{l s='Give us your email and you will be daily update with the latest events in detail!' d='Shop.Theme'}</span>
+			<h3>{l s='Get the latest news delivered daily' d='Shop.Theme.Global'}</h3>
+			<span>{l s='Give us your email and you will be daily update with the latest events in detail!' d='Shop.Theme.Global'}</span>
 		</div>
 		<div class="textnews_h7 addon-title">
-			<h3>{l s='Subscribe to Our Newsletter' d='Shop.Theme'}</h3>
-			<span>{l s='More special Deals, Events & Promotions' d='Shop.Theme'}</span>
+			<h3>{l s='Subscribe to Our Newsletter' d='Shop.Theme.Global'}</h3>
+			<span>{l s='More special Deals, Events & Promotions' d='Shop.Theme.Global'}</span>
 		</div>
 		<div class="popup addon-title">
-			<p class="text-1">{l s='Get the latest news' d='Shop.Theme'}</p>
-			<p class="text-2">{l s='Delivered daily!' d='Shop.Theme'}</p>
-			<span>{l s='Give us your email and you will be daily updated with the latest events, in detail!' d='Shop.Theme'}</span>
+			<p class="text-1">{l s='Get the latest news' d='Shop.Theme.Global'}</p>
+			<p class="text-2">{l s='Delivered daily!' d='Shop.Theme.Global'}</p>
+			<span>{l s='Give us your email and you will be daily updated with the latest events, in detail!' d='Shop.Theme.Global'}</span>
 		</div>
 		<div class="news_content">
         	<div  class="block_c_right">

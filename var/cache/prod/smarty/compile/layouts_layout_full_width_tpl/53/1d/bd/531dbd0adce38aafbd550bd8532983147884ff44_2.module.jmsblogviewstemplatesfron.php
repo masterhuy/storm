@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-08 05:04:29
+/* Smarty version 3.1.32, created on 2018-11-13 05:26:09
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5be40a2d0dbce6_77400892',
+  'unifunc' => 'content_5beaa6c14d6c44_24090973',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:modules/jmsblog/views/templates/front/comment_facebook.tpl' => 1,
   ),
 ),false)) {
-function content_5be40a2d0dbce6_77400892 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5beaa6c14d6c44_24090973 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?> 
@@ -33,7 +33,7 @@ if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?>
 }?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_49565be40a2d07e0d4_24991212', "page_content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_180845beaa6c146d4a8_05608456', "page_content");
 ?>
 
 
@@ -41,12 +41,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_49565be40a2d07e0d4
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block "page_content"} */
-class Block_49565be40a2d07e0d4_24991212 extends Smarty_Internal_Block
+class Block_180845beaa6c146d4a8_05608456 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_49565be40a2d07e0d4_24991212',
+    0 => 'Block_180845beaa6c146d4a8_05608456',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

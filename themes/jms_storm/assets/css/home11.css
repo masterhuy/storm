@@ -404,7 +404,7 @@
 .slides .slide_1 .text-2, .slides .slide_2 .text-2, .slides .slide_3 .text-2 {
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: -3.5px; }
+  letter-spacing: -0.185vw; }
 
 .slides .slide_1 .text-3, .slides .slide_2 .text-3, .slides .slide_3 .text-3 {
   text-align: center; }
@@ -844,6 +844,8 @@
     padding: 0; } }
 
 @media (max-width: 481px) {
+  .newsletter .form-group #newsletter-input {
+    width: 175px; }
   .header .search-box .searchbox {
     top: 20%; }
   .header .search-box #ajax_search {

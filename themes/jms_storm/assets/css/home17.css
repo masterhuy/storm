@@ -378,6 +378,9 @@
       color: #222;
       font-size: 27px; }
 
+.menu li.home {
+  position: relative !important; }
+
 .menu.fixed {
   background: #fff;
   z-index: 9999 !important; }
@@ -803,7 +806,8 @@
     .header #cart_block.open .shoppingcart-box {
       top: calc(100% + 20px); }
     .header #cart_block .shoppingcart-box {
-      top: calc(100% + 20px); }
+      top: calc(100% + 20px);
+      right: 15px; }
   .header .container {
     position: relative; }
     .header .container > .row {

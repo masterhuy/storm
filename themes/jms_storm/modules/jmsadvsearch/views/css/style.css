@@ -51,6 +51,7 @@
 #advsearch_result .result_div .right-info {
     float: left;
     width: 70%;
+    text-align: left;
 }
 #advsearch_result .result_div h3.title {
     float: left;

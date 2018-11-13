@@ -196,11 +196,8 @@
     padding-bottom: 5px;
 }
 #product .product-cover .layer {
-	position:absolute;
-	right:25px;
-	top:10px;
-	cursor:pointer;
-	font-size:20px;
+    position: absolute;
+    cursor: pointer;
 }
 #product .product-prices.content_price .price.new{
 	font-size:24px;

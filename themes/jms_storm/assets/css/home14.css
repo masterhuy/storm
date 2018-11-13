@@ -679,6 +679,11 @@
     min-width: auto; } }
 
 @media (max-width: 481px) {
+  .header .right, .header #jms_ajax_search {
+    position: unset; }
+  .header .right #jms_ajax_search #search_result {
+    left: 15px;
+    right: auto; }
   .banner_1 .left .col-sm-7, .banner_1 .left .col-sm-5 {
     width: 100%; }
   .banner_1 .right .col-sm-6 {

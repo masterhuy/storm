@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-12 00:00:16
+/* Smarty version 3.1.32, created on 2018-11-13 05:24:17
   from 'module:jmsproducttabviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5be908e08dbdf0_55626401',
+  'unifunc' => 'content_5beaa651375982_15012240',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be908e08dbdf0_55626401 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5beaa651375982_15012240 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['html_content']->value) {?>
 	<?php echo $_smarty_tpl->tpl_vars['html_content']->value;?>
 

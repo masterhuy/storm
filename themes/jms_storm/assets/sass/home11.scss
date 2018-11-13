@@ -465,7 +465,7 @@
 		.text-2{
 			font-weight: 700;
 			text-transform: uppercase;
-			letter-spacing: -3.5px;
+			letter-spacing: -0.185vw;
 		}
 		.text-3{
 			text-align: center;
@@ -1023,6 +1023,9 @@
 	}
 }
 @media (max-width: 481px){
+	.newsletter .form-group #newsletter-input{
+		width: 175px;
+	}
 	.header .search-box{
 		.searchbox{
 			top: 20%;

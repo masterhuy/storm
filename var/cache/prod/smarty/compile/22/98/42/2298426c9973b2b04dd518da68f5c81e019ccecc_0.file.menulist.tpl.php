@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-12 03:23:25
+/* Smarty version 3.1.32, created on 2018-11-12 22:37:51
   from 'D:\xamppp\htdocs\jms_storm\modules\jmsmegamenu\views\templates\admin\jmsmegamenu_manager\menulist.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5be9387dd6b2b0_72109928',
+  'unifunc' => 'content_5bea470f51ebe9_27797667',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2298426c9973b2b04dd518da68f5c81e019ccecc' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\modules\\jmsmegamenu\\views\\templates\\admin\\jmsmegamenu_manager\\menulist.tpl',
-      1 => 1537260447,
+      1 => 1542078179,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be9387dd6b2b0_72109928 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bea470f51ebe9_27797667 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="note row">
 	<p class="col-lg-6 pull-left"><i class="icon-info"></i> Drap &amp; Drop Menu Item to Change Order.</p>
 	<p class="col-lg-6 pull-right"><i class="icon-info"></i>Use Collapse tool to Collapse Menu. It will be easy when change order.</p>	

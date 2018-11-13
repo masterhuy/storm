@@ -871,6 +871,16 @@
 	}
 }
 @media (max-width: 481px){
+	.header{
+		.right, #jms_ajax_search{
+			position: unset;
+		}
+		.right #jms_ajax_search #search_result {
+			left: 15px;
+			right: auto;
+		}
+	}
+
 	.banner_1{
 		.left{
 			.col-sm-7, .col-sm-5{

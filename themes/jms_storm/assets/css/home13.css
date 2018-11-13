@@ -772,6 +772,11 @@
     min-width: auto; } }
 
 @media (max-width: 481px) {
+  .new_arrivals .side {
+    margin-top: 30px; }
+  .newsletter .form-group #newsletter-input {
+    max-width: 175px;
+    width: 100%; }
   .banner_full .include_content_s .text-1 {
     font-size: 30px; }
   .banner_full .include_content_s .text-2 {
@@ -780,4 +785,6 @@
     font-size: 14px; }
   .banner_full .include_content_s .btn-shopnow {
     font-size: 14px;
-    padding: 7px 20px; } }
+    padding: 7px 20px; }
+  .footer_b .addon-box p img {
+    margin: 5px 0 !important; } }

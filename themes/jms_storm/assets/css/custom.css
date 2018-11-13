@@ -1395,7 +1395,7 @@ ul#order_step li {
   -webkit-box-shadow: 0 0 11px rgba(0, 0, 0, 0.12);
   box-shadow: 0 0 11px rgba(0, 0, 0, 0.12);
   display: block;
-  min-width: 353px;
+  width: 570px;
   opacity: 0;
   padding: 35px;
   right: 0;
@@ -2298,7 +2298,8 @@ padding: 5.5px 20px; }
   font-size: 13px;
   position: absolute;
   right: 0;
-  top: 10px; }
+  top: 10px;
+  cursor: pointer; }
 
 .sort-by {
   color: #666; }
@@ -2930,7 +2931,7 @@ ul.footer_links {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 9999;
   background-color: #000; }
   .modal-backdrop.fade {
     opacity: 0; }

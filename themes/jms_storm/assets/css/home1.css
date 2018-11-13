@@ -111,6 +111,9 @@
     padding-left: 1px; }
   .topbar .right #_desktop_user_info .dropdown-menu {
     left: -18px; }
+    .topbar .right #_desktop_user_info .dropdown-menu > li > a {
+      line-height: 35px;
+      text-transform: capitalize; }
   .topbar .right #_desktop_user_info .type1, .topbar .right #_desktop_user_info .type2 {
     display: none; }
   .topbar .right #_desktop_user_info .type3 {
@@ -251,7 +254,7 @@
     position: unset;
     color: #fff;
     border: 0;
-    max-width: 145px;
+    max-width: 100px;
     text-align: right; }
     .header .right #ajax_search::-webkit-input-placeholder {
       color: #fff;

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-01 03:05:42
+/* Smarty version 3.1.32, created on 2018-11-13 02:51:09
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\templates\catalog\_partials\products.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bdaa5c64c4d24_21897262',
+  'unifunc' => 'content_5bea826de9f175_93403437',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/pagination.tpl' => 1,
   ),
 ),false)) {
-function content_5bdaa5c64c4d24_21897262 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bea826de9f175_93403437 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -34,7 +34,7 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
 ?>
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_137875bdaa5c64c4d24_03684820', 'product_miniature');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_160905bea826de9b2f5_48995425', 'product_miniature');
 ?>
 
     <?php
@@ -44,18 +44,18 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
   </div>
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_226485bdaa5c64c4d28_13330111', 'pagination');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_243315bea826de9f173_50434038', 'pagination');
 ?>
 
 </div>
 <?php }
 /* {block 'product_miniature'} */
-class Block_137875bdaa5c64c4d24_03684820 extends Smarty_Internal_Block
+class Block_160905bea826de9b2f5_48995425 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_miniature' => 
   array (
-    0 => 'Block_137875bdaa5c64c4d24_03684820',
+    0 => 'Block_160905bea826de9b2f5_48995425',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -68,12 +68,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_miniature'} */
 /* {block 'pagination'} */
-class Block_226485bdaa5c64c4d28_13330111 extends Smarty_Internal_Block
+class Block_243315bea826de9f173_50434038 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'pagination' => 
   array (
-    0 => 'Block_226485bdaa5c64c4d28_13330111',
+    0 => 'Block_243315bea826de9f173_50434038',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

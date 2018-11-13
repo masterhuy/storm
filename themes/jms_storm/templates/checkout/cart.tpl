@@ -28,7 +28,7 @@
 
   <section id="main">
 	 <div class="cart-block">
-            <h1>{l s='Your Shopping Cart' d='Shop.Theme.Checkout'}</h1>
+            <h1>{l s='Shopping Cart' d='Shop.Theme.Checkout'}</h1>
           </div>
     <div class="cart-grid">
 		<div class="row first">

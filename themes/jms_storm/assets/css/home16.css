@@ -752,6 +752,13 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    .header .right #cart_block {
+      position: unset; }
+      .header .right #cart_block.open .shoppingcart-box {
+        top: calc(100% + 16px); }
+      .header .right #cart_block .shoppingcart-box {
+        top: calc(100% + 16px);
+        right: 15px; }
     .header .right .addon-box {
       margin: 0;
       margin: 0 10px; }

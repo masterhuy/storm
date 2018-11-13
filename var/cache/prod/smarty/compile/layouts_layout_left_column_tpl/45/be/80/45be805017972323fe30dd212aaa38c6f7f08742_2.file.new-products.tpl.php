@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-01 03:06:22
+/* Smarty version 3.1.32, created on 2018-11-13 02:53:14
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\templates\catalog\listing\new-products.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bdaa5ee6a1aa7_79962568',
+  'unifunc' => 'content_5bea82ea38f7b2_79938480',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bdaa5ee6a1aa7_79962568 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bea82ea38f7b2_79938480 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
