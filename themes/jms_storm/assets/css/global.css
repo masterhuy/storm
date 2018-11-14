@@ -1372,7 +1372,9 @@ a.wishlist_top {
   display: none; }
 
 #product #footer {
-  margin-top: -186px; }
+  margin-top: -186px;
+  display: inline-block;
+  width: 100%; }
 
 #category #header {
   position: relative;
@@ -1589,6 +1591,8 @@ a.wishlist_top {
     justify-content: center;
     text-align: center !important;
     margin: 10px 0; }
+    .service .feature-box i {
+      margin-right: 0 !important; }
   .footer_t div.layout-column {
     min-height: auto; }
   .footer_b .addon-box p {
@@ -2186,5 +2190,14 @@ a.wishlist_top {
     top: 0;
     left: 0; }
 
+.product-preview button.cart-button:focus {
+  outline: none; }
+
 .modal-open #header .header.fixed, .modal-open #header .menu.fixed {
   left: -8.5px; }
+
+.force-full-width .feature-icon span {
+  display: none; }
+
+.our-team .member img {
+  border: 2px solid #e6e6e6; }

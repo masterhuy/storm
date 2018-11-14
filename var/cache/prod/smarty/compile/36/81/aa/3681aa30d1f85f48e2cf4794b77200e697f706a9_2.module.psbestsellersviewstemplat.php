@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-13 05:24:19
+/* Smarty version 3.1.32, created on 2018-11-14 04:56:59
   from 'module:psbestsellersviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5beaa653406955_59858652',
+  'unifunc' => 'content_5bebf16be0ac38_14501324',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product2.tpl' => 1,
   ),
 ),false)) {
-function content_5beaa653406955_59858652 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bebf16be0ac38_14501324 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="best-sellers_block_right">
 	<div class="title-block">
 		<h3>

@@ -274,13 +274,10 @@
   .slides .jms-slide-content {
     text-transform: uppercase; }
   .slides .text-1 {
-    font-size: 40px;
     font-weight: 600; }
   .slides .text-2 {
-    font-size: 70px;
     font-weight: 700; }
   .slides .text-3 {
-    font-size: 30px;
     font-weight: 500; }
   .slides .btn-shopnow {
     padding: 18.5px 51px; }
@@ -390,8 +387,9 @@
   position: relative;
   z-index: 2;
   margin-top: -82px;
+  display: inline-block;
+  width: 100%;
   text-align: center;
-  padding: 113px 0;
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto; }
@@ -400,6 +398,7 @@
   .banner_f .image img {
     width: 100%; }
   .banner_f .include_content_s {
+    padding: 113px 0;
     text-transform: uppercase;
     text-align: center;
     color: #fff; }
@@ -444,10 +443,7 @@
     position: relative;
     z-index: 9; }
     .cate_tab .addon-title h3 {
-      float: left;
-      font-size: 20px;
-      font-weight: 600;
-      color: #222; }
+      float: left; }
     .cate_tab .addon-title .jms-tab {
       float: right; }
       .cate_tab .addon-title .jms-tab .nav {
@@ -512,6 +508,7 @@
       margin-bottom: 0; }
 
 .footer_t {
+  margin-top: -86px;
   color: #fff;
   padding-top: 146px; }
   .footer_t .addon-title h3 {
@@ -641,8 +638,8 @@
   .footer_b .right p {
     float: right; }
 
-.page-index #footer {
-  margin-top: -86px; }
+#product #footer {
+  margin-top: -90px; }
 
 @media (min-width: 1900px) {
   .container {
@@ -701,8 +698,6 @@
     width: 38%; } }
 
 @media (max-width: 1199px) {
-  .banner_f, .banner_f .layout-column {
-    margin-top: -50px; }
   .cate_tab {
     background-position: 50% 60px !important; }
     .cate_tab .product_action {

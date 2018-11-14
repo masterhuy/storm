@@ -244,28 +244,11 @@
 		margin-top:20px;
 	}
 }
-@media(max-width:480px){
-	#cart .js-cart-line-product-quantity.form-control {
-		width: calc(100% - 18px);
-	}
-	.product-line-info .label.product-name {
-		overflow: hidden;
-		text-overflow: ellipsis;
-		text-transform: capitalize;
-		white-space: nowrap;
-		width: 100%;
-		display:inline-block;
-		text-align:left;
-	}
-}
 @media(max-width:320px){
 	.cart-grid-right .block-social ul li {
 	  height: 30px;
 	  line-height: 30px;
 	  margin-right: 5px;
 	  min-width: 30px;
-	}
-	#cart .js-cart-line-product-quantity.form-control {
-		width: calc(100% - 15px);
 	}
 }

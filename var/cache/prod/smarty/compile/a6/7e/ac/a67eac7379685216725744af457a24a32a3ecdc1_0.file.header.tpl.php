@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-13 01:45:07
+/* Smarty version 3.1.32, created on 2018-11-13 23:25:44
   from 'D:\xamppp\htdocs\jms_storm\admin063ihraim\themes\default\template\controllers\login\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bea72f3e006f6_92424213',
+  'unifunc' => 'content_5beba3c8a10677_08720121',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bea72f3e006f6_92424213 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5beba3c8a10677_08720121 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 lt-ie6"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->

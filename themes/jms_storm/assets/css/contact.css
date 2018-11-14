@@ -76,7 +76,7 @@
 }
 @media(max-width:767px) {
 	#contact #wrapper #content-wrapper {
-	  padding: 0;
+		padding: 0 15px;
 	}
 	#contact #wrapper>.row {
 		margin-left:0;

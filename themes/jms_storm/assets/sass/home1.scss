@@ -348,15 +348,12 @@
 		text-transform: uppercase;
 	}
 	.text-1{
-		font-size: 40px;
 		font-weight: 600;
 	}
 	.text-2{
-		font-size:70px;
 		font-weight: 700;
 	}
 	.text-3{
-		font-size: 30px;
 		font-weight: 500;
 	}
 	.btn-shopnow{
@@ -502,8 +499,9 @@
 	position: relative;
 	z-index: 2;
 	margin-top: -82px;
+	display: inline-block;
+	width: 100%;
 	text-align: center;
-	padding: 113px 0;
 	max-width: 1920px;
 	margin-left: auto;
 	margin-right: auto;
@@ -514,6 +512,7 @@
 		width: 100%;
 	}
 	.include_content_s{
+		padding: 113px 0;
 		text-transform: uppercase;
 		text-align: center;
 		color: #fff;
@@ -571,9 +570,6 @@
 		z-index: 9;;
 		h3{
 			float: left;
-			font-size: 20px;
-			font-weight: 600;
-			color: #222;
 		}
 		.jms-tab{
 			.nav{
@@ -657,6 +653,7 @@
 
 // footer
 .footer_t{
+	margin-top: -86px;
 	.addon-title{
 		h3{
 			color: #fff;
@@ -815,8 +812,10 @@
 		}
 	}
 }
-.page-index #footer{
-	margin-top: -86px;
+#product{
+	 #footer {
+		margin-top: -90px;
+	}
 }
 
 @media (min-width: 1900px){
@@ -903,9 +902,6 @@
 	}
 }
 @media (max-width: 1199px){
-	.banner_f, .banner_f .layout-column {
-		margin-top: -50px;
-	}
 	.cate_tab{
 		background-position: 50% 60px !important;
 		.product_action{

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-13 05:18:24
+/* Smarty version 3.1.32, created on 2018-11-14 03:43:58
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmspagebuilder\views\templates\hook\addonproductcarousel_h12_1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5beaa4f0c46cb0_19635521',
+  'unifunc' => 'content_5bebe04e9c2b06_07825130',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5beaa4f0c46cb0_19635521 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bebe04e9c2b06_07825130 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 	var p_12_1_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {

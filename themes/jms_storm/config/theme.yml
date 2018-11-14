@@ -27,6 +27,12 @@ meta:
       description: Two columns with a small right column
 
 assets:
+  js:
+    product:
+     - id: elevateZoom
+       path: assets/js/jquery.elevatezoom.js
+       priority: 130
+       position: bottom
   # If you're using this theme as child and you want to load
   # the parent theme assets, uncomment this line.
 #  use_parent_assets: true
