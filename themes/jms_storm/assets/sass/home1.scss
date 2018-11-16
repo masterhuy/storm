@@ -411,9 +411,10 @@
 		.btn-shopnow{
 			background: transparent;
 			border: 2px solid #fff;
+			color: #fff;
 			&:hover{
-				background: $active-h1;
-				border-color: $active-h1;
+				background: $active-h1 !important;
+				border-color: $active-h1 !important;
 			}
 
 		}
@@ -459,9 +460,10 @@
 		.btn-shopnow{
 			background: transparent;
 			border: 2px solid #fff;
+			color: #fff;
 			&:hover{
-				background: $active-h1;
-				border-color: $active-h1;
+				background: $active-h1 !important;
+				border-color: $active-h1 !important;
 			}
 
 		}
@@ -567,7 +569,7 @@
 		border-bottom: 1px solid #cfcfcf;
 		height: 39px;
 		position: relative;
-		z-index: 9;;
+		z-index: 9;
 		h3{
 			float: left;
 		}
@@ -885,8 +887,8 @@
 		text-overflow: ellipsis;
 		overflow: hidden;
 	}
-	.header .right .addon-box:not(:first-child) {
-		margin-right: 0px;
+	.header .right .text-custom {
+		display: none;
 	}
 	.cate_tab{
 		.categorytab-carousel{
@@ -926,8 +928,12 @@
 		padding: 0 8px;
 	}
 }
+@media (min-width: 992px){
+	.header.fixed{
+		padding: 10px 0;
+	}
+}
 @media (max-width: 991px){
-	
 	.footer_t{
 		.layout-column{
 			min-height: 325px;
@@ -978,22 +984,53 @@
 			top: 100%;
 		}
 		#cart_block .shoppingcart-box{
-			top: calc(100% + 7px);
+			top: calc(100% + 17px);
 		}
 	}
 }
 @media (max-width: 991px) and (min-width: 768px){
 	.banner_1{
-		.layout-column{
-			width: 50%;
+		.btn-shopnow {
+			font-size: 14px;
+			padding: 7px 20px;
+		}
+		.left{
+			.text-1{
+				font-size: 16px;
+				margin-bottom: 0;
+			}
+			.text-2{
+				font-size: 20px;
+			}
+		}
+		.center{
+			.text-1{
+				font-size: 16px;
+				margin-bottom: 0;
+			}
+			.text-2{
+				font-size: 20px;
+			}
 		}
 		.right{
-			width: 100%;
-			.addon-box{
-				width: 50%;
-				margin: 0 auto;
-				margin-top: 30px;
+			.text-1{
+				font-size: 16px;
+				margin-bottom: 0;
 			}
+			.text-2{
+				font-size: 20px;
+			}
+			.text-3{
+				font-size: 14px;
+			}
+		}
+	}
+	.header{
+		.left{
+			padding-top: 10px;
+		}
+		.center, .right{
+			padding-bottom: 10px;
 		}
 	}
 }
@@ -1025,8 +1062,16 @@
 		.left{
 			padding: 15px 0;
 		}
-		.right .addon-box {
-			margin-left: 10px;
+		.right{
+			#jms_ajax_search{
+				position: unset;
+				#search_result{
+					top: calc(100% + 10px);
+				}
+			}
+			.addon-box {
+				margin-left: 10px;
+			}
 		}
 	}
 	.slides{

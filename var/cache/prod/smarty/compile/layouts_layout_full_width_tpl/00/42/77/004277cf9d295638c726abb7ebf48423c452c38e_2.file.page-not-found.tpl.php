@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-14 05:04:03
+/* Smarty version 3.1.32, created on 2018-11-16 05:14:40
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\templates\errors\page-not-found.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bebf3139e52f4_54491221',
+  'unifunc' => 'content_5bee989096db01_17013420',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '004277cf9d295638c726abb7ebf48423c452c38e' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_storm\\themes\\jms_storm\\templates\\errors\\page-not-found.tpl',
-      1 => 1541057163,
+      1 => 1542266622,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bebf3139e52f4_54491221 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bee989096db01_17013420 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
-<section id="content" class="page-content page-not-found"> 
+<section id="content" class="page-content page-not-found">
+	<span class="icon">
+		<i class="fa fa-frown"></i>
+	</span>
 	<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'error 404 not found','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 </h3>
 	<p><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'We are sorry but the page you are looking for does not exist.','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
@@ -33,19 +36,19 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 </p>
 
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_134705bebf3139e1478_37109053', 'hook_not_found');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_172975bee9890969c86_78589725', 'hook_not_found');
 ?>
 
 	</div>
 </section>
 <?php }
 /* {block 'hook_not_found'} */
-class Block_134705bebf3139e1478_37109053 extends Smarty_Internal_Block
+class Block_172975bee9890969c86_78589725 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'hook_not_found' => 
   array (
-    0 => 'Block_134705bebf3139e1478_37109053',
+    0 => 'Block_172975bee9890969c86_78589725',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

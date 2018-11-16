@@ -164,12 +164,14 @@
     content: "\f107";
     font-family: "FontAwesome";
     padding-left: 1px; }
-  .topbar .right #_desktop_user_info .user-info > a::before {
-    content: "\e915";
-    font-family: Storm;
-    font-size: 17px;
-    left: -25px;
-    top: -12px; }
+  .topbar .right #_desktop_user_info .user-info > a {
+    top: -2px; }
+    .topbar .right #_desktop_user_info .user-info > a::before {
+      content: "\e915";
+      font-family: Storm;
+      font-size: 17px;
+      left: -25px;
+      top: -12px; }
   .topbar .right #_desktop_user_info .dropdown-menu {
     background: #fff; }
     .topbar .right #_desktop_user_info .dropdown-menu > li {
@@ -188,7 +190,8 @@
     display: none; }
   .topbar .right .addon-box {
     float: right;
-    position: relative; }
+    position: relative;
+    height: 42px; }
     .topbar .right .addon-box:not(:first-child) {
       margin-right: 40px; }
       .topbar .right .addon-box:not(:first-child)::after {

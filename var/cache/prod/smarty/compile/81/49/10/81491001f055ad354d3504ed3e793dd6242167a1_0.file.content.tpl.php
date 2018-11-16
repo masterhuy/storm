@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-13 23:25:44
+/* Smarty version 3.1.32, created on 2018-11-16 02:12:29
   from 'D:\xamppp\htdocs\jms_storm\admin063ihraim\themes\default\template\controllers\login\content.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5beba3c8926038_93797096',
+  'unifunc' => 'content_5bee6ddd575272_07751744',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5beba3c8926038_93797096 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bee6ddd575272_07751744 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_storm\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?><div id="login-panel">
 	<div id="login-header">

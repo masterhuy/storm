@@ -146,6 +146,8 @@ jQuery(function ($) {
 
 jQuery(document).ready(function($) {
 	var header = $(".jms-row.header");
+	producttab = $(".product_tab");
+	catetab = $(".cate_tab");
 
 	$(window).scroll(function () {
     	if ($(window).scrollTop()){
@@ -156,13 +158,13 @@ jQuery(document).ready(function($) {
     });
 
 	$(".product_tab .product-miniature").hover(function(){
-	    $(".product_tab").css("z-index", "3");
+	    producttab.css("z-index", "3");
 		}, function(){
-        $(".product_tab").css("z-index", "1");
+        producttab.css("z-index", "1");
 	});
 	$(".cate_tab .product-miniature").hover(function(){
-	    $(".cate_tab").css("z-index", "3");
+	    catetab.css("z-index", "3");
 		}, function(){
-        $(".cate_tab").css("z-index", "1");
+        catetab.css("z-index", "1");
 	});
 });

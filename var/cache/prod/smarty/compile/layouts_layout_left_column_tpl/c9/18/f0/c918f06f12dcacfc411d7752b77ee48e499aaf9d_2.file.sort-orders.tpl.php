@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-14 04:44:23
+/* Smarty version 3.1.32, created on 2018-11-16 03:19:23
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\templates\catalog\_partials\sort-orders.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bebee773efbd5_78359949',
+  'unifunc' => 'content_5bee7d8b8dab03_34773101',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bebee773efbd5_78359949 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bee7d8b8dab03_34773101 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div class="inlude_sort_by">
 <span class="hidden-sm-down sort-by"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sort by:','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 </span>

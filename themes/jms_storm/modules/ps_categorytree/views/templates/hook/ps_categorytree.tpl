@@ -43,7 +43,13 @@
 					</div>
 				{/if}
             {else}
-              <a class="category-sub-link" href="{$node.link}">{$node.name}</a>	
+              <a class="category-sub-link" href="{$node.link}">{$node.name}
+              {if $node.children}
+                <span class="navbar-toggler collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
+                  <i class="material-icons add"></i>
+                </span>
+              {/if}
+              </a>	
               {if $node.children}
                 <div class="collapse" id="exCollapsingNavbar{$node.id}">
                   {categories nodes=$node.children depth=$depth+1}

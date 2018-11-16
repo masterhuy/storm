@@ -18,6 +18,10 @@
 	z-index:11;
 	min-width:30px;
 }
+#authentication .forgot-password > a {
+	margin-bottom: 10px;
+	display: inline-block;
+}
 #authentication .forgot-password, #authentication .form-footer, #authentication .no-account {
 	text-align:center;
 }

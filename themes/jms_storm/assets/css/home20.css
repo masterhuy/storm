@@ -263,7 +263,7 @@
 .header {
   padding: 25px 0 24px; }
   .header.fixed {
-    padding: 0;
+    padding: 10px 0;
     background: #fff;
     z-index: 9999 !important; }
     .header.fixed #cart_block .shoppingcart-box {
@@ -906,8 +906,11 @@
     display: none; }
   .header #cart_block {
     position: unset; }
+    .header #cart_block.open .shoppingcart-box {
+      top: calc(100% + 24px); }
     .header #cart_block .shoppingcart-box {
-      right: 15px; }
+      right: 15px;
+      top: calc(100% + 24px); }
   .service .layout-column {
     margin-bottom: 15px; }
   .hot_deal .jms-tab .nav {
@@ -935,6 +938,7 @@
   .blog .right .addon-box {
     width: 100%;
     padding: 0 !important;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    margin-top: 15px; }
   #footer .newsletter .form-group #newsletter-input {
     width: 175px; } }

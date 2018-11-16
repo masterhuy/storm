@@ -40,7 +40,7 @@
 	position:relative;
 }
 .block-categories .cat-item .sub-list {
-	padding:0 15px;
+	padding-left:15px;
 }
 .block-categories .collapse-icons i::before {
     color: #333;

@@ -150,7 +150,7 @@
   background: rgba(0, 0, 0, 0.77);
   padding: 25px 0 23px; }
   .header.fixed {
-    padding: 0; }
+    padding: 10px 0; }
     .header.fixed #cart_block .shoppingcart-box {
       top: calc(100% + 5px); }
     .header.fixed #cart_block.open .shoppingcart-box {

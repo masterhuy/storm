@@ -325,10 +325,11 @@
     margin-bottom: 18px; }
   .banner_1 .left .btn-shopnow {
     background: transparent;
-    border: 2px solid #fff; }
+    border: 2px solid #fff;
+    color: #fff; }
     .banner_1 .left .btn-shopnow:hover {
-      background: #1ec7a6;
-      border-color: #1ec7a6; }
+      background: #1ec7a6 !important;
+      border-color: #1ec7a6 !important; }
   .banner_1 .center .text-1 {
     font-size: 40px;
     font-weight: 600;
@@ -356,10 +357,11 @@
     margin-bottom: 32px; }
   .banner_1 .right .btn-shopnow {
     background: transparent;
-    border: 2px solid #fff; }
+    border: 2px solid #fff;
+    color: #fff; }
     .banner_1 .right .btn-shopnow:hover {
-      background: #1ec7a6;
-      border-color: #1ec7a6; }
+      background: #1ec7a6 !important;
+      border-color: #1ec7a6 !important; }
   .banner_1 .include_content_s {
     color: #fff;
     position: absolute;
@@ -688,8 +690,8 @@
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     overflow: hidden; }
-  .header .right .addon-box:not(:first-child) {
-    margin-right: 0px; }
+  .header .right .text-custom {
+    display: none; }
   .cate_tab .categorytab-carousel {
     padding-top: 0; } }
 
@@ -712,6 +714,10 @@
     display: none; }
   .jms-megamenu .nav > li {
     padding: 0 8px; } }
+
+@media (min-width: 992px) {
+  .header.fixed {
+    padding: 10px 0; } }
 
 @media (max-width: 991px) {
   .footer_t .layout-column {
@@ -745,17 +751,33 @@
   .header #search_result {
     top: 100%; }
   .header #cart_block .shoppingcart-box {
-    top: calc(100% + 7px); } }
+    top: calc(100% + 17px); } }
 
 @media (max-width: 991px) and (min-width: 768px) {
-  .banner_1 .layout-column {
-    width: 50%; }
-  .banner_1 .right {
-    width: 100%; }
-    .banner_1 .right .addon-box {
-      width: 50%;
-      margin: 0 auto;
-      margin-top: 30px; } }
+  .banner_1 .btn-shopnow {
+    font-size: 14px;
+    padding: 7px 20px; }
+  .banner_1 .left .text-1 {
+    font-size: 16px;
+    margin-bottom: 0; }
+  .banner_1 .left .text-2 {
+    font-size: 20px; }
+  .banner_1 .center .text-1 {
+    font-size: 16px;
+    margin-bottom: 0; }
+  .banner_1 .center .text-2 {
+    font-size: 20px; }
+  .banner_1 .right .text-1 {
+    font-size: 16px;
+    margin-bottom: 0; }
+  .banner_1 .right .text-2 {
+    font-size: 20px; }
+  .banner_1 .right .text-3 {
+    font-size: 14px; }
+  .header .left {
+    padding-top: 10px; }
+  .header .center, .header .right {
+    padding-bottom: 10px; } }
 
 @media (max-width: 767px) {
   .topbar {
@@ -776,6 +798,10 @@
     padding: 10px 0; }
     .header .left {
       padding: 15px 0; }
+    .header .right #jms_ajax_search {
+      position: unset; }
+      .header .right #jms_ajax_search #search_result {
+        top: calc(100% + 10px); }
     .header .right .addon-box {
       margin-left: 10px; }
   .slides {

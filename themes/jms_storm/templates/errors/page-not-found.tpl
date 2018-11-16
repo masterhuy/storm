@@ -22,7 +22,10 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<section id="content" class="page-content page-not-found"> 
+<section id="content" class="page-content page-not-found">
+	<span class="icon">
+		<i class="fa fa-frown"></i>
+	</span>
 	<h3>{l s='error 404 not found' d='Shop.Theme'}</h3>
 	<p>{l s='We are sorry but the page you are looking for does not exist.' d='Shop.Theme'}</p>
 	<p>{l s='You could return to homepage or using search!' d='Shop.Theme'}</p>

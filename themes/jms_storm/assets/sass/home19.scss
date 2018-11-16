@@ -988,6 +988,9 @@
 			}
 		}
 	}
+	.menu{
+		padding: 5px 0;
+	}
 	.new_arrivals{
 		.left{
 			.owl-stage-outer{
@@ -1025,8 +1028,12 @@
 	.header{
 		#cart_block{
 			position: unset;
+			&.open .shoppingcart-box{
+				top: calc(100% + 24px);
+			}
 			.shoppingcart-box{
 				right: 15px;
+				top: calc(100% + 24px);
 			}
 		}
 	}

@@ -870,6 +870,8 @@
     .banner_2 .include_content_s {
       width: 100%;
       padding-left: 0; }
+  .brand .brand-item {
+    background: #f5f6f6; }
   .footer_t .newsletter #newsletter-input {
     width: 200px; }
   .footer_t .newsletter .form-group .newsletter-btn {

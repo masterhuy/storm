@@ -830,6 +830,8 @@
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
         order: 2; }
+  .menu {
+    padding: 5px 0; }
   .new_arrivals .left .owl-stage-outer {
     padding-bottom: 0; }
   .new_arrivals .center {
@@ -857,8 +859,11 @@
     display: none; }
   .header #cart_block {
     position: unset; }
+    .header #cart_block.open .shoppingcart-box {
+      top: calc(100% + 24px); }
     .header #cart_block .shoppingcart-box {
-      right: 15px; }
+      right: 15px;
+      top: calc(100% + 24px); }
   .banner_2 .c1, .banner_2 .c2 {
     margin-bottom: 30px; }
   .new_arrivals .right {

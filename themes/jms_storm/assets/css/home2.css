@@ -693,4 +693,6 @@
 
 @media (max-width: 481px) {
   .banner .left {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .footer_b .right img:not(:last-child) {
+    margin-right: 0; } }

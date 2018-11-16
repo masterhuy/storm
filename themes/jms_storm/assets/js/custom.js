@@ -30,7 +30,7 @@ $('body').on('click', '.ajax-add-to-cart', function (event) {
 	$(this).addClass('checking');
 	var callerElement = $(this);
 	$.post(actionURL, query, null, 'json').then(function (resp) {		
-		if(jpb_addtocart == 'ajax_cartbottom') alert('aaa');
+		if(jpb_addtocart == 'ajax_cartbottom') alert('Add Success');
 	    prestashop.emit('updateCart', {
 	        reason: {
 	          idProduct: resp.id_product,
@@ -91,7 +91,7 @@ jQuery(function ($) {
 			responsiveClass:true,
 			responsive:{            
 				1199:{
-                  items:4
+                  	items:4
 				},
 				991:{
 					items:3

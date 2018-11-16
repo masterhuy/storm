@@ -790,6 +790,8 @@
     float: none; } }
 
 @media (max-width: 481px) {
+  .header .right #jms_ajax_search {
+    position: unset; }
   .header .right #ajax_search {
     width: 120px;
     padding-left: 20px; }

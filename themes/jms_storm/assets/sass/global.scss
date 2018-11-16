@@ -12,6 +12,7 @@
 	  	animation-duration: 0.8s;
 		animation-name: slideDown;
 		animation-timing-function: ease;
+		margin-right: 0 !important;
 	}
 }
 
@@ -23,7 +24,6 @@
       transform: translateY(0%);
   }
 }
-
 .fa.fa-cog{
 	animation: fa-spin 2s infinite linear;
 }
@@ -375,6 +375,7 @@ a.wishlist_top{
 	.group_btn{
 		a{
 			display: inline-block;
+			margin-right: 10px;
 		}
 	}
 }
@@ -755,6 +756,14 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 481px){
+	div.footer_t{
+		.contact .address {
+			padding-right: 0;
+		}
+		.contact-info li.address{
+			padding-right: 0;
+		}
+	}
 	#product{
         .product-quantity{
             align-items: flex-start;
@@ -886,6 +895,12 @@ a.wishlist_top{
 			width: calc(100% - 30px);
 			background: #fff;
 		}
+	}
+}
+@media (max-width: 991px) and (min-width: 767px){
+	div.service .feature-box {
+		justify-content: flex-start;
+		padding-left: 15px;
 	}
 }
 @media (max-width: 767px){
@@ -1560,13 +1575,19 @@ a.wishlist_top{
 .product-preview button.cart-button:focus{
     outline: none;
 }
-.modal-open #header{
+.modal-open #header, .fancybox-margin{
 	.header, .menu{
 		&.fixed{
 			left: -8.5px;
 		}
 	}
 }
+.home_7, .home_8, .home_11, .home_17, .home_18, .home_19, .home_20{
+	&#product .product-cover {
+		border: 1px solid #e6e6e6;
+	}
+}
+
 
 // about us
 .force-full-width{

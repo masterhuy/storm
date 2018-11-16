@@ -299,7 +299,7 @@
 .header{
 	padding: 25px 0 24px;
 	&.fixed{
-		padding: 0;
+		padding: 10px 0;
 		background: #fff;
 		z-index: 9999 !important;
 		#cart_block{
@@ -1097,8 +1097,12 @@
 	.header{
 		#cart_block{
 			position: unset;
+			&.open .shoppingcart-box{
+				top: calc(100% + 24px);
+			}
 			.shoppingcart-box{
 				right: 15px;
+				top: calc(100% + 24px);
 			}
 		}
 	}
@@ -1135,6 +1139,7 @@
 		width: 100%;
 		padding: 0 !important;
 		margin-bottom: 15px;
+		margin-top: 15px;
 	}
 	#footer .newsletter .form-group #newsletter-input{
 		width: 175px;

@@ -927,6 +927,10 @@
 			padding: 10px 0;
 		}
 	}
+	.menu .left{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
 	.jms-banner > a::before{
 		border: 50px double transparent;
 	}
@@ -1030,8 +1034,11 @@
 	.footer_t .newsletter #newsletter-input {
 		width: 200px;
 	}
-	.slides .right .addon-box{
-		width: 100% !important;
+	.slides .right{
+		padding: 0 15px;
+		.addon-box{
+			width: 100% !important;
+		}
 	}
 	.banner_full .include_content_s{
 		.text-2 {

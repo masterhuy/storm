@@ -876,13 +876,16 @@
 @media (max-width: 991px){
 	.header{
 		.container > .row{
-			display: block;
+			display: block
 		}
 		.left .addon-box{
 			display: flex;
 			justify-content: center;
 			padding: 10px 0;
 		}
+	}
+	.menu{
+		padding: 5px 0;
 	}
 	.container{
 		width: 750px;

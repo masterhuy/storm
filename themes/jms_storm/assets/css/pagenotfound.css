@@ -1,6 +1,9 @@
 .page-not-found {
 	text-align: center;
-	padding-bottom: 150px;
+}
+.page-not-found .icon i{
+	font-size: 250px;
+	margin-bottom: 30px;
 }
 .page-not-found h3 {
 	text-transform: capitalize;
@@ -80,10 +83,18 @@
 		padding: 0;
 	}
 }
-@media(max-width:360px) {
-	#pagenotfound h4, #search h4 {
+@media (max-width: 481px){
+	.page-content.page-not-found .icon i {
 		font-size: 150px;
 	}
+	.page-content.page-not-found h3{
+		font-size: 25px;
+	}
+	.page-content.page-not-found p {
+		font-size: 14px;
+	}
+}
+@media(max-width:360px) {
 	#pagenotfound .large-text, #search .large-text {
 		font-size: 25px;
 	}

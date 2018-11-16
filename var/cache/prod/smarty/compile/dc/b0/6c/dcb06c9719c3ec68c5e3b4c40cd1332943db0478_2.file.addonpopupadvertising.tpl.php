@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-13 01:48:38
+/* Smarty version 3.1.32, created on 2018-11-16 02:45:37
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmspagebuilder\views\templates\hook\addonpopupadvertising.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bea73c6749da8_89428340',
+  'unifunc' => 'content_5bee75a1739291_97689392',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bea73c6749da8_89428340 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bee75a1739291_97689392 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-popup-overlay" style="display:none;">
 	<div class="jms-popup">		
 		<?php if ($_smarty_tpl->tpl_vars['popup_title']->value) {?>

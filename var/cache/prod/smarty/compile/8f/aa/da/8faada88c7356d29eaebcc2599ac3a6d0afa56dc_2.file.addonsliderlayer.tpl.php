@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-14 05:04:05
+/* Smarty version 3.1.32, created on 2018-11-16 05:14:51
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\modules\jmspagebuilder\views\templates\hook\addonsliderlayer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bebf315a81e49_84559018',
+  'unifunc' => 'content_5bee989bd44ab1_13483567',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bebf315a81e49_84559018 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bee989bd44ab1_13483567 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-slider-wrapper">
 	<div class="responisve-container">
 		<div class="slider" >

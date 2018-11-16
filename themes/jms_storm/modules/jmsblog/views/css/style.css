@@ -341,3 +341,9 @@ h4.heading {
     font-weight: 500;
 }
 /* Tag Page */
+
+@media (max-width: 767px){
+	.cat-post-list .item .post-meta {
+		display: block;
+	}
+}

@@ -206,12 +206,15 @@
 			@include icon_dropdown(1);
 		}
 		#_desktop_user_info{
-			.user-info > a::before{
-				content: "\e915";
-				font-family: Storm;
-				font-size: 17px;
-				left: -25px;
-				top: -12px;
+			.user-info > a{
+				top: -2px;
+				&::before{
+					content: "\e915";
+					font-family: Storm;
+					font-size: 17px;
+					left: -25px;
+					top: -12px;
+				}
 			}
 			.dropdown-menu{
 				background: #fff;
@@ -244,6 +247,7 @@
 		.addon-box{
 			float: right;
 			position: relative;
+			height: 42px;
 			&:not(:first-child){
 				margin-right: 40px;
 				&::after{

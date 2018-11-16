@@ -917,8 +917,10 @@
         -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
         order: 1; }
-  .menu .left {
-    display: none; }
+  .menu {
+    padding: 5px 0; }
+    .menu .left {
+      display: none; }
   .slides .right .addon-box:last-child .title {
     width: 100%;
     text-align: center;

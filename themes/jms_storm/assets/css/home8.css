@@ -729,6 +729,8 @@
     -ms-flex-pack: center;
     justify-content: center;
     padding: 10px 0; }
+  .header .center {
+    padding-bottom: 10px; }
   .footer_b .left p {
     text-align: center; }
   .footer_b ul {
@@ -751,7 +753,9 @@
   .banner_full .include_content_s .btn-shopnow {
     font-size: 14px; }
   .cate_tab {
-    background: unset !important; } }
+    background: unset !important; }
+  .footer_b {
+    line-height: 30px; } }
 
 @media (max-width: 481px) {
   .banner_1 .left .addon-box {

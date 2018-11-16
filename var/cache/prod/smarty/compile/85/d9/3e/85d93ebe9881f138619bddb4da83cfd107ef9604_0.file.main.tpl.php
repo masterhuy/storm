@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-12 22:39:55
+/* Smarty version 3.1.32, created on 2018-11-15 04:05:03
   from 'D:\xamppp\htdocs\jms_storm\admin063ihraim\themes\default\template\controllers\translations\helpers\view\main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bea478b4d0f90_57240300',
+  'unifunc' => 'content_5bed36bfafb063_51922029',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bea478b4d0f90_57240300 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bed36bfafb063_51922029 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_165395bea478b43c877_20338567', "override_tpl");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_244635bed36bfa7a1d5_24652576', "override_tpl");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "helpers/view/view.tpl");
 }
 /* {block "override_tpl"} */
-class Block_165395bea478b43c877_20338567 extends Smarty_Internal_Block
+class Block_244635bed36bfa7a1d5_24652576 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'override_tpl' => 
   array (
-    0 => 'Block_165395bea478b43c877_20338567',
+    0 => 'Block_244635bed36bfa7a1d5_24652576',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
