@@ -822,9 +822,6 @@
 	.owl-stage-outer{
 		padding-bottom: 150px;
 	}
-	.product_action{
-		padding: 0 30px;
-	}
 	.product-link{
 		white-space: nowrap;
 		text-overflow: ellipsis;
@@ -1181,8 +1178,13 @@
 			margin-bottom: 20px;
 		}
 	}
-	.header #cart_block .shoppingcart-box{
-		right: 15px;
+	.header{
+		.right{
+			padding-top: 10px;
+		}
+		#cart_block .shoppingcart-box{
+			right: 15px;
+		}
 	}
 	.cate_tab .addon-title h3 {
 		float: none;

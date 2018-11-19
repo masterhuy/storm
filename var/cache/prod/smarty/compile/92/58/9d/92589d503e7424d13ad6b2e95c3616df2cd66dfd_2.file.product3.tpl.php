@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-15 22:08:37
+/* Smarty version 3.1.32, created on 2018-11-19 05:22:56
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\templates\catalog\_partials\miniatures\product3.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bee34b56dafc3_80149740',
+  'unifunc' => 'content_5bf28f00f39a50_67397181',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bee34b56dafc3_80149740 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bf28f00f39a50_67397181 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -29,18 +29,18 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ">
 	<div class="preview flexbox">
 		<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_177315bee34b56b3eb2_33742747', 'product_thumbnail');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_299605bf28f00f0ac44_39947980', 'product_thumbnail');
 ?>
 				
 	</div>
 
     <div class="product-info">
 	    <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_197055bee34b56cb5c1_51457184', 'product_name');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_263105bf28f00f2a042_24284075', 'product_name');
 ?>
 
 		    <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_215665bee34b56cf445_33604805', 'product_price_and_shipping');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_180555bf28f00f2dec4_40875407', 'product_price_and_shipping');
 ?>
 
 	   
@@ -48,7 +48,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_215665bee34b56cf44
    
 </div><?php }
 /* {block 'product_flags'} */
-class Block_60805bee34b56bfa44_53249464 extends Smarty_Internal_Block
+class Block_298575bf28f00f1e4c6_67142471 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -81,16 +81,16 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'product_flags'} */
 /* {block 'product_thumbnail'} */
-class Block_177315bee34b56b3eb2_33742747 extends Smarty_Internal_Block
+class Block_299605bf28f00f0ac44_39947980 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_thumbnail' => 
   array (
-    0 => 'Block_177315bee34b56b3eb2_33742747',
+    0 => 'Block_299605bf28f00f0ac44_39947980',
   ),
   'product_flags' => 
   array (
-    0 => 'Block_60805bee34b56bfa44_53249464',
+    0 => 'Block_298575bf28f00f1e4c6_67142471',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -119,7 +119,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 		  	</a>
 		 	<div class="block-label">
 			  	<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_60805bee34b56bfa44_53249464', 'product_flags', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_298575bf28f00f1e4c6_67142471', 'product_flags', $this->tplIndex);
 ?>
 	
 			</div>
@@ -128,12 +128,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_60805bee34b56bfa44
 }
 /* {/block 'product_thumbnail'} */
 /* {block 'product_name'} */
-class Block_197055bee34b56cb5c1_51457184 extends Smarty_Internal_Block
+class Block_263105bf28f00f2a042_24284075 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_name' => 
   array (
-    0 => 'Block_197055bee34b56cb5c1_51457184',
+    0 => 'Block_263105bf28f00f2a042_24284075',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -147,12 +147,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_name'} */
 /* {block 'product_price_and_shipping'} */
-class Block_215665bee34b56cf445_33604805 extends Smarty_Internal_Block
+class Block_180555bf28f00f2dec4_40875407 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_price_and_shipping' => 
   array (
-    0 => 'Block_215665bee34b56cf445_33604805',
+    0 => 'Block_180555bf28f00f2dec4_40875407',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

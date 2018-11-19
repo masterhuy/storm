@@ -384,7 +384,7 @@
   position: relative;
   z-index: 1; }
   .tv .owl-stage-outer {
-    padding-bottom: 150px; }
+    padding-bottom: 100px; }
   .tv .addon-title {
     border-bottom: 1px solid #d3d3d3; }
   .tv .product-info {
@@ -627,13 +627,15 @@
     margin-top: 20px; }
   .topbar .left .addon-box:last-child {
     display: none; }
-  .header .left .addon-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+  .header .left {
+    padding-bottom: 10px; }
+    .header .left .addon-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
   .header .container > .row {
     display: block; }
   .menu {
@@ -682,6 +684,8 @@
       min-height: auto; } }
 
 @media (max-width: 767px) {
+  .header .right {
+    padding-top: 10px; }
   .cates_tab .addon-title h3 {
     float: none;
     text-align: center; }
@@ -771,6 +775,8 @@
     min-width: auto; } }
 
 @media (max-width: 481px) {
+  .tv {
+    max-height: 570px; }
   .banner_2 {
     margin-top: 0; }
   .on_sale .addon-title h3 {

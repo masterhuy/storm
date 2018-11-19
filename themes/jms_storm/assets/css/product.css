@@ -95,7 +95,7 @@
 }
 .images-container .product-images > li.thumb-container > .thumb {
     margin-right: 14px;
-    width: 90px;
+    width: 87px;
 }
 .product-images > li.thumb-container > .thumb.selected, 
 .product-images > li.thumb-container > .thumb:hover {
@@ -811,6 +811,9 @@
 	.images-container .thumb-box {
 		height: 34.1vw;
 	}
+    .images-container .product-images > li.thumb-container > .thumb {
+        width: 82px;
+    }
 }
 @media(max-width:1199px){
 	

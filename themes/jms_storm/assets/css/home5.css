@@ -732,13 +732,15 @@
     display: none; }
   .header #search_result {
     top: calc(100% + 16px); }
-  .header .left .addon-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+  .header .left {
+    padding-bottom: 10px; }
+    .header .left .addon-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
   .header .container > .row {
     display: block; }
   #open-button::before {

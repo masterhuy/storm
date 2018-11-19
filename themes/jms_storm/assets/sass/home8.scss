@@ -608,9 +608,6 @@
 	.owl-stage-outer{
 		padding-bottom: 150px;
 	}
-	.product_action{
-		padding: 0 25px;
-	}
 	.addon-title{
 		border-bottom: 1px solid #e6e6e6;
 		padding-bottom: 3px;
@@ -972,5 +969,8 @@
 		#search_result{
 			top: calc(30% - 22px);
 		}
+	}
+	.cate_tab .addon-desc{
+		text-align: center;
 	}
 }

@@ -821,6 +821,10 @@
 	}
 	.hotdeal{
 		margin-top: 49px;
+		.owl-theme .owl-controls {
+			top: -78px;
+			right: 0;
+		}
 		.addon-title{
 			border-bottom: 1px solid #e6e6e6;
 			margin-bottom: 30px;
@@ -847,9 +851,6 @@
 		}
 		.hotdeal-carousel{
 			padding-top: 0;
-		}
-		.product-name{
-			min-height: 61px;
 		}
 		.countdown.is-countdown{
 			margin-top: 4px;
@@ -992,7 +993,6 @@
 			}
 		}
 		.product_action{
-			padding: 0 10px;
 			.cart-button{
 				padding: 5px 0;
 				width: calc(100% - 25px);
@@ -1216,11 +1216,29 @@
 	}
 }
 @media (max-width: 991px){
+	.ver_menu_mobile{
+		.addon-box:last-child {
+			opacity: 0;
+			visibility: hidden;
+			position: absolute;
+			z-index: 1000;
+			width: calc(100% - 30px);
+			background: #fff;
+			-webkit-transition: .4s all;
+			-o-transition: .4s all;
+			transition: .4s all;
+		}
+		.addon-box.closed + .addon-box {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
 	.header{
 		.container > .row{
 			display: block;
 		}
 		.left{
+			padding-bottom: 10px;
 			.addon-box{
 				display: flex;
 				justify-content: center;
@@ -1296,6 +1314,11 @@
 	}
 }
 @media (max-width: 767px){
+	.header{
+		.right{
+			padding-top: 10px;
+		}
+	}
 	.brand{
 		display: block;
 		width: auto;
@@ -1355,9 +1378,14 @@
 		margin-top: 0 !important;
 	}
 	.main_column .healthy_eat{
+		padding: 0;
+		.addon-title{
+			padding: 0 15px;
+		}
 		.addon-title, .product_box{
 			float: none;
 			width: 100%;
+			margin: 0 auto !important;
 		}
 		.product_box{
 			margin: 0 -15px;

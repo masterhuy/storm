@@ -2542,7 +2542,7 @@
         function e() {
             (0, r.default)("#main .js-qv-product-images li").length > 2 ? ((0, r.default)("#main .js-qv-mask").addClass("scroll"), (0, r.default)(".scroll-box-arrows").addClass("scroll"), (0, r.default)("#main .js-qv-mask").scrollbox({
                 direction: "h",
-                distance: 107,
+                distance: 100,
                 autoPlay: !1
             }), (0, r.default)(".scroll-box-arrows .left").click(function() {
                 (0, r.default)("#main .js-qv-mask").trigger("backward")

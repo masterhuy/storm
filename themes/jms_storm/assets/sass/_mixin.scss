@@ -21,17 +21,26 @@
 	}
 }
 
-@mixin facetLabelActive($home, $color){
-	.home_#{$home} .facet-label.active a{
-		background: #{$color} !important;
-		border-color: #{$color} !important;
+@mixin bgAndBorderHover($home, $color){
+	.home_#{$home}{
+		.cart-box .btn-shopping:hover,
+		.card.cart-summary .checkout a:hover,
+		.scroll-box-arrows i:hover,
+		.products-list-in-row .ajax-add-to-cart:hover,
+		.products-list-in-row .addToWishlist:hover,
+		.facet-label.active a{
+			background: #{$color} !important;
+			border-color: #{$color} !important;
+		}
 	}
 }
 
-@mixin underlineTitle($home, $color){
-	.home_#{$home} #search_filters .facet .facet-title,
-	.home_#{$home} .title-block h3{
-		border-bottom-color: #{$color};
+@mixin borderBottomColor($home, $color){
+	.home_#{$home}{
+		#search_filters .facet .facet-title,
+		.title-block h3{
+			border-bottom-color: #{$color};
+		}
 	}
 }
 
@@ -47,20 +56,6 @@
 @mixin buttonActive($home, $color){
 	.home_#{$home} .view-mode .button a.active{
 		color: #{$color};
-	}
-}
-
-@mixin wishlistHover($home, $color){
-	.home_#{$home} .products-list-in-row .addToWishlist:hover{
-		background-color: #{$color};
-		border-color: #{$color};
-	}
-}
-
-@mixin scrollArrowHover($home, $color){
-	.home_#{$home} .scroll-box-arrows i:hover{
-		background-color: #{$color};
-		border-color: #{$color};
 	}
 }
 
@@ -88,14 +83,6 @@
 		.widget-title, .title_block{
 		    border-bottom-color: #{$color};
 		}
-	}
-}
-
-@mixin btnShoppingHover($home, $color){
-	.home_#{$home} .cart-box .btn-shopping:hover,
-	.home_#{$home} .card.cart-summary .checkout a:hover{
-	    background: #{$color};
-	    border-color: #{$color};
 	}
 }
 

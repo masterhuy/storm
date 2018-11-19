@@ -918,6 +918,14 @@
 }
 @media (max-width: 991px){
 	.header{
+		#cart_block{
+			.shoppingcart-box {
+				top: calc(100% + 15px);
+			}
+			&.open .shoppingcart-box {
+				top: calc(100% + 15px);
+			}
+		}
 		.container > .row{
 			display: block;
 		}
@@ -966,6 +974,7 @@
 		.right{
 			display: flex;
 			justify-content: center;
+			padding-top: 10px;
 			.addon-box{
 				margin: 0;
 				margin: 0 10px;

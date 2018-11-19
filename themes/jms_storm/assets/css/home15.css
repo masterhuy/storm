@@ -805,6 +805,8 @@
       position: unset; }
       .header #cart_block .shoppingcart-box {
         right: 15px; }
+    .header .right {
+      padding-top: 10px; }
   .women {
     max-height: unset !important; }
     .women .left .content {

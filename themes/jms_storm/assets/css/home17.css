@@ -471,6 +471,8 @@
     overflow: hidden;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis; }
+  .product_carousel .product-preview .product-info {
+    min-height: auto; }
   .product_carousel .owl-theme .owl-controls div {
     background-color: #d7d7d7; }
   .product_carousel .right .text-addcart, .product_carousel .right .text-outofstock {
@@ -488,11 +490,9 @@
   .product_carousel .right .product-preview:hover, .product_carousel .right .product-preview:hover .product_action {
     -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2); }
-  .product_carousel .right .product_action {
-    padding: 0 15px; }
-    .product_carousel .right .product_action button.cart-button {
-      padding: 5px 0;
-      width: 85%; }
+  .product_carousel .right .product_action button.cart-button {
+    padding: 5px 0;
+    width: 85%; }
   .product_carousel .left .include_content_s {
     text-align: center;
     color: #222; }

@@ -37,6 +37,9 @@
 		color: #888;
 	}
 }
+.jms-advsearch .input-group.keyword-group {
+    width: 100%;
+}
 #_desktop_user_info .dropdown-menu{
 	left: -20px;
 }
@@ -59,48 +62,68 @@
 .facet-label.active a{
 	color: #fff !important;
 }
+@include btnDefaultHover(1, $active-h1);
+@include btnDefaultHover(2, $active-h2);
+@include btnDefaultHover(3, $active-h3);
+@include btnDefaultHover(4, $active-h4);
+@include btnDefaultHover(5, $active-h5);
+@include btnDefaultHover(6, $active-h6);
+@include btnDefaultHover(7, $active-h7);
+@include btnDefaultHover(8, $active-h8);
+@include btnDefaultHover(9, $active-h9);
+@include btnDefaultHover(10, $active-h10);
+@include btnDefaultHover(11, $active-h11);
+@include btnDefaultHover(12, $active-h12);
+@include btnDefaultHover(13, $active-h13);
+@include btnDefaultHover(14, $active-h14);
+@include btnDefaultHover(15, $active-h15);
+@include btnDefaultHover(16, $active-h16);
+@include btnDefaultHover(17, $active-h17);
+@include btnDefaultHover(18, $active-h18);
+@include btnDefaultHover(19, $active-h19);
+@include btnDefaultHover(20, $active-h20);
 
-@include facetLabelActive(1, $active-h1);
-@include facetLabelActive(2, $active-h2);
-@include facetLabelActive(3, $active-h3);
-@include facetLabelActive(4, $active-h4);
-@include facetLabelActive(5, $active-h5);
-@include facetLabelActive(6, $active-h6);
-@include facetLabelActive(7, $active-h7);
-@include facetLabelActive(8, $active-h8);
-@include facetLabelActive(9, $active-h9);
-@include facetLabelActive(10, $active-h10);
-@include facetLabelActive(11, $active-h11);
-@include facetLabelActive(12, $active-h12);
-@include facetLabelActive(13, $active-h13);
-@include facetLabelActive(14, $active-h14);
-@include facetLabelActive(15, $active-h15);
-@include facetLabelActive(16, $active-h16);
-@include facetLabelActive(17, $active-h17);
-@include facetLabelActive(18, $active-h18);
-@include facetLabelActive(19, $active-h19);
-@include facetLabelActive(20, $active-h20);
+@include bgAndBorderHover(1, $active-h1);
+@include bgAndBorderHover(2, $active-h2);
+@include bgAndBorderHover(3, $active-h3);
+@include bgAndBorderHover(4, $active-h4);
+@include bgAndBorderHover(5, $active-h5);
+@include bgAndBorderHover(6, $active-h6);
+@include bgAndBorderHover(7, $active-h7);
+@include bgAndBorderHover(8, $active-h8);
+@include bgAndBorderHover(9, $active-h9);
+@include bgAndBorderHover(10, $active-h10);
+@include bgAndBorderHover(11, $active-h11);
+@include bgAndBorderHover(12, $active-h12);
+@include bgAndBorderHover(13, $active-h13);
+@include bgAndBorderHover(14, $active-h14);
+@include bgAndBorderHover(15, $active-h15);
+@include bgAndBorderHover(16, $active-h16);
+@include bgAndBorderHover(17, $active-h17);
+@include bgAndBorderHover(18, $active-h18);
+@include bgAndBorderHover(19, $active-h19);
+@include bgAndBorderHover(20, $active-h20);
 
-@include underlineTitle(1, $active-h1);
-@include underlineTitle(2, $active-h2);
-@include underlineTitle(3, $active-h3);
-@include underlineTitle(4, $active-h4);
-@include underlineTitle(5, $active-h5);
-@include underlineTitle(6, $active-h6);
-@include underlineTitle(7, $active-h7);
-@include underlineTitle(8, $active-h8);
-@include underlineTitle(9, $active-h9);
-@include underlineTitle(10, $active-h10);
-@include underlineTitle(11, $active-h11);
-@include underlineTitle(12, $active-h12);
-@include underlineTitle(13, $active-h13);
-@include underlineTitle(14, $active-h14);
-@include underlineTitle(15, $active-h15);
-@include underlineTitle(16, $active-h16);
-@include underlineTitle(17, $active-h17);
-@include underlineTitle(18, $active-h18);
-@include underlineTitle(19, $active-h19);
-@include underlineTitle(20, $active-h20);
+@include borderBottomColor(1, $active-h1);
+@include borderBottomColor(2, $active-h2);
+@include borderBottomColor(3, $active-h3);
+@include borderBottomColor(4, $active-h4);
+@include borderBottomColor(5, $active-h5);
+@include borderBottomColor(6, $active-h6);
+@include borderBottomColor(7, $active-h7);
+@include borderBottomColor(8, $active-h8);
+@include borderBottomColor(9, $active-h9);
+@include borderBottomColor(10, $active-h10);
+@include borderBottomColor(11, $active-h11);
+@include borderBottomColor(12, $active-h12);
+@include borderBottomColor(13, $active-h13);
+@include borderBottomColor(14, $active-h14);
+@include borderBottomColor(15, $active-h15);
+@include borderBottomColor(16, $active-h16);
+@include borderBottomColor(17, $active-h17);
+@include borderBottomColor(18, $active-h18);
+@include borderBottomColor(19, $active-h19);
+@include borderBottomColor(20, $active-h20);
 
 @include paginationCurrent(1, $active-h1);
 @include paginationCurrent(2, $active-h2);
@@ -143,48 +166,6 @@
 @include buttonActive(18, $active-h18);
 @include buttonActive(19, $active-h19);
 @include buttonActive(20, $active-h20);
-
-@include wishlistHover(1, $active-h1);
-@include wishlistHover(2, $active-h2);
-@include wishlistHover(3, $active-h3);
-@include wishlistHover(4, $active-h4);
-@include wishlistHover(5, $active-h5);
-@include wishlistHover(6, $active-h6);
-@include wishlistHover(7, $active-h7);
-@include wishlistHover(8, $active-h8);
-@include wishlistHover(9, $active-h9);
-@include wishlistHover(10, $active-h10);
-@include wishlistHover(11, $active-h11);
-@include wishlistHover(12, $active-h12);
-@include wishlistHover(13, $active-h13);
-@include wishlistHover(14, $active-h14);
-@include wishlistHover(15, $active-h15);
-@include wishlistHover(16, $active-h16);
-@include wishlistHover(17, $active-h17);
-@include wishlistHover(18, $active-h18);
-@include wishlistHover(19, $active-h19);
-@include wishlistHover(20, $active-h20);
-
-@include scrollArrowHover(1, $active-h1);
-@include scrollArrowHover(2, $active-h2);
-@include scrollArrowHover(3, $active-h3);
-@include scrollArrowHover(4, $active-h4);
-@include scrollArrowHover(5, $active-h5);
-@include scrollArrowHover(6, $active-h6);
-@include scrollArrowHover(7, $active-h7);
-@include scrollArrowHover(8, $active-h8);
-@include scrollArrowHover(9, $active-h9);
-@include scrollArrowHover(10, $active-h10);
-@include scrollArrowHover(11, $active-h11);
-@include scrollArrowHover(12, $active-h12);
-@include scrollArrowHover(13, $active-h13);
-@include scrollArrowHover(14, $active-h14);
-@include scrollArrowHover(15, $active-h15);
-@include scrollArrowHover(16, $active-h16);
-@include scrollArrowHover(17, $active-h17);
-@include scrollArrowHover(18, $active-h18);
-@include scrollArrowHover(19, $active-h19);
-@include scrollArrowHover(20, $active-h20);
 
 @include inForBlockActive(1, $active-h1);
 @include inForBlockActive(2, $active-h2);
@@ -248,48 +229,6 @@
 @include colorItemSize(18, $active-h18);
 @include colorItemSize(19, $active-h19);
 @include colorItemSize(20, $active-h20);
-
-@include btnShoppingHover(1, $active-h1);
-@include btnShoppingHover(2, $active-h2);
-@include btnShoppingHover(3, $active-h3);
-@include btnShoppingHover(4, $active-h4);
-@include btnShoppingHover(5, $active-h5);
-@include btnShoppingHover(6, $active-h6);
-@include btnShoppingHover(7, $active-h7);
-@include btnShoppingHover(8, $active-h8);
-@include btnShoppingHover(9, $active-h9);
-@include btnShoppingHover(10, $active-h10);
-@include btnShoppingHover(11, $active-h11);
-@include btnShoppingHover(12, $active-h12);
-@include btnShoppingHover(13, $active-h13);
-@include btnShoppingHover(14, $active-h14);
-@include btnShoppingHover(15, $active-h15);
-@include btnShoppingHover(16, $active-h16);
-@include btnShoppingHover(17, $active-h17);
-@include btnShoppingHover(18, $active-h18);
-@include btnShoppingHover(19, $active-h19);
-@include btnShoppingHover(20, $active-h20);
-
-@include btnDefaultHover(1, $active-h1);
-@include btnDefaultHover(2, $active-h2);
-@include btnDefaultHover(3, $active-h3);
-@include btnDefaultHover(4, $active-h4);
-@include btnDefaultHover(5, $active-h5);
-@include btnDefaultHover(6, $active-h6);
-@include btnDefaultHover(7, $active-h7);
-@include btnDefaultHover(8, $active-h8);
-@include btnDefaultHover(9, $active-h9);
-@include btnDefaultHover(10, $active-h10);
-@include btnDefaultHover(11, $active-h11);
-@include btnDefaultHover(12, $active-h12);
-@include btnDefaultHover(13, $active-h13);
-@include btnDefaultHover(14, $active-h14);
-@include btnDefaultHover(15, $active-h15);
-@include btnDefaultHover(16, $active-h16);
-@include btnDefaultHover(17, $active-h17);
-@include btnDefaultHover(18, $active-h18);
-@include btnDefaultHover(19, $active-h19);
-@include btnDefaultHover(20, $active-h20);
 
 @include blogWigetTitle(1, $active-h1);
 @include blogWigetTitle(2, $active-h2);
@@ -756,6 +695,12 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 481px){
+	div.jms-tab ul .nav-item{
+		&.active a, a.active{
+			border-bottom: 1px solid #e6e6e6;
+		}
+	}
+
 	div.footer_t{
 		.contact .address {
 			padding-right: 0;
@@ -894,6 +839,7 @@ a.wishlist_top{
 			z-index: 1000;
 			width: calc(100% - 30px);
 			background: #fff;
+			transition: .4s all;
 		}
 	}
 }
@@ -934,10 +880,10 @@ a.wishlist_top{
 		.js-qv-mask{
 			order: 1;
 			width: 35%;
-			max-height: 340px;
+			max-height: 387px;
 			overflow: hidden;
 			margin-right: 0;
-			margin-top: 50px;
+			margin-top: 25px;
 		}
 	}
 	.content_price{
@@ -962,7 +908,7 @@ a.wishlist_top{
 	    top: 0;
 	    bottom: 0;
 	    max-height: 441px;
-		left: 43px;
+		left: 42px;
 		width: 0;
 	    z-index: 0;
 	}
@@ -1548,7 +1494,7 @@ a.wishlist_top{
 		    display: block;
 		    width: 100%;
 		    text-align: center;
-		    z-index: 99;
+		    z-index: 95;
 		    transition: .4s all;
 		    i{
 		    	font-size: 70px;
@@ -1585,6 +1531,18 @@ a.wishlist_top{
 .home_7, .home_8, .home_11, .home_17, .home_18, .home_19, .home_20{
 	&#product .product-cover {
 		border: 1px solid #e6e6e6;
+	}
+}
+.home_2, .home_3, .home_7, .home_10, .home_12, .home_16{
+	.menu-wrap{
+		right: -300px;
+		left: auto;
+		transition: .4s all;
+	}
+	&.show-menu .menu-wrap{
+		right: 0;
+		left: auto;
+		transition: .4s all;
 	}
 }
 

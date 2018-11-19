@@ -491,8 +491,6 @@
   margin-top: 36px; }
   .most_view .owl-stage-outer {
     padding-bottom: 150px; }
-  .most_view .product_action {
-    padding: 0 25px; }
   .most_view .addon-title {
     border-bottom: 1px solid #e6e6e6;
     padding-bottom: 3px; }
@@ -772,4 +770,6 @@
   .header .search-box #ajax_search {
     width: 230px; }
   .header .search-box #search_result {
-    top: calc(30% - 22px); } }
+    top: calc(30% - 22px); }
+  .cate_tab .addon-desc {
+    text-align: center; } }

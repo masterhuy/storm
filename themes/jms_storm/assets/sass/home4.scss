@@ -471,7 +471,7 @@
 	position: relative;
 	z-index: 1;
 	.owl-stage-outer{
-		padding-bottom: 150px;
+		padding-bottom: 100px;
 	}
 	.addon-title{
 		border-bottom: 1px solid #d3d3d3;
@@ -780,6 +780,7 @@
 	}
 	.header{
 		.left{
+			padding-bottom: 10px;
 			.addon-box{
 				display: flex;
 				justify-content: center;
@@ -849,6 +850,11 @@
 	}
 }
 @media (max-width: 767px){
+	.header{
+		.right{
+			padding-top: 10px;
+		}
+	}
 	.cates_tab{
 		.addon-title{
 			h3{
@@ -975,6 +981,9 @@
 	}
 }
 @media (max-width: 481px){
+	.tv{
+		max-height: 570px;
+	}
 	.banner_2{
 		margin-top: 0;
 	}

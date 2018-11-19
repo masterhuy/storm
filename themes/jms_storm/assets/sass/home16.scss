@@ -945,7 +945,7 @@
 			position: absolute;
 			right: 0;
 			z-index: 2;
-			top: 4px;
+			top: 2px;
 			width: 75px;
 			#open-button{
 				display: inline-flex;
@@ -980,6 +980,11 @@
 	}
 }
 @media (max-width: 767px){
+	.header{
+		.right{
+			padding-top: 10px;
+		}
+	}
 	.topbar{
 		display: none;
 	}

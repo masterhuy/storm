@@ -604,6 +604,9 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
+	.product-preview .product-info {
+		min-height: auto;
+	}
 	.owl-theme .owl-controls div{
 		background-color: #d7d7d7;
 	}
@@ -630,7 +633,6 @@
 			box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
 		}
 		.product_action{
-			padding: 0 15px;
 			button.cart-button{
 				padding: 5px 0;
 				width: 85%;

@@ -966,9 +966,12 @@
 				flex-direction: column;
 			}
 		}
-		.left .addon-box{
-			display: flex;
-			justify-content: center;
+		.left{
+			padding-bottom: 10px;
+			.addon-box{
+				display: flex;
+				justify-content: center;
+			}
 		}
 		.right{
 			display: flex;

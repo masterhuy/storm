@@ -648,8 +648,6 @@
     padding-bottom: 3px; }
   .most_view .owl-stage-outer {
     padding-bottom: 150px; }
-  .most_view .product_action {
-    padding: 0 30px; }
   .most_view .product-link {
     white-space: nowrap;
     -o-text-overflow: ellipsis;
@@ -933,6 +931,8 @@
     display: none; }
   .banner_1 .left {
     margin-bottom: 20px; }
+  .header .right {
+    padding-top: 10px; }
   .header #cart_block .shoppingcart-box {
     right: 15px; }
   .cate_tab .addon-title h3 {

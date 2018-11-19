@@ -593,7 +593,7 @@
 		border-bottom: 1px solid #e6e6e6;
 	}
 	.owl-stage-outer{
-		padding-bottom: 150px;
+		padding-bottom: 100px;
 	}
 }
 
@@ -936,23 +936,27 @@
 		margin-top: 15px;
 		margin-bottom: 15px;
 	}
-	.banner_2{
-		margin-top: 0;
-	}
 }
 @media (max-width: 991px){
+	.page-index .container > .row, .page-index .container-fluid > .row {
+		margin: 0 -15px;
+	}
 	.header{
 		.left{
+			padding: 10px 0;
 			.addon-box{
 				display: flex;
 				justify-content: center;
 			}
 		}
+		.center, .right{
+			padding: 10px 15px;
+		}
 		.container > .row{
 			display: block;
 		}
 		#cart_block.open .shoppingcart-box, #cart_block .shoppingcart-box {
-			top: calc(100% + 7px);
+			top: calc(100% + 17px);
 		}
 	}
 	.video{
@@ -991,9 +995,6 @@
 @media (max-width: 767px){
 	.topbar{
 		display: none;
-	}
-	.header{
-		padding: 10px 0;
 	}
 	.banner{
 		.left{

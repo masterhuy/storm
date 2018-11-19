@@ -72,7 +72,7 @@
 			</span>
 	    {/if}
 		{block name='product_name'}
-			<a href="{$product.link|escape:'html'}" title="{$product.name|escape:'html':'UTF-8'}" class="product-link">{$product.name|truncate:40:'...'|escape:'html':'UTF-8'}</a>
+			<a href="{$product.link|escape:'html'}" title="{$product.name|escape:'html':'UTF-8'}" class="product-link">{$product.name|truncate:60:'...'|escape:'html':'UTF-8'}</a>
 		{/block}
 			  
 		{block name='product_price_and_shipping'}
@@ -102,7 +102,7 @@
 			<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
 				<span class="fa fa-spin fa-spinner"></span>
 				<span class="fa fa-check"></span>
-				<span class="text-addcart"><i class="storm-shopping-bag"></i>{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
+				<span class="text-addcart"><i class="flaticon-shopping-basket"></i>{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
 				<span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>								   
 			</button>
 			{if isset($jpb_wishlist) && $jpb_wishlist}							
@@ -125,7 +125,7 @@
 		<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
 			<span class="fa fa-spin fa-spinner"></span>
 			<span class="fa fa-check"></span>
-			<span class="text-addcart"><i class="storm-shopping-bag"></i>{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
+			<span class="text-addcart"><i class="flaticon-shopping-basket"></i>{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
 			<span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>			
 	   	</button>
 	   	{if isset($jpb_wishlist) && $jpb_wishlist}							

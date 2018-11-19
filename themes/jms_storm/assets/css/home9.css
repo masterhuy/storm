@@ -749,6 +749,10 @@
     margin-right: 3px; } }
 
 @media (max-width: 991px) {
+  .header #cart_block .shoppingcart-box {
+    top: calc(100% + 15px); }
+  .header #cart_block.open .shoppingcart-box {
+    top: calc(100% + 15px); }
   .header .container > .row {
     display: block; }
   .header .left .addon-box {
@@ -789,7 +793,8 @@
       display: flex;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+      padding-top: 10px; }
       .header .right .addon-box {
         margin: 0;
         margin: 0 10px; }

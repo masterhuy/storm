@@ -659,6 +659,9 @@
       float: right; }
   .main_column .hotdeal {
     margin-top: 49px; }
+    .main_column .hotdeal .owl-theme .owl-controls {
+      top: -78px;
+      right: 0; }
     .main_column .hotdeal .addon-title {
       border-bottom: 1px solid #e6e6e6;
       margin-bottom: 30px;
@@ -680,8 +683,6 @@
         padding: 0; }
     .main_column .hotdeal .hotdeal-carousel {
       padding-top: 0; }
-    .main_column .hotdeal .product-name {
-      min-height: 61px; }
     .main_column .hotdeal .countdown.is-countdown {
       margin-top: 4px; }
     .main_column .hotdeal .img-hotdeal {
@@ -779,11 +780,9 @@
       font-size: 10px; }
       .main_column .healthy_eat .quick-view span i {
         font-size: 16px; }
-    .main_column .healthy_eat .product_action {
-      padding: 0 10px; }
-      .main_column .healthy_eat .product_action .cart-button {
-        padding: 5px 0;
-        width: calc(100% - 25px); }
+    .main_column .healthy_eat .product_action .cart-button {
+      padding: 5px 0;
+      width: calc(100% - 25px); }
     .main_column .healthy_eat .product-link {
       padding: 0 10px;
       white-space: nowrap;
@@ -949,15 +948,30 @@
     margin-right: 10px; } }
 
 @media (max-width: 991px) {
+  .ver_menu_mobile .addon-box:last-child {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1000;
+    width: calc(100% - 30px);
+    background: #fff;
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
+    transition: .4s all; }
+  .ver_menu_mobile .addon-box.closed + .addon-box {
+    opacity: 1;
+    visibility: visible; }
   .header .container > .row {
     display: block; }
-  .header .left .addon-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+  .header .left {
+    padding-bottom: 10px; }
+    .header .left .addon-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
   .menu .ver_menu_mobile {
     display: block; }
   .menu .container {
@@ -1012,6 +1026,8 @@
     text-align: center; } }
 
 @media (max-width: 767px) {
+  .header .right {
+    padding-top: 10px; }
   .brand {
     display: block;
     width: auto;
@@ -1060,10 +1076,15 @@
 @media (max-width: 481px) {
   div#cart_block .shoppingcart-box {
     margin-top: 0 !important; }
-  .main_column .healthy_eat .addon-title, .main_column .healthy_eat .product_box {
-    float: none;
-    width: 100%; }
-  .main_column .healthy_eat .product_box {
-    margin: 0 -15px; }
-  .main_column .healthy_eat .addon-box {
-    background: none; } }
+  .main_column .healthy_eat {
+    padding: 0; }
+    .main_column .healthy_eat .addon-title {
+      padding: 0 15px; }
+    .main_column .healthy_eat .addon-title, .main_column .healthy_eat .product_box {
+      float: none;
+      width: 100%;
+      margin: 0 auto !important; }
+    .main_column .healthy_eat .product_box {
+      margin: 0 -15px; }
+    .main_column .healthy_eat .addon-box {
+      background: none; } }

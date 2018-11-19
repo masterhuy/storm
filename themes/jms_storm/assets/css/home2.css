@@ -610,13 +610,15 @@
 @media (max-width: 991px) {
   .header .container > .row {
     display: block; }
-  .header .left .addon-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+  .header .left {
+    padding-bottom: 10px; }
+    .header .left .addon-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
   .menu .container {
     position: relative; }
     .menu .container > .row {
@@ -672,7 +674,8 @@
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    padding-top: 10px; }
     .header .right .addon-box {
       margin: 0;
       margin: 0 10px; }

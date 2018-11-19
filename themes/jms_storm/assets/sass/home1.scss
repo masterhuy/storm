@@ -906,9 +906,6 @@
 @media (max-width: 1199px){
 	.cate_tab{
 		background-position: 50% 60px !important;
-		.product_action{
-			padding: 0 20px;
-		}
 	}
 	.banner_f .include_content_s .text-1, {
 		font-size: 20px;
@@ -955,12 +952,12 @@
 		}
 		.addon-title .jms-tab ul .nav-item{
 			&.active a{
-				border-bottom-color: #fff;
+				border-bottom: 1px solid #cfcfcf;
 			}
 			a{
 				padding: 5px 15px;
 				&.active{
-					border-bottom-color: #fff;
+					border-bottom: 1px solid #cfcfcf;
 				}
 			}
 		}
@@ -1035,6 +1032,17 @@
 	}
 }
 @media (max-width: 767px){
+	.header{
+		.center, .right{
+			padding-bottom: 10px;
+		}
+		.left{
+			padding: 15px 0;
+		}
+		.right .addon-box {
+			margin-left: 30px;
+		}
+	}
 	.topbar{
 		display: none;
 	}
@@ -1054,14 +1062,13 @@
 	}
 }
 @media (max-width: 481px){
+	.cate_tab .product-miniature {
+		margin-bottom: 20px;
+	}
 	.footer_b .right img:not(:last-child) {
 		margin-right: 3px;
 	}
 	.header{
-		padding: 10px 0;
-		.left{
-			padding: 15px 0;
-		}
 		.right{
 			#jms_ajax_search{
 				position: unset;
@@ -1071,6 +1078,9 @@
 			}
 			.addon-box {
 				margin-left: 10px;
+				&:not(:first-child){
+					margin-right: 0;
+				}
 			}
 		}
 	}
