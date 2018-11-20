@@ -867,16 +867,6 @@
 		    padding: 70px 0;
 		}
 	}
-	.banner_2{
-		margin-top: 0;
-		top: -150px;
-		.layout-column{
-			margin-top: 0;
-		}
-	}
-	.most_view{
-		top: -150px;
-	}
 	.product-link{
 		padding: 0;
 	}
@@ -959,15 +949,20 @@
 			top: calc(100% + 10px);
 		}
 	}
-	.header .search-box{
-		.searchbox{
-			top: 20%;
+	.header{
+		.right .addon-box:not(:first-child) {
+			margin-right: 20px;
 		}
-		#ajax_search{
-			width: 230px;
-		}
-		#search_result{
-			top: calc(30% - 22px);
+		.search-box{
+			.searchbox{
+				top: 20%;
+			}
+			#ajax_search{
+				width: 230px;
+			}
+			#search_result{
+				top: calc(30% - 22px);
+			}
 		}
 	}
 	.cate_tab .addon-desc{

@@ -803,7 +803,7 @@
   .header .right #jms_ajax_search {
     position: unset; }
     .header .right #jms_ajax_search #search_result {
-      top: calc(100% + 10px); }
+      top: calc(100%); }
   .header .right .addon-box {
     margin-left: 10px; }
     .header .right .addon-box:not(:first-child) {

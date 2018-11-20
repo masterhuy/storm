@@ -230,50 +230,33 @@
 @include colorItemSize(19, $active-h19);
 @include colorItemSize(20, $active-h20);
 
-@include blogWigetTitle(1, $active-h1);
-@include blogWigetTitle(2, $active-h2);
-@include blogWigetTitle(3, $active-h3);
-@include blogWigetTitle(4, $active-h4);
-@include blogWigetTitle(5, $active-h5);
-@include blogWigetTitle(6, $active-h6);
-@include blogWigetTitle(7, $active-h7);
-@include blogWigetTitle(8, $active-h8);
-@include blogWigetTitle(9, $active-h9);
-@include blogWigetTitle(10, $active-h10);
-@include blogWigetTitle(11, $active-h11);
-@include blogWigetTitle(12, $active-h12);
-@include blogWigetTitle(13, $active-h13);
-@include blogWigetTitle(14, $active-h14);
-@include blogWigetTitle(15, $active-h15);
-@include blogWigetTitle(16, $active-h16);
-@include blogWigetTitle(17, $active-h17);
-@include blogWigetTitle(18, $active-h18);
-@include blogWigetTitle(19, $active-h19);
-@include blogWigetTitle(20, $active-h20);
 
-@include arrowFooterHover(1, $active-h1);
-@include arrowFooterHover(2, $active-h2);
-@include arrowFooterHover(3, $active-h3);
-@include arrowFooterHover(4, $active-h4);
-@include arrowFooterHover(5, $active-h5);
-@include arrowFooterHover(6, $active-h6);
-@include arrowFooterHover(7, $active-h7);
-@include arrowFooterHover(8, $active-h8);
-@include arrowFooterHover(9, $active-h9);
-@include arrowFooterHover(10, $active-h10);
-@include arrowFooterHover(11, $active-h11);
-@include arrowFooterHover(12, $active-h12);
-@include arrowFooterHover(13, $active-h13);
-@include arrowFooterHover(14, $active-h14);
-@include arrowFooterHover(15, $active-h15);
-@include arrowFooterHover(16, $active-h16);
-@include arrowFooterHover(17, $active-h17);
-@include arrowFooterHover(18, $active-h18);
-@include arrowFooterHover(19, $active-h19);
-@include arrowFooterHover(20, $active-h20);
-
-
-
+#blockcart-modal{
+	.modal-dialog{
+		margin: 0 auto;
+	}
+	&.modal{
+		&.fade .modal-dialog{
+			transform: translate(0,20%);
+		}
+		&.in .modal-dialog{
+			transform: translate(0,50%);
+		}
+	}
+}
+#product-modal{
+	.modal-dialog{
+		margin: 0 auto;
+	}
+	&.modal{
+		&.fade .modal-dialog{
+			transform: translate(0,10%);
+		}
+		&.in .modal-dialog{
+			transform: translate(0,30%);
+		}
+	}
+}
 .page-index #content-wrapper{
 	margin-bottom: 0;
 }
@@ -464,6 +447,26 @@ a.wishlist_top{
 }
 
 #off-canvas-menu{
+	.menu-item > .dropdown-menu{
+		position: relative !important;
+		.dropdown-menu{
+			position: relative !important;
+			&::before{
+				left: 52px;
+			}
+		}
+		&::before{
+			top: 0;
+			bottom: 0;
+			left: 32px;
+			width: 1px;
+			content: '';
+			height: 100%;
+			position: absolute;
+			background-color: #f0f0f0;
+			z-index: 1;
+		}
+	}
 	#_desktop_user_info{
 		.user-info > .logout2 {
 			text-transform: capitalize;
@@ -1059,6 +1062,12 @@ a.wishlist_top{
 }
 
 .home_12{
+	#off-canvas-menu{
+		#search_widget button i,
+		.languages-info > span{
+			color: #333;
+		}
+	}
 	&#contact{
 		#wrapper {
 			background: transparent;

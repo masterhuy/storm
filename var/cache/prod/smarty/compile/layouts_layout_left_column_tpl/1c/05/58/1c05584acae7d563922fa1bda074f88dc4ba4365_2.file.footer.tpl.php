@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-19 05:15:41
+/* Smarty version 3.1.32, created on 2018-11-20 03:07:39
   from 'D:\xamppp\htdocs\jms_storm\themes\jms_storm\templates\_partials\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bf28d4d900454_94979066',
+  'unifunc' => 'content_5bf3c0cb0bb378_59634810',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bf28d4d900454_94979066 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bf3c0cb0bb378_59634810 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div class="back-to-top" id="back-to-top">
 			<span class="fa fa-angle-up"></span>
 </div>

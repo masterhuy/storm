@@ -706,13 +706,6 @@
     margin-top: 0; }
   .banner_full .include_content_s {
     padding: 70px 0; }
-  .banner_2 {
-    margin-top: 0;
-    top: -150px; }
-    .banner_2 .layout-column {
-      margin-top: 0; }
-  .most_view {
-    top: -150px; }
   .product-link {
     padding: 0; } }
 
@@ -765,6 +758,8 @@
     top: calc(100% + 10px); }
   div#cart_block .shoppingcart-box {
     top: calc(100% + 10px); }
+  .header .right .addon-box:not(:first-child) {
+    margin-right: 20px; }
   .header .search-box .searchbox {
     top: 20%; }
   .header .search-box #ajax_search {

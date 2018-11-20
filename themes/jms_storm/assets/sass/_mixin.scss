@@ -28,7 +28,8 @@
 		.scroll-box-arrows i:hover,
 		.products-list-in-row .ajax-add-to-cart:hover,
 		.products-list-in-row .addToWishlist:hover,
-		.facet-label.active a{
+		.facet-label.active a,
+		#off-canvas-menu .dropdown-menu > li > a::before{
 			background: #{$color} !important;
 			border-color: #{$color} !important;
 		}
@@ -38,7 +39,8 @@
 @mixin borderBottomColor($home, $color){
 	.home_#{$home}{
 		#search_filters .facet .facet-title,
-		.title-block h3{
+		.title-block h3,
+		.widget-title, .title_block{
 			border-bottom-color: #{$color};
 		}
 	}
@@ -54,8 +56,12 @@
 }
 
 @mixin buttonActive($home, $color){
-	.home_#{$home} .view-mode .button a.active{
-		color: #{$color};
+	.home_#{$home}{
+		.view-mode .button a.active,
+		#off-canvas-menu #_desktop_currency_selector ul li.current a,
+		#footer .addon-title + ul li a:hover::before{
+			color: #{$color};
+		}
 	}
 }
 
@@ -78,16 +84,4 @@
 	}
 }
 
-@mixin blogWigetTitle($home, $color){
-	.home_#{$home}{
-		.widget-title, .title_block{
-		    border-bottom-color: #{$color};
-		}
-	}
-}
 
-@mixin arrowFooterHover($home, $color){
-	.home_#{$home} #footer .addon-title + ul li a:hover::before{
-	    color: #{$color};
-	}
-}

@@ -1170,6 +1170,15 @@
 		 }
 	}
 	.on_sale{
+		.left{
+			position: relative;
+			z-index: 1;
+		}
+		.right{
+			margin-top: -120px;
+			position: relative;
+			z-index: 2;
+		}
 		.addon-title{
 			height: auto;
 			h3{
@@ -1228,6 +1237,9 @@
 	}
 }
 @media (max-width: 481px){
+	.service .include_content_s{
+		margin-top: 5px;
+	}
 	div.footer_m .contact-info li.address {
 		padding-right: 0;
 	}

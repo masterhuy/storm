@@ -758,6 +758,7 @@ body {
     border-radius: 0;
     background: transparent; }
   .main_column .daily_deal .product_action {
+    margin-top: 5px;
     position: unset;
     padding: 0;
     opacity: 1;
@@ -770,10 +771,7 @@ body {
     bottom: -5px;
     position: relative;
     white-space: nowrap;
-    -webkit-transition: unset;
-    -o-transition: unset;
-    transition: unset;
-    padding: 9px 10px;
+    padding: 7px 10px;
     border-radius: 3px;
     width: 100%;
     overflow: hidden;

@@ -41,7 +41,7 @@
 	}
 	#cart_block .shoppingcart-box{
 		right:0;
-		max-width: 290px;
+		max-width: 490px;
 	}
 	.btn-group.open .dropdown-menu::before {
 		right: 10px;
@@ -169,6 +169,22 @@
 	}
 }
 @media (max-width: 767px){
+	.cart-wrap .remove_link{
+		position: relative;
+		top: 5px;
+	}
+	.cart-wrap .description > a{
+		margin-bottom: 5px;
+	}
+	#cart_block #button_order_cart{
+		font-size: 12px;
+	}
+	.cart-wrap .description {
+		padding-left: 10px;
+	}
+	#cart_block .shoppingcart-box{
+		max-width: 290px;
+	}
 	.title_meta, .breadcrumb-inner{
 		float:none;
 	}

@@ -717,13 +717,7 @@
   .newsletter {
     padding: 100px 0; }
   .banner_2 {
-    margin-top: 0; }
-  .brand {
-    margin-top: 0; }
-    .brand .container {
-      margin-top: -120px; }
-    .brand .layout-column {
-      margin-top: 0; } }
+    margin-top: 0; } }
 
 @media (max-width: 991px) {
   #cart_block .shoppingcart-box {
@@ -792,6 +786,8 @@
     float: none; } }
 
 @media (max-width: 481px) {
+  .header #cart_block .shoppingcart-box, .header #cart_block.open .shoppingcart-box {
+    top: calc(100% + 23px) !important; }
   .header .right #jms_ajax_search {
     position: unset; }
   .header .right #ajax_search {
@@ -809,5 +805,10 @@
     margin-bottom: 0; }
   .service .feature-box i {
     margin-right: 0; }
+  .newsletter {
+    margin-top: 20px; }
+  .brand .brand-item {
+    text-align: center;
+    background: #f5f6f6; }
   .footer_b .addon-box p img {
     margin: 5px 0 !important; } }

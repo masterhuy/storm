@@ -215,12 +215,19 @@ jQuery(function ($) {
 
 jQuery(document).ready(function($) {
 	var menu = $(".jms-row.menu");
+	var close = $(".menu .left .addon-box:first-child");
+	var verMegaMenu = $(".page-index #jms-vermegamenu-container");
 
 	$(window).scroll(function () {
     	if ($(window).scrollTop()){
 			menu.addClass("fixed");
+			close.addClass("closed");
+			verMegaMenu.removeClass('in');
+
     	} else {
 			menu.removeClass("fixed");
+			close.removeClass("closed");
+			verMegaMenu.addClass('in');
     	}
     });
     
@@ -230,7 +237,7 @@ jQuery(document).ready(function($) {
 	
 	$("#mobile-vermegamenu").addClass('collapse');
 	$("#jms-vermegamenu-container").addClass('collapse');
-	$(".page-index #jms-vermegamenu-container").addClass('collapse in');
+	verMegaMenu.addClass('collapse in');
 	$('.page-index .ver_menu').click(function(event) {
 		$(this).parent().toggleClass('closed');
 	});

@@ -1322,7 +1322,6 @@
 	.brand{
 		display: block;
 		width: auto;
-		margin-top: 0;
 	}
 	.left_column, .main_column{
 		padding: 0 15px;
@@ -1392,6 +1391,17 @@
 		}
 		.addon-box{
 			background: none;
+		}
+	}
+	.service{
+		.addon-box{
+			padding: 10px 0 !important;
+		}
+		.include_content_s{
+			padding-top: 10px;
+		}
+		.feature-img{
+			margin-right: 0 !important;
 		}
 	}
 }

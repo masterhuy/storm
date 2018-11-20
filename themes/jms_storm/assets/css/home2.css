@@ -353,8 +353,6 @@
   margin-top: 80px; }
   .product_tab .owl-stage-outer {
     padding-bottom: 120px; }
-  .product_tab .product-link {
-    min-height: 61px; }
 
 .p_banner {
   margin-top: -102px;
@@ -610,6 +608,8 @@
 @media (max-width: 991px) {
   .header .container > .row {
     display: block; }
+  .header #cart_block.open .shoppingcart-box, .header #cart_block .shoppingcart-box {
+    top: calc(100% + 16px); }
   .header .left {
     padding-bottom: 10px; }
     .header .left .addon-box {

@@ -433,9 +433,6 @@
 	.owl-stage-outer{
 		padding-bottom: 120px;
 	}
-	.product-link{
-		min-height: 61px;
-	}
 }
 
 // banner promotion
@@ -756,6 +753,9 @@
 	.header{
 		.container > .row{
 			display: block;
+		}
+		#cart_block.open .shoppingcart-box, #cart_block .shoppingcart-box {
+			top: calc(100% + 16px);
 		}
 		.left{
 			padding-bottom: 10px;
