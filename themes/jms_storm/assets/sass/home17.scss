@@ -324,6 +324,36 @@
 		display: flex;
 		align-items: center;
 	}
+	#cart_block{
+		display: flex;
+		align-items: center;
+		&.open .shoppingcart-box, .shoppingcart-box {
+			top: calc(100% + 22px);
+		}
+		#button_order_cart:hover {
+		    background: $active-h17;
+		}
+		.ajax_cart_quantity {
+    		background: #333e48 none repeat scroll 0 0;
+    		top: 1px;
+    		right: -11px;
+    	}
+		.text-custom{
+			padding-left: 16px;
+			padding-top: 10px;
+			p{
+				font-size: 13px;
+				text-transform: uppercase;
+				margin-bottom: 0;
+			}
+			span{
+				font-size: 19px;
+				font-weight: 600;
+				position: relative;
+				top: -7px;
+			}
+		}
+	}
 	.right{
 		#_desktop_currency_selector{
 			a.dropdown-toggle:hover{
@@ -393,33 +423,6 @@
 				background: #fff;
 				right: -32px;
 				top: 3px;
-			}
-		}
-		#cart_block{
-			display: flex;
-			align-items: center;
-			#button_order_cart:hover {
-			    background: $active-h17;
-			}
-			.ajax_cart_quantity {
-	    		background: #333e48 none repeat scroll 0 0;
-	    		top: 1px;
-	    		right: -11px;
-	    	}
-			.text-custom{
-				padding-left: 16px;
-				padding-top: 10px;
-				p{
-					font-size: 13px;
-					text-transform: uppercase;
-					margin-bottom: 0;
-				}
-				span{
-					font-size: 19px;
-					font-weight: 600;
-					position: relative;
-					top: -7px;
-				}
 			}
 		}
 		.addon-box{
@@ -582,7 +585,7 @@
 		right: 5px;
 	}
 	.owl-stage-outer{
-		padding-bottom: 150px;
+		padding-bottom: 100px;
 	}
 	.addon-title{
 		h3{
@@ -620,9 +623,6 @@
 				background: #fff;
 			}
 		}
-		.product-info{
-			padding-top: 5px;
-		}
 		.product_box {
 			margin: 0 -5px;
 		}
@@ -631,12 +631,6 @@
 		}
 		.product-preview:hover, .product-preview:hover .product_action {
 			box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
-		}
-		.product_action{
-			button.cart-button{
-				padding: 5px 0;
-				width: 85%;
-			}
 		}
 	}
 	.left{
@@ -1028,15 +1022,15 @@
 	}
 }
 @media (max-width: 991px){
-	.header{
+	div.header{
 		padding: 0;
 		#cart_block{
 			position: unset;
 			&.open .shoppingcart-box {
-			    top: calc(100% + 20px);
+			    top: calc(100% + 0px);
 			}
 			.shoppingcart-box {
-			    top: calc(100% + 20px);
+			    top: calc(100% + 0px);
 			    right: 15px;
 			}
 		}
@@ -1130,6 +1124,13 @@
 	}
 }
 @media (max-width: 481px){
+	.new_arrivals {
+		margin-top: -130px;
+		background: #fff;
+		display: inline-block;
+		width: 100%;
+		padding-top: 30px;
+	}
 	.footer_m{
 		img{
 			width: 100%;

@@ -426,13 +426,8 @@
       float: right;
       position: relative;
       top: 1px; }
-      .product_tab .addon-title .jms-tab ul li.active a {
-        font-weight: 600; }
       .product_tab .addon-title .jms-tab ul li a {
-        font-size: 14px;
-        font-weight: 400; }
-        .product_tab .addon-title .jms-tab ul li a.active {
-          font-weight: 600; }
+        font-size: 14px; }
   .product_tab .product_action {
     padding-top: 0; }
 

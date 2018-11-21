@@ -246,9 +246,6 @@
     background: #fff !important;
     padding: 30px 15px !important;
 }
-.jms-megamenu .home .mega-nav li:first-child span {
-    display: none;
-}
 .jms-megamenu .mega-col-nav.col-sm-3:first-child {
 	border-left:0;
 }
@@ -290,10 +287,6 @@
     line-height: 23px;
     padding: 0;
     margin-bottom: 5px;
-}
-.jms-megamenu .home .dropdown-menu.sub-home .mega-dropdown-inner {
-    max-height: 445px;
-    overflow: auto;
 }
 .jms-megamenu .home img:hover {
     top: -3px;

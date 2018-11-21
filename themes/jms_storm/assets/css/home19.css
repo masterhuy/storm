@@ -885,5 +885,7 @@
     margin-right: 15px; }
   .new_arrivals .center {
     width: 100%; }
-  #footer .newsletter .form-group #newsletter-input {
-    max-width: 175px; } }
+  #footer {
+    margin-top: 30px; }
+    #footer .newsletter .form-group #newsletter-input {
+      max-width: 175px; } }

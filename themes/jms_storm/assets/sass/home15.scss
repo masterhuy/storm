@@ -30,14 +30,11 @@
 .jms-tab ul .nav-item {
 	&.active a{
 		color: $active-h15;
-		font-weight: 600;
 	}
 	a{
 		font-size: 14px;
-		font-weight: 400;
 		&.active{
 			color: $active-h15;
-			font-weight: 600;
 		}
 	}
 }
@@ -492,6 +489,8 @@
 		}
 	}
 	.right{
+		position: relative;
+		z-index: 2;
 		.content{
 			text-align: center;
 			padding-top: 116px;
@@ -514,6 +513,8 @@
 		}
 	}
 	.left{
+		position: relative;
+		z-index: 1;
 		.owl-stage-outer{
 			padding-bottom: 150px;
 		}
@@ -891,6 +892,21 @@
 		}
 	}
 }
+@media (max-width: 1366px) and (min-width: 1200px){
+	.topbar{
+		.right .addon-box:not(:first-child) {
+			margin-right: 16px;
+			&::after{
+				right: -8px;
+			}
+		}
+	}
+}
+@media (min-width: 1200px){
+	.header{
+		min-height: 118px;
+	}
+}
 @media (max-width: 1199px){
 	.topbar{
 		.center{
@@ -1028,10 +1044,12 @@
 	}
 	.men{
 		max-height: unset !important;
-		.right .content {
-		    float: none;
-		    padding-top: 0;
-
+		.right{
+			margin-top: -100px;
+			.content {
+			    float: none;
+			    padding-top: 0;
+			}
 		}
 	}
 	.product_tab{
@@ -1056,11 +1074,17 @@
 			float: none;
 		}
 	}
+	.brand {
+		margin-top: 30px;
+	}
 	.cates .addon-title h3::after{
 		width: 100%;
 	}
 	#footer .newsletter .form-group #newsletter-input{
 		max-width: 175px;
 		min-width: auto;
+	}
+	#footer {
+		margin-top: 30px;
 	}
 }

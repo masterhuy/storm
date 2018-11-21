@@ -279,4 +279,9 @@ jQuery(document).ready(function($) {
 		}, function(){
         $(".men").css("z-index", "1");
 	});
+	$(".men .left").hover(function(){
+	    $(".men .left").css("z-index", "3");
+		}, function(){
+        $(".men .left").css("z-index", "1");
+	});
 });

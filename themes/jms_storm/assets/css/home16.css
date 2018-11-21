@@ -23,15 +23,12 @@
   background: #9d3bc6; }
 
 .jms-tab ul .nav-item.active a {
-  color: #9d3bc6;
-  font-weight: 600; }
+  color: #9d3bc6; }
 
 .jms-tab ul .nav-item a {
-  font-size: 14px;
-  font-weight: 400; }
+  font-size: 14px; }
   .jms-tab ul .nav-item a.active {
-    color: #9d3bc6;
-    font-weight: 600; }
+    color: #9d3bc6; }
 
 .product-preview .quick-view span {
   background: rgba(157, 59, 198, 0.3); }
@@ -829,8 +826,12 @@
     text-align: center; }
   .product_tab .addon-title .jms-tab {
     float: none; }
+  .insta {
+    margin-top: 30px; }
   .newsletter .form-group #newsletter-input {
     max-width: 175px;
     min-width: auto; }
-  .footer_b .right p img {
-    margin-left: 3px; } }
+  .footer_b {
+    padding: 20px 0; }
+    .footer_b .right p img {
+      margin-left: 3px; } }

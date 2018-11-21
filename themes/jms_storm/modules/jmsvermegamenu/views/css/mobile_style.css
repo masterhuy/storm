@@ -31,15 +31,33 @@
 	width:100%;
 	background: transparent;
 }
+#mobile-vermegamenu .menu-item > .dropdown-menu > li > a {
+	padding-left: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#mobile-vermegamenu .open > .dropdown-menu .dropdown-menu {
+	opacity: 1;
+	visibility: visible;
+	display: block;
+	box-shadow: unset;
+	padding-top: 0;
+	padding-bottom: 0;
+	transform: unset;
+	width: 100%;
+}
 #mobile-vermegamenu .dropdown-menu{
 	padding-left: 15px;
+	position: relative
 }
+#mobile-vermegamenu .dropdown-menu
 #mobile-vermegamenu .dropdown-menu >  li > a {
 	line-height:35px;
 	padding:3px 30px;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+	position: relative;
 }
 #mobile-vermegamenu .dropdown-menu >  li.group > a{
 	padding-left: 0;

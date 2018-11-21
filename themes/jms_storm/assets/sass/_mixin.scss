@@ -29,7 +29,8 @@
 		.products-list-in-row .ajax-add-to-cart:hover,
 		.products-list-in-row .addToWishlist:hover,
 		.facet-label.active a,
-		#off-canvas-menu .dropdown-menu > li > a::before{
+		#off-canvas-menu .dropdown-menu > li > a::before,
+		#mobile-vermegamenu .dropdown-menu >  li > a::before{
 			background: #{$color} !important;
 			border-color: #{$color} !important;
 		}
@@ -59,7 +60,8 @@
 	.home_#{$home}{
 		.view-mode .button a.active,
 		#off-canvas-menu #_desktop_currency_selector ul li.current a,
-		#footer .addon-title + ul li a:hover::before{
+		#footer .addon-title + ul li a:hover::before,
+		.feature-icon i{
 			color: #{$color};
 		}
 	}

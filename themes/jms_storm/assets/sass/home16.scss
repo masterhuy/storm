@@ -29,14 +29,11 @@
 .jms-tab ul .nav-item {
 	&.active a{
 		color: $active-h16;
-		font-weight: 600;
 	}
 	a{
 		font-size: 14px;
-		font-weight: 400;
 		&.active{
 			color: $active-h16;
-			font-weight: 600;
 		}
 	}
 }
@@ -1025,11 +1022,17 @@
 			float: none;
 		}
 	}
+	.insta {
+		margin-top: 30px;
+	}
 	.newsletter .form-group #newsletter-input{
 		max-width: 175px;
 		min-width: auto;
 	}
-	.footer_b .right p img {
-		margin-left: 3px;
+	.footer_b{
+		padding: 20px 0;
+		.right p img {
+			margin-left: 3px;
+		}
 	}
 }

@@ -698,6 +698,9 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 481px){
+	div.addon-title h3, div.jms-tab ul .nav-item {
+		font-size: 16px;
+	}
 	div.jms-tab ul .nav-item{
 		&.active a, a.active{
 			border-bottom: 1px solid #e6e6e6;
@@ -1525,6 +1528,14 @@ a.wishlist_top{
 				left: 0;
 			}
 		}
+	}
+}
+.modal-dialog .product-cover{
+	&:hover::after{
+		display: none;
+	}
+	.layer {
+		display: none !important;
 	}
 }
 .product-preview button.cart-button:focus{

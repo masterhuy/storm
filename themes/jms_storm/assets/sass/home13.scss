@@ -582,9 +582,11 @@
 			opacity: 1;
 			visibility: visible;
 			background: #f5f6f6;
-			padding-bottom: 37px;
+			padding-bottom: 46px;
+			margin-top: 0;
 			.cart-button{
 				margin-top: 0;
+				border-color: #333;
 			}
 			.addToWishlist.product-btn{
 				display: none;
@@ -664,6 +666,14 @@
 	position: relative;
 	z-index: 1;
 	margin-top: 86px;
+	.left{
+		position: relative;
+		z-index: 1;
+	}
+	.right{
+		position: relative;
+		z-index: 2;
+	}
 	.addon-title{
 		border-bottom: 1px solid #e6e6e6;
 		padding-bottom: 3px;
@@ -889,6 +899,11 @@
 	}
 	.container{
 		width: 750px;
+	}
+	.men{
+		.right{
+			margin-top: -120px;
+		}
 	}
 	.hot_product{
 		.left{

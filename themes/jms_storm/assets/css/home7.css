@@ -1073,6 +1073,8 @@
     margin: 0 15px; } }
 
 @media (max-width: 481px) {
+  .left_column .testimonial .owl-dots {
+    display: none; }
   div#cart_block .shoppingcart-box {
     margin-top: 0 !important; }
   .main_column .healthy_eat {

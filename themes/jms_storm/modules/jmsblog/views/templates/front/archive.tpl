@@ -39,7 +39,7 @@
 					</div>
 				{elseif $post.image && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
 					<div class="post-thumb">
-						<a href="#"><img src="{$image_baseurl|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'}" alt="{$post.title|escape:'htmlall':'UTF-8'}" class="img-responsive" /></a>			 		
+						<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}"><img src="{$image_baseurl|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'}" alt="{$post.title|escape:'htmlall':'UTF-8'}" class="img-responsive" /></a>			 		
 					</div>
 				{/if}
                 <h4 class="post-title"><a href="{jmsblog::getPageLink('jmsblog-post', $params)}">{$post.title|escape:'htmlall':'UTF-8'}</a></h4>
@@ -56,7 +56,7 @@
 					{/if}	
 				</ul>					
 				<div class="blog-intro">{$post.introtext nofilter}</div>				
-				<a class="btn btn-default blog-readmore btn-effect button-small" href="#">{l s='Read more' d='Modules.JmsBlog'} ...</a>
+				<a class="btn btn-default blog-readmore btn-effect button-small" href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{l s='Read more' d='Modules.JmsBlog'} ...</a>
 			</article>			
 		{/foreach}
 	</div>

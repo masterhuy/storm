@@ -178,16 +178,13 @@
 }	
 
 .jms-vermegamenu .mega-nav .mega > a::after {
-    border-color: transparent transparent transparent #555;
-    border-style: solid;
-    border-width: 5px 0 5px 5px;
-    content: " ";
+    content: "\f105";
     display: block;
     float: right;
     height: 0;
-    margin-right: -15px;
-    margin-top: 12px;
+    margin-top: 0;
     width: 0;
+    font-family: FontAwesome;
 }
 .jms-vermegamenu .mega-nav li.group > a {
     text-transform: uppercase;
@@ -217,7 +214,8 @@
 	margin:0px;	
 }
 .jms-vermegamenu .dropdown-menu .dropdown-menu {
-	margin-left:0px;
+    margin-left: 0px;
+    left: calc(100% + 40px);
 }
 .mega-nav > .mega {
 	position:relative;

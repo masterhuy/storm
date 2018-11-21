@@ -1071,7 +1071,10 @@
 	.new_arrivals .center {
 		width: 100%;
 	}
-	#footer .newsletter .form-group #newsletter-input{
-		max-width: 175px;
+	#footer{
+		margin-top: 30px;
+		.newsletter .form-group #newsletter-input{
+			max-width: 175px;
+		}
 	}
 }
