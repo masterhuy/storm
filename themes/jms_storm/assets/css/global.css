@@ -1392,9 +1392,6 @@ a.wishlist_top {
 .ver_mobile {
   display: none; }
 
-#off-canvas-menu .home ul > li.menu-item:nth-child(2n+1) {
-  display: none; }
-
 @media (max-width: 1199px) {
   #product .product-quantity .qty {
     margin-right: 10px; }
